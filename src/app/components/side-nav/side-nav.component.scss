@@ -1,0 +1,78 @@
+.container {
+    width: 13rem;
+    height: 100vh;
+    background-color: #151515;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+a {
+    color: #6E6E6E;
+}
+
+p {
+    margin-bottom: 0;
+}
+
+.person {
+    width: 100%;
+    height: auto;
+    padding-top: 7.5%;
+}
+
+.name {
+    color: white;
+    font-size: 150%;
+}
+
+.job {
+    color: white;
+}
+
+.menu {
+    width: 100%;
+    line-height: 3rem;
+    padding-left: 0;
+}
+
+.menu>li {
+    list-style-type: none;
+    text-align: center;
+    border-bottom: 1px solid #6E6E6E;
+}
+
+.menu>li:first-child {
+    border-top: 1px solid #6E6E6E;
+}
+
+.menu>li>a {
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+.socials {
+    display: flex;
+    height: 4rem;
+    width: 100%;
+    margin-top: 2rem;
+    padding-left: 1.75rem;
+    padding-right: 1.75rem;
+}
+
+.socials>li {
+    text-align: center;
+    list-style-type: none;
+}
+
+.socials>li>a {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+}
+
+.socials>li>a>svg {
+    width: 2.5rem;
+}
