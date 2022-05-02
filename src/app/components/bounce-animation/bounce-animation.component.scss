@@ -1,0 +1,98 @@
+.bouncing-animation-container {
+    position: absolute;
+    width: 100vw;
+    left: 0;
+    bottom: 0;
+    padding-bottom: 1rem;
+}
+
+.bouncing-text {
+    display: flex;
+    justify-content: space-around;
+}
+
+.wordwrapper {
+    padding-left: 6.5rem;
+    display: flex;
+    font-size: 2.5rem;
+}
+
+span {
+    color: white;
+    text-shadow: 0 3px orange, 0 4px orange, 0 5px orange;
+}
+
+.wordwrapper span:nth-child(1) {
+    animation: bounce 5s ease infinite
+}
+
+.wordwrapper span:nth-child(3) {
+    animation: bounce 5s ease infinite .1s;
+}
+
+.wordwrapper span:nth-child(4) {
+    animation: bounce 5s ease infinite .2s;
+}
+
+.wordwrapper span:nth-child(5) {
+    animation: bounce 5s ease infinite .3s;
+}
+
+.wordwrapper span:nth-child(6) {
+    animation: bounce 5s ease infinite .4s;
+}
+
+.wordwrapper span:nth-child(7) {
+    animation: bounce 5s ease infinite .5s;
+}
+
+.wordwrapper span:nth-child(8) {
+    animation: bounce 5s ease infinite .6s;
+}
+
+.wordwrapper span:nth-child(10) {
+    animation: bounce 5s ease infinite .7s;
+}
+
+.wordwrapper span:nth-child(11) {
+    animation: bounce 5s ease infinite .8s;
+}
+
+.wordwrapper span:nth-child(12) {
+    animation: bounce 5s ease infinite .9s;
+}
+
+.wordwrapper span:nth-child(13) {
+    animation: bounce 5s ease infinite 1s;
+}
+
+.wordwrapper span:nth-child(15) {
+    animation: bounce 5s ease infinite 1.1s;
+}
+
+@keyframes bounce {
+    0% {
+        transform: scale(1, 1) translateY(0);
+    }
+    2% {
+        transform: scale(1.1, .9) translateY(0);
+    }
+    6% {
+        transform: scale(.9, 1.1) translateY(-55px);
+    }
+    10% {
+        transform: scale(1.05, .95) translateY(0);
+    }
+    12% {
+        transform: scale(1, 1) translateY(-7px);
+    }
+    13% {
+        transform: scale(1, 1) translateY(0);
+    }
+    20% {
+        transform: scale(1, 1) translateY(0);
+    }
+    100% {
+        transform: scale(1, 1) translateY(0);
+    }
+}
