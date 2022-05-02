@@ -7,6 +7,7 @@ import { SideNavComponent } from './components/side-nav/side-nav.component';
 import { StartingPageComponent } from './components/starting-page/starting-page.component';
 import { TypingAnimationComponent } from './components/typing-animation/typing-animation.component';
 import { SettingsComponent } from './components/settings/settings.component';
+import { BounceAnimationComponent } from './components/bounce-animation/bounce-animation.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { SettingsComponent } from './components/settings/settings.component';
     SideNavComponent,
     StartingPageComponent,
     TypingAnimationComponent,
-    SettingsComponent
+    SettingsComponent,
+    BounceAnimationComponent
   ],
   imports: [
     BrowserModule,
