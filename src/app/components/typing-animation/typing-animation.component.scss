@@ -15,12 +15,12 @@
     color: white;
     &::before {
         background-color: #1C1C1C;
-        animation: typewriter var(--speed, 3.5s) steps(var(--chars)) var(--delay, 1s) forwards;
+        animation: typewriter var(--speed, 2s) steps(var(--chars)) var(--delay, 1s) forwards;
     }
     &::after {
         width: 0.125em;
         background: transparent;
-        animation: typewriter var(--speed, 3.5s) steps(var(--chars)) var(--delay, 1s) forwards, blink 750ms steps(var(--chars)) var(--delay, 1s) var(--count);
+        animation: typewriter var(--speed, 2s) steps(var(--chars)) var(--delay, 1s) forwards, blink 750ms steps(var(--chars)) var(--delay, 1s) var(--count);
     }
     &::before,
     &::after {
@@ -30,8 +30,14 @@
     }
 }
 
+span {
+    color: white;
+    text-shadow: 0 3px orange, 0 4px orange, 0 5px orange;
+}
+
 .name {
     color: orange;
+    text-shadow: 0 3px darkred, 0 4px darkred, 0 5px darkred;
 }
 
 h1 {
