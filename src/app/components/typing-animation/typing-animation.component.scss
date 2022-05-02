@@ -8,6 +8,7 @@
 
 .typewriter {
     position: relative;
+    display: flex;
     background-color: inherit;
     font-family: "Source Code Pro", monospace;
     width: max-content;
@@ -27,6 +28,10 @@
         position: absolute;
         inset: 0;
     }
+}
+
+.name {
+    color: orange;
 }
 
 h1 {
