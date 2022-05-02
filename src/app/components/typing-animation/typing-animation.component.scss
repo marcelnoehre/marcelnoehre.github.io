@@ -1,0 +1,50 @@
+.typing-animation-container {
+    position: relative;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+}
+
+.typewriter {
+    position: relative;
+    background-color: inherit;
+    font-family: "Source Code Pro", monospace;
+    width: max-content;
+    color: white;
+    &::before {
+        background-color: #1C1C1C;
+        animation: typewriter var(--speed, 3.5s) steps(var(--chars)) var(--delay, 1s) forwards;
+    }
+    &::after {
+        width: 0.125em;
+        background: transparent;
+        animation: typewriter var(--speed, 3.5s) steps(var(--chars)) var(--delay, 1s) forwards, blink 750ms steps(var(--chars)) var(--delay, 1s) var(--count);
+    }
+    &::before,
+    &::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+    }
+}
+
+h1 {
+    font-size: 5rem;
+}
+
+h2 {
+    font-size: 3.5rem;
+}
+
+@keyframes typewriter {
+    to {
+        left: 100%;
+    }
+}
+
+@keyframes blink {
+    to {
+        background: white;
+    }
+}
