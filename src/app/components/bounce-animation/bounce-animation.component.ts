@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-bounce-animation',
@@ -7,9 +8,25 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BounceAnimationComponent implements OnInit {
 
-  constructor() { }
+  public language:string = '';
 
-  ngOnInit(): void {
+  constructor(
+    private translate: TranslateService
+  ) { }
+
+  async ngOnInit(): Promise<void> {
+    try {
+      setTimeout( () => { 
+        this.setLanguage();
+        this.translate.onLangChange
+          .subscribe(
+            lang => this.setLanguage());
+       }, 10 );
+    } catch(err) {}
+  }
+
+  setLanguage() {
+    this.language = this.translate.instant('STARTING_PAGE.BOUNCE');
   }
 
 }
