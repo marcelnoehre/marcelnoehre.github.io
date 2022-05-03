@@ -12,29 +12,25 @@ a {
     color: #6E6E6E;
 }
 
-a:hover {
-    color: orange;
+li {
+    text-align: center;
+    list-style-type: none;
 }
 
 p {
-    margin-bottom: 0;
-    margin-top: 0;
+    color: #6E6E6E;
+    padding: 0;
+    margin: 0;
+}
+
+a:hover {
+    color: orange;
 }
 
 .person {
     width: 100%;
     height: auto;
     padding-top: 7.5%;
-}
-
-.name {
-    color: white;
-    font-size: 150%;
-    padding-bottom: 0.5rem;
-}
-
-.job {
-    color: white;
 }
 
 .menu {
@@ -44,8 +40,6 @@ p {
 }
 
 .menu>li {
-    list-style-type: none;
-    text-align: center;
     border-bottom: 1px solid #6E6E6E;
 }
 
@@ -58,6 +52,57 @@ p {
     font-size: 1.5rem;
 }
 
+.languages {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border-top: 1px solid #6E6E6E;
+    border-bottom: 1px solid #6E6E6E;
+}
+
+.selectedLanguage {
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid #6E6E6E;
+}
+
+.selectedLanguage>img {
+    width: 2rem;
+    height: auto;
+    margin-left: 0.25rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+.selectedLanguage>p {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 0.25rem;
+}
+
+.chooseLanguage {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.chooseLanguage>li:hover {
+    background-color: orange;
+}
+
+.chooseLanguage>li>img {
+    width: 2rem;
+    height: auto;
+    margin: 0.5rem;
+}
+
 .socials {
     display: flex;
     height: 4rem;
@@ -65,11 +110,6 @@ p {
     margin-top: 2rem;
     padding-left: 1.75rem;
     padding-right: 1.75rem;
-}
-
-.socials>li {
-    text-align: center;
-    list-style-type: none;
 }
 
 .socials>li>a {
