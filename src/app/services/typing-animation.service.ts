@@ -7,23 +7,23 @@ export class TypingAnimationService {
     private languages = new Map<string, Object>([
         ["en", {
 			name: 21,
-            job: 19
+            job: 20
 		}],
         ["de", {
 			name: 25,
-            job: 22
+            job: 23
 		}],
         ["es", {
 			name: 22,
-            job: 21
+            job: 22
 		}],
         ["fr", {
 			name: 24,
-            job: 22
+            job: 23
 		}],
         ["it", {
 			name: 24,
-            job: 21
+            job: 22
 		}]
     ]);
 

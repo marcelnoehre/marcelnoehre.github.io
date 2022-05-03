@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { TypingAnimation } from 'src/app/interfaces/typing-animation';
+import { StorageService } from 'src/app/services/storage.service';
+import { TypingAnimationService } from 'src/app/services/typing-animation.service';
 
 @Component({
   selector: 'app-typing-animation',
@@ -6,10 +9,23 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./typing-animation.component.scss']
 })
 export class TypingAnimationComponent implements OnInit {
+  public charackters: TypingAnimation = {
+    name: 0,
+    job: 0
+  }
 
-  constructor() { }
+  constructor(
+    private storage: StorageService,
+    private typing: TypingAnimationService
+  ) { }
 
   ngOnInit(): void {
+    let id = null;
+    try {
+      id = this.storage.getSessionEntry('lang');
+    } catch(err) {}  
+    id = id? id : 'de';
+    this.charackters = this.typing.getCharackters(id);
   }
 
 }
