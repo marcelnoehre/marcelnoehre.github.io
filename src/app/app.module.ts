@@ -8,8 +8,9 @@ import { TypingAnimationComponent } from './components/typing-animation/typing-a
 import { SettingsComponent } from './components/settings/settings.component';
 import { BounceAnimationComponent } from './components/bounce-animation/bounce-animation.component';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
-import {TranslateLoader, TranslateModule} from '@ngx-translate/core';
-import {TranslateHttpLoader} from '@ngx-translate/http-loader';
+import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
+import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+import { AboutPageComponent } from './components/about-page/about-page.component';
 
 export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -18,11 +19,13 @@ export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
 @NgModule({
   declarations: [
     AppComponent,
-    SideNavComponent,
     StartingPageComponent,
+    AboutPageComponent,
+    SideNavComponent,
     TypingAnimationComponent,
     SettingsComponent,
     BounceAnimationComponent
+
   ],
   imports: [
     BrowserModule,
