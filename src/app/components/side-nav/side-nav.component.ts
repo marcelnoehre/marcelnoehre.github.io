@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
 import { StorageService } from 'src/app/services/storage.service';
 
 @Component({
@@ -11,11 +12,17 @@ export class SideNavComponent implements OnInit {
   public languages:string[] = ['en', 'de', 'fr', 'es', 'it']
 
   constructor(
-    private storage: StorageService
+    private storage: StorageService,
+    private translate: TranslateService
   ) { }
 
   ngOnInit(): void {
     this.selectedLanguage = this.storage.getSessionEntry('lang');
   }
 
+  newLanguage(lang:string): void {
+    this.storage.setSessionEntry('lang', lang);
+    this.selectedLanguage = lang;
+    this.translate.use(lang);
+  }
 }

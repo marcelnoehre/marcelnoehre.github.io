@@ -35,7 +35,7 @@
         </div>
         <ul class="chooseLanguage">
             <li *ngFor="let language of languages">
-                <img *ngIf="language != selectedLanguage" class="flag " src="{{'assets/images/flags/' + language + '.png'}} " />
+                <img *ngIf="language != selectedLanguage" class="flag " src="{{'assets/images/flags/' + language + '.png'}} " (click)="newLanguage(language)" />
             </li>
         </ul>'
     </div>
