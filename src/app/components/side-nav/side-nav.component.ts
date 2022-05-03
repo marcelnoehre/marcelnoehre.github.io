@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { StorageService } from 'src/app/services/storage.service';
 
 @Component({
   selector: 'app-side-nav',
@@ -6,10 +7,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./side-nav.component.scss']
 })
 export class SideNavComponent implements OnInit {
+  public selectedLanguage:string = '';
+  public languages:string[] = ['en', 'de', 'fr', 'es', 'it']
 
-  constructor() { }
+  constructor(
+    private storage: StorageService
+  ) { }
 
   ngOnInit(): void {
+    this.selectedLanguage = this.storage.getSessionEntry('lang');
   }
 
 }
