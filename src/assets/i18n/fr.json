@@ -1,5 +1,9 @@
 {
-    "APP": {
+    "SIDE_NAV": {
         "SELECTED": "Sélectionné:"
+    },
+    "STARTING_PAGE": {
+        "TYPING_FIRST": "Hé, je suis",
+        "TYPING_SECOND": "Je suis un développeur"
     }
 }
