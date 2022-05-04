@@ -1,11 +1,14 @@
 <div class="bouncing-animation-container">
     <div class="bouncing-text">
-        <div class="wordwrapper">
-            <span>&#8595;</span>
-            <span>&nbsp;</span>
-            <span>{{language}}</span>
-            <span>&nbsp;</span>
-            <span>&#8595;</span>
+        <div class="wordwrapper" #wordwrapper>
+            <div class="{{lang}}">
+                <span>&#8595;&nbsp;</span>
+                <span *ngFor="let char of bounce; let i = index">
+                    <div *ngIf="char == ' '">&nbsp;</div>
+                    <div *ngIf="char != ' '">{{char}}</div>
+                </span>
+                <span>&nbsp;&#8595;</span>
+            </div>
         </div>
     </div>
 </div>

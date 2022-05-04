@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
+import { StorageService } from 'src/app/services/storage.service';
 
 @Component({
   selector: 'app-bounce-animation',
@@ -8,25 +9,27 @@ import { TranslateService } from '@ngx-translate/core';
 })
 export class BounceAnimationComponent implements OnInit {
 
-  public language:string = '';
+  public bounce: string[] = [];
+  public lang:string = ''
 
   constructor(
-    private translate: TranslateService
+    private translate: TranslateService,
+    private storage: StorageService
   ) { }
 
   async ngOnInit(): Promise<void> {
     try {
       setTimeout( () => { 
-        this.setLanguage();
+        this.setBounce();
         this.translate.onLangChange
           .subscribe(
-            lang => this.setLanguage());
+            lang => this.setBounce());
        }, 10 );
     } catch(err) {}
   }
 
-  setLanguage() {
-    this.language = this.translate.instant('STARTING_PAGE.BOUNCE');
-  }
-
+  setBounce() {
+    this.lang = this.storage.getSessionEntry('lang');
+    this.bounce = this.translate.instant('STARTING_PAGE.BOUNCE').split('');
+  } 
 }
