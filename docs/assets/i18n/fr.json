@@ -1,0 +1,14 @@
+{
+    "SIDE_NAV": {
+        "ABOUT": "À propos",
+        "EXPERIENCE": "Vivre",
+        "PROJECTS": "Projets",
+        "CONTACT": "Contactez",
+        "SELECTED": "Sélectionné:"
+    },
+    "STARTING_PAGE": {
+        "TYPING_FIRST": "Hé, je suis",
+        "TYPING_SECOND": "Je suis un développeur.",
+        "BOUNCE": "Défiler vers le bas"
+    }
+}
