@@ -1,5 +1,9 @@
 {
     "SIDE_NAV": {
+        "ABOUT": "Acerca de",
+        "EXPERIENCE": "Experiencia",
+        "PROJECTS": "Proyectos",
+        "CONTACT": "Contacto",
         "SELECTED": "Seleccionado:"
     },
     "STARTING_PAGE": {
