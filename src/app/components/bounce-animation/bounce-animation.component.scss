@@ -36,3 +36,9 @@ span {
         transform: translateY(0);
     }
 }
+
+@media (max-width: 1300px) {
+    .wordwrapper>div {
+        padding-left: 0;
+    }
+}

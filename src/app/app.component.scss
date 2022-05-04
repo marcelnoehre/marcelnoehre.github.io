@@ -9,7 +9,11 @@ app-about-page {
 }
 
 app-side-nav {
-    display: none;
+    display: flex;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
 }
 
 app-settings {
@@ -18,10 +22,7 @@ app-settings {
 
 @media (max-width: 1300px) {
     app-side-nav {
-        position: fixed;
-        z-index: 1;
-        top: 0;
-        left: 0;
+        display: none;
     }
     app-settings {
         position: fixed;
