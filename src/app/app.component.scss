@@ -6,8 +6,12 @@ app-side-nav {
 }
 
 app-starting-page {
-    position: absolute;
     top: 0;
+    left: 0;
+}
+
+app-about-page {
+    top: 100vh;
     left: 0;
 }
 

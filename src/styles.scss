@@ -1,3 +1,4 @@
+html,
 body {
     cursor: url('assets/images/icons/custom-cursor.png'), auto;
     /* Safari */
@@ -8,6 +9,12 @@ body {
     -ms-user-select: none;
     /* Standard */
     user-select: none;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+body::-webkit-scrollbar {
+    display: none;
 }
 
 a {

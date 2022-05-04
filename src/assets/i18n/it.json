@@ -1,9 +1,14 @@
 {
     "SIDE_NAV": {
+        "ABOUT": "Di",
+        "EXPERIENCE": "Esperienza",
+        "PROJECTS": "Progetti",
+        "CONTACT": "Contatto",
         "SELECTED": "Selezinoato:"
     },
     "STARTING_PAGE": {
         "TYPING_FIRST": "Ciao, sono",
-        "TYPING_SECOND": "Sono uno sviluppatore."
+        "TYPING_SECOND": "Sono uno sviluppatore.",
+        "BOUNCE": "Scorrere verso il basso"
     }
 }
