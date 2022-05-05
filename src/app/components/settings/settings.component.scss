@@ -10,3 +10,10 @@ svg {
 svg:hover {
     color: orange;
 }
+
+@media (max-width: 400px) {
+    .settings-container {
+        height: 12vw;
+        width: 12vw;
+    }
+}

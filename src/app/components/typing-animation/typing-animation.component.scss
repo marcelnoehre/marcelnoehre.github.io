@@ -33,16 +33,16 @@
 
 span {
     color: white;
-    text-shadow: 0 3px orange, 0 4px orange, 0 5px orange;
+    text-shadow: 0 3px orange, 0 4px orange, 0 4.5px orange;
 }
 
 .name {
     color: orange;
-    text-shadow: 0 3px darkred, 0 4px darkred, 0 5px darkred;
+    text-shadow: 0 3px darkred, 0 4px darkred, 0 4.5px darkred;
 }
 
 h1 {
-    font-size: 4.5rem;
+    font-size: 4.25rem;
 }
 
 h2 {
@@ -58,5 +58,76 @@ h2 {
 @keyframes blink {
     to {
         background: white;
+    }
+}
+
+@media (max-width: 1000px) {
+    h1 {
+        font-size: 3.3rem;
+    }
+    h2 {
+        font-size: 2rem;
+    }
+    span {
+        color: white;
+        text-shadow: 0 2.5px orange, 0 3.5px orange, 0 4px orange;
+    }
+    .name {
+        color: orange;
+        text-shadow: 0 2.5px darkred, 0 3.5px darkred, 0 4px darkred;
+    }
+}
+
+@media (max-width: 800px) {
+    h1 {
+        font-size: 2.4rem;
+    }
+    h2 {
+        font-size: 1.75rem;
+    }
+    span {
+        color: white;
+        text-shadow: 0 2px orange, 0 3px orange, 0 3.5px orange;
+    }
+    .name {
+        color: orange;
+        text-shadow: 0 2px darkred, 0 3px darkred, 0 3.5px darkred;
+    }
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+    h2 {
+        font-size: 1.25rem;
+    }
+    span {
+        color: white;
+        text-shadow: 0 1.5px orange, 0 2px orange, 0 2.5px orange;
+    }
+    .name {
+        color: orange;
+        text-shadow: 0 1.5px darkred, 0 2px darkred, 0 2.5px darkred;
+    }
+}
+
+@media (max-width: 400px) {
+    h1 {
+        font-size: 6vw;
+    }
+    h2 {
+        font-size: 5vw;
+    }
+    span {
+        color: white;
+        text-shadow: 0 0.25vw orange, 0 0.5vw orange, 0 0.75vw orange;
+    }
+    .name {
+        color: orange;
+        text-shadow: 0 0.025vw darkred, 0 0.5vw darkred, 0 0.75vw darkred;
+    }
+    .typing-animation-container {
+        padding-left: 10vw;
     }
 }
