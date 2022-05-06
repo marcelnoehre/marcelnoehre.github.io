@@ -7,8 +7,7 @@
         "SELECTED": "Selected:"
     },
     "STARTING_PAGE": {
-        "TYPING_FIRST": "Hey, I'm",
-        "TYPING_SECOND": "I'm a Software Developer.",
+        "TYPING": "Software Developer",
         "BOUNCE": "Scroll Down"
     }
 }

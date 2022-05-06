@@ -7,8 +7,7 @@
         "SELECTED": "Sélectionné:"
     },
     "STARTING_PAGE": {
-        "TYPING_FIRST": "Hé, je suis",
-        "TYPING_SECOND": "Je suis un développeur de logiciels.",
+        "TYPING": "Développeur de logiciels",
         "BOUNCE": "Défiler vers le bas"
     }
 }
