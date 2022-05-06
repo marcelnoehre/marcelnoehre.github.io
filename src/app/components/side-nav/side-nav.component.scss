@@ -97,7 +97,12 @@ a:hover {
     background-color: orange;
 }
 
-.chooseLanguage>li>img {
+.chooseLanguage>li>div {
+    width: 100%;
+    height: 100%;
+}
+
+.chooseLanguage>li>div>img {
     width: 2rem;
     height: auto;
     margin: 0.5rem;

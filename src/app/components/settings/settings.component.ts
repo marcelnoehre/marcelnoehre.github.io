@@ -12,4 +12,8 @@ export class SettingsComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  public openSettings(): void {
+    //open the sidenav as fullscreen Overlay
+    //fade in
+  }
 }
