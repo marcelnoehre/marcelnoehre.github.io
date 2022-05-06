@@ -113,9 +113,10 @@ a:hover {
     justify-content: space-around;
     height: 4rem;
     width: 100%;
-    padding-left: 1.75rem;
-    padding-right: 1.75rem;
-    margin-top: 2rem;
+    margin: 0;
+    padding: 0;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
 .socials>li>a {
@@ -164,9 +165,6 @@ a:hover {
     }
     .socials {
         width: 100%;
-        padding-left: 25vw;
-        padding-right: 25vw;
-        margin: 1rem;
     }
     .socials>li>a {
         padding: 0;
