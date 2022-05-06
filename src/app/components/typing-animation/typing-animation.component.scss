@@ -46,7 +46,7 @@ h1 {
 }
 
 h2 {
-    font-size: 3rem;
+    font-size: 2.8rem;
 }
 
 @keyframes typewriter {
@@ -83,7 +83,7 @@ h2 {
         font-size: 2.4rem;
     }
     h2 {
-        font-size: 1.75rem;
+        font-size: 1.6rem;
     }
     span {
         color: white;
@@ -97,10 +97,10 @@ h2 {
 
 @media (max-width: 600px) {
     h1 {
-        font-size: 1.5rem;
+        font-size: 1.65rem;
     }
     h2 {
-        font-size: 1.25rem;
+        font-size: 1.125rem;
     }
     span {
         color: white;
@@ -110,14 +110,17 @@ h2 {
         color: orange;
         text-shadow: 0 1.5px darkred, 0 2px darkred, 0 2.5px darkred;
     }
+    .typing-animation-container {
+        padding-left: 2rem;
+    }
 }
 
 @media (max-width: 400px) {
     h1 {
-        font-size: 6vw;
+        font-size: 6.5vw;
     }
     h2 {
-        font-size: 5vw;
+        font-size: 4.25vw;
     }
     span {
         color: white;
