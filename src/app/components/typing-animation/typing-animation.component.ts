@@ -10,8 +10,7 @@ import { TypingAnimationService } from 'src/app/services/typing-animation.servic
 })
 export class TypingAnimationComponent implements OnInit {
   public charackters: TypingAnimation = {
-    name: 0,
-    job: 0
+    amount: 0
   }
 
   constructor(

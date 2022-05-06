@@ -6,24 +6,19 @@ import { Injectable } from '@angular/core';
 export class TypingAnimationService {
     private languages = new Map<string, Object>([
         ["en", {
-			name: 21,
-            job: 25
+			amount: 18
 		}],
         ["de", {
-			name: 25,
-            job: 28
+			amount: 19
 		}],
         ["es", {
-			name: 22,
-            job: 30
+			amount: 25
 		}],
         ["fr", {
-			name: 24,
-            job: 36
+			amount: 24
 		}],
         ["it", {
-			name: 24,
-            job: 34
+			amount: 24
 		}]
     ]);
 
