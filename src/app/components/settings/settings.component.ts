@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./settings.component.scss']
 })
 export class SettingsComponent implements OnInit {
+  public settingsOpen: boolean = false;
 
   constructor() { }
 
@@ -13,7 +14,7 @@ export class SettingsComponent implements OnInit {
   }
 
   public openSettings(): void {
-    //open the sidenav as fullscreen Overlay
-    //fade in
+    this.settingsOpen = this.settingsOpen? false : true; 
+
   }
 }
