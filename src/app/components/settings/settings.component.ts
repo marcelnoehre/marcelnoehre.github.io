@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, HostListener, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-settings',
@@ -8,6 +8,19 @@ import { Component, OnInit } from '@angular/core';
 export class SettingsComponent implements OnInit {
   public settingsOpen: boolean = false;
 
+  @HostListener('window:resize', ['$event'])
+  onResize(event: any) {
+    if(event.target.innerWidth > 1300) {
+      document.getElementById('side-nav')!.style.display = 'flex';
+    } else {
+      if(this.settingsOpen) {
+        document.getElementById('side-nav')!.style.display = 'flex';
+      } else {
+        document.getElementById('side-nav')!.style.display = 'none';
+      }
+    }
+  }
+
   constructor() { }
 
   ngOnInit(): void {
@@ -15,6 +28,10 @@ export class SettingsComponent implements OnInit {
 
   public openSettings(): void {
     this.settingsOpen = this.settingsOpen? false : true; 
-
+    if(this.settingsOpen) {
+      document.getElementById('side-nav')!.style.display = 'flex';
+    } else {
+      document.getElementById('side-nav')!.style.display = 'none';
+    }
   }
 }

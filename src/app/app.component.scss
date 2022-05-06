@@ -21,6 +21,12 @@ app-settings {
 }
 
 @media (max-width: 1300px) {
+    app-side-nav {
+        display: none;
+        z-index: 1;
+        top: 0;
+        left: 0;
+    }
     app-settings {
         position: fixed;
         display: flex;

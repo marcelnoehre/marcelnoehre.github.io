@@ -1,10 +1,18 @@
 .settings-container {
-    height: 3rem;
-    width: 3rem;
+    display: flex;
+    justify-content: center;
+}
+
+.inner-settings-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 svg {
     color: #6E6E6E;
+    height: 10vw;
+    width: 10vw;
 }
 
 svg:hover {

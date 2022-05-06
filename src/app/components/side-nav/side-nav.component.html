@@ -2,6 +2,19 @@
     <div class="personal-information">
         <img class="person" src="assets/images/person/logo.png">
     </div>
+    <div class="languages">
+        <div class="selectedLanguage">
+            <p>{{'SIDE_NAV.SELECTED'|translate}}</p>
+            <img src="{{'assets/images/flags/' + selectedLanguage + '.png'}}">
+        </div>
+        <ul class="chooseLanguage">
+            <li *ngFor="let language of languages">
+                <div class="selector" (click)="newLanguage(language)">
+                    <img class="flag " src="{{'assets/images/flags/' + language + '.png'}} " />
+                </div>
+            </li>
+        </ul>
+    </div>
     <ul class="menu">
         <li>
             <a href="" class="about">{{'SIDE_NAV.ABOUT'|translate}}</a>
@@ -16,19 +29,6 @@
             <a href="" class="contact">{{'SIDE_NAV.CONTACT'|translate}}</a>
         </li>
     </ul>
-    <div class="languages">
-        <div class="selectedLanguage">
-            <p>{{'SIDE_NAV.SELECTED'|translate}}</p>
-            <img src="{{'assets/images/flags/' + selectedLanguage + '.png'}}">
-        </div>
-        <ul class="chooseLanguage">
-            <li *ngFor="let language of languages">
-                <div class="selector" (click)="newLanguage(language)">
-                    <img *ngIf="language != selectedLanguage" class="flag " src="{{'assets/images/flags/' + language + '.png'}} " />
-                </div>
-            </li>
-        </ul>
-    </div>
     <ul class="socials ">
         <li>
             <a href="https://www.linkedin.com/in/marcel-n%C3%B6hre-155377235/ " target="_blank ">

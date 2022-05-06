@@ -30,7 +30,6 @@ a:hover {
 .person {
     width: 100%;
     height: auto;
-    padding-top: 7.5%;
 }
 
 .menu {
@@ -61,6 +60,7 @@ a:hover {
     padding: 0;
     border-top: 1px solid #6E6E6E;
     border-bottom: 1px solid #6E6E6E;
+    font-size: 1.5rem;
 }
 
 .selectedLanguage {
@@ -110,18 +110,17 @@ a:hover {
 
 .socials {
     display: flex;
+    justify-content: space-around;
     height: 4rem;
     width: 100%;
-    margin-top: 2rem;
     padding-left: 1.75rem;
     padding-right: 1.75rem;
+    margin-top: 2rem;
 }
 
 .socials>li>a {
     padding-top: 2rem;
     padding-bottom: 2rem;
-    padding-left: 0.75rem;
-    padding-right: 0.75rem;
 }
 
 .socials>li>a>svg {
@@ -139,10 +138,114 @@ a:hover {
         flex-direction: column;
         justify-content: space-between;
     }
+    .personal-information {
+        background-color: black;
+    }
     .person {
-        width: 50vw;
+        width: 10rem;
         height: auto;
         padding-top: 2vh;
-        padding-bottom: 2vh;
+    }
+    .selectedLanguage>img {
+        width: 4rem;
+        height: auto;
+        margin-left: 0.25rem;
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+    }
+    .chooseLanguage {
+        margin-left: 4rem;
+        margin-right: 4rem;
+    }
+    .chooseLanguage>li>div>img {
+        width: 4rem;
+        height: auto;
+        margin: 0.5rem;
+    }
+    .socials {
+        width: 100%;
+        padding-left: 25vw;
+        padding-right: 25vw;
+        margin: 1rem;
+    }
+    .socials>li>a {
+        padding: 0;
+    }
+}
+
+@media (max-width: 500px) {
+    .chooseLanguage {
+        margin-left: 12.5vw;
+        margin-right: 12.5vw;
+    }
+    .chooseLanguage>li>div>img {
+        width: 12.5vw;
+        height: auto;
+        margin: 0.5rem;
+    }
+    .selectedLanguage>img {
+        width: 12.5vw;
+        height: auto;
+        margin-left: 0.25rem;
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+    }
+}
+
+@media (max-width: 300px) {
+    .chooseLanguage {
+        margin-left: 0;
+        margin-right: 0;
+        justify-content: space-around;
+    }
+    .menu>li>a {
+        text-decoration: none;
+        font-size: 10vw;
+    }
+    .languages {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        border-top: 1px solid #6E6E6E;
+        border-bottom: 1px solid #6E6E6E;
+        font-size: 10vw;
+    }
+    .socials>li>a>svg {
+        width: 10vw;
+    }
+}
+
+@media (max-width: 200px) {
+    .person {
+        width: 100vw;
+        height: auto;
+        padding-top: 2vh;
+    }
+}
+
+@media (max-height: 650px) {
+    .selectedLanguage>img {
+        width: auto;
+        height: 5vh;
+        margin-left: 0.25rem;
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+    }
+    .chooseLanguage>li>div>img {
+        width: auto;
+        height: 5vh;
+        margin: 0.5rem;
+    }
+    .menu {
+        width: 100%;
+        line-height: 5vh;
+        padding-left: 0;
+    }
+    .socials>li>a {
+        padding-top: 0;
+        padding-bottom: 0;
     }
 }
