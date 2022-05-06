@@ -5,6 +5,7 @@
 @import "../../../../src/styles/bouncer/it.scss";
 .bouncing-animation-container {
     position: absolute;
+    display: block;
     width: 100vw;
     max-width: 100%;
     left: 0;
@@ -19,7 +20,6 @@
 .wordwrapper>div {
     padding-left: 6.5rem;
     display: flex;
-    font-size: 2.5rem;
     opacity: 0;
     transform: translateY(1rem);
     animation: fadeInUp 3s ease 8s forwards;
@@ -27,7 +27,8 @@
 
 span {
     color: white;
-    text-shadow: 0 3px orange, 0 4px orange, 0 5px orange;
+    text-shadow: 0 0.1rem orange, 0 0.15rem orange, 0 0.2rem orange;
+    font-size: 2.5rem;
 }
 
 @keyframes fadeInUp {
@@ -40,5 +41,60 @@ span {
 @media (max-width: 1300px) {
     .wordwrapper>div {
         padding-left: 0;
+    }
+    span {
+        color: white;
+        text-shadow: 0 0.1rem orange, 0 0.15rem orange, 0 0.2rem orange;
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 1000px) {
+    .wordwrapper {
+        padding-left: 0;
+    }
+    span {
+        color: white;
+        text-shadow: 0 0.1rem orange, 0 0.15rem orange, 0 0.175rem orange;
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 800px) {
+    .wordwrapper {
+        padding-left: 0;
+    }
+    span {
+        color: white;
+        text-shadow: 0 0.1rem orange, 0 0.125rem orange, 0 0.15rem orange;
+        font-size: 1.75rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .wordwrapper {
+        padding-left: 0;
+    }
+    span {
+        color: white;
+        text-shadow: 0 0.1rem orange, 0 0.125rem orange, 0 0.15rem orange;
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .wordwrapper {
+        padding-left: 0;
+    }
+    span {
+        color: white;
+        text-shadow: 0 0.2vw orange, 0 0.35vw orange, 0 0.5vw orange;
+        font-size: 5vw;
+    }
+}
+
+@media (max-height: 400px) {
+    .bouncing-animation-container {
+        display: none;
     }
 }
