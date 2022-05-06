@@ -31,22 +31,22 @@
     }
 }
 
-span {
-    color: white;
-    text-shadow: 0 2.75px orange, 0 3.75px orange, 0 4.25px orange;
-}
-
 .name {
     color: orange;
-    text-shadow: 0 2.75px darkred, 0 3.75px darkred, 0 4.25px darkred;
+    text-shadow: 0 5px darkred, 0 5.5px darkred, 0 6px darkred;
+}
+
+.job {
+    color: white;
+    text-shadow: 0 3px orange, 0 3.5px orange, 0 4px orange;
 }
 
 h1 {
-    font-size: 3.75rem;
+    font-size: 6.5rem;
 }
 
 h2 {
-    font-size: 2.4rem;
+    font-size: 3.75rem;
 }
 
 @keyframes typewriter {
@@ -63,72 +63,69 @@ h2 {
 
 @media (max-width: 1000px) {
     h1 {
-        font-size: 3rem;
+        font-size: 5rem;
     }
     h2 {
-        font-size: 1.8rem;
-    }
-    span {
-        color: white;
-        text-shadow: 0 2.5px orange, 0 3.5px orange, 0 4px orange;
+        font-size: 3rem;
     }
     .name {
         color: orange;
-        text-shadow: 0 2.5px darkred, 0 3.5px darkred, 0 4px darkred;
+        text-shadow: 0 4px darkred, 0 4.5px darkred, 0 5px darkred;
+    }
+    .job {
+        color: white;
+        text-shadow: 0 2.5px orange, 0 3px orange, 0 3.5px orange;
     }
 }
 
 @media (max-width: 800px) {
     h1 {
-        font-size: 2.3rem;
+        font-size: 3.5rem;
     }
     h2 {
-        font-size: 1.45rem;
-    }
-    span {
-        color: white;
-        text-shadow: 0 1.75px orange, 0 2.25px orange, 0 2.75px orange;
+        font-size: 2.125rem;
     }
     .name {
         color: orange;
-        text-shadow: 0 1.75px darkred, 0 2.25px darkred, 0 2.75px darkred;
+        text-shadow: 0 3px darkred, 0 3.5px darkred, 0 4px darkred;
+    }
+    .job {
+        color: white;
+        text-shadow: 0 2px orange, 0 2.25px orange, 0 2.5px orange;
     }
 }
 
 @media (max-width: 600px) {
     h1 {
-        font-size: 1.5rem;
+        font-size: 2.25rem;
     }
     h2 {
-        font-size: 1rem;
-    }
-    span {
-        color: white;
-        text-shadow: 0 1.25px orange, 0 1.5px orange, 0 1.75px orange;
+        font-size: 1.25rem;
     }
     .name {
         color: orange;
-        text-shadow: 0 1.25px darkred, 0 1.5px darkred, 0 1.75px darkred;
+        text-shadow: 0 2.4px darkred, 0 2.55px darkred, 0 2.7px darkred;
     }
-    .typing-animation-container {
-        padding-left: 2rem;
+    .job {
+        color: white;
+        text-shadow: 0 1.5px orange, 0 1.6px orange, 0 1.7px orange;
     }
 }
 
 @media (max-width: 400px) {
     h1 {
-        font-size: 5vw;
+        font-size: 9vw;
     }
     h2 {
-        font-size: 3vw;
-    }
-    span {
-        color: white;
-        text-shadow: 0 0.25vw orange, 0 0.5vw orange, 0 0.2vw orange;
+        font-size: 5vw;
     }
     .name {
         color: orange;
         text-shadow: 0 0.25vw darkred, 0 0.5vw darkred, 0 0.2vw darkred;
+    }
+    .job {
+        color: white;
+        text-shadow: 0 0.25vw orange, 0 0.5vw orange, 0 0.2vw orange;
     }
     .typing-animation-container {
         padding-left: 7vw;
