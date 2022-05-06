@@ -9,7 +9,8 @@ import { StorageService } from 'src/app/services/storage.service';
 })
 export class SideNavComponent implements OnInit {
   public selectedLanguage:string = '';
-  public languages:string[] = ['en', 'de', 'fr', 'es', 'it']
+  public languagesDefault:string[] = ['en', 'de', 'fr', 'es', 'it']
+  public languages:string[] = [];
 
   constructor(
     private storage: StorageService,
@@ -18,11 +19,22 @@ export class SideNavComponent implements OnInit {
 
   ngOnInit(): void {
     this.selectedLanguage = this.storage.getSessionEntry('lang');
+    this.getLanguages();
   }
 
   newLanguage(lang:string): void {
     this.storage.setSessionEntry('lang', lang);
     this.selectedLanguage = lang;
     this.translate.use(lang);
+    this.getLanguages();
+  }
+
+  public getLanguages(): void {
+    this.languages = [];
+    for(let i = 0; i < 5; i++) {
+      if(this.selectedLanguage != this.languagesDefault[i]) {
+        this.languages.push(this.languagesDefault[i]);
+      }
+    }
   }
 }

@@ -8,6 +8,7 @@ import { StorageService } from './services/storage.service';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
+  public title = 'portfolio'; 
 
   constructor(
     private translate: TranslateService, 
