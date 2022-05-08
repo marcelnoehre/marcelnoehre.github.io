@@ -140,12 +140,13 @@ a:hover {
         justify-content: space-between;
     }
     .personal-information {
-        background-color: black;
+        background: linear-gradient(0.25turn, rgba(255, 203, 0, 0.75), rgba(254, 59, 6, 0.75));
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
     }
     .person {
         width: 10rem;
         height: auto;
-        padding-top: 2vh;
     }
     .selectedLanguage>img {
         width: 4rem;
