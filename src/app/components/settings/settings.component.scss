@@ -10,13 +10,16 @@
 }
 
 svg {
-    color: #6E6E6E;
     height: 10vw;
     width: 10vw;
 }
 
-svg:hover {
-    color: orange;
+.fa-bars {
+    color: #6E6E6E;
+}
+
+.fa-times {
+    color: black;
 }
 
 @media (max-width: 400px) {
