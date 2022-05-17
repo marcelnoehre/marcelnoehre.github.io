@@ -20,6 +20,14 @@ app-settings {
     display: none;
 }
 
+app-color-theme-selector {
+    top: 0;
+    right: 0;
+    position: fixed;
+    display: flex;
+    z-index: 1;
+}
+
 @media (max-width: 1300px) {
     app-side-nav {
         display: none;
@@ -33,5 +41,8 @@ app-settings {
         z-index: 1;
         top: 10px;
         right: 10px;
+    }
+    app-color-theme-selector {
+        left: 0;
     }
 }
