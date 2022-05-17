@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
+import { filter, Observable, pluck } from 'rxjs';
 import { StorageService } from 'src/app/services/storage.service';
 
 @Component({
@@ -12,6 +13,7 @@ export class BounceAnimationComponent implements OnInit {
   public bounce: string[] = [];
   public lang:string = '';
   public colorTheme:string = window.sessionStorage.getItem('colorTheme') || 'dark';
+  colorThemeChange$!: Observable<string>;
 
   constructor(
     private translate: TranslateService,
@@ -19,6 +21,13 @@ export class BounceAnimationComponent implements OnInit {
   ) { }
 
   async ngOnInit(): Promise<void> {
+    this.colorThemeChange$ = this.storage.storageChange$.pipe(
+      filter(({ key }) => key === "colorTheme"),
+      pluck("id")
+    );
+    this.colorThemeChange$.subscribe(newTheme => {
+      this.colorTheme = newTheme;
+    });
     try {
       setTimeout( () => { 
         this.setBounce();

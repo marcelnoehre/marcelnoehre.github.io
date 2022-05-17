@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
+import { filter, Observable, pluck } from 'rxjs';
 import { StorageService } from 'src/app/services/storage.service';
 
 @Component({
@@ -9,6 +10,7 @@ import { StorageService } from 'src/app/services/storage.service';
 })
 export class SideNavComponent implements OnInit {
   public colorTheme:string = window.sessionStorage.getItem('colorTheme') || 'dark';
+  colorThemeChange$!: Observable<string>;
   public selectedLanguage:string = '';
   public languagesDefault:string[] = ['en', 'de', 'fr', 'es', 'it']
   public languages:string[] = [];
@@ -21,6 +23,13 @@ export class SideNavComponent implements OnInit {
   ngOnInit(): void {
     this.selectedLanguage = this.storage.getSessionEntry('lang');
     this.getLanguages();
+    this.colorThemeChange$ = this.storage.storageChange$.pipe(
+      filter(({ key }) => key === "colorTheme"),
+      pluck("id")
+    );
+    this.colorThemeChange$.subscribe(newTheme => {
+      this.colorTheme = newTheme;
+    });
   }
 
   newLanguage(lang:string): void {
