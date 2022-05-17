@@ -1,0 +1,36 @@
+.color-theme-selector {
+    display: flex;
+    justify-content: center;
+    width: 4rem;
+    height: 4rem;
+    box-sizing: border-box;
+    border-radius: 4vw;
+    box-shadow: 0 0 1em white, 0 0 1em gold;
+    background-color: rgb(0, 0, 0, 0.5);
+    margin: 1rem;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.fas {
+    display: flex;
+    justify-content: center;
+    color: gold;
+    font-size: 3rem;
+}
+
+@media (max-width: 1300px) {
+    .color-theme-selector {
+        width: 9vw;
+        height: 9vw;
+        border-radius: 3vw;
+        margin: 0.5vw;
+    }
+    .fas {
+        border-radius: 4vw;
+    }
+}

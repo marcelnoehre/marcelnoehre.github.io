@@ -12,11 +12,14 @@ export class SettingsComponent implements OnInit {
   onResize(event: any) {
     if(event.target.innerWidth > 1300) {
       document.getElementById('side-nav')!.style.display = 'flex';
+      document.getElementById('color-theme-selector')!.style.display = 'flex';
     } else {
       if(this.settingsOpen) {
         document.getElementById('side-nav')!.style.display = 'flex';
+        document.getElementById('color-theme-selector')!.style.display = 'flex';
       } else {
         document.getElementById('side-nav')!.style.display = 'none';
+        document.getElementById('color-theme-selector')!.style.display = 'none';
       }
     }
   }
@@ -27,11 +30,13 @@ export class SettingsComponent implements OnInit {
   }
 
   public openSettings(): void {
-    this.settingsOpen = this.settingsOpen? false : true; 
+    this.settingsOpen = this.settingsOpen? false : true;
     if(this.settingsOpen) {
       document.getElementById('side-nav')!.style.display = 'flex';
+      document.getElementById('color-theme-selector')!.style.display = 'flex';
     } else {
       document.getElementById('side-nav')!.style.display = 'none';
+      document.getElementById('color-theme-selector')!.style.display = 'none';
     }
   }
 }

@@ -7,9 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ColorThemeSelectorComponent implements OnInit {
 
+  public colorTheme:string = window.sessionStorage.getItem('colorTheme') || 'dark';
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  changeColorTheme() {
+    this.colorTheme = this.colorTheme == 'dark'? 'light' : 'dark';
   }
 
 }
