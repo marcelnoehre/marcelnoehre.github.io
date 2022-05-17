@@ -8,6 +8,7 @@ import { StorageService } from 'src/app/services/storage.service';
   styleUrls: ['./side-nav.component.scss']
 })
 export class SideNavComponent implements OnInit {
+  public colorTheme:string = 'light';
   public selectedLanguage:string = '';
   public languagesDefault:string[] = ['en', 'de', 'fr', 'es', 'it']
   public languages:string[] = [];

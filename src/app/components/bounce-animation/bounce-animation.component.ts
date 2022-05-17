@@ -10,7 +10,8 @@ import { StorageService } from 'src/app/services/storage.service';
 export class BounceAnimationComponent implements OnInit {
 
   public bounce: string[] = [];
-  public lang:string = ''
+  public lang:string = '';
+  public colorTheme:string = 'light';
 
   constructor(
     private translate: TranslateService,

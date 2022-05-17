@@ -2,12 +2,12 @@
     <div class="bouncing-text">
         <div class="wordwrapper" #wordwrapper>
             <div class="{{lang}}">
-                <span>&#8595;&nbsp;</span>
-                <span *ngFor="let char of bounce; let i = index">
+                <span [ngClass]="colorTheme">&#8595;&nbsp;</span>
+                <span *ngFor="let char of bounce; let i = index" [ngClass]="colorTheme">
                     <div *ngIf="char == ' '">&nbsp;</div>
                     <div *ngIf="char != ' '">{{char}}</div>
                 </span>
-                <span>&nbsp;&#8595;</span>
+                <span [ngClass]="colorTheme">&nbsp;&#8595;</span>
             </div>
         </div>
     </div>
