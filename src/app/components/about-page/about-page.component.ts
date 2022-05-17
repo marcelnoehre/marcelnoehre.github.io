@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AboutPageComponent implements OnInit {
 
-  public colorTheme:string = 'dark';
+  public colorTheme:string = window.sessionStorage.getItem('colorTheme') || 'dark';
 
   constructor() { }
 

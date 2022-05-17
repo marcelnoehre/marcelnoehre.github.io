@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./starting-page.component.scss']
 })
 export class StartingPageComponent implements OnInit {
-  public colorTheme = 'light';
+  public colorTheme = window.sessionStorage.getItem('colorTheme') || 'dark';
 
   constructor() { }
 

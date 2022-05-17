@@ -11,7 +11,7 @@ export class BounceAnimationComponent implements OnInit {
 
   public bounce: string[] = [];
   public lang:string = '';
-  public colorTheme:string = 'light';
+  public colorTheme:string = window.sessionStorage.getItem('colorTheme') || 'dark';
 
   constructor(
     private translate: TranslateService,

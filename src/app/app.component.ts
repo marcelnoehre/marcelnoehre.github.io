@@ -9,7 +9,7 @@ import { StorageService } from './services/storage.service';
 })
 export class AppComponent implements OnInit{
   public title = 'portfolio'; 
-  public colorTheme = 'dark'
+  public colorTheme = 'dark';
 
   constructor(
     private translate: TranslateService, 

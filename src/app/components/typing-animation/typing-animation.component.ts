@@ -9,7 +9,7 @@ import { TypingAnimationService } from 'src/app/services/typing-animation.servic
   styleUrls: ['./typing-animation.component.scss']
 })
 export class TypingAnimationComponent implements OnInit {
-  public colorTheme:string = 'light';
+  public colorTheme:string = window.sessionStorage.getItem('colorTheme') || 'dark';
   public charackters: TypingAnimation = {
     amount: 0
   }
