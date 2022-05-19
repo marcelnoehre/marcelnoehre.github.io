@@ -4,7 +4,7 @@
         background-color: #1C1C1C;
     }
     &::after {
-        animation: typewriter var(--speed, 1.75s) steps(var(--chars)) var(--delay, 1s) forwards, blink-dark 750ms steps(var(--chars)) var(--delay, 0s) var(--count);
+        animation: typewriter var(--speed, 1.75s) steps(var(--chars)) var(--delay, 1s) forwards, blink 750ms steps(var(--chars)) var(--delay, 0s) var(--count);
     }
 }
 
@@ -14,7 +14,7 @@
         background-color: #D8D8D8;
     }
     &::after {
-        animation: typewriter var(--speed, 1.75s) steps(var(--chars)) var(--delay, 1s) forwards, blink-light 750ms steps(var(--chars)) var(--delay, 0s) var(--count);
+        animation: typewriter var(--speed, 1.75s) steps(var(--chars)) var(--delay, 1s) forwards, blink 750ms steps(var(--chars)) var(--delay, 0s) var(--count);
     }
 }
 
@@ -82,15 +82,9 @@ h2 {
     }
 }
 
-@keyframes blink-dark {
+@keyframes blink {
     to {
-        background: white;
-    }
-}
-
-@keyframes blink-light {
-    to {
-        background: black;
+        background: grey;
     }
 }
 
