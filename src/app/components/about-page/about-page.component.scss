@@ -7,10 +7,26 @@
 }
 
 .about-page-container {
+    display: flex;
     width: 100vw;
     height: 100vh;
     max-width: 100%;
     padding-left: 13rem;
+}
+
+.person,
+.education {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.marcel-noehre {
+    height: 20rem;
+    width: auto;
+    margin-top: 10rem;
+    box-shadow: 0 0 1em #FFCB00, 0 0 1em #FE3B06;
 }
 
 @media (max-width: 1300px) {
