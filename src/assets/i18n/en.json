@@ -9,5 +9,32 @@
     "STARTING_PAGE": {
         "TYPING": "Web Developer",
         "BOUNCE": "Scroll Down"
+    },
+    "TIMELINE": {
+        "READ_MORE": "Read More",
+        "BACHELOR": {
+            "TITLE": "B.Sc. IMIT / AI",
+            "DATE": "Since 1st Oct 2019",
+            "CONTENT": "The Information Management and Information Technology program combines the contents of computer science, information technology and business administration. The additional specialization in Applied Computer Science offers a stronger technology orientation, so that this study program variant can be compared with Applied Computer Science.",
+            "COMPANY": "University of Hildesheim"
+        },
+        "YOUCO": {
+            "TITLE": "Business Internship",
+            "DATE": "1st Mar 2021-14th Jun 2021",
+            "CONTENT": "During my internship, Youco GmbH started to set up a digital test center for Corona rapid tests using the Checkpoint app. I modified the existing interface for a self-service terminal and set up a website that displays the area of an ongoing model project on a map.",
+            "COMPANY": "Youco GmbH"
+        },
+        "ENTIAC": {
+            "TITLE": "Web Developer",
+            "DATE": "Since 4th Oct 2021",
+            "CONTENT": "Besides my studies I am working as a student assistant at Entiac GmbH. Thereby I am part of an agile scrum team, with the goal to create a modern interface for mobile data processing.",
+            "COMPANY": "Entiac GmbH"
+        },
+        "HIWI": {
+            "TITLE": "Research Assistant",
+            "DATE": "1st Apr 2022-31st Aug 2022",
+            "CONTENT": "In the summer semester of 2022, I pursued employment as a tutor for the Java programming practical course. My tasks include planning and leading the tutorials, offering office hours and correcting homework and exams.",
+            "COMPANY": "University of Hildesheim"
+        }
     }
 }
