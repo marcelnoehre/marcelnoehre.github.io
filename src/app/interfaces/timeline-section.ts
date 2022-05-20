@@ -3,5 +3,6 @@ export interface TimelineSection {
     date: string,
     content: string,
     company: string,
-    website: string
+    website: string,
+    icon: string
 }
