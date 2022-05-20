@@ -156,7 +156,7 @@
         display: none;
     }
     .wrapper .row {
-        margin: 10px 0;
+        margin: 15px 0;
     }
 }
 
@@ -168,10 +168,14 @@
         margin: 0;
         margin-bottom: 1rem;
     }
+    .row section .details {
+        display: grid;
+    }
     .row section .details .title {
         font-size: 5vw;
     }
     .row section .details .date {
+        text-align: left;
         font-size: 3vw;
     }
     .row section .content {
@@ -184,14 +188,15 @@
     }
     .row section .bottom i {
         font-size: 3vw;
-        text-align: right;
     }
 }
 
 @media (max-width: 200px) {
     .wrapper {
-        margin: 0;
-        padding: 0;
+        margin: 1vw;
+    }
+    .wrapper .row {
+        margin: 5px 0;
     }
     .wrapper .row-1 {
         justify-content: flex-start;
