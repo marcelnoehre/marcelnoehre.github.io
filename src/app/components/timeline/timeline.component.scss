@@ -22,6 +22,7 @@
 
 .wrapper .row {
     display: flex;
+    margin-bottom: 1rem;
 }
 
 .wrapper .row-1 {
@@ -165,6 +166,7 @@
     }
     .wrapper .row {
         margin: 0;
+        margin-bottom: 1rem;
     }
     .row .section {
         padding: 0;
@@ -179,7 +181,7 @@
         font-size: 4vw;
     }
     .row section .bottom a {
-        padding: 2px 4px;
+        padding: 4px 8px;
         border-radius: 5px;
         font-size: 3vw;
     }

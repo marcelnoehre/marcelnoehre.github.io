@@ -9,5 +9,32 @@
     "STARTING_PAGE": {
         "TYPING": "Web-Entwickler",
         "BOUNCE": "Runterscrollen"
+    },
+    "TIMELINE": {
+        "READ_MORE": "Weiterlesen",
+        "BACHELOR": {
+            "TITLE": "B.Sc. IMIT / AI",
+            "DATE": "Seit dem 01.10.2019",
+            "CONTENT": "Der Studiengang Informationsmanagement und Informationstechnologie kombiniert die Inhalte der Informatik, der Informationstechnologie und der Betriebswirtschaftslehre. Die zusätzliche Vertiefung Angewandte Informatik bietet eine stärkere Technik-Orientierung, sodass diese Studiengangsvariante mit der Angewandten Informatik verglichen werden kann.",
+            "COMPANY": "Universität Hildesheim"
+        },
+        "YOUCO": {
+            "TITLE": "Wirtschaftspraktikum",
+            "DATE": "01.03.2021-14.06.2021",
+            "CONTENT": "Während meiner Praktikumszeit hat die Youco GmbH begonnen mithilfe der Checkpoint-App ein digitales Testzentrum für Corona-Schnelltests aufzusetzen. Dabei habe ich die bestehende Oberfläche für ein Selbstbedienungs-Terminal abgewandelt und eine Website aufgesetzt, die den Bereich eines laufenden Modellprojekts auf einer Karten anzeigt.",
+            "COMPANY": "Youco GmbH"
+        },
+        "ENTIAC": {
+            "TITLE": "Web-Entwickler",
+            "DATE": "Seit dem 04.10.2021",
+            "CONTENT": "Neben meinem Studium gehe ich einer Tätigkeit als Studentische Aushilfe bei der Entiac GmbH nach. Dabei bin ich Teil eines agilen Scrum Teams, mit dem Ziel eine moderne Oberfläche für die mobile Datenverarbeitung zu erstellen.",
+            "COMPANY": "Entiac GmbH"
+        },
+        "HIWI": {
+            "TITLE": "Wissenschaftliche Hilfskraft",
+            "DATE": "01.04.2022-31.08.2022",
+            "CONTENT": "Im Sommersemester 2022 bin ich einer Beschäftigung als Tutor für das Programmierpraktikum Java nachgegangen. Dabei gehören zu meinen Aufgaben das Plane und Leiten der Tutorien, das Anbieten von Sprechstunden und die Korrektur von Hausaufgaben und Klausuren.",
+            "COMPANY": "Universität Hildesheim"
+        }
     }
 }
