@@ -168,9 +168,6 @@
         margin: 0;
         margin-bottom: 1rem;
     }
-    .row .section {
-        padding: 0;
-    }
     .row section .details .title {
         font-size: 5vw;
     }
@@ -198,5 +195,8 @@
     }
     .wrapper .row-1 {
         justify-content: flex-start;
+    }
+    .row section {
+        padding: 5px !important;
     }
 }
