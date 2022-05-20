@@ -1,8 +1,8 @@
 <div class="side-nav-container" [ngClass]="colorTheme">
-    <div class="personal-information">
+    <a href="#" class="personal-information">
         <img *ngIf="colorTheme == 'dark'" class=" person" src="assets/images/logos/logo_dark.jpg ">
         <img *ngIf="colorTheme == 'light'" class="person" src="assets/images/logos/logo_light.jpg ">
-    </div>
+    </a>
     <div class="languages ">
         <div class="selectedLanguage ">
             <p>{{'SIDE_NAV.SELECTED'|translate}}</p>
@@ -18,16 +18,16 @@
     </div>
     <ul class="menu ">
         <li>
-            <a href=" " class="about " [ngClass]="colorTheme ">{{'SIDE_NAV.ABOUT'|translate}}</a>
+            <a href="#about" class="about " [ngClass]="colorTheme ">{{'SIDE_NAV.ABOUT'|translate}}</a>
         </li>
         <li>
-            <a href=" " class="experience " [ngClass]="colorTheme ">{{'SIDE_NAV.EXPERIENCE'|translate}}</a>
+            <a href="#experience" class="experience " [ngClass]="colorTheme ">{{'SIDE_NAV.EXPERIENCE'|translate}}</a>
         </li>
         <li>
-            <a href=" " class="projects " [ngClass]="colorTheme ">{{'SIDE_NAV.PROJECTS'|translate}}</a>
+            <a href="#projects" class="projects " [ngClass]="colorTheme ">{{'SIDE_NAV.PROJECTS'|translate}}</a>
         </li>
         <li>
-            <a href=" " class="contact " [ngClass]="colorTheme ">{{'SIDE_NAV.CONTACT'|translate}}</a>
+            <a href="#contact" class="contact " [ngClass]="colorTheme ">{{'SIDE_NAV.CONTACT'|translate}}</a>
         </li>
     </ul>
     <ul class="socials ">

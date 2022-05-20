@@ -10,8 +10,8 @@
 }
 
 svg {
-    height: 10vw;
-    width: 10vw;
+    height: 5rem;
+    width: 5rem;
 }
 
 .fa-bars {
@@ -22,9 +22,20 @@ svg {
     color: black;
 }
 
+@media (max-width: 800px) {
+    svg {
+        height: 3rem;
+        width: 3rem;
+    }
+}
+
 @media (max-width: 400px) {
     .settings-container {
         height: 12vw;
         width: 12vw;
+    }
+    svg {
+        height: 2rem;
+        width: 1rem;
     }
 }

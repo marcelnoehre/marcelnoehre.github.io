@@ -9,5 +9,44 @@
     "STARTING_PAGE": {
         "TYPING": "Sviluppatore Web",
         "BOUNCE": "Scorrere verso il basso"
+    },
+    "ABOUT_PAGE": {
+        "HEADER": "Di"
+    },
+    "EXPERIENCE_PAGE": {
+        "HEADER": "Esperienza"
+    },
+    "PROJECTS_PAGE": {
+        "HEADER": "Progetti"
+    },
+    "CONTACT_PAGE": {
+        "HEADER": "Contatto"
+    },
+    "TIMELINE": {
+        "READ_MORE": "Per saperne di più",
+        "BACHELOR": {
+            "TITLE": "B.Sc. IMIT / AI",
+            "DATE": "Dal 01.10.2019",
+            "CONTENT": "Il corso di laurea in Gestione dell'informazione e tecnologia dell'informazione combina i contenuti dell'informatica, della tecnologia dell'informazione e dell'amministrazione aziendale. La specializzazione aggiuntiva Informatica applicata offre un orientamento tecnologico più marcato, per cui questa variante del programma di studio può essere confrontata con Informatica applicata.",
+            "COMPANY": "Università di Hildesheim"
+        },
+        "YOUCO": {
+            "TITLE": "Stage aziendale",
+            "DATE": "01.03.2021-14.06.2021",
+            "CONTENT": "Durante il mio stage, Youco GmbH ha iniziato a creare un centro di analisi digitale per i test rapidi Corona utilizzando l'app Checkpoint. Ho modificato l'interfaccia esistente per un terminale self-service e ho creato un sito web che visualizza su una mappa l'area di un progetto di modello in corso.",
+            "COMPANY": "Youco GmbH"
+        },
+        "ENTIAC": {
+            "TITLE": "Sviluppatore Web",
+            "DATE": "Dal 04.10.2021",
+            "CONTENT": "Oltre ai miei studi, lavoro come assistente agli studenti presso Entiac GmbH. Faccio parte di un team agile Scrum con l'obiettivo di creare un'interfaccia moderna per l'elaborazione mobile dei dati.",
+            "COMPANY": "Entiac GmbH"
+        },
+        "HIWI": {
+            "TITLE": "Assistente alla ricerca",
+            "DATE": "01.04.2022-31.08.2022",
+            "CONTENT": "Nel semestre estivo del 2022 ho cercato lavoro come tutor per il corso pratico di programmazione Java. I miei compiti comprendono la pianificazione e la conduzione delle esercitazioni, l'offerta di orari di ricevimento e la correzione di compiti ed esami.",
+            "COMPANY": "Università di Hildesheim"
+        }
     }
 }

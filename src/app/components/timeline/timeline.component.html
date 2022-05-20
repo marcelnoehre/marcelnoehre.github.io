@@ -1,0 +1,21 @@
+<div class="wrapper">
+    <div class="center-line">
+        <div class="scroll-icon"><i class="fas fa-caret-down"></i></div>
+    </div>
+    <div *ngFor="let section of timelineSections; index as i;">
+        <div class="row row-{{i%2}}">
+            <section>
+                <i class="icon fas fa-graduation-cap"></i>
+                <div class="details">
+                    <span class="title">{{section.title|translate}}</span>
+                    <span class="date">{{section.date|translate}}&nbsp;</span>
+                </div>
+                <p class="content">{{section.content|translate}}</p>
+                <div class="bottom">
+                    <a href="{{section.website}}" target="_blank ">{{'TIMELINE.READ_MORE'|translate}}</a>
+                    <i>{{section.company|translate}}</i>
+                </div>
+            </section>
+        </div>
+    </div>
+</div>

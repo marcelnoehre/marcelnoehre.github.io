@@ -12,6 +12,10 @@ import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { AboutPageComponent } from './components/about-page/about-page.component';
 import { ColorThemeSelectorComponent } from './components/color-theme-selector/color-theme-selector.component';
+import { TimelineComponent } from './components/timeline/timeline.component';
+import { ExperiencePageComponent } from './components/experience-page/experience-page.component';
+import { ProjectsPageComponent } from './components/projects-page/projects-page.component';
+import { ContactPageComponent } from './components/contact-page/contact-page.component';
 
 export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -26,7 +30,11 @@ export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
     TypingAnimationComponent,
     SettingsComponent,
     BounceAnimationComponent,
-    ColorThemeSelectorComponent
+    ColorThemeSelectorComponent,
+    TimelineComponent,
+    ExperiencePageComponent,
+    ProjectsPageComponent,
+    ContactPageComponent
 
   ],
   imports: [
