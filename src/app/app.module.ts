@@ -16,6 +16,7 @@ import { TimelineComponent } from './components/timeline/timeline.component';
 import { ExperiencePageComponent } from './components/experience-page/experience-page.component';
 import { ProjectsPageComponent } from './components/projects-page/projects-page.component';
 import { ContactPageComponent } from './components/contact-page/contact-page.component';
+import { CubeComponent } from './components/cube/cube.component';
 
 export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -34,7 +35,8 @@ export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
     TimelineComponent,
     ExperiencePageComponent,
     ProjectsPageComponent,
-    ContactPageComponent
+    ContactPageComponent,
+    CubeComponent
 
   ],
   imports: [

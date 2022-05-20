@@ -10,7 +10,7 @@
 
 .about-page-container {
     display: grid;
-    justify-content: center;
+    justify-content: space-between;
     width: 100vw;
     max-width: 100%;
     padding-left: 13rem;
@@ -34,7 +34,10 @@ h1 {
 
 .content {
     display: flex;
+    justify-content: space-between;
+    width: 100vw;
     height: 70vh;
+    padding-left: 13rem;
 }
 
 .content>div {
@@ -53,12 +56,15 @@ img {
 }
 
 .information {
-    margin-right: 3rem;
-    text-align: center;
+    display: flex;
+    justify-content: center;
 }
 
 @media (max-width: 1300px) {
     .about-page-container {
+        padding-left: 0;
+    }
+    .content {
         padding-left: 0;
     }
 }
