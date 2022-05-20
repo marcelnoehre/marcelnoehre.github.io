@@ -9,5 +9,44 @@
     "STARTING_PAGE": {
         "TYPING": "Développeur Web",
         "BOUNCE": "Défiler vers le bas"
+    },
+    "ABOUT_PAGE": {
+        "HEADER": "À propos"
+    },
+    "EXPERIENCE_PAGE": {
+        "HEADER": "Vivre"
+    },
+    "PROJECTS_PAGE": {
+        "HEADER": "Projets"
+    },
+    "CONTACT_PAGE": {
+        "HEADER": "Contactez"
+    },
+    "TIMELINE": {
+        "READ_MORE": "Lire la suite",
+        "BACHELOR": {
+            "TITLE": "B.Sc. IMIT / AI",
+            "DATE": "Depuis le 01.10.2019",
+            "CONTENT": "La filière Gestion et technologie de l'information combine les contenus de l'informatique, de la technologie de l'information et de la gestion d'entreprise. La spécialisation supplémentaire en informatique appliquée offre une orientation plus technique, de sorte que cette variante du cursus peut être comparée à l'informatique appliquée.",
+            "COMPANY": "Université de Hildesheim"
+        },
+        "YOUCO": {
+            "TITLE": "Stage en économie",
+            "DATE": "01.03.2021-14.06.2021",
+            "CONTENT": "Pendant mon stage, Youco GmbH a commencé à mettre en place un centre de test numérique pour les tests rapides Corona à l'aide de l'application Checkpoint. Pour ce faire, j'ai modifié l'interface existante pour un terminal en libre-service et mis en place un site web qui affiche sur une carte la zone d'un projet modèle en cours.",
+            "COMPANY": "Youco GmbH"
+        },
+        "ENTIAC": {
+            "TITLE": "Développeur Web",
+            "DATE": "Depuis le 04.10.2021",
+            "CONTENT": "En plus de mes études, je travaille en tant qu'étudiant auxiliaire chez Entiac GmbH. Je fais partie d'une équipe Scrum agile, dont l'objectif est de créer une interface moderne pour le traitement mobile des données.",
+            "COMPANY": "Entiac GmbH"
+        },
+        "HIWI": {
+            "TITLE": "Assistant Scientifique",
+            "DATE": "01.04.2022-31.08.2022",
+            "CONTENT": "Au cours du semestre d'été 2022, j'ai travaillé comme tuteur pour le stage de programmation Java. Mes tâches consistent à planifier et à diriger les tutorats, à proposer des heures de consultation et à corriger les devoirs et les examens.",
+            "COMPANY": "Université de Hildesheim"
+        }
     }
 }
