@@ -1,4 +1,11 @@
 <div class="about-page-container" [ngClass]="colorTheme">
     <h1 class="header-{{colorTheme}}">{{'ABOUT_PAGE.HEADER'|translate}}</h1>
-    <h2 class="coming-soon-{{colorTheme}}">Coming soon...</h2>
+    <div class="content">
+        <div class="marcel-noehre">
+            <img src="assets/images/person/marcel_noehre.jpg">
+        </div>
+        <div class="information">
+            <p [ngClass]="colorTheme">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis cumque soluta cupiditate voluptate architecto tempora, enim consequatur a magni odio error voluptates facere suscipit quo, exercitationem consequuntur velit eos! Voluptatibus!</p>
+        </div>
+    </div>
 </div>

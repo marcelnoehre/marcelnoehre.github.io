@@ -1,16 +1,17 @@
 .dark {
     background-color: #1C1C1C;
+    color: white;
 }
 
 .light {
     background-color: #D8D8D8;
+    color: black;
 }
 
 .about-page-container {
-    display: block;
+    display: grid;
     justify-content: center;
     width: 100vw;
-    height: 100vh;
     max-width: 100%;
     padding-left: 13rem;
     padding-top: 5rem;
@@ -18,11 +19,6 @@
 
 h1 {
     font-size: 6.5rem;
-    padding-left: 3rem;
-}
-
-h2 {
-    font-size: 3.75rem;
     padding-left: 3rem;
 }
 
@@ -36,14 +32,29 @@ h2 {
     text-shadow: 0 5px orange, 0 5.5px orange, 0 6px orange;
 }
 
-.coming-soon-dark {
-    color: white;
-    text-shadow: 0 3px orange, 0 3.5px orange, 0 4px orange;
+.content {
+    display: flex;
+    height: 70vh;
 }
 
-.coming-soon-light {
-    color: orange;
-    text-shadow: 0 3px darkred, 0 3.5px darkred, 0 4px darkred;
+.content>div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    width: 50%;
+}
+
+img {
+    width: 30rem;
+    height: auto;
+    margin: 3rem;
+    box-shadow: 0 0 1em #FFCB00, 0 0 1em #FE3B06;
+}
+
+.information {
+    margin-right: 3rem;
+    text-align: center;
 }
 
 @media (max-width: 1300px) {
@@ -56,20 +67,11 @@ h2 {
     h1 {
         font-size: 5rem;
     }
-    h2 {
-        font-size: 3rem;
-    }
     .header-dark {
         text-shadow: 0 4px darkred, 0 4.5px darkred, 0 5px darkred;
     }
     .header-light {
         text-shadow: 0 4px orange, 0 4.5px orange, 0 5px orange;
-    }
-    .coming-soon-dark {
-        text-shadow: 0 2.5px orange, 0 3px orange, 0 3.5px orange;
-    }
-    .coming-soon-light {
-        text-shadow: 0 2.5px darkred, 0 3px darkred, 0 3.5px darkred;
     }
 }
 
@@ -77,20 +79,11 @@ h2 {
     h1 {
         font-size: 3.5rem;
     }
-    h2 {
-        font-size: 2.125rem;
-    }
     .header-dark {
         text-shadow: 0 3px darkred, 0 3.5px darkred, 0 4px darkred;
     }
     .header-light {
         text-shadow: 0 3px orange, 0 3.5px orange, 0 4px orange;
-    }
-    .coming-soon-dark {
-        text-shadow: 0 2px orange, 0 2.25px orange, 0 2.5px orange;
-    }
-    .coming-soon-light {
-        text-shadow: 0 2px darkred, 0 2.25px darkred, 0 2.5px darkred;
     }
 }
 
@@ -98,20 +91,11 @@ h2 {
     h1 {
         font-size: 2.25rem;
     }
-    h2 {
-        font-size: 1.25rem;
-    }
     .header-dark {
         text-shadow: 0 2.4px darkred, 0 2.55px darkred, 0 2.7px darkred;
     }
     .header-light {
         text-shadow: 0 2.4px orange, 0 2.55px orange, 0 2.7px orange;
-    }
-    .coming-soon-dark {
-        text-shadow: 0 1.5px orange, 0 1.6px orange, 0 1.7px orange;
-    }
-    .coming-soon-light {
-        text-shadow: 0 1.5px darkred, 0 1.6px darkred, 0 1.7px darkred;
     }
 }
 
@@ -120,20 +104,10 @@ h2 {
         font-size: 9vw;
         padding-left: 7vw;
     }
-    h2 {
-        font-size: 5vw;
-        padding-left: 7vw;
-    }
     .header-dark {
         text-shadow: 0 0.3vw darkred, 0 0.45vw darkred, 0 0.6vw darkred;
     }
     .header-light {
         text-shadow: 0 0.3vw orange, 0 0.45vw orange, 0 0.6vw orange;
-    }
-    .coming-soon-dark {
-        text-shadow: 0 0.25vw orange, 0 0.35vw orange, 0 0.45vw orange;
-    }
-    .coming-soon-light {
-        text-shadow: 0 0.25vw darkred, 0 0.35vw darkred, 0 0.45vw darkred;
     }
 }
