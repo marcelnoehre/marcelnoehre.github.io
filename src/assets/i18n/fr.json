@@ -16,6 +16,12 @@
     "EXPERIENCE_PAGE": {
         "HEADER": "Vivre"
     },
+    "PROJECTS_PAGE": {
+        "HEADER": "Projets"
+    },
+    "CONTACT_PAGE": {
+        "HEADER": "Contactez"
+    },
     "TIMELINE": {
         "READ_MORE": "Lire la suite",
         "BACHELOR": {
