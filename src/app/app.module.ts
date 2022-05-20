@@ -13,6 +13,7 @@ import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { AboutPageComponent } from './components/about-page/about-page.component';
 import { ColorThemeSelectorComponent } from './components/color-theme-selector/color-theme-selector.component';
 import { TimelineComponent } from './components/timeline/timeline.component';
+import { ExperiencePageComponent } from './components/experience-page/experience-page.component';
 
 export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -28,7 +29,8 @@ export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
     SettingsComponent,
     BounceAnimationComponent,
     ColorThemeSelectorComponent,
-    TimelineComponent
+    TimelineComponent,
+    ExperiencePageComponent
 
   ],
   imports: [

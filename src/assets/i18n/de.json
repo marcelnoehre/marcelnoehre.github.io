@@ -11,7 +11,10 @@
         "BOUNCE": "Runterscrollen"
     },
     "ABOUT_PAGE": {
-        "EXPERIENCE": "Erfahrung"
+        "HEADER": "Über mich"
+    },
+    "EXPERIENCE_PAGE": {
+        "HEADER": "Erfahrung"
     },
     "TIMELINE": {
         "READ_MORE": "Weiterlesen",

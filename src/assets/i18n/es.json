@@ -11,7 +11,10 @@
         "BOUNCE": "Desplácese hacia abajo"
     },
     "ABOUT_PAGE": {
-        "EXPERIENCE": "Experiencia"
+        "HEADER": "Acerca de"
+    },
+    "EXPERIENCE_PAGE": {
+        "HEADER": "Experiencia"
     },
     "TIMELINE": {
         "READ_MORE": "Leer más",
