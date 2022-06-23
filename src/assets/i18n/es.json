@@ -1,6 +1,6 @@
 {
     "SIDE_NAV": {
-        "ABOUT": "Acerca de",
+        "ABOUT": "Sobre mí",
         "EXPERIENCE": "Experiencia",
         "PROJECTS": "Proyectos",
         "CONTACT": "Contacto",
@@ -11,7 +11,7 @@
         "BOUNCE": "Desplácese hacia abajo"
     },
     "ABOUT_PAGE": {
-        "HEADER": "Acerca de"
+        "HEADER": "Sobre mí"
     },
     "EXPERIENCE_PAGE": {
         "HEADER": "Experiencia"
@@ -33,19 +33,19 @@
         "YOUCO": {
             "TITLE": "Prácticas en empresas",
             "DATE": "01.03.2021-14.06.2021",
-            "CONTENT": "Durante mis prácticas, Youco GmbH empezó a crear un centro de pruebas digitales para las pruebas rápidas Corona utilizando la aplicación Checkpoint. He modificado la interfaz existente para un terminal de autoservicio y he creado un sitio web que muestra la zona de un proyecto de maqueta en curso en un mapa.",
+            "CONTENT": "Durante mi práctica Youco GmbH empezó a crear un centro de pruebas digitales para las pruebas rápidas Corona utilizando la aplicación Checkpoint. He modificado la interfaz existente para un terminal de autoservicio y he creado un sitio web que muestra la zona de un proyecto de maqueta en curso en un mapa.",
             "COMPANY": "Youco GmbH"
         },
         "ENTIAC": {
             "TITLE": "Desarrollador Web",
             "DATE": "Desde el 04.10.2021",
-            "CONTENT": "Además de mis estudios, trabajo como asistente estudiantil en Entiac GmbH. Formo parte de un equipo ágil de Scrum con el objetivo de crear una interfaz moderna para el procesamiento de datos móviles.",
+            "CONTENT": "Además de mis estudios, trabajo como asistente estudiantil en Entiac GmbH. Formo parte de un equipo ágil de Scrum con el objetivo de crear una interfaz moderna para la recopilación móvil de datos.",
             "COMPANY": "Entiac GmbH"
         },
         "HIWI": {
             "TITLE": "Asistente de investigación",
             "DATE": "01.04.2022-31.08.2022",
-            "CONTENT": "En el semestre de verano de 2022, busqué empleo como tutor del curso práctico de programación Java. Mis tareas incluyen planificar y dirigir las tutorías, ofrecer horas de oficina y corregir los deberes y los exámenes.",
+            "CONTENT": "En el semestre de verano de 2022, tuve un empleo como tutor del curso práctico de programación Java. Mis tareas incluyen planificar y dirigir las tutorías, ofrecer horas de oficina y corregir los deberes y los exámenes.",
             "COMPANY": "Universidad de Hildesheim"
         }
     }
