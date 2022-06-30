@@ -4,7 +4,7 @@
         background-color: #1C1C1C;
     }
     &::after {
-        animation: typewriter var(--speed, 1.75s) steps(var(--chars)) var(--delay, 1s) forwards, blink 750ms steps(var(--chars)) var(--delay, 0s) var(--count);
+        animation: typewriter var(--speed, 1.25s) steps(var(--chars)) var(--delay, 1s) forwards, blink 750ms steps(var(--chars)) var(--delay, 0s) var(--count);
     }
 }
 
@@ -14,7 +14,7 @@
         background-color: #D8D8D8;
     }
     &::after {
-        animation: typewriter var(--speed, 1.75s) steps(var(--chars)) var(--delay, 1s) forwards, blink 750ms steps(var(--chars)) var(--delay, 0s) var(--count);
+        animation: typewriter var(--speed, 1.25s) steps(var(--chars)) var(--delay, 1s) forwards, blink 750ms steps(var(--chars)) var(--delay, 0s) var(--count);
     }
 }
 
@@ -34,7 +34,7 @@
     padding-top: 0, 2rem;
     padding-bottom: 0.2rem;
     &::before {
-        animation: typewriter var(--speed, 1.75s) steps(var(--chars)) var(--delay, 1s) forwards;
+        animation: typewriter var(--speed, 1.25s) steps(var(--chars)) var(--delay, 1s) forwards;
     }
     &::after {
         width: 0.125em;
@@ -165,10 +165,10 @@ h2 {
         text-shadow: 0 0.3vw orange, 0 0.45vw orange, 0 0.6vw orange;
     }
     .job-dark {
-        text-shadow: 0 0.25vw orange, 0 0.35vw orange, 0 0.45vw orange;
+        text-shadow: 0 0.2vw orange, 0 0.3vw orange, 0 0.4vw orange;
     }
     .job-light {
-        text-shadow: 0 0.25vw darkred, 0 0.35vw darkred, 0 0.45vw darkred;
+        text-shadow: 0 0.2vw darkred, 0 0.3vw darkred, 0 0.4vw darkred;
     }
     .typing-animation-container {
         padding-left: 7vw;
