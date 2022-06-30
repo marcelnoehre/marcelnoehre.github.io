@@ -13,7 +13,7 @@ export class TimelineComponent implements OnInit {
       date: 'TIMELINE.BACHELOR.DATE',
       content: 'TIMELINE.BACHELOR.CONTENT', 
       company: 'TIMELINE.BACHELOR.COMPANY',
-      website: 'https://www.uni-hildesheim.de/studium/studienangebot/bachelorstudium/informationsmanagement-und-informationstechnologie-bachelor-of-science-bsc/#c112615',
+      website: 'https://www.uni-hildesheim.de/studium/studienangebot/bachelorstudium/informationsmanagement-und-informationstechnologie-bachelor-of-science-bsc/',
       icon: 'icon fas fa-graduation-cap'
     },
     {
