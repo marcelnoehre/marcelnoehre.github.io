@@ -10,13 +10,11 @@ import { BounceAnimationComponent } from './components/bounce-animation/bounce-a
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
-import { AboutPageComponent } from './components/about-page/about-page.component';
 import { ColorThemeSelectorComponent } from './components/color-theme-selector/color-theme-selector.component';
 import { TimelineComponent } from './components/timeline/timeline.component';
 import { ExperiencePageComponent } from './components/experience-page/experience-page.component';
 import { ProjectsPageComponent } from './components/projects-page/projects-page.component';
 import { ContactPageComponent } from './components/contact-page/contact-page.component';
-import { CubeComponent } from './components/cube/cube.component';
 
 export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -26,7 +24,6 @@ export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
   declarations: [
     AppComponent,
     StartingPageComponent,
-    AboutPageComponent,
     SideNavComponent,
     TypingAnimationComponent,
     SettingsComponent,
@@ -35,9 +32,7 @@ export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
     TimelineComponent,
     ExperiencePageComponent,
     ProjectsPageComponent,
-    ContactPageComponent,
-    CubeComponent
-
+    ContactPageComponent
   ],
   imports: [
     BrowserModule,

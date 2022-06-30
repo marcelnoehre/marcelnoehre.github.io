@@ -1,17 +1,14 @@
 {
     "SIDE_NAV": {
-        "ABOUT": "About",
         "EXPERIENCE": "Experience",
         "PROJECTS": "Projects",
         "CONTACT": "Contact",
+        "PLAYGROUND": "Playground",
         "SELECTED": "Selected:"
     },
     "STARTING_PAGE": {
         "TYPING": "Web Developer",
         "BOUNCE": "Scroll Down"
-    },
-    "ABOUT_PAGE": {
-        "HEADER": "About"
     },
     "EXPERIENCE_PAGE": {
         "HEADER": "Experience"
