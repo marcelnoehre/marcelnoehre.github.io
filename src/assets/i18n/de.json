@@ -1,17 +1,14 @@
 {
     "SIDE_NAV": {
-        "ABOUT": "Über mich",
         "EXPERIENCE": "Erfahrung",
         "PROJECTS": "Projekte",
         "CONTACT": "Kontakt",
+        "PLAYGROUND": "Projektsammlung",
         "SELECTED": "Ausgewählt:"
     },
     "STARTING_PAGE": {
         "TYPING": "Web-Entwickler",
         "BOUNCE": "Runterscrollen"
-    },
-    "ABOUT_PAGE": {
-        "HEADER": "Über mich"
     },
     "EXPERIENCE_PAGE": {
         "HEADER": "Erfahrung"
