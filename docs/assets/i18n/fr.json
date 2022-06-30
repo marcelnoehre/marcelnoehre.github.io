@@ -1,17 +1,14 @@
 {
     "SIDE_NAV": {
-        "ABOUT": "À propos",
         "EXPERIENCE": "Vivre",
         "PROJECTS": "Projets",
         "CONTACT": "Contactez",
+        "PLAYGROUND": "Terrain de jeux",
         "SELECTED": "Sélectionné:"
     },
     "STARTING_PAGE": {
         "TYPING": "Développeur Web",
         "BOUNCE": "Défiler vers le bas"
-    },
-    "ABOUT_PAGE": {
-        "HEADER": "À propos"
     },
     "EXPERIENCE_PAGE": {
         "HEADER": "Vivre"

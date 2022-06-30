@@ -1,17 +1,14 @@
 {
     "SIDE_NAV": {
-        "ABOUT": "Di",
         "EXPERIENCE": "Esperienza",
         "PROJECTS": "Progetti",
         "CONTACT": "Contatto",
+        "PLAYGROUND": "Parco giochi",
         "SELECTED": "Selezinoato:"
     },
     "STARTING_PAGE": {
         "TYPING": "Sviluppatore Web",
         "BOUNCE": "Scorrere verso il basso"
-    },
-    "ABOUT_PAGE": {
-        "HEADER": "Di"
     },
     "EXPERIENCE_PAGE": {
         "HEADER": "Esperienza"

@@ -1,17 +1,14 @@
 {
     "SIDE_NAV": {
-        "ABOUT": "Sobre mí",
         "EXPERIENCE": "Experiencia",
         "PROJECTS": "Proyectos",
         "CONTACT": "Contacto",
+        "PLAYGROUND": "Parque infantil",
         "SELECTED": "Seleccionado:"
     },
     "STARTING_PAGE": {
         "TYPING": "Desarrollador Web",
         "BOUNCE": "Desplácese hacia abajo"
-    },
-    "ABOUT_PAGE": {
-        "HEADER": "Sobre mí"
     },
     "EXPERIENCE_PAGE": {
         "HEADER": "Experiencia"
