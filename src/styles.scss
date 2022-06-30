@@ -33,6 +33,7 @@ body::-webkit-scrollbar {
     display: none;
 }
 
-a {
+a,
+label {
     cursor: url('assets/images/icons/custom-hand.png'), auto;
 }
