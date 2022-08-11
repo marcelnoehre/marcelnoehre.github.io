@@ -20,9 +20,9 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    height: 5rem;
-    font-size: 5rem;
-    line-height: 5rem;
+    height: 10rem;
+    font-size: 10rem;
+    line-height: 10rem;
     font-family: epyval;
     color: #FF00FF;
     animation: move 1.25s 2.75s ease-in-out forwards;
@@ -80,6 +80,39 @@
     animation: fade 1s 2.1s ease-in-out forwards;
 }
 
+.description {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin-right: 10%;
+    margin-bottom: 7.5%;
+}
+
+.full-stack {
+    font-size: 6rem;
+    font-family: epyval;
+    white-space: nowrap;
+    background-color: white;
+    color: black;
+}
+
+.programming-languages {
+    display: flex;
+    justify-content: right;
+    font-size: 4rem;
+    font-family: epyval;
+    margin-top: 2.5%;
+}
+
+.programming-languages>div {
+    background-color: white;
+    color: black;
+}
+
+.angular {
+    margin-right: 5%;
+}
+
 @keyframes fade {
     from {
         opacity: 0;
@@ -100,11 +133,11 @@
         filter: blur(0.1rem);
     }
     100% {
-        top: 5vh;
-        left: 5vh;
-        height: 3rem;
-        font-size: 3rem;
-        line-height: 3rem;
+        top: 6.5vh;
+        left: 6.5vh;
+        height: 5rem;
+        font-size: 5rem;
+        line-height: 5rem;
         transform: translate(1rem, 1rem);
         filter: blur(0);
     }
