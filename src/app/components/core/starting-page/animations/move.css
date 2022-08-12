@@ -1,0 +1,34 @@
+@keyframes moveTitle {
+    0% {
+        filter: blur(0);
+    }
+    50% {
+        filter: blur(0.25rem);
+    }
+    90% {
+        filter: blur(0.1rem);
+    }
+    100% {
+        top: 7vh;
+        left: 7vh;
+        height: 5.5rem;
+        font-size: 5.5rem;
+        line-height: 5.5rem;
+        transform: translate(1rem, 1rem);
+        filter: blur(0);
+    }
+}
+
+@keyframes moveDescription {
+    70% {
+        filter: blur(0.15rem);
+    }
+    90% {
+        filter: blur(0.1rem);
+    }
+    100% {
+        margin-left: 35%;
+        margin-right: 9%;
+        filter: blur(0);
+    }
+}
