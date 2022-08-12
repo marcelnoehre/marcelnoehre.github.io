@@ -9,6 +9,7 @@
     padding: 0;
     margin: 0;
     background-color: black;
+    overflow: hidden;
 }
 
 .title-name {
@@ -22,7 +23,7 @@
     line-height: 10rem;
     font-family: epyval;
     color: #FF00FF;
-    animation: move 1.25s 2.75s ease-in-out forwards;
+    animation: moveTitle 1.25s 2.75s ease-in-out forwards;
 }
 
 .title-name>div {
@@ -78,11 +79,11 @@
 }
 
 .description {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    margin-right: 10%;
-    margin-bottom: 7.5%;
+    margin-top: 35%;
+    margin-left: 135%;
+    margin-right: 109%;
+    filter: blur(1rem);
+    animation: moveDescription 2.5s 3s ease-in-out forwards;
 }
 
 .full-stack {
@@ -91,6 +92,9 @@
     white-space: nowrap;
     background-color: white;
     color: black;
+    transform: skew(-35deg);
+    padding-left: 2%;
+    padding-right: 2%;
 }
 
 .programming-languages {
@@ -99,11 +103,16 @@
     font-size: 4rem;
     font-family: epyval;
     margin-top: 2.5%;
+    margin-right: 11%;
 }
 
 .programming-languages>div {
     background-color: white;
     color: black;
+    padding: 1%;
+    padding-left: 2%;
+    padding-right: 2%;
+    transform: skew(-35deg);
 }
 
 .angular {
@@ -116,6 +125,7 @@
     bottom: 0;
     margin: 1rem;
     font-size: 2rem;
+    font-family: epyval;
     color: aqua;
     opacity: 0;
     transform: translateY(1rem);
@@ -179,7 +189,7 @@
     }
 }
 
-@keyframes move {
+@keyframes moveTitle {
     0% {
         filter: blur(0);
     }
@@ -196,6 +206,20 @@
         font-size: 5rem;
         line-height: 5rem;
         transform: translate(1rem, 1rem);
+        filter: blur(0);
+    }
+}
+
+@keyframes moveDescription {
+    70% {
+        filter: blur(0.15rem);
+    }
+    90% {
+        filter: blur(0.1rem);
+    }
+    100% {
+        margin-left: 35%;
+        margin-right: 9%;
         filter: blur(0);
     }
 }
