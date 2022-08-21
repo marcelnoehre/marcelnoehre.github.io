@@ -1,4 +1,4 @@
-<div class="starting-page-container">
+<div class="starting-page-container" [ngClass]="responsiveClass">
     <div class="title-name">
         <div>M</div>
         <div>a</div>
@@ -13,13 +13,13 @@
         <div>r</div>
         <div>e</div>
     </div>
-    <div class="description">
+    <!-- <div class="description">
         <div class="full-stack">Full-Stack Developer&nbsp;</div>
         <div class="programming-languages">
             <div class="angular">Angular</div>
             <div class="java">Java</div>
         </div>
-    </div>
+    </div> -->
     <div *ngIf="!scrolled" class="scroll-info">
         <span>&#8595;&nbsp;</span>
         <span>S</span>

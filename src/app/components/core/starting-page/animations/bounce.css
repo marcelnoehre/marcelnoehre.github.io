@@ -54,13 +54,13 @@
         transform: scale(1.1, .9) translateY(0);
     }
     3% {
-        transform: scale(.9, 1.1) translateY(-55px);
+        transform: scale(.9, 1.1) translateY(-100%);
     }
     5% {
         transform: scale(1.05, .95) translateY(0);
     }
     6% {
-        transform: scale(1, 1) translateY(-7px);
+        transform: scale(1, 1) translateY(-20%);
     }
     7% {
         transform: scale(1, 1) translateY(0);
