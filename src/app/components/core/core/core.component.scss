@@ -1,9 +1,14 @@
+@font-face {
+    font-family: epyval;
+    src: url('/assets/fonts/Epyval.ttf');
+}
+
 .coming-soon {
     height: 100vh;
     width: 100vw;
     background-color: black;
     color: grey;
-    font-family: fantasy;
+    font-family: epyval;
     font-size: calc(5px + (150 - 10) * ((100vw - 50px) / (2000 - 50)));
     display: flex;
     flex-direction: column;
