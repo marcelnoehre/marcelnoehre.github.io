@@ -34,7 +34,7 @@
 }
 
 .description {
-    margin-top: 35%;
+    margin-top: 60vh;
     margin-left: 135%;
     margin-right: 109%;
     filter: blur(1rem);
@@ -43,18 +43,19 @@
 
 .full-stack {
     text-align: center;
-    font-size: 4rem;
+    font-size: calc(5px + (100 - 5) * ((100vw - 50px) / (2000 - 50)));
     font-family: epyval;
     white-space: nowrap;
     background-color: white;
     color: black;
     transform: skew(-35deg);
+    padding: 1%;
 }
 
 .programming-languages {
     display: flex;
     justify-content: right;
-    font-size: 4rem;
+    font-size: calc(5px + (90 - 5) * ((100vw - 50px) / (2000 - 50)));
     font-family: epyval;
     margin-top: 2.5%;
 }
@@ -62,13 +63,13 @@
 .programming-languages>div {
     background-color: white;
     color: black;
-    padding: 2%;
+    padding: 1%;
     transform: skew(-35deg);
 }
 
 .java {
     transform: skew(-35deg);
-    margin-right: 9%;
+    margin-right: 10%;
 }
 
 .angular {
