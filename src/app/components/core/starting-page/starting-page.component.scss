@@ -20,13 +20,14 @@
     display: flex;
     top: 50%;
     left: 50%;
-    height: calc(10px + (200 - 10) * ((100vw - 50px) / (2000 - 50)));
-    font-size: calc(10px + (200 - 10) * ((100vw - 50px) / (2000 - 50)));
-    line-height: calc(10px + (200 - 10) * ((100vw - 50px) / (2000 - 50)));
+    height: calc(5px + (200 - 10) * ((100vw - 50px) / (2000 - 50)));
+    font-size: calc(5px + (200 - 10) * ((100vw - 50px) / (2000 - 50)));
+    line-height: calc(5px + (200 - 10) * ((100vw - 50px) / (2000 - 50)));
     transform: translate(-50%, -50%);
     font-family: epyval;
     color: #FF00FF;
     animation: moveTitle 1.25s 2.75s ease-in-out forwards;
+    z-index: 1;
 }
 
 .title-name>div {
@@ -43,7 +44,7 @@
 
 .full-stack {
     text-align: center;
-    font-size: calc(5px + (100 - 5) * ((100vw - 50px) / (2000 - 50)));
+    font-size: calc(5px + (110 - 5) * ((100vw - 50px) / (2000 - 50)));
     font-family: epyval;
     white-space: nowrap;
     background-color: white;
@@ -55,16 +56,19 @@
 .programming-languages {
     display: flex;
     justify-content: right;
-    font-size: calc(5px + (90 - 5) * ((100vw - 50px) / (2000 - 50)));
+    font-size: calc(5px + (100 - 5) * ((100vw - 50px) / (2000 - 50)));
     font-family: epyval;
     margin-top: 2.5%;
 }
 
 .programming-languages>div {
+    text-align: center;
     background-color: white;
     color: black;
     padding: 1%;
     transform: skew(-35deg);
+    padding-left: 2%;
+    padding-right: 2%;
 }
 
 .java {
