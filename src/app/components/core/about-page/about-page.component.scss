@@ -19,13 +19,13 @@
     color: white;
 }
 
-.top-left {
+.top-left,
+.top-right,
+.bottom-left,
+.bottom-right {
     position: absolute;
     display: flex;
-    justify-content: left;
     width: 50vw;
-    top: 100vh;
-    left: 0;
     .quote {
         background: #FF00FF;
         display: flex;
@@ -33,7 +33,6 @@
         margin: 3rem;
         width: 100%;
         height: 10rem;
-        clip-path: circle(5rem at 5rem 5rem);
         transition: all 0.5s ease-in-out;
         color: white;
         i {
@@ -42,125 +41,82 @@
         }
         &:hover {
             clip-path: circle(75%);
-            background: #F25022;
-            box-shadow: #F25022 0px 0px 30px 3px;
         }
         h1 {
             display: flex;
             flex-direction: column;
             justify-content: center;
             text-align: center;
+        }
+    }
+}
+
+.top-left,
+.bottom-left {
+    justify-content: left;
+    left: 0;
+    .quote {
+        clip-path: circle(5rem at 5rem 5rem);
+        h1 {
             padding-right: 1rem;
+        }
+    }
+}
+
+.top-right,
+.bottom-right {
+    justify-content: right;
+    right: 0;
+    .quote {
+        clip-path: circle(5rem at calc(100% - 5rem) 5rem);
+        h1 {
+            padding-left: 1rem;
+        }
+    }
+}
+
+.top-left,
+.top-right {
+    top: 100vh;
+}
+
+.bottom-left,
+.bottom-right {
+    bottom: -100vh
+}
+
+.top-left {
+    .quote {
+        &:hover {
+            background: #F25022;
+            box-shadow: #F25022 0px 0px 30px 3px;
         }
     }
 }
 
 .top-right {
-    position: absolute;
-    display: flex;
-    justify-content: right;
-    width: 50vw;
-    top: 100vh;
-    right: 0;
     .quote {
-        background: #FF00FF;
-        display: flex;
-        justify-content: right;
-        border-radius: 10px;
-        margin: 3rem;
-        width: 100%;
-        height: 10rem;
-        clip-path: circle(5rem at calc(100% - 5rem) 5rem);
-        transition: all 0.5s ease-in-out;
-        color: white;
-        i {
-            margin: 2.5rem;
-            font-size: 5rem;
-        }
         &:hover {
-            clip-path: circle(75%);
             background: #7FBA00;
             box-shadow: #7FBA00 0px 0px 30px 3px;
-        }
-        h1 {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            text-align: center;
-            padding-left: 1rem;
         }
     }
 }
 
 .bottom-left {
-    position: absolute;
-    display: flex;
-    justify-content: left;
-    width: 50vw;
-    bottom: -100vh;
-    left: 0;
     .quote {
-        background: #FF00FF;
-        display: flex;
-        border-radius: 10px;
-        margin: 3rem;
-        width: 100%;
-        height: 10rem;
-        clip-path: circle(5rem at 5rem 5rem);
-        transition: all 0.5s ease-in-out;
-        color: white;
-        i {
-            margin: 2.5rem;
-            font-size: 5rem;
-        }
         &:hover {
-            clip-path: circle(75%);
             background: #00A4EF;
             box-shadow: #00A4EF 0px 0px 30px 3px;
-        }
-        h1 {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            text-align: center;
-            padding-right: 1rem;
         }
     }
 }
 
 .bottom-right {
-    position: absolute;
-    display: flex;
-    justify-content: right;
-    width: 50vw;
-    bottom: -100vh;
-    right: 0;
     .quote {
-        background: #FF00FF;
-        display: flex;
-        justify-content: right;
-        border-radius: 10px;
-        margin: 3rem;
-        width: 100%;
-        height: 10rem;
-        clip-path: circle(5rem at calc(100% - 5rem) 5rem);
-        transition: all 0.5s ease-in-out;
-        color: white;
-        i {
-            margin: 2.5rem;
-            font-size: 5rem;
-        }
         &:hover {
-            clip-path: circle(75%);
             background: #FFB900;
             box-shadow: #FFB900 0px 0px 30px 3px;
-        }
-        h1 {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            text-align: center;
-            padding-left: 1rem;
         }
     }
 }
