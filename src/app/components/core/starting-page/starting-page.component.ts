@@ -1,5 +1,4 @@
 import { Component, HostListener, OnInit } from '@angular/core';
-import { BreakpointService } from 'src/app/services/breakpoint.service';
 
 @Component({
   selector: 'app-starting-page',
@@ -13,7 +12,4 @@ export class StartingPageComponent {
   onWindowScroll() {
       this.scrolled = true;
   }
-  
-
-  constructor(private _breakpoint: BreakpointService) {}
 }
