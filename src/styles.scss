@@ -33,6 +33,7 @@ body::-webkit-scrollbar {
     display: none;
 }
 
-a {
+a,
+.quote {
     cursor: url('assets/images/cursors/rainbow-pointer.png'), auto;
 }
