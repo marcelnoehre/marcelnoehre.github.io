@@ -1,0 +1,21 @@
+@keyframes dot-in {
+    0% {
+        box-shadow: #FF00FF 0px 0px 30px 3px;
+        background-color: #FF00FF;
+    }
+    100% {
+        box-shadow: #FF0144 0px 0px 30px 15px;
+        background-color: #FF0144;
+    }
+}
+
+@keyframes dot-out {
+    0% {
+        box-shadow: #FF0144 0px 0px 30px 15px;
+        background-color: #FF0144;
+    }
+    100% {
+        box-shadow: FF00FF 0px 0px 30px 3px;
+        background-color: FF00FF;
+    }
+}
