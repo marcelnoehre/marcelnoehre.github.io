@@ -17,9 +17,23 @@
     width: 40%;
     font-size: calc(10px + (30 - 10) * ((100vw - 50px) / (2000 - 50)));
     color: white;
-    * {
+    transform-style: preserve-3d;
+    transition: all 1s ease;
+    background: transparent;
+    img {
+        width: 100%;
+        height: auto;
+        position: absolute;
         box-shadow: #FF00FF 0px 0px 30px 3px;
+        backface-visibility: hidden;
     }
+    .about-me {
+        transform: rotateY(180deg);
+    }
+}
+
+.information:hover {
+    transform: rotateY(180deg);
 }
 
 .top-left,
