@@ -14,7 +14,7 @@
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    width: 40%;
+    width: 40vw;
     font-size: calc(10px + (30 - 10) * ((100vw - 50px) / (2000 - 50)));
     color: white;
     transform-style: preserve-3d;
@@ -29,6 +29,15 @@
     }
     .about-me {
         transform: rotateY(180deg);
+        width: calc(100% - 3rem);
+        height: calc(40vw / 1.3164983165 - 3rem);
+        box-shadow: #FF00FF 0px 0px 30px 3px;
+        background-color: #1c1c1c;
+        backface-visibility: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 1.5rem;
     }
 }
 
