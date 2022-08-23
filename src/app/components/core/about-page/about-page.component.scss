@@ -14,9 +14,12 @@
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    width: 60%;
+    width: 40%;
     font-size: calc(10px + (30 - 10) * ((100vw - 50px) / (2000 - 50)));
     color: white;
+    * {
+        box-shadow: #FF00FF 0px 0px 30px 3px;
+    }
 }
 
 .top-left,
