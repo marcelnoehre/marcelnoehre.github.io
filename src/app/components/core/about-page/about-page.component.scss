@@ -101,6 +101,7 @@
     justify-content: left;
     left: 0;
     .quote {
+        justify-content: left;
         clip-path: circle(5rem at 5rem 5rem);
         h1 {
             padding-right: 1rem;
@@ -113,6 +114,7 @@
     justify-content: right;
     right: 0;
     .quote {
+        justify-content: right;
         clip-path: circle(5rem at calc(100% - 5rem) 5rem);
         h1 {
             padding-left: 1rem;
