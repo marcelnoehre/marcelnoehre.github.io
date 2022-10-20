@@ -2,11 +2,11 @@ import { Component, HostListener, OnInit } from '@angular/core';
 import { BreakpointService } from 'src/app/services/breakpoint.service';
 
 @Component({
-  selector: 'app-starting-page',
-  templateUrl: './starting-page.component.html',
-  styleUrls: ['./starting-page.component.scss']
+  selector: 'app-homepage',
+  templateUrl: './homepage.component.html',
+  styleUrls: ['./homepage.component.scss']
 })
-export class StartingPageComponent implements OnInit {
+export class HomepageComponent implements OnInit {
   scrolled: boolean = false;
   responsiveClass!: string;
 
