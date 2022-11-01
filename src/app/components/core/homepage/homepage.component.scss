@@ -11,7 +11,7 @@
     height: 100vh;
     padding: 0;
     margin: 0;
-    background-color: #0d0d0d;
+    background: radial-gradient(farthest-corner at 0 0, #0d0d0d, #220022 75%, #FF00FF);
     overflow: hidden;
 }
 
@@ -86,9 +86,9 @@
     display: flex;
     bottom: 0;
     margin: 1rem;
-    font-size: calc(10px + (50 - 10) * ((100vw - 50px) / (2000 - 50)));
+    font-size: calc(10px + (40 - 10) * ((100vw - 50px) / (2000 - 50)));
     font-family: epyval;
-    color: aqua;
+    color: #FF00FF;
     opacity: 0;
     transform: translateY(1rem);
     animation: fadeScrollInfo 3s ease 7.5s forwards;
@@ -99,9 +99,9 @@
     display: flex;
     bottom: 0;
     margin: 1rem;
-    font-size: calc(10px + (50 - 10) * ((100vw - 50px) / (2000 - 50)));
+    font-size: calc(10px + (40 - 10) * ((100vw - 50px) / (2000 - 50)));
     font-family: epyval;
-    color: aqua;
+    color: #FF00FF;
     opacity: 1;
     animation: removeScrollInfo 1s ease-in-out forwards;
 }
