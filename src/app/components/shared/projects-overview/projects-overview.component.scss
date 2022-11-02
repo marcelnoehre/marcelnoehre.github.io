@@ -4,6 +4,24 @@
     padding: 0;
     margin: 0;
     overflow: hidden;
-    background: radial-gradient(farthest-corner at 0 0, #220022, #10101a);
+    background-color: #10101a;
     border-top: 2px solid white;
+    justify-content: center;
+    display: flex;
+}
+
+mat-card {
+    background-color: #10101a;
+    background: linear-gradient(180deg, #1A1B26, #10101a);
+    height: 60vh;
+    width: 40vw;
+    border: 2px solid #1A1B26;
+    border-radius: 50px;
+    margin-top: 10%;
+    div {
+        color: white;
+        font-size: calc(10px + (40 - 10) * ((100vw - 50px) / (2000 - 50)));
+        text-align: center;
+        padding-top: 20%;
+    }
 }
