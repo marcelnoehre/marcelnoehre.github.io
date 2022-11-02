@@ -6,14 +6,14 @@
     overflow-y: hidden;
     background-color: #10101a;
     border-top: 2px solid #E0FFFF;
-    justify-content: space-around;
-    flex-direction: column;
+    justify-content: center;
     display: flex;
 }
 
 .project-cards {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 :host ::ng-deep {
@@ -26,13 +26,15 @@
         margin-bottom: 5%;
         text-align: center;
         padding: 5%;
+        font-size: calc(10px + (40 - 10) * ((100vw - 50px) / (2000 - 50)));
+        color: #E0FFFF;
         img {
             width: 10vw;
             height: auto;
         }
-        .name {
-            font-size: calc(10px + (40 - 10) * ((100vw - 50px) / (2000 - 50)));
-            color: #E0FFFF;
-        }
+    }
+    mat-card:hover {
+        color: #F080FF;
+        border: 2px solid #F080FF;
     }
 }
