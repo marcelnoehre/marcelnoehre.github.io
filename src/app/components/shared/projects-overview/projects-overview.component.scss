@@ -4,20 +4,5 @@
     padding: 0;
     margin: 0;
     overflow: hidden;
-}
-
-.coming-soon {
-    height: calc(5px + (200 - 10) * ((100vw - 50px) / (2000 - 50)));
-    font-size: calc(5px + (200 - 10) * ((100vw - 50px) / (2000 - 50)));
-    line-height: calc(20px + (200 - 150) * ((100vw - 50px) / (2000 - 50)));
-    background-image: linear-gradient(120deg, #FF00FF, #E0FFFF 90%);
-    background-size: 100%;
-    background-clip: text;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
-    padding-top: 20%;
-    text-align: center;
-    font-family: epyval;
+    background-color: #0d0d0d;
 }
