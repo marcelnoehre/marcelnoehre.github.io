@@ -11,7 +11,7 @@
     height: 100vh;
     padding: 0;
     margin: 0;
-    background: radial-gradient(farthest-corner at 0 0, #0d0d0d, #220022 75%, #FF00FF);
+    background: radial-gradient(farthest-corner at 0 0, #1A1B26, #10101a 80%, #E0FFFF, #E8BFFF, #F080FF, #F740FF, #FF00FF);
     overflow: hidden;
 }
 
@@ -103,10 +103,10 @@
     margin: 1rem;
     font-size: calc(10px + (40 - 10) * ((100vw - 50px) / (2000 - 50)));
     font-family: epyval;
-    color: rgba(100, 100, 100, 0.75);
+    color: #E0FFFF;
     opacity: 0;
     transform: translateY(1rem);
-    animation: fadeScrollInfo 3s ease 12s forwards;
+    animation: fadeScrollInfo 3s ease 13s forwards;
 }
 
 .remove-scroll-info {
@@ -116,7 +116,7 @@
     margin: 1rem;
     font-size: calc(10px + (40 - 10) * ((100vw - 50px) / (2000 - 50)));
     font-family: epyval;
-    color: rgba(100, 100, 100, 0.75);
+    color: #E0FFFF;
     opacity: 1;
     animation: removeScrollInfo 1s ease-in-out forwards;
 }
