@@ -60,6 +60,9 @@
     transform: skew(-35deg);
     padding: 1%;
     color: currentColor;
+    span {
+        opacity: 0;
+    }
 }
 
 .programming-languages {
@@ -78,6 +81,10 @@
     transform: skew(-35deg);
     padding-left: 2%;
     padding-right: 2%;
+    span {
+        animation: fadeIn 1s 6.4s ease-in-out forwards;
+        opacity: 0;
+    }
 }
 
 .java {
@@ -99,7 +106,7 @@
     color: rgba(100, 100, 100, 0.75);
     opacity: 0;
     transform: translateY(1rem);
-    animation: fadeScrollInfo 3s ease 7.5s forwards;
+    animation: fadeScrollInfo 3s ease 12s forwards;
 }
 
 .remove-scroll-info {
