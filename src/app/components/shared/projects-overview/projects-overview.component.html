@@ -1,14 +1,12 @@
 <div class="projects-overview-container">
-    <div class="project-cards">
-        <mat-card style="margin-top: 10%;" (click)="viewProject('/rl-overlay')">
+    <mat-card>
+        <mat-card-content>
+            <img src="assets/images/projects/mvb-logo.png" alt="Musikverein Borsum von 1954 e.V. - Website">
+        </mat-card-content>
+    </mat-card>
+    <mat-card (click)="viewProject('/rl-overlay')">
+        <mat-card-content>
             <img src="assets/images/projects/rl-overlay.png" alt="Rocket League - Overlay">
-            <br><br>
-            <div class="name">Rocket League Overlay</div>
-        </mat-card>
-        <mat-card style="margin-bottom: 10%;">
-            <img src="assets/images/projects/rl-overlay.png" alt="Rocket League - Overlay">
-            <br><br>
-            <div class="name">Coming Soon</div>
-        </mat-card>
-    </div>
+        </mat-card-content>
+    </mat-card>
 </div>
