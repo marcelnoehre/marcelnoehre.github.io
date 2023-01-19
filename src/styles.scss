@@ -17,7 +17,6 @@ body {
     scrollbar-width: none;
     -ms-overflow-style: none;
     background-color: #10101a;
-    cursor: url('assets/images/cursors/rainbow-arrow.png'), auto;
 }
 
 app-root {
@@ -31,13 +30,4 @@ app-root {
 
 body::-webkit-scrollbar {
     display: none;
-}
-
-a,
-.quote {
-    cursor: url('assets/images/cursors/rainbow-pointer.png'), auto;
-}
-
-.project-cards>mat-card {
-    cursor: url('assets/images/cursors/rainbow-pointer.png'), auto;
 }
