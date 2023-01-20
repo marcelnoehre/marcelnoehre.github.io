@@ -4,3 +4,89 @@
     background-color: #10101a;
     overflow: hidden;
 }
+
+.landing-page {
+    width: 100vw;
+    height: 100vh;
+}
+
+.title-container {
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .title {
+        display: flex;
+        justify-content: center;
+        color: #FF00FF;
+        padding-top: 2.5%;
+        padding-bottom: 2.5%;
+        height: calc(25px + (125 - 10) * ((100vw - 50px) / (2000 - 50)));
+        font-size: calc(10px + (125 - 10) * ((100vw - 50px) / (2000 - 50)));
+        line-height: calc(10px + (125 - 10) * ((100vw - 50px) / (2000 - 50)));
+        font-weight: bolder;
+    }
+    .title>div {
+        background-image: linear-gradient(135deg, #E0FFFF 20%, #FF00FF);
+        background-size: 100%;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -moz-text-fill-color: transparent;
+    }
+}
+
+.information {
+    height: 50vh;
+    display: flex;
+    flex-flow: column;
+    .source-code {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 2%;
+        button {
+            font-size: calc(10px + (30 - 10) * ((100vw - 50px) / (2000 - 50)));
+            padding: 0.5%;
+            background-color: #F080FF;
+        }
+    }
+    .description {
+        flex: 1 1 auto;
+        display: flex;
+        justify-content: center;
+        p {
+            width: 75%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            font-size: calc(10px + (40 - 10) * ((100vw - 50px) / (2000 - 50)));
+        }
+    }
+}
+
+.game-view {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5%;
+    img {
+        width: 75vw;
+        height: auto;
+    }
+}
+
+.features {
+    width: 100%;
+    display: flex;
+    margin-bottom: 5%;
+    div {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        img {
+            width: 75%;
+        }
+    }
+}

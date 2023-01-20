@@ -10,6 +10,7 @@ import { ProjectsOverviewComponent } from './components/shared/projects-overview
 import { RLOverlayComponent } from './components/shared/projects/rl-overlay/rl-overlay.component'
 
 import { MatCardModule } from '@angular/material/card';
+import { MatButtonModule } from '@angular/material/button';
 
 
 
@@ -25,7 +26,8 @@ import { MatCardModule } from '@angular/material/card';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MatCardModule
+    MatCardModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
