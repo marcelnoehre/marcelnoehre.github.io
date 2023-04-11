@@ -74,19 +74,33 @@
     video {
         width: 75vw;
         height: auto;
+        margin-top: 10%;
     }
 }
 
 .features {
     width: 100%;
     display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
     margin-bottom: 5%;
     div {
-        width: 50%;
         display: flex;
-        justify-content: center;
-        img {
-            width: 75%;
+        * {
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            margin-bottom: 5%;
+            img {
+                width: 75%;
+            }
+            p {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                text-align: center;
+                font-size: calc(10px + (40 - 10) * ((100vw - 50px) / (2000 - 50)));
+            }
         }
     }
 }
