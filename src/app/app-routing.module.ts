@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-import { CoreComponent } from './components/core/core/core.component';
-import { RLOverlayComponent } from './components/shared/projects/rl-overlay/rl-overlay.component';
+import { CoreComponent } from './components/core/core.component';
+import { RLOverlayComponent } from './components/rl-overlay/rl-overlay.component';
 
 const routes: Routes = [  
   { path: '', component: CoreComponent },
