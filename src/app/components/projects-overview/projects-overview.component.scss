@@ -8,35 +8,75 @@
     border-top: 2px solid #E0FFFF;
     justify-content: space-around;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-:host ::ng-deep {
-    mat-card {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        background-color: #10101a;
-        background: linear-gradient(180deg, #1A1B26, #10101a);
-        border: 2px solid #1A1B26;
-        border-radius: 12.5%;
-        text-align: center;
-        font-size: calc(10px + (40 - 10) * ((100vw - 50px) / (2000 - 50)));
-        color: #E0FFFF;
-        margin-top: 25vh;
-        width: 30vw;
-        height: 50vh;
-        mat-card-content {
-            display: flex;
-            justify-content: center;
-        }
-        img {
-            width: 15vw;
-            height: auto;
-        }
+.slider {
+    position: relative;
+    width: 350px;
+    margin: 50px auto;
+    perspective: 1000px;
+    padding-top: 120px;
+}
+
+.rotator {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 55%;
+    height: 150px;
+    transform-style: preserve-3d;
+    animation: roter 17s linear infinite;
+}
+
+.rotator:hover {
+    animation-play-state: paused;
+}
+
+@keyframes roter {
+    from {
+        transform: rotateY(0deg);
     }
-    mat-card:hover {
-        color: #F080FF;
-        border: 2px solid #F080FF;
-        box-shadow: 0 0 1.5rem #F080FF;
+    to {
+        transform: rotateY(360deg);
     }
+}
+
+.items {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.items:hover img {
+    transform: scale(0.8);
+}
+
+.items img {
+    height: 100%;
+    width: 100%;
+    transition: all 0.75s ease;
+}
+
+.items:first-child {
+    transform: rotateY(calc(72deg * 1)) translateZ(300px);
+}
+
+.items:nth-child(2) {
+    transform: rotateY(calc(72deg * 2)) translateZ(300px);
+}
+
+.items:nth-child(3) {
+    transform: rotateY(calc(72deg * 3)) translateZ(300px);
+}
+
+.items:nth-child(4) {
+    transform: rotateY(calc(72deg * 4)) translateZ(300px);
+}
+
+.items:nth-child(5) {
+    transform: rotateY(calc(72deg * 5)) translateZ(300px);
 }
