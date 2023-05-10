@@ -7,12 +7,14 @@ import { BreakpointService } from 'src/app/services/breakpoint.service';
   styleUrls: ['./homepage.component.scss']
 })
 export class HomepageComponent implements OnInit {
+  scrollDetected: boolean = false;
   scrolled: boolean = false;
+  scrollInterval: any;
   responsiveClass!: string;
 
   @HostListener('window:scroll', ['$event'])
   onWindowScroll() {
-      this.scrolled = true;
+      this.scrollDetected = true;
   }
 
   constructor(
@@ -22,9 +24,19 @@ export class HomepageComponent implements OnInit {
   }
 
   ngOnInit(): void {
-      this._breakpoint.responsiveClass$.subscribe((responsiveClass) => {
-        this.responsiveClass = responsiveClass;
-      });
+    this._breakpoint.responsiveClass$.subscribe((responsiveClass) => {
+      this.responsiveClass = responsiveClass;
+    });
+    this.handleScroll();
   }
 
+  async handleScroll() {
+    await new Promise<void>(done => setTimeout(() => done(), 5000));
+    this.scrollInterval = this.scrollDetected ? null : setInterval(() => {
+      if (this.scrollDetected) {
+        this.scrolled = true;
+        clearInterval(this.scrollInterval);
+      }
+    }, 10000);
+  }
 }
