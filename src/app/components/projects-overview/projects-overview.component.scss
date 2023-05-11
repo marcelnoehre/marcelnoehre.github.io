@@ -32,10 +32,28 @@
 }
 
 .projects {
-    width: 100%;
     margin-top: calc(30px + (275 - 25) * ((100vw - 50px) / (2000 - 50)) + 5rem);
-    font-size: calc(10px + (125 - 10) * ((100vw - 50px) / (2000 - 50)));
-    height: 10rem;
+}
+
+mat-card {
+    width: 40%;
+    display: flex;
+    background: radial-gradient(farthest-corner at 0 0, #E8BFFF 50%, #E0FFFF);
+}
+
+mat-card-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    font-weight: bold;
     text-align: center;
-    color: white;
+    font-family: epyval;
+}
+
+mat-card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
