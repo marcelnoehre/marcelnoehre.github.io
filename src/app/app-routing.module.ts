@@ -6,7 +6,7 @@ import { RLOverlayComponent } from './components/rl-overlay/rl-overlay.component
 
 const routes: Routes = [  
   { path: '', component: CoreComponent },
-  { path: 'rl-overlay', component: RLOverlayComponent}
+  // { path: 'rl-overlay', component: RLOverlayComponent}
   ];
 
 @NgModule({
