@@ -60,6 +60,8 @@
     transform: skew(-35deg);
     padding: 1%;
     color: currentColor;
+    visibility: hidden;
+    animation: fadeFullStack 1s 4.5s ease-in-out forwards;
     span {
         opacity: 0;
     }
@@ -82,7 +84,7 @@
     padding-left: 2%;
     padding-right: 2%;
     span {
-        animation: fadeIn 1s 6.4s ease-in-out forwards;
+        animation: fadeIn 1.5s 6.1s ease-in-out forwards;
         opacity: 0;
     }
 }
