@@ -36,24 +36,29 @@
 }
 
 mat-card {
-    width: 40%;
-    display: flex;
+    margin-left: 7.5%;
+    width: 50%;
     background: radial-gradient(farthest-corner at 0 0, #E8BFFF 50%, #E0FFFF);
+    p {
+        margin-bottom: 0px;
+    }
 }
 
-mat-card-header {
+mat-card-title {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     writing-mode: vertical-rl;
     text-orientation: mixed;
     font-weight: bold;
     text-align: center;
+    padding: calc(1rem + 3px) 1rem !important;
     font-family: epyval;
 }
 
-mat-card-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.content {
+    .actions {
+        display: flex;
+        justify-content: center;
+        padding: 16px 0;
+    }
 }
