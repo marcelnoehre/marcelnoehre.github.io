@@ -2,6 +2,7 @@
     width: 100vw;
     min-height: 100vh;
     padding: 0;
+    padding-bottom: 1rem;
     margin: 0;
     background-color: #10101a;
     border-top: 2px solid #E0FFFF;
@@ -37,6 +38,7 @@
 
 mat-card {
     margin-left: 7.5%;
+    margin-bottom: 3.5rem;
     width: 50%;
     background: radial-gradient(farthest-corner at 0 0, #E8BFFF 50%, #E0FFFF);
     p {
@@ -56,6 +58,8 @@ mat-card-title {
 }
 
 .content {
+    text-align: justify;
+    padding-right: 1rem;
     .actions {
         display: flex;
         justify-content: center;

@@ -10,26 +10,22 @@
         <div>s</div>
     </div>
     <div class="projects">
-        <mat-card>
+        <mat-card *ngFor="let project of projects">
             <mat-card-title-group>
                 <mat-card-title>
-                    Swagger 4 AAS
+                    {{'PROJECTS.' + project + '.TITLE'|translate}}
                 </mat-card-title>
                 <div class="content">
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sagittis tincidunt semper. Donec eu erat malesuada, consequat arcu et, sollicitudin nisi. Sed id volutpat lorem. Ut sit amet fringilla arcu. Nunc condimentum viverra metus, sed facilisis
-                        nisi hendrerit at. Vivamus ut tellus quis metus lacinia cursus vel sit amet orci. Cras eu ligula lobortis, pulvinar mi eu, iaculis enim. Donec varius felis quis mi tinc
+                        {{'PROJECTS.' + project + '.CONTENT'|translate}}
                     </p>
                     <div class="actions">
                         <button mat-raised-button color="accent">
-                            View
+                            {{'PROJECTS.VIEW'|translate}}
                         </button>
                     </div>
                 </div>
             </mat-card-title-group>
-
-
-
         </mat-card>
     </div>
 </div>

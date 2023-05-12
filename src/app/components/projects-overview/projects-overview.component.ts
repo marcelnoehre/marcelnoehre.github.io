@@ -7,6 +7,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./projects-overview.component.scss']
 })
 export class ProjectsOverviewComponent implements OnInit {
+  projects: String[] = ['SWAGGER', 'OVERLAY', 'MVB', 'MORE']
 
   constructor(
     private router: Router
