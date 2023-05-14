@@ -10,22 +10,24 @@
         <div>s</div>
     </div>
     <div class="projects">
-        <mat-card *ngFor="let project of projects">
-            <mat-card-title-group>
-                <mat-card-title>
-                    {{'PROJECTS.' + project + '.TITLE'|translate}}
-                </mat-card-title>
-                <div class="content">
-                    <p>
-                        {{'PROJECTS.' + project + '.CONTENT'|translate}}
-                    </p>
-                    <div class="actions">
-                        <button mat-raised-button color="accent">
+        <ng-container *ngFor="let project of projects; let even = even">
+            <mat-card [class]="even ? 'left' : 'right'">
+                <mat-card-title-group>
+                    <mat-card-title>
+                        {{'PROJECTS.' + project + '.TITLE'|translate}}
+                    </mat-card-title>
+                    <div class="content">
+                        <p>
+                            {{'PROJECTS.' + project + '.CONTENT'|translate}}
+                        </p>
+                        <div class="actions">
+                            <button mat-raised-button color="accent">
                             {{'PROJECTS.VIEW'|translate}}
                         </button>
+                        </div>
                     </div>
-                </div>
-            </mat-card-title-group>
-        </mat-card>
+                </mat-card-title-group>
+            </mat-card>
+        </ng-container>
     </div>
 </div>

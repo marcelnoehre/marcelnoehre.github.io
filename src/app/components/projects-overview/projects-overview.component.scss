@@ -37,10 +37,9 @@
 }
 
 mat-card {
-    margin-left: 7.5%;
-    margin-bottom: 3.5rem;
-    width: 50%;
     background: radial-gradient(farthest-corner at 0 0, #E8BFFF 50%, #E0FFFF);
+    margin-bottom: 5%;
+    width: 50%;
     p {
         margin-bottom: 0px;
     }
@@ -49,20 +48,38 @@ mat-card {
 mat-card-title {
     display: flex;
     justify-content: center;
-    writing-mode: vertical-rl;
     text-orientation: mixed;
     font-weight: bold;
     text-align: center;
     padding: calc(1rem + 3px) 1rem !important;
+    writing-mode: vertical-rl;
     font-family: epyval;
 }
 
 .content {
     text-align: justify;
-    padding-right: 1rem;
     .actions {
         display: flex;
         justify-content: center;
         padding: 16px 0;
+    }
+}
+
+.left {
+    margin-left: 7.5%;
+    .content {
+        padding-right: 1rem;
+    }
+}
+
+.right {
+    margin-left: 42.5%;
+    transform: scaleX(-1);
+    .content {
+        padding-left: 1rem;
+        transform: scaleX(-1);
+    }
+    mat-card-title {
+        transform: scaleX(-1);
     }
 }
