@@ -3,10 +3,12 @@ import { RouterModule, Routes } from '@angular/router';
 
 import { CoreComponent } from './components/core/core.component';
 import { RLOverlayComponent } from './components/rl-overlay/rl-overlay.component';
+import { ComingSoonComponent } from './components/coming-soon/coming-soon.component';
 
 const routes: Routes = [  
   { path: '', component: CoreComponent },
-  // { path: 'rl-overlay', component: RLOverlayComponent}
+  { path: 'coming-soon', component: ComingSoonComponent },
+  { path: '3dg-overlay', component: RLOverlayComponent }
   ];
 
 @NgModule({

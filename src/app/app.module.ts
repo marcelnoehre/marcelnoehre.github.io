@@ -11,6 +11,7 @@ import { AppComponent } from './app.component';
 import { CoreComponent } from './components/core/core.component';
 import { HomepageComponent } from './components/homepage/homepage.component';
 import { ProjectsOverviewComponent } from './components/projects-overview/projects-overview.component';
+import { ComingSoonComponent } from './components/coming-soon/coming-soon.component';
 import { RLOverlayComponent } from './components/rl-overlay/rl-overlay.component'
 
 import { MatCardModule } from '@angular/material/card';
@@ -26,6 +27,7 @@ export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
     CoreComponent,
     HomepageComponent,
     ProjectsOverviewComponent,
+    ComingSoonComponent,
     RLOverlayComponent
   ],
   imports: [
