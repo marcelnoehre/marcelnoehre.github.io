@@ -14,14 +14,14 @@
             <mat-card [class]="even ? 'left' : 'right'">
                 <mat-card-title-group>
                     <mat-card-title>
-                        {{'PROJECTS.' + project + '.TITLE'|translate}}
+                        {{'PROJECTS.' + project.key + '.TITLE'|translate}}
                     </mat-card-title>
                     <div class="content">
                         <p>
-                            {{'PROJECTS.' + project + '.CONTENT'|translate}}
+                            {{'PROJECTS.' + project.key + '.CONTENT'|translate}}
                         </p>
                         <div class="actions">
-                            <a>
+                            <a (click)="viewProject(project.path)">
                                 {{'PROJECTS.VIEW'|translate}}
                                 <span *ngFor="let i of counter(4)"></span>
                             </a>

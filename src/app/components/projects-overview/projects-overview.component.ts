@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { Project } from 'src/app/interfaces/project';
 
 @Component({
   selector: 'app-projects-overview',
@@ -7,7 +8,26 @@ import { Router } from '@angular/router';
   styleUrls: ['./projects-overview.component.scss']
 })
 export class ProjectsOverviewComponent implements OnInit {
-  projects: String[] = ['SWAGGER', 'OVERLAY', 'MVB', 'MORE']
+  counter = Array;
+  projects: Project[] = [
+    {
+      key: 'SWAGGER',
+      path: '/coming-soon',
+    },    
+    {
+      key: 'OVERLAY',
+      path: '/coming-soon',
+    },
+    {
+      key: 'MVB',
+      path: 'https://musikverein-borsum.de',
+    },
+    {
+      key: 'MORE',
+      path: 'https://github.com/marcelnoehre?tab=repositories',
+    }
+  ];
+
 
   constructor(
     private router: Router
@@ -17,7 +37,11 @@ export class ProjectsOverviewComponent implements OnInit {
   }
 
   viewProject(path: string) {
-    this.router.navigateByUrl(path);
+    if(path.startsWith('/')) {
+      this.router.navigateByUrl(path);
+    } else {
+      window.open(path, "_blank");
+    }
   }
 
 }
