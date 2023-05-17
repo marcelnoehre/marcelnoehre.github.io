@@ -1,0 +1,21 @@
+{
+    "PROJECTS": {
+        "VIEW": "Ansehen",
+        "SWAGGER": {
+            "TITLE": "Swagger 4 AAS",
+            "CONTENT": "Ein Dienst der automatisiert Informationen aus einer Verwaltungsschale ausliest und aufbereitet, sodass eine Swagger-UI-Dokumentation der verfügbaren Schnittstellen erstellt werden kann. Aufbauend darauf können mithilfe des integrierten Swagger-CodeGen Plugins Modellklassen generiert werden, die einen in den Quellcode eingebundenen Zugriff auf die Schnittstellen der Verwaltungsschale ermöglichen."
+        },
+        "OVERLAY": {
+            "TITLE": "RL Overlay",
+            "CONTENT": "Ein dynamisches Overlay für Rocket League Esport Livestreams, das die Daten des aktuell laufenden Spiels ausliest und für die Zuschauer anschaulich darstellt. Zusätzlich wird dem Kommentator im Hintergrund eine administrative Oberfläche bereitgestellt, sodass gewünschte Anpassungen in Echtzeit vorgenommen werden können."
+        },
+        "MVB": {
+            "TITLE": "MVB Website",
+            "CONTENT": "Als Teil einer kleinen Gruppe von Informatikern des Musikvereins Borsum haben wir die Verantwortung für die veraltete Website und alle dazugehörigen Tätigkeiten des Webmasters eines Vereins übernommen. Dazu haben wir der Joomla Website ein neues Design verpasst und erstellen aktuelle Beiträge zu vergangenen Veranstaltungen, anstehenden Terminen oder füllen unsere Datenbank mit Bildern."
+        },
+        "MORE": {
+            "TITLE": "Weitere",
+            "CONTENT": "Weitere interessante Projekte wie beispielsweise ein CBR-gestütztes Tippsystem für ein Minesweeper-Spiel, eine Analyse der Taxifahrten in New York City sowie verschiedene Discord Bots finden sich in meinem GitHub Profil."
+        }
+    }
+}
