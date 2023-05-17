@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { Project } from 'src/app/interfaces/project';
+import { BreakpointService } from 'src/app/services/breakpoint.service';
 
 @Component({
   selector: 'app-projects-overview',
@@ -9,6 +10,7 @@ import { Project } from 'src/app/interfaces/project';
 })
 export class ProjectsOverviewComponent implements OnInit {
   counter = Array;
+  responsiveClass!: string;
   projects: Project[] = [
     {
       key: 'SWAGGER',
@@ -30,10 +32,14 @@ export class ProjectsOverviewComponent implements OnInit {
 
 
   constructor(
-    private router: Router
-  ) { }
+    private router: Router,
+    private _breakpoint: BreakpointService
+    ) { }
 
   ngOnInit(): void {
+    this._breakpoint.responsiveClass$.subscribe((responsiveClass) => {
+      this.responsiveClass = responsiveClass;
+    });
   }
 
   viewProject(path: string) {

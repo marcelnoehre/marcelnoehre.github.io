@@ -1,3 +1,7 @@
+* {
+    min-width: 0;
+}
+
 .projects-overview-container {
     width: 100vw;
     min-height: 100vh;
@@ -38,9 +42,8 @@
 
 mat-card {
     background: radial-gradient(farthest-corner at 0 0, #E8BFFF 50%, #E0FFFF);
-    margin-bottom: 5%;
-    width: 50%;
     p {
+        overflow-wrap: break-word;
         margin-bottom: 0px;
     }
 }
@@ -65,18 +68,9 @@ mat-card-title {
     }
 }
 
-.left {
-    margin-left: 7.5%;
-    .content {
-        padding-right: 1rem;
-    }
-}
-
 .right {
-    margin-left: 42.5%;
     transform: scaleX(-1);
     .content {
-        padding-left: 1rem;
         transform: scaleX(-1);
     }
     mat-card-title {
@@ -123,6 +117,7 @@ a {
         transform: scaleY(0);
         transform-origin: top;
         transition: transform 0.75s;
+        transition-delay: 0.5s;
     }
     span:nth-child(4) {
         left: 0;
@@ -132,6 +127,7 @@ a {
         transform: scaleX(0);
         transform-origin: right;
         transition: transform 0.75s;
+        transition-delay: 0.5s;
     }
 }
 
@@ -151,10 +147,54 @@ a:hover {
         transform: scaleY(1);
         transform-origin: bottom;
         transition: transform 0.5s;
+        transition-delay: 0.5s;
     }
     span:nth-child(4) {
         transform: scaleX(1);
         transform-origin: left;
         transition: transform 0.5s;
+        transition-delay: 0.5s;
+    }
+}
+
+.handset-portrait {
+    mat-card {
+        width: 80%;
+        margin-bottom: 10%;
+    }
+    .left {
+        margin-left: 5%;
+        .content {
+            padding-right: 1rem;
+        }
+    }
+    .right {
+        margin-left: 15%;
+        .content {
+            padding-left: 1rem;
+        }
+    }
+}
+
+.small,
+.medium,
+.large,
+.handset-landscape,
+.web-landscape {
+    mat-card {
+        width: 50%;
+        margin-bottom: 5%;
+    }
+    .left {
+        margin-left: 7.5%;
+        .content {
+            padding-right: 1rem;
+        }
+    }
+    .right {
+        margin-left: 42.5%;
+        .content {
+            padding-left: 1rem;
+        }
     }
 }
