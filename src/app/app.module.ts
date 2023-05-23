@@ -11,6 +11,7 @@ import { AppComponent } from './app.component';
 import { CoreComponent } from './components/core/core.component';
 import { HomepageComponent } from './components/homepage/homepage.component';
 import { ProjectsOverviewComponent } from './components/projects-overview/projects-overview.component';
+import { ContactComponent } from './components/contact/contact.component';
 import { ComingSoonComponent } from './components/coming-soon/coming-soon.component';
 import { RLOverlayComponent } from './components/rl-overlay/rl-overlay.component'
 
@@ -27,6 +28,7 @@ export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
     CoreComponent,
     HomepageComponent,
     ProjectsOverviewComponent,
+    ContactComponent,
     ComingSoonComponent,
     RLOverlayComponent
   ],
