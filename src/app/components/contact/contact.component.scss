@@ -31,3 +31,11 @@
     -moz-text-fill-color: transparent;
     clip-path: inset(1px);
 }
+
+.contact {
+    margin-top: calc(30px + (275 - 25) * ((100vw - 50px) / (2000 - 50)) + 2rem);
+}
+
+mat-card {
+    background: radial-gradient(farthest-corner at 0 0, #E8BFFF 50%, #E0FFFF);
+}
