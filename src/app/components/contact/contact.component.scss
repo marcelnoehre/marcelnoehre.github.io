@@ -2,7 +2,6 @@
     width: 100vw;
     min-height: 100vh;
     padding: 0;
-    padding-bottom: 1rem;
     margin: 0;
     background-color: #10101a;
     border-top: 2px solid #E0FFFF;
@@ -33,9 +32,43 @@
 }
 
 .contact {
-    margin-top: calc(30px + (275 - 25) * ((100vw - 50px) / (2000 - 50)) + 2rem);
+    position: relative;
+    display: flex;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: calc(100vh - (45px + (425 - 40) * ((100vw - 50px) / (2000 - 50))));
+    margin-top: calc(30px + (275 - 25) * ((100vw - 50px) / (2000 - 50)));
+    div {
+        height: 100%;
+        width: 50%;
+    }
 }
 
-mat-card {
-    background: radial-gradient(farthest-corner at 0 0, #E8BFFF 50%, #E0FFFF);
+.information {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    mat-card {
+        align-self: center;
+        width: 70%;
+        aspect-ratio: 1;
+    }
+}
+
+.chatbot {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    .message {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-self: center;
+        text-align: center;
+        width: 70%;
+        height: 15%;
+        border-radius: 75%;
+        background-color: white;
+    }
 }

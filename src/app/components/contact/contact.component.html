@@ -9,49 +9,13 @@
         <div>t</div>
     </div>
     <div class="contact">
-        <mat-card>
-            <mat-card-content>
-                <form [formGroup]="contactForm">
-                    <div>
-                        <mat-form-field appearance="outline" class="contact-form-field" MatInput>
-                            <mat-label>{{'CONTACT.NAME'|translate}}</mat-label>
-                            <input id="name-input" formControlName="nameFormControl" matInput name="name" placeholder="{{'CONTACT.NAME'|translate}}" required />
-                            <mat-icon matPrefix>person</mat-icon>
-                            <mat-error> {{'CONTACT.NAME_REQUIRED'|translate}} </mat-error>
-                        </mat-form-field>
-                    </div>
-                    <div>
-                        <mat-form-field appearance="outline" class="contact-form-field" MatInput>
-                            <mat-label>{{'CONTACT.EMAIL'|translate}}</mat-label>
-                            <input id="email-input" formControlName="emailFormControl" matInput name="email" placeholder="{{'CONTACT.EMAIL'|translate}}" required />
-                            <mat-icon matPrefix>person</mat-icon>
-                            <mat-error> {{'CONTACT.EMAIL_REQUIRED'|translate}} </mat-error>
-                        </mat-form-field>
-                    </div>
-                    <div>
-                        <mat-form-field appearance="outline" class="contact-form-field" MatInput>
-                            <mat-label>{{'CONTACT.SUBJECT'|translate}}</mat-label>
-                            <input id="subject-input" formControlName="subjectFormControl" matInput name="subject" placeholder="{{'CONTACT.SUBJECT'|translate}}" required />
-                            <mat-icon matPrefix>person</mat-icon>
-                            <mat-error> {{'CONTACT.SUBJECT_REQUIRED'|translate}} </mat-error>
-                        </mat-form-field>
-                    </div>
-                    <div>
-                        <mat-form-field appearance="outline" class="contact-form-field" MatInput>
-                            <mat-label>{{'CONTACT.MESSAGE'|translate}}</mat-label>
-                            <input id="message-input" formControlName="messageFormControl" matInput name="message" placeholder="{{'CONTACT.MESSAGE'|translate}}" required />
-                            <mat-icon matPrefix>person</mat-icon>
-                            <mat-error>{{'CONTACT.MESSAGE_REQUIRED'|translate}} </mat-error>
-                        </mat-form-field>
-                    </div>
-                    <div>
-                        <button id="submit-button" #submit class="submit-button align-center" color="accent" mat-raised-button type="submit" [disabled]="!contactForm.valid" (click)="sendMail()">
-                            <mat-icon>send</mat-icon>
-                            {{'CONTACT.SEND_EMAIL'|translate}}
-                        </button>
-                    </div>
-                </form>
-            </mat-card-content>
-        </mat-card>
+        <div class="information">
+            <mat-card></mat-card>
+        </div>
+        <div class="chatbot">
+            <ng-container *ngFor="let message of chatBotItems">
+                <div class="message">{{message}}</div>
+            </ng-container>
+        </div>
     </div>
 </div>
