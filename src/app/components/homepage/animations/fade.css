@@ -147,9 +147,3 @@
         visibility: visible;
     }
 }
-
-@keyframes removeScrollInfo {
-    to {
-        opacity: 0;
-    }
-}
