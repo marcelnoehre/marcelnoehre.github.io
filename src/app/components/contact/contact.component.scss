@@ -46,12 +46,3 @@
     color: #E0FFFF;
     margin-top: 1rem;
 }
-
-:host ::ng-deep {
-    .mat-button.mat-primary .mat-button-focus-overlay {
-        background-color: transparent;
-      }
-    .email {
-        background: #E8BFFF;
-    }
-}

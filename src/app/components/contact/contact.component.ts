@@ -6,9 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./contact.component.scss']
 })
 export class ContactComponent {
-  chatBotItems: string[] = [
-    "Question 1",
-    "Question 2",
-    "Question 3"
-  ];
+  private email: string = 'marcel.noehre@icloud.com'
+
+  sendEmail(): void {
+      window.location.href = 'mailto:' + this.email;
+  }
 }
