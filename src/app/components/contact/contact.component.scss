@@ -42,7 +42,28 @@
 
 .information {
     text-align: center;
-    font-size: calc(5px + (50 - 5) * ((100vw - 50px) / (2000 - 50)));
+    font-size: calc(10px + (50 - 5) * ((100vw - 50px) / (2000 - 50)));
     color: #E0FFFF;
     margin-top: 1rem;
+}
+
+.email {
+    mat-icon {
+        transform: scale(1.5);
+    }
+    font-size: calc(5px + (25 - 5) * ((100vw - 50px) / (2000 - 50)));
+}
+
+.links {
+    width: 100%;
+    position: absolute;
+    left: 1rem;
+    margin-top: calc(100vh - 3rem);
+    display: flex;
+    gap: 1rem;
+    img {
+        width: 2rem;
+        height: auto;
+        fill: white;
+    }
 }
