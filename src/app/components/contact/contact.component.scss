@@ -55,12 +55,12 @@
 }
 
 .links {
-    width: 100%;
+    width: calc(100% - 1rem);
     position: absolute;
-    left: 1rem;
     margin-top: calc(100vh - 3rem);
     display: flex;
     gap: 1rem;
+    left: 1rem;
     img {
         width: 2rem;
         height: auto;

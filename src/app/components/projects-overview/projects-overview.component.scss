@@ -41,7 +41,9 @@
     margin-top: calc(30px + (275 - 25) * ((100vw - 50px) / (2000 - 50)) + 5rem);
 }
 
-mat-card {
+.project-card {
+    display: flex;
+    border-radius: 5px;
     background: radial-gradient(farthest-corner at 0 0, #E8BFFF 50%, #E0FFFF);
     p {
         overflow-wrap: break-word;
@@ -49,7 +51,7 @@ mat-card {
     }
 }
 
-mat-card-title {
+.project-title {
     display: flex;
     justify-content: center;
     text-orientation: mixed;
@@ -69,32 +71,37 @@ mat-card-title {
     }
 }
 
+.left {
+    .project-title {
+        margin-left: 1rem;
+    }
+    .content {
+        padding-right: 1rem;
+    }
+}
+
 .right {
     transform: scaleX(-1);
     .content {
         transform: scaleX(-1);
+        padding-left: 1rem;
     }
-    mat-card-title {
+    .project-title {
         transform: scaleX(-1);
+        margin-right: 1rem;
     }
 }
 
 .handset-portrait {
-    mat-card {
+    .project-card {
         width: 80%;
         margin-bottom: 10%;
     }
     .left {
         margin-left: 5%;
-        .content {
-            padding-right: 1rem;
-        }
     }
     .right {
         margin-left: 15%;
-        .content {
-            padding-left: 1rem;
-        }
     }
 }
 
@@ -103,20 +110,14 @@ mat-card-title {
 .large,
 .handset-landscape,
 .web-landscape {
-    mat-card {
+    .project-card {
         width: 50%;
         margin-bottom: 5%;
     }
     .left {
         margin-left: 7.5%;
-        .content {
-            padding-right: 1rem;
-        }
     }
     .right {
-        margin-left: 42.5%;
-        .content {
-            padding-left: 1rem;
-        }
+        margin-left: 40%;
     }
 }
