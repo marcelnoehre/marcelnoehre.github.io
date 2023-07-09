@@ -3,19 +3,19 @@
         "VIEW": "View",
         "SWAGGER": {
             "TITLE": "Swagger 4 AAS",
-            "CONTENT": "A service that automatically reads and prepares information from a management shell so that Swagger UI documentation of the available interfaces can be created. Based on this, the integrated Swagger-CodeGen plugin can be used to generate model classes that enable access to the interfaces of the management shell embedded in the source code."
+            "CONTENT": "A service that automatically retrieves information from an asset administration shell, allowing for the creation of a Swagger UI documentation for the available interfaces. Based on this, model classes can be generated using the integrated Swagger CodeGen plugin, enabling access to the asset administration shell interfaces within the source code."
         },
         "OVERLAY": {
             "TITLE": "RL Overlay",
-            "CONTENT": "A dynamic overlay for Rocket League Esport livestreams that reads the data of the currently running game and displays it vividly for the viewers. Additionally, an administrative interface is provided to the commentator in the background so that desired adjustments can be made in real time."
+            "CONTENT": "A dynamic overlay for Rocket League Esport livestreams that reads the data of the currently running game and displays it vividly for viewers. In addition, an administrative interface is provided for the commentators in the background, through which desired adjustments can be made."
         },
         "MVB": {
             "TITLE": "MVB Website",
-            "CONTENT": "As part of a small group of computer scientists of the Musikverein Borsum we have taken over the responsibility for the outdated website and all related activities of the webmaster of a club. For this purpose we have given the Joomla website a new design and create current articles about past events, upcoming dates or fill our database with pictures."
+            "CONTENT": "As part of a small group of computer scientists of the local music club we have taken over the responsibility for the outdated website and all related activities of a webmaster. For this we give the Joomla website a new design and create articles about past events, upcoming dates or fill our picture gallery."
         },
         "MORE": {
             "TITLE": "More",
-            "CONTENT": "Other interesting projects such as a CBR-powered typing system for a Minesweeper game, an analysis of cab rides in New York City, and various Discord bots can be found in my GitHub profile."
+            "CONTENT": "Other interesting projects such as a CBR-based hint system for a Minesweeper game, an analysis of cab rides in New York City, and various Discord bots can be found in my GitHub profile."
         }
     }
 }

@@ -13,6 +13,6 @@ export class AppComponent {
     private _translate: TranslateService
   ) {
     _translate.setDefaultLang('en');
-    _translate.use(_translate.getBrowserLang()!);
+    _translate.use('en');
   }
 }

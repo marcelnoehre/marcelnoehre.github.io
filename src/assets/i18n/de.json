@@ -7,15 +7,15 @@
         },
         "OVERLAY": {
             "TITLE": "RL Overlay",
-            "CONTENT": "Ein dynamisches Overlay für Rocket League Esport Livestreams, das die Daten des aktuell laufenden Spiels ausliest und für die Zuschauer anschaulich darstellt. Zusätzlich wird dem Kommentator im Hintergrund eine administrative Oberfläche bereitgestellt, sodass gewünschte Anpassungen in Echtzeit vorgenommen werden können."
+            "CONTENT": "Ein dynamisches Overlay für Rocket League Esport Livestreams, das die Daten des aktuell laufenden Spiels ausliest und für die Zuschauer anschaulich darstellt. Zusätzlich wird den Kommentatoren im Hintergrund eine administrative Oberfläche bereitgestellt, über die gewünschte Anpassungen vorgenommen werden können."
         },
         "MVB": {
             "TITLE": "MVB Website",
-            "CONTENT": "Als Teil einer kleinen Gruppe von Informatikern des Musikvereins Borsum haben wir die Verantwortung für die veraltete Website und alle dazugehörigen Tätigkeiten des Webmasters eines Vereins übernommen. Dazu haben wir der Joomla Website ein neues Design verpasst und erstellen aktuelle Beiträge zu vergangenen Veranstaltungen, anstehenden Terminen oder füllen unsere Datenbank mit Bildern."
+            "CONTENT": "Als Teil einer kleinen Gruppe von Informatikern des Musikvereins Borsum haben wir die Verantwortung für die veraltete Website und alle dazugehörigen Tätigkeiten eines Webmasters übernommen. Dazu verpassen wir der Joomla Website ein neues Design und erstellen Beiträge zu vergangenen Veranstaltungen, anstehenden Terminen oder füllen unsere Bildergalerie."
         },
         "MORE": {
             "TITLE": "Weitere",
-            "CONTENT": "Weitere interessante Projekte wie beispielsweise ein CBR-gestütztes Tippsystem für ein Minesweeper-Spiel, eine Analyse der Taxifahrten in New York City sowie verschiedene Discord Bots finden sich in meinem GitHub Profil."
+            "CONTENT": "Weitere interessante Projekte wie beispielsweise ein CBR-gestütztes Tippsystem für ein Minesweeper-Spiel, eine Analyse von Taxifahrten in New York City sowie verschiedene Discord Bots finden sich in meinem GitHub Profil."
         }
     }
 }

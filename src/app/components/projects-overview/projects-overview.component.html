@@ -21,10 +21,7 @@
                             {{'PROJECTS.' + project.key + '.CONTENT'|translate}}
                         </p>
                         <div class="actions">
-                            <a (click)="viewProject(project.path)">
-                                {{'PROJECTS.VIEW'|translate}}
-                                <span *ngFor="let i of counter(4)"></span>
-                            </a>
+                            <button mat-raised-button color="transparent" (click)="viewProject(project.path)">{{'PROJECTS.VIEW'|translate}}</button>
                         </div>
                     </div>
                 </mat-card-title-group>

@@ -9,7 +9,6 @@ import { BreakpointService } from 'src/app/services/breakpoint.service';
   styleUrls: ['./projects-overview.component.scss']
 })
 export class ProjectsOverviewComponent implements OnInit {
-  counter = Array;
   responsiveClass!: string;
   projects: Project[] = [
     {
