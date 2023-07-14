@@ -46,84 +46,76 @@
     animation: fadeIn 1s 2.1s ease-in-out forwards;
 }
 
-.full-stack>span:nth-child(1) {
+.developer>span:nth-child(1) {
     animation: fadeIn 1s 5s ease-in-out forwards;
 }
 
-.full-stack>span:nth-child(2) {
+.developer>span:nth-child(2) {
     animation: fadeIn 1s 5.075s ease-in-out forwards;
 }
 
-.full-stack>span:nth-child(3) {
+.developer>span:nth-child(3) {
     animation: fadeIn 1s 5.125s ease-in-out forwards;
 }
 
-.full-stack>span:nth-child(4) {
+.developer>span:nth-child(4) {
     animation: fadeIn 1s 5.2s ease-in-out forwards;
 }
 
-.full-stack>span:nth-child(5) {
+.developer>span:nth-child(5) {
     animation: fadeIn 1s 5.275s ease-in-out forwards;
 }
 
-.full-stack>span:nth-child(6) {
+.developer>span:nth-child(6) {
     animation: fadeIn 1s 5.35s ease-in-out forwards;
 }
 
-.full-stack>span:nth-child(7) {
+.developer>span:nth-child(7) {
     animation: fadeIn 1s 5.425s ease-in-out forwards;
 }
 
-.full-stack>span:nth-child(8) {
+.developer>span:nth-child(8) {
     animation: fadeIn 1s 5.5s ease-in-out forwards;
 }
 
-.full-stack>span:nth-child(9) {
+.developer>span:nth-child(9) {
     animation: fadeIn 1s 5.575s ease-in-out forwards;
 }
 
-.full-stack>span:nth-child(10) {
+.developer>span:nth-child(10) {
     animation: fadeIn 1s 5.65s ease-in-out forwards;
 }
 
-.full-stack>span:nth-child(11) {
+.developer>span:nth-child(11) {
     animation: fadeIn 1s 5.725s ease-in-out forwards;
 }
 
-.full-stack>span:nth-child(12) {
+.developer>span:nth-child(12) {
     animation: fadeIn 1s 5.8s ease-in-out forwards;
 }
 
-.full-stack>span:nth-child(13) {
+.developer>span:nth-child(13) {
     animation: fadeIn 1s 5.875s ease-in-out forwards;
 }
 
-.full-stack>span:nth-child(14) {
+.developer>span:nth-child(14) {
     animation: fadeIn 1s 5.95s ease-in-out forwards;
 }
 
-.full-stack>span:nth-child(15) {
+.developer>span:nth-child(15) {
     animation: fadeIn 1s 6.025s ease-in-out forwards;
 }
 
-.full-stack>span:nth-child(16) {
+.developer>span:nth-child(16) {
     animation: fadeIn 1s 6.1s ease-in-out forwards;
 }
 
-.full-stack>span:nth-child(17) {
+.developer>span:nth-child(17) {
     animation: fadeIn 1s 6.175s ease-in-out forwards;
 }
 
-.full-stack>span:nth-child(18) {
+.developer>span:nth-child(18) {
     animation: fadeIn 1s 6.25s ease-in-out forwards;
-}
-
-.full-stack>span:nth-child(19) {
-    animation: fadeIn 1s 6.325s ease-in-out forwards;
-}
-
-.full-stack>span:nth-child(20) {
-    animation: fadeIn 1s 6.4s ease-in-out forwards;
 }
 
 @keyframes fadeIn {
@@ -142,7 +134,7 @@
     }
 }
 
-@keyframes fadeFullStack {
+@keyframes fadeDeveloper {
     to {
         visibility: visible;
     }

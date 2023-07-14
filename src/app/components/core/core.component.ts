@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, HostListener, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-core',
@@ -6,10 +6,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./core.component.scss']
 })
 export class CoreComponent implements OnInit {
+  private languageSelector!: boolean;
+  @HostListener('window:scroll', [])
+  onWindowScroll() {
+    this.languageSelector = window.scrollY >= window.innerHeight;
+  }
 
   constructor() { }
 
   ngOnInit(): void {
+    this.languageSelector = window.scrollY >= window.innerHeight;
   }
 
 }

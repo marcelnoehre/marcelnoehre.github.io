@@ -1,16 +1,22 @@
 {
+    "LANGUAGES": {
+        "en": "Englisch",
+        "de": "Deutsch",
+        "es": "Spanisch",
+        "fr": "Französisch"
+    },
     "PROJECTS": {
-        "VIEW": "Ansehen",
+        "VIEW": "ansehen",
         "SWAGGER": {
             "TITLE": "Swagger 4 AAS",
             "CONTENT": "Ein Dienst der automatisiert Informationen aus einer Verwaltungsschale ausliest und aufbereitet, sodass eine Swagger-UI-Dokumentation der verfügbaren Schnittstellen erstellt werden kann. Aufbauend darauf können mithilfe des integrierten Swagger-CodeGen Plugins Modellklassen generiert werden, die einen in den Quellcode eingebundenen Zugriff auf die Schnittstellen der Verwaltungsschale ermöglichen."
         },
         "OVERLAY": {
-            "TITLE": "RL Overlay",
+            "TITLE": "RL-Overlay",
             "CONTENT": "Ein dynamisches Overlay für Rocket League Esport Livestreams, das die Daten des aktuell laufenden Spiels ausliest und für die Zuschauer anschaulich darstellt. Zusätzlich wird den Kommentatoren im Hintergrund eine administrative Oberfläche bereitgestellt, über die gewünschte Anpassungen vorgenommen werden können."
         },
         "MVB": {
-            "TITLE": "MVB Website",
+            "TITLE": "MVB-Website",
             "CONTENT": "Als Teil einer kleinen Gruppe von Informatikern des Musikvereins Borsum haben wir die Verantwortung für die veraltete Website und alle dazugehörigen Tätigkeiten eines Webmasters übernommen. Dazu verpassen wir der Joomla Website ein neues Design und erstellen Beiträge zu vergangenen Veranstaltungen, anstehenden Terminen oder füllen unsere Bildergalerie."
         },
         "MORE": {

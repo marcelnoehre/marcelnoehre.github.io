@@ -1,0 +1,27 @@
+{
+    "LANGUAGES": {
+        "en": "Inglés",
+        "de": "Alemán",
+        "es": "Español",
+        "fr": "Francés"
+    },
+    "PROJECTS": {
+        "VIEW": "ver",
+        "SWAGGER": {
+            "TITLE": "Swagger 4 AAS",
+            "CONTENT": "Un servicio que recupera automáticamente información de una cáscara de administración de activos, permitiendo la creación de una documentación Swagger UI para las interfaces disponibles. Basado en esto, se pueden generar clases de modelo utilizando el complemento integrado Swagger CodeGen, lo que permite acceder a las interfaces de la cáscara de administración de activos dentro del código fuente."
+        },
+        "OVERLAY": {
+            "TITLE": "Superposición RL",
+            "CONTENT": "Una superposición dinámica para las transmisiones en vivo de los deportes electrónicos de Rocket League que lee los datos del juego actualmente en curso y los muestra de manera vívida para los espectadores. Además, se proporciona una interfaz administrativa para los comentaristas en segundo plano, a través de la cual se pueden realizar ajustes deseados."
+        },
+        "MVB": {
+            "TITLE": "Sitio web de MVB",
+            "CONTENT": "Como parte de un pequeño grupo de científicos de la computación del club de música local, hemos asumido la responsabilidad de actualizar el sitio web y todas las actividades relacionadas del webmaster. Para esto, le daremos al sitio web de Joomla un nuevo diseño y crearemos artículos sobre eventos pasados, fechas futuras o llenaremos nuestra galería de imágenes."
+        },
+        "MORE": {
+            "TITLE": "más",
+            "CONTENT": "Otros proyectos interesantes, como un sistema de pistas basado en CBR para un juego de Buscaminas, un análisis de los viajes en taxi en la ciudad de Nueva York y varios bots de Discord, se pueden encontrar en mi perfil de GitHub."
+        }
+    }
+}

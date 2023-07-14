@@ -13,8 +13,9 @@ import { CoreComponent } from './components/core/core.component';
 import { HomepageComponent } from './components/homepage/homepage.component';
 import { ProjectsOverviewComponent } from './components/projects-overview/projects-overview.component';
 import { ContactComponent } from './components/contact/contact.component';
-import { ComingSoonComponent } from './components/coming-soon/coming-soon.component';
 import { RLOverlayComponent } from './components/rl-overlay/rl-overlay.component'
+import { LanguageSelectorComponent } from './components/language-selector/language-selector.component';
+import { ComingSoonComponent } from './components/coming-soon/coming-soon.component';
 
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
@@ -33,8 +34,9 @@ export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
     HomepageComponent,
     ProjectsOverviewComponent,
     ContactComponent,
-    ComingSoonComponent,
-    RLOverlayComponent
+    RLOverlayComponent,
+    LanguageSelectorComponent,
+    ComingSoonComponent
   ],
   imports: [
     BrowserModule,

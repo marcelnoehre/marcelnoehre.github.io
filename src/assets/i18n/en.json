@@ -1,6 +1,12 @@
 {
+    "LANGUAGES": {
+        "en": "English",
+        "de": "German",
+        "es": "Spanish",
+        "fr": "French"
+    },
     "PROJECTS": {
-        "VIEW": "View",
+        "VIEW": "view",
         "SWAGGER": {
             "TITLE": "Swagger 4 AAS",
             "CONTENT": "A service that automatically retrieves information from an asset administration shell, allowing for the creation of a Swagger UI documentation for the available interfaces. Based on this, model classes can be generated using the integrated Swagger CodeGen plugin, enabling access to the asset administration shell interfaces within the source code."
