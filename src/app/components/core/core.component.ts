@@ -6,7 +6,7 @@ import { Component, HostListener, OnInit } from '@angular/core';
   styleUrls: ['./core.component.scss']
 })
 export class CoreComponent implements OnInit {
-  private languageSelector!: boolean;
+  languageSelector!: boolean;
   @HostListener('window:scroll', [])
   onWindowScroll() {
     this.languageSelector = window.scrollY >= window.innerHeight;

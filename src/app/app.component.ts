@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
+import { StorageService } from './services/storage.service';
 
 @Component({
   selector: 'app-root',
@@ -10,9 +11,10 @@ export class AppComponent {
   title = 'portfolio';
 
   constructor(
+    private _storage: StorageService,
     private _translate: TranslateService
   ) {
     _translate.setDefaultLang('en');
-    _translate.use('en');
+    _translate.use(_storage.getLocalEntry('lang') || 'en');
   }
 }

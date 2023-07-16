@@ -1,0 +1,47 @@
+.language-selector-container {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 4rem;
+    height: 4rem;
+    margin: 1rem;
+}
+
+img {
+    height: auto;
+    width: 2rem;
+}
+
+.active-language {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    background: radial-gradient(black, darkgray);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.active-language:hover {
+    cursor: pointer;
+}
+
+.selectable-languages {
+    height: 300%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    transform: translate(-1.7rem, -130%);
+    .lang {
+        display: flex;
+        color: white;
+        gap: 0.5rem;
+        .label {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+    }
+}

@@ -1,0 +1,13 @@
+<div class="language-selector-container">
+    <div class="active-language">
+        <img src="assets/images/languages/{{ active }}.png">
+    </div>
+    <div class="selectable-languages">
+        <ng-container *ngFor="let lang of languages">
+            <div class="lang" *ngIf="lang !== active">
+                <div class="label">{{ 'LANGUAGES.' + lang | translate}}</div>
+                <img src="assets/images/languages/{{ lang }}.png">
+            </div>
+        </ng-container>
+    </div>
+</div>
