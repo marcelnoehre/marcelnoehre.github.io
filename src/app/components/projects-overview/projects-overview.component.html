@@ -20,7 +20,10 @@
                         {{'PROJECTS.' + project.key + '.CONTENT'|translate}}
                     </p>
                     <div class="actions">
-                        <button mat-raised-button color="transparent" (click)="viewProject(project.path)">{{'PROJECTS.VIEW'|translate}}</button>
+                        <button mat-raised-button color="transparent" (click)="viewProject(project.path)">
+                            <mat-icon>visibility</mat-icon>
+                            {{'PROJECTS.VIEW'|translate}}
+                        </button>
                     </div>
                 </div>
             </div>

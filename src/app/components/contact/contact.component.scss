@@ -25,8 +25,8 @@
     font-family: epyval;
     color: #FF00FF;
     z-index: 1;
-    height: calc(10px + (200 - 15) * ((100vw - 50px) / (2000 - 50)));
-    font-size: calc(10px + (200 - 15) * ((100vw - 50px) / (2000 - 50)));
+    height: calc(20px + (200 - 15) * ((100vw - 50px) / (2000 - 50)));
+    font-size: calc(20px + (200 - 15) * ((100vw - 50px) / (2000 - 50)));
 }
 
 .title>div {
@@ -48,10 +48,11 @@
 }
 
 .email {
+    text-wrap: nowrap;
     mat-icon {
         transform: scale(1.5);
     }
-    font-size: calc(5px + (25 - 5) * ((100vw - 50px) / (2000 - 50)));
+    font-size: calc(10px + (25 - 5) * ((100vw - 50px) / (2000 - 50)));
 }
 
 .links {
