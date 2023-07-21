@@ -39,19 +39,9 @@
             <div class="java"><span>Java</span></div>
         </div>
     </div>
-    <div class="scroll-info">
+    <div class="scroll-info" [ngClass]="currentLang">
         <span>&#8595;&nbsp;</span>
-        <span>S</span>
-        <span>c</span>
-        <span>r</span>
-        <span>o</span>
-        <span>l</span>
-        <span>l</span>
-        <span>&nbsp;</span>
-        <span>D</span>
-        <span>o</span>
-        <span>w</span>
-        <span>n</span>
+        <span *ngFor="let char of scrollInfo.split('')">{{ char === ' ' ? '&nbsp;' : char }}</span>
         <span>&nbsp;&#8595;</span>
     </div>
 </div>

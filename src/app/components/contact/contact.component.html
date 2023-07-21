@@ -1,22 +1,16 @@
 <div class="contact-container">
     <div class="content">
         <div class="title">
-            <div>C</div>
-            <div>o</div>
-            <div>n</div>
-            <div>t</div>
-            <div>a</div>
-            <div>c</div>
-            <div>t</div>
+            <div *ngFor="let char of title.split('')">{{ char }}</div>
         </div>
         <div class="information">
-            Interested in what I do?
+            {{ 'CONTACT.INFO_LINE' | translate }}
             <br>
-            Reach out and let's make magic happen.
+            {{ 'CONTACT.INFO_SUBLINE' | translate }}
         </div>
         <button mat-raised-button class="email" style="background: radial-gradient(#E8BFFF 25%, #F080FF)" (click)="sendEmail()">
             <mat-icon>email</mat-icon>
-            &nbsp;Get in touch
+            &nbsp;{{ 'CONTACT.MAIL' | translate }}
         </button>
     </div>
     <div class="links">

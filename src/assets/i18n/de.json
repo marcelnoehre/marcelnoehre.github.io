@@ -5,6 +5,13 @@
         "es": "Spanisch",
         "fr": "Französisch"
     },
+    "CAPTIONS": {
+        "PROJECTS": "Projekte",
+        "CONTACT": "Kontakt"
+    },
+    "HOMEPAGE": {
+        "SCROLL": "Runterscrollen"
+    },
     "PROJECTS": {
         "VIEW": "ansehen",
         "SWAGGER": {
@@ -23,5 +30,10 @@
             "TITLE": "Weitere",
             "CONTENT": "Weitere interessante Projekte wie beispielsweise ein CBR-gestütztes Tippsystem für ein Minesweeper-Spiel, eine Analyse von Taxifahrten in New York City sowie verschiedene Discord Bots finden sich in meinem GitHub Profil."
         }
+    },
+    "CONTACT": {
+        "INFO_LINE": "Interessiert an meinen Projekten?",
+        "INFO_SUBLINE": "Dann schreib mir gerne eine E-Mail.",
+        "MAIL": "Kontaktiere mich"
     }
 }

@@ -1,52 +1,366 @@
-.scroll-info span:nth-child(1) {
-    animation: bounce 10s ease infinite
+.en span:nth-child(1) {
+    animation: bounce-en 10s ease infinite;
 }
 
-.scroll-info span:nth-child(2) {
-    animation: bounce 10s ease infinite 0.1s
+.en span:nth-child(2) {
+    animation: bounce-en 10s ease infinite 0.1s;
 }
 
-.scroll-info span:nth-child(3) {
-    animation: bounce 10s ease infinite 0.2s
+.en span:nth-child(3) {
+    animation: bounce-en 10s ease infinite 0.2s;
 }
 
-.scroll-info span:nth-child(4) {
-    animation: bounce 10s ease infinite 0.3s
+.en span:nth-child(4) {
+    animation: bounce-en 10s ease infinite 0.3s;
 }
 
-.scroll-info span:nth-child(5) {
-    animation: bounce 10s ease infinite 0.4s
+.en span:nth-child(5) {
+    animation: bounce-en 10s ease infinite 0.4s;
 }
 
-.scroll-info span:nth-child(6) {
-    animation: bounce 10s ease infinite 0.5s
+.en span:nth-child(6) {
+    animation: bounce-en 10s ease infinite 0.5s;
 }
 
-.scroll-info span:nth-child(7) {
-    animation: bounce 10s ease infinite 0.6s
+.en span:nth-child(7) {
+    animation: bounce-en 10s ease infinite 0.6s;
 }
 
-.scroll-info span:nth-child(9) {
-    animation: bounce 10s ease infinite 0.7s
+.en span:nth-child(9) {
+    animation: bounce-en 10s ease infinite 0.7s;
 }
 
-.scroll-info span:nth-child(10) {
-    animation: bounce 10s ease infinite 0.8s
+.en span:nth-child(10) {
+    animation: bounce-en 10s ease infinite 0.8s;
 }
 
-.scroll-info span:nth-child(11) {
-    animation: bounce 10s ease infinite 0.9s
+.en  span:nth-child(11) {
+    animation: bounce-en 10s ease infinite 0.9s;
 }
 
-.scroll-info span:nth-child(12) {
-    animation: bounce 10s ease infinite 1s
+.en  span:nth-child(12) {
+    animation: bounce-en 10s ease infinite 1s;
 }
 
-.scroll-info span:nth-child(13) {
-    animation: bounce 10s ease infinite 1.1s
+.en  span:nth-child(13) {
+    animation: bounce-en 10s ease infinite 1.1s;
 }
 
-@keyframes bounce {
+.de span:nth-child(1) {
+    animation: bounce-de 10s ease infinite;
+}
+
+.de span:nth-child(2) {
+    animation: bounce-de 10s ease infinite 0.1s;
+}
+
+.de span:nth-child(3) {
+    animation: bounce-de 10s ease infinite 0.2s;
+}
+
+.de span:nth-child(4) {
+    animation: bounce-de 10s ease infinite 0.3s;
+}
+
+.de span:nth-child(5) {
+    animation: bounce-de 10s ease infinite 0.4s;
+}
+
+.de span:nth-child(6) {
+    animation: bounce-de 10s ease infinite 0.5s;
+}
+
+.de span:nth-child(7) {
+    animation: bounce-de 10s ease infinite 0.6s;
+}
+
+.de span:nth-child(8) {
+    animation: bounce-de 10s ease infinite 0.7s;
+}
+    
+.de span:nth-child(9) {
+    animation: bounce-de 10s ease infinite 0.8s;
+}
+
+.de span:nth-child(10) {
+    animation: bounce-de 10s ease infinite 0.9s;
+}
+
+.de span:nth-child(11) {
+    animation: bounce-de 10s ease infinite 1s;
+}
+
+.de span:nth-child(12) {
+    animation: bounce-de 10s ease infinite 1.1s;
+}
+
+.de span:nth-child(13) {
+    animation: bounce-de 10s ease infinite 1.2s;
+}
+
+.de span:nth-child(14) {
+    animation: bounce-de 10s ease infinite 1.3s;
+}
+
+.de span:nth-child(15) {
+    animation: bounce-de 10s ease infinite 1.4s;
+}
+
+.de span:nth-child(16) {
+    animation: bounce-de 10s ease infinite 1.5s;
+}
+
+.es span:nth-child(1) {
+    animation: bounce-es 10s ease infinite;
+}
+
+.es span:nth-child(2) {
+    animation: bounce-es 10s ease infinite 0.1s;
+}
+
+.es span:nth-child(3) {
+    animation: bounce-es 10s ease infinite 0.2s;
+}
+
+.es span:nth-child(4) {
+    animation: bounce-es 10s ease infinite 0.3s;
+}
+
+.es span:nth-child(5) {
+    animation: bounce-es 10s ease infinite 0.4s;
+}
+
+.es span:nth-child(6) {
+    animation: bounce-es 10s ease infinite 0.5s;
+}
+
+.es span:nth-child(7) {
+    animation: bounce-es 10s ease infinite 0.6s;
+}
+
+.es span:nth-child(8) {
+    animation: bounce-es 10s ease infinite 0.7s;
+}
+
+.es span:nth-child(9) {
+    animation: bounce-es 10s ease infinite 0.8s;
+}
+
+.es span:nth-child(10) {
+    animation: bounce-es 10s ease infinite 0.9s;
+}
+
+.es span:nth-child(11) {
+    animation: bounce-es 10s ease infinite 1s;
+}
+
+.es span:nth-child(13) {
+    animation: bounce-es 10s ease infinite 1.1s;
+}
+
+.es span:nth-child(14) {
+    animation: bounce-es 10s ease infinite 1.2s;
+}
+
+.es span:nth-child(15) {
+    animation: bounce-es 10s ease infinite 1.3s;
+}
+
+.es span:nth-child(16) {
+    animation: bounce-es 10s ease infinite 1.4s;
+}
+
+.es span:nth-child(17) {
+    animation: bounce-es 10s ease infinite 1.5s;
+}
+
+.es span:nth-child(19) {
+    animation: bounce-es 10s ease infinite 1.6s;
+}
+
+.es span:nth-child(20) {
+    animation: bounce-es 10s ease infinite 1.7s;
+}
+
+.es span:nth-child(21) {
+    animation: bounce-es 10s ease infinite 1.8s;
+}
+
+.es span:nth-child(22) {
+    animation: bounce-es 10s ease infinite 1.9s;
+}
+
+.es span:nth-child(23) {
+    animation: bounce-es 10s ease infinite 2s;
+}
+
+.es span:nth-child(24) {
+    animation: bounce-es 10s ease infinite 2.1s;
+}
+
+.fr span:nth-child(1) {
+    animation: bounce-fr 10s ease infinite;
+}
+
+.fr span:nth-child(2) {
+    animation: bounce-fr 10s ease infinite 0.1s;
+}
+
+.fr span:nth-child(3) {
+    animation: bounce-fr 10s ease infinite 0.2s;
+}
+
+.fr span:nth-child(4) {
+    animation: bounce-fr 10s ease infinite 0.3s;
+}
+
+.fr span:nth-child(5) {
+    animation: bounce-fr 10s ease infinite 0.4s;
+}
+
+.fr span:nth-child(6) {
+    animation: bounce-fr 10s ease infinite 0.5s;
+}
+
+.fr span:nth-child(8) {
+    animation: bounce-fr 10s ease infinite 0.6s;
+}
+
+.fr span:nth-child(9) {
+    animation: bounce-fr 10s ease infinite 0.7s;
+}
+
+.fr span:nth-child(10) {
+    animation: bounce-fr 10s ease infinite 0.8s;
+}
+
+.fr span:nth-child(11) {
+    animation: bounce-fr 10s ease infinite 0.9s;
+}
+.fr span:nth-child(12) {
+    animation: bounce-fr 10s ease infinite 1s;
+}
+.fr span:nth-child(13) {
+    animation: bounce-fr 10s ease infinite 1.1s;
+}
+.fr span:nth-child(14) {
+    animation: bounce-fr 10s ease infinite 1.2s;
+}
+.fr span:nth-child(16) {
+    animation: bounce-fr 10s ease infinite 1.3s;
+}
+.fr span:nth-child(17) {
+    animation: bounce-fr 10s ease infinite 1.4s;
+}
+.fr span:nth-child(18) {
+    animation: bounce-fr 10s ease infinite 1.5s;
+}
+.fr span:nth-child(19) {
+    animation: bounce-fr 10s ease infinite 1.6s;
+}
+.fr span:nth-child(21) {
+    animation: bounce-fr 10s ease infinite 1.7s;
+}
+.fr span:nth-child(22) {
+    animation: bounce-fr 10s ease infinite 1.8s;
+}
+.fr span:nth-child(24) {
+    animation: bounce-fr 10s ease infinite 1.9s;
+}
+.fr span:nth-child(25) {
+    animation: bounce-fr 10s ease infinite 2s;
+}
+.fr span:nth-child(26) {
+    animation: bounce-fr 10s ease infinite 2.1s;
+}
+.fr span:nth-child(27) {
+    animation: bounce-fr 10s ease infinite 2.2s;
+}
+
+
+
+@keyframes bounce-en {
+    0% {
+        transform: scale(1, 1) translateY(0);
+    }
+    1% {
+        transform: scale(1.1, .9) translateY(0);
+    }
+    3% {
+        transform: scale(.9, 1.1) translateY(-100%);
+    }
+    5% {
+        transform: scale(1.05, .95) translateY(0);
+    }
+    6% {
+        transform: scale(1, 1) translateY(-20%);
+    }
+    7% {
+        transform: scale(1, 1) translateY(0);
+    }
+    10% {
+        transform: scale(1, 1) translateY(0);
+    }
+    100% {
+        transform: scale(1, 1) translateY(0);
+    }
+}
+
+@keyframes bounce-de {
+    0% {
+        transform: scale(1, 1) translateY(0);
+    }
+    1% {
+        transform: scale(1.1, .9) translateY(0);
+    }
+    3% {
+        transform: scale(.9, 1.1) translateY(-100%);
+    }
+    5% {
+        transform: scale(1.05, .95) translateY(0);
+    }
+    6% {
+        transform: scale(1, 1) translateY(-20%);
+    }
+    7% {
+        transform: scale(1, 1) translateY(0);
+    }
+    10% {
+        transform: scale(1, 1) translateY(0);
+    }
+    100% {
+        transform: scale(1, 1) translateY(0);
+    }
+}
+
+@keyframes bounce-es {
+    0% {
+        transform: scale(1, 1) translateY(0);
+    }
+    1% {
+        transform: scale(1.1, .9) translateY(0);
+    }
+    3% {
+        transform: scale(.9, 1.1) translateY(-100%);
+    }
+    5% {
+        transform: scale(1.05, .95) translateY(0);
+    }
+    6% {
+        transform: scale(1, 1) translateY(-20%);
+    }
+    7% {
+        transform: scale(1, 1) translateY(0);
+    }
+    10% {
+        transform: scale(1, 1) translateY(0);
+    }
+    100% {
+        transform: scale(1, 1) translateY(0);
+    }
+}
+
+@keyframes bounce-fr {
     0% {
         transform: scale(1, 1) translateY(0);
     }

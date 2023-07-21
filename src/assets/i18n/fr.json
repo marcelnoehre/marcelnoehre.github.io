@@ -5,6 +5,13 @@
         "es": "Espagnol",
         "fr": "Français"
     },
+    "CAPTIONS": {
+        "PROJECTS": "Projets",
+        "CONTACT": "Contact"
+    },
+    "HOMEPAGE": {
+        "SCROLL": "faire défiler vers le bas"
+    },
     "PROJECTS": {
         "VIEW": "voir",
         "SWAGGER": {
@@ -23,5 +30,10 @@
             "TITLE": "plus",
             "CONTENT": "D'autres projets intéressants tels qu'un système d'indices basé sur le Raisonnement à Partir de Cas (CBR) pour un jeu du démineur, une analyse des trajets en taxi à New York City et différents bots Discord peuvent être trouvés sur mon profil GitHub."
         }
+    },
+    "CONTACT": {
+        "INFO_LINE": "Intéressé par ce que je fais?",
+        "INFO_SUBLINE": "Tendez la main et faisons en sorte que la magie opère.",
+        "MAIL": "Prendre contact"
     }
 }

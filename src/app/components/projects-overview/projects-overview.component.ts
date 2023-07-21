@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { TranslateService } from '@ngx-translate/core';
 import { Project } from 'src/app/interfaces/project';
 import { BreakpointService } from 'src/app/services/breakpoint.service';
 
@@ -10,6 +11,7 @@ import { BreakpointService } from 'src/app/services/breakpoint.service';
 })
 export class ProjectsOverviewComponent implements OnInit {
   responsiveClass!: string;
+  title: string = '';
   projects: Project[] = [
     {
       key: 'SWAGGER',
@@ -32,12 +34,16 @@ export class ProjectsOverviewComponent implements OnInit {
 
   constructor(
     private router: Router,
-    private _breakpoint: BreakpointService
+    private _breakpoint: BreakpointService,
+    private _translate: TranslateService
     ) { }
 
   ngOnInit(): void {
     this._breakpoint.responsiveClass$.subscribe((responsiveClass) => {
       this.responsiveClass = responsiveClass;
+    });
+    this._translate.onLangChange.subscribe(() => {
+      this.title = this._translate.instant('CAPTIONS.PROJECTS')
     });
   }
 

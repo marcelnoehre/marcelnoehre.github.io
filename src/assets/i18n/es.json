@@ -5,6 +5,13 @@
         "es": "Español",
         "fr": "Francés"
     },
+    "CAPTIONS": {
+        "PROJECTS": "Proyectos",
+        "CONTACT": "Contacto"
+    },
+    "HOMEPAGE": {
+        "SCROLL": "desplázate hacia abajo"
+    },
     "PROJECTS": {
         "VIEW": "ver",
         "SWAGGER": {
@@ -23,5 +30,10 @@
             "TITLE": "más",
             "CONTENT": "Otros proyectos interesantes, como un sistema de pistas basado en CBR para un juego de Buscaminas, un análisis de los viajes en taxi en la ciudad de Nueva York y varios bots de Discord, se pueden encontrar en mi perfil de GitHub."
         }
+    },
+    "CONTACT": {
+        "INFO_LINE": "¿Interesado en lo que hago?",
+        "INFO_SUBLINE": "Acércate y hagamos que surja la magia.",
+        "MAIL": "Póngase en contacto"
     }
 }

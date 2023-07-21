@@ -5,6 +5,13 @@
         "es": "Spanish",
         "fr": "French"
     },
+    "CAPTIONS": {
+        "PROJECTS": "Projects",
+        "CONTACT": "Contact"
+    },
+    "HOMEPAGE": {
+        "SCROLL": "Scroll Down"
+    },
     "PROJECTS": {
         "VIEW": "view",
         "SWAGGER": {
@@ -23,5 +30,10 @@
             "TITLE": "More",
             "CONTENT": "Other interesting projects such as a CBR-based hint system for a Minesweeper game, an analysis of cab rides in New York City, and various Discord bots can be found in my GitHub profile."
         }
+    },
+    "CONTACT": {
+        "INFO_LINE": "Interested in what I do?",
+        "INFO_SUBLINE": "Reach out and let's make magic happen.",
+        "MAIL": "Get in touch"
     }
 }
