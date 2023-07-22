@@ -1,283 +1,367 @@
 .en span:nth-child(1) {
+    will-change: auto;
     animation: bounce-en 10s ease infinite;
 }
 
 .en span:nth-child(2) {
+    will-change: auto;
     animation: bounce-en 10s ease infinite 0.1s;
 }
 
 .en span:nth-child(3) {
+    will-change: auto;
     animation: bounce-en 10s ease infinite 0.2s;
 }
 
 .en span:nth-child(4) {
+    will-change: auto;
     animation: bounce-en 10s ease infinite 0.3s;
 }
 
 .en span:nth-child(5) {
+    will-change: auto;
     animation: bounce-en 10s ease infinite 0.4s;
 }
 
 .en span:nth-child(6) {
+    will-change: auto;
     animation: bounce-en 10s ease infinite 0.5s;
 }
 
 .en span:nth-child(7) {
+    will-change: auto;
     animation: bounce-en 10s ease infinite 0.6s;
 }
 
 .en span:nth-child(9) {
+    will-change: auto;
     animation: bounce-en 10s ease infinite 0.7s;
 }
 
 .en span:nth-child(10) {
+    will-change: auto;
     animation: bounce-en 10s ease infinite 0.8s;
 }
 
 .en  span:nth-child(11) {
+    will-change: auto;
     animation: bounce-en 10s ease infinite 0.9s;
 }
 
 .en  span:nth-child(12) {
+    will-change: auto;
     animation: bounce-en 10s ease infinite 1s;
 }
 
 .en  span:nth-child(13) {
+    will-change: auto;
     animation: bounce-en 10s ease infinite 1.1s;
 }
 
 .de span:nth-child(1) {
+    will-change: auto;
     animation: bounce-de 10s ease infinite;
 }
 
 .de span:nth-child(2) {
+    will-change: auto;
     animation: bounce-de 10s ease infinite 0.1s;
 }
 
 .de span:nth-child(3) {
+    will-change: auto;
     animation: bounce-de 10s ease infinite 0.2s;
 }
 
 .de span:nth-child(4) {
+    will-change: auto;
     animation: bounce-de 10s ease infinite 0.3s;
 }
 
 .de span:nth-child(5) {
+    will-change: auto;
     animation: bounce-de 10s ease infinite 0.4s;
 }
 
 .de span:nth-child(6) {
+    will-change: auto;
     animation: bounce-de 10s ease infinite 0.5s;
 }
 
 .de span:nth-child(7) {
+    will-change: auto;
     animation: bounce-de 10s ease infinite 0.6s;
 }
 
 .de span:nth-child(8) {
+    will-change: auto;
     animation: bounce-de 10s ease infinite 0.7s;
 }
     
 .de span:nth-child(9) {
+    will-change: auto;
     animation: bounce-de 10s ease infinite 0.8s;
 }
 
 .de span:nth-child(10) {
+    will-change: auto;
     animation: bounce-de 10s ease infinite 0.9s;
 }
 
 .de span:nth-child(11) {
+    will-change: auto;
     animation: bounce-de 10s ease infinite 1s;
 }
 
 .de span:nth-child(12) {
+    will-change: auto;
     animation: bounce-de 10s ease infinite 1.1s;
 }
 
 .de span:nth-child(13) {
+    will-change: auto;
     animation: bounce-de 10s ease infinite 1.2s;
 }
 
 .de span:nth-child(14) {
+    will-change: auto;
     animation: bounce-de 10s ease infinite 1.3s;
 }
 
 .de span:nth-child(15) {
+    will-change: auto;
     animation: bounce-de 10s ease infinite 1.4s;
 }
 
 .de span:nth-child(16) {
+    will-change: auto;
     animation: bounce-de 10s ease infinite 1.5s;
 }
 
 .es span:nth-child(1) {
+    will-change: auto;
     animation: bounce-es 10s ease infinite;
 }
 
 .es span:nth-child(2) {
+    will-change: auto;
     animation: bounce-es 10s ease infinite 0.1s;
 }
 
 .es span:nth-child(3) {
+    will-change: auto;
     animation: bounce-es 10s ease infinite 0.2s;
 }
 
 .es span:nth-child(4) {
+    will-change: auto;
     animation: bounce-es 10s ease infinite 0.3s;
 }
 
 .es span:nth-child(5) {
+    will-change: auto;
     animation: bounce-es 10s ease infinite 0.4s;
 }
 
 .es span:nth-child(6) {
+    will-change: auto;
     animation: bounce-es 10s ease infinite 0.5s;
 }
 
 .es span:nth-child(7) {
+    will-change: auto;
     animation: bounce-es 10s ease infinite 0.6s;
 }
 
 .es span:nth-child(8) {
+    will-change: auto;
     animation: bounce-es 10s ease infinite 0.7s;
 }
 
 .es span:nth-child(9) {
+    will-change: auto;
     animation: bounce-es 10s ease infinite 0.8s;
 }
 
 .es span:nth-child(10) {
+    will-change: auto;
     animation: bounce-es 10s ease infinite 0.9s;
 }
 
 .es span:nth-child(11) {
+    will-change: auto;
     animation: bounce-es 10s ease infinite 1s;
 }
 
 .es span:nth-child(13) {
+    will-change: auto;
     animation: bounce-es 10s ease infinite 1.1s;
 }
 
 .es span:nth-child(14) {
+    will-change: auto;
     animation: bounce-es 10s ease infinite 1.2s;
 }
 
 .es span:nth-child(15) {
+    will-change: auto;
     animation: bounce-es 10s ease infinite 1.3s;
 }
 
 .es span:nth-child(16) {
+    will-change: auto;
     animation: bounce-es 10s ease infinite 1.4s;
 }
 
 .es span:nth-child(17) {
+    will-change: auto;
     animation: bounce-es 10s ease infinite 1.5s;
 }
 
 .es span:nth-child(19) {
+    will-change: auto;
     animation: bounce-es 10s ease infinite 1.6s;
 }
 
 .es span:nth-child(20) {
+    will-change: auto;
     animation: bounce-es 10s ease infinite 1.7s;
 }
 
 .es span:nth-child(21) {
+    will-change: auto;
     animation: bounce-es 10s ease infinite 1.8s;
 }
 
 .es span:nth-child(22) {
+    will-change: auto;
     animation: bounce-es 10s ease infinite 1.9s;
 }
 
 .es span:nth-child(23) {
+    will-change: auto;
     animation: bounce-es 10s ease infinite 2s;
 }
 
 .es span:nth-child(24) {
+    will-change: auto;
     animation: bounce-es 10s ease infinite 2.1s;
 }
 
 .fr span:nth-child(1) {
+    will-change: auto;
     animation: bounce-fr 10s ease infinite;
 }
 
 .fr span:nth-child(2) {
+    will-change: auto;
     animation: bounce-fr 10s ease infinite 0.1s;
 }
 
 .fr span:nth-child(3) {
+    will-change: auto;
     animation: bounce-fr 10s ease infinite 0.2s;
 }
 
 .fr span:nth-child(4) {
+    will-change: auto;
     animation: bounce-fr 10s ease infinite 0.3s;
 }
 
 .fr span:nth-child(5) {
+    will-change: auto;
     animation: bounce-fr 10s ease infinite 0.4s;
 }
 
 .fr span:nth-child(6) {
+    will-change: auto;
     animation: bounce-fr 10s ease infinite 0.5s;
 }
 
 .fr span:nth-child(8) {
+    will-change: auto;
     animation: bounce-fr 10s ease infinite 0.6s;
 }
 
 .fr span:nth-child(9) {
+    will-change: auto;
     animation: bounce-fr 10s ease infinite 0.7s;
 }
 
 .fr span:nth-child(10) {
+    will-change: auto;
     animation: bounce-fr 10s ease infinite 0.8s;
 }
 
 .fr span:nth-child(11) {
+    will-change: auto;
     animation: bounce-fr 10s ease infinite 0.9s;
 }
+
 .fr span:nth-child(12) {
+    will-change: auto;
     animation: bounce-fr 10s ease infinite 1s;
 }
+
 .fr span:nth-child(13) {
+    will-change: auto;
     animation: bounce-fr 10s ease infinite 1.1s;
 }
+
 .fr span:nth-child(14) {
+    will-change: auto;
     animation: bounce-fr 10s ease infinite 1.2s;
 }
+
 .fr span:nth-child(16) {
+    will-change: auto;
     animation: bounce-fr 10s ease infinite 1.3s;
 }
+
 .fr span:nth-child(17) {
+    will-change: auto;
     animation: bounce-fr 10s ease infinite 1.4s;
 }
+
 .fr span:nth-child(18) {
+    will-change: auto;
     animation: bounce-fr 10s ease infinite 1.5s;
 }
+
 .fr span:nth-child(19) {
+    will-change: auto;
     animation: bounce-fr 10s ease infinite 1.6s;
 }
+
 .fr span:nth-child(21) {
+    will-change: auto;
     animation: bounce-fr 10s ease infinite 1.7s;
 }
+
 .fr span:nth-child(22) {
+    will-change: auto;
     animation: bounce-fr 10s ease infinite 1.8s;
 }
+
 .fr span:nth-child(24) {
+    will-change: auto;
     animation: bounce-fr 10s ease infinite 1.9s;
 }
+
 .fr span:nth-child(25) {
+    will-change: auto;
     animation: bounce-fr 10s ease infinite 2s;
 }
+
 .fr span:nth-child(26) {
+    will-change: auto;
     animation: bounce-fr 10s ease infinite 2.1s;
 }
+
 .fr span:nth-child(27) {
+    will-change: auto;
     animation: bounce-fr 10s ease infinite 2.2s;
 }
-
-
 
 @keyframes bounce-en {
     0% {

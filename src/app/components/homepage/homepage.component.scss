@@ -26,7 +26,6 @@
     transform: translate(-50%, -50%);
     font-family: epyval;
     color: #FF00FF;
-    animation: moveTitle 1.25s 2.75s ease-in-out forwards;
     z-index: 1;
 }
 
@@ -47,7 +46,6 @@
     margin-left: 135%;
     margin-right: 109%;
     filter: blur(1rem);
-    animation: moveDescription 2.5s 3s ease-in-out forwards;
     font-weight: 500;
 }
 
@@ -61,8 +59,7 @@
     transform: skew(-35deg);
     padding: 1%;
     color: currentColor;
-    visibility: hidden;
-    animation: fadeDeveloper 1s 4.5s ease-in-out forwards;
+    opacity: 0;
     span {
         opacity: 0;
     }
@@ -85,7 +82,6 @@
     padding-left: 2%;
     padding-right: 2%;
     span {
-        animation: fadeIn 1.5s 6.1s ease-in-out forwards;
         opacity: 0;
     }
 }
@@ -109,7 +105,6 @@
     color: #E0FFFF;
     opacity: 0;
     transform: translateY(1rem);
-    animation: fadeScrollInfo 3s ease 13s forwards;
 }
 
 .handset-portrait,

@@ -1,127 +1,170 @@
 .title-name>div:nth-child(1) {
+    will-change: auto;
     animation: fadeIn 1s 1s ease-in-out forwards;
 }
 
 .title-name>div:nth-child(2) {
-    animation: fadeIn 1s 1.1s ease-in-out forwards;
+    will-change: auto;
+    animation: fadeIn 1s 1.075s ease-in-out forwards;
 }
 
 .title-name>div:nth-child(3) {
-    animation: fadeIn 1s 1.2s ease-in-out forwards;
+    will-change: auto;
+    animation: fadeIn 1s 1.15s ease-in-out forwards;
 }
 
 .title-name>div:nth-child(4) {
-    animation: fadeIn 1s 1.3s ease-in-out forwards;
+    will-change: auto;
+    animation: fadeIn 1s 1.225s ease-in-out forwards;
 }
 
 .title-name>div:nth-child(5) {
-    animation: fadeIn 1s 1.4s ease-in-out forwards;
+    will-change: auto;
+    animation: fadeIn 1s 1.3s ease-in-out forwards;
 }
 
 .title-name>div:nth-child(6) {
-    animation: fadeIn 1s 1.5s ease-in-out forwards;
+    will-change: auto;
+    animation: fadeIn 1s 1.375s ease-in-out forwards;
 }
 
 .title-name>div:nth-child(7) {
-    animation: fadeIn 1s 1.6s ease-in-out forwards;
+    will-change: auto;
+    animation: fadeIn 1s 1.45s ease-in-out forwards;
 }
 
 .title-name>div:nth-child(8) {
-    animation: fadeIn 1s 1.7s ease-in-out forwards;
+    will-change: auto;
+    animation: fadeIn 1s 1.525s ease-in-out forwards;
 }
 
 .title-name>div:nth-child(9) {
-    animation: fadeIn 1s 1.8s ease-in-out forwards;
+    will-change: auto;
+    animation: fadeIn 1s 1.6s ease-in-out forwards;
 }
 
 .title-name>div:nth-child(10) {
-    animation: fadeIn 1s 1.9s ease-in-out forwards;
+    will-change: auto;
+    animation: fadeIn 1s 1.675s ease-in-out forwards;
 }
 
 .title-name>div:nth-child(11) {
-    animation: fadeIn 1s 2s ease-in-out forwards;
+    will-change: auto;
+    animation: fadeIn 1s 1.75s ease-in-out forwards;
 }
 
 .title-name>div:nth-child(12) {
-    animation: fadeIn 1s 2.1s ease-in-out forwards;
+    will-change: auto;
+    animation: fadeIn 1s 1.825s ease-in-out forwards;
+}
+
+.developer {
+    will-change: auto;
+    animation: fadeIn 0.5s 3.5s ease-in-out forwards;
 }
 
 .developer>span:nth-child(1) {
-    animation: fadeIn 1s 5s ease-in-out forwards;
+    will-change: auto;
+    animation: fadeIn 1s 4.25s ease-in-out forwards;
 }
 
 .developer>span:nth-child(2) {
-    animation: fadeIn 1s 5.075s ease-in-out forwards;
+    will-change: auto;
+    animation: fadeIn 1s 4.3s ease-in-out forwards;
 }
 
 .developer>span:nth-child(3) {
-    animation: fadeIn 1s 5.125s ease-in-out forwards;
+    will-change: auto;
+    animation: fadeIn 1s 4.35s ease-in-out forwards;
 }
 
 .developer>span:nth-child(4) {
-    animation: fadeIn 1s 5.2s ease-in-out forwards;
+    will-change: auto;
+    animation: fadeIn 1s 4.4s ease-in-out forwards;
 }
 
 .developer>span:nth-child(5) {
-    animation: fadeIn 1s 5.275s ease-in-out forwards;
+    will-change: auto;
+    animation: fadeIn 1s 4.45s ease-in-out forwards;
 }
 
 .developer>span:nth-child(6) {
-    animation: fadeIn 1s 5.35s ease-in-out forwards;
+    will-change: auto;
+    animation: fadeIn 1s 4.5s ease-in-out forwards;
 }
 
 .developer>span:nth-child(7) {
-    animation: fadeIn 1s 5.425s ease-in-out forwards;
+    will-change: auto;
+    animation: fadeIn 1s 4.55s ease-in-out forwards;
 }
 
 .developer>span:nth-child(8) {
-    animation: fadeIn 1s 5.5s ease-in-out forwards;
+    will-change: auto;
+    animation: fadeIn 1s 4.6s ease-in-out forwards;
 }
 
 .developer>span:nth-child(9) {
-    animation: fadeIn 1s 5.575s ease-in-out forwards;
+    will-change: auto;
+    animation: fadeIn 1s 4.65s ease-in-out forwards;
 }
 
 .developer>span:nth-child(10) {
-    animation: fadeIn 1s 5.65s ease-in-out forwards;
+    will-change: auto;
+    animation: fadeIn 1s 4.7s ease-in-out forwards;
 }
 
 .developer>span:nth-child(11) {
-    animation: fadeIn 1s 5.725s ease-in-out forwards;
+    will-change: auto;
+    animation: fadeIn 1s 4.75s ease-in-out forwards;
 }
 
 .developer>span:nth-child(12) {
-    animation: fadeIn 1s 5.8s ease-in-out forwards;
+    will-change: auto;
+    animation: fadeIn 1s 4.8s ease-in-out forwards;
 }
 
 .developer>span:nth-child(13) {
-    animation: fadeIn 1s 5.875s ease-in-out forwards;
+    will-change: auto;
+    animation: fadeIn 1s 4.85s ease-in-out forwards;
 }
 
 .developer>span:nth-child(14) {
-    animation: fadeIn 1s 5.95s ease-in-out forwards;
+    will-change: auto;
+    animation: fadeIn 1s 4.9s ease-in-out forwards;
 }
 
 .developer>span:nth-child(15) {
-    animation: fadeIn 1s 6.025s ease-in-out forwards;
+    will-change: auto;
+    animation: fadeIn 1s 4.95s ease-in-out forwards;
 }
 
 .developer>span:nth-child(16) {
-    animation: fadeIn 1s 6.1s ease-in-out forwards;
+    will-change: auto;
+    animation: fadeIn 1s 5s ease-in-out forwards;
 }
 
 .developer>span:nth-child(17) {
-    animation: fadeIn 1s 6.175s ease-in-out forwards;
+    will-change: auto;
+    animation: fadeIn 1s 5.05s ease-in-out forwards;
 }
 
 .developer>span:nth-child(18) {
-    animation: fadeIn 1s 6.25s ease-in-out forwards;
+    will-change: auto;
+    animation: fadeIn 1s 5.1s ease-in-out forwards;
+}
+
+.angular>span,
+.java>span {
+    will-change: auto;
+    animation: fadeIn 1.25s 4.85s ease-in-out forwards;
+}
+
+.scroll-info {
+    will-change: auto;
+    animation: fadeScrollInfo 3s ease 13s forwards;
 }
 
 @keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
     to {
         opacity: 1;
     }
@@ -131,11 +174,5 @@
     to {
         opacity: 1;
         transform: translateY(0);
-    }
-}
-
-@keyframes fadeDeveloper {
-    to {
-        visibility: visible;
     }
 }

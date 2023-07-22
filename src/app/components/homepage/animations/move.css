@@ -1,3 +1,13 @@
+.title-name {
+    will-change: auto;
+    animation: moveTitle 1s 2s ease-in-out forwards;
+}
+
+.description {
+    will-change: auto;
+    animation: moveDescription 2s 2.5s ease-in-out forwards;
+}
+
 @keyframes moveTitle {
     0% {
         filter: blur(0);
