@@ -18,7 +18,7 @@ export class ContactComponent implements OnInit {
 
   ngOnInit(): void {
     this._translate.onLangChange.subscribe(() => {
-      this.title = this._translate.instant('CAPTIONS.PROJECTS')
+      this.title = this._translate.instant('CAPTIONS.CONTACT')
     });
   }
 
