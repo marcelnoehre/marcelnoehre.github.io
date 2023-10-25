@@ -1,0 +1,39 @@
+{
+    "LANGUAGES": {
+        "en": "English",
+        "de": "German",
+        "es": "Spanish",
+        "fr": "French"
+    },
+    "CAPTIONS": {
+        "PROJECTS": "Projects",
+        "CONTACT": "Contact"
+    },
+    "HOMEPAGE": {
+        "SCROLL": "Scroll Down"
+    },
+    "PROJECTS": {
+        "VIEW": "view",
+        "SWAGGER": {
+            "TITLE": "Swagger 4 AAS",
+            "CONTENT": "A service that automatically retrieves information from an asset administration shell, allowing for the creation of a Swagger UI documentation for the available interfaces. Based on this, model classes can be generated using the integrated Swagger CodeGen plugin, enabling access to the asset administration shell interfaces within the source code."
+        },
+        "OVERLAY": {
+            "TITLE": "RL Overlay",
+            "CONTENT": "A dynamic overlay for Rocket League Esport livestreams that reads the data of the currently running game and displays it vividly for viewers. In addition, an administrative interface is provided for the commentators in the background, through which desired adjustments can be made."
+        },
+        "MVB": {
+            "TITLE": "MVB Website",
+            "CONTENT": "As part of a small group of computer scientists of the local music club we have taken over the responsibility for the outdated website and all related activities of a webmaster. For this we give the Joomla website a new design and create articles about past events, upcoming dates or fill our picture gallery."
+        },
+        "MORE": {
+            "TITLE": "More",
+            "CONTENT": "Other interesting projects such as a CBR-based hint system for a Minesweeper game, an analysis of cab rides in New York City, and various Discord bots can be found in my GitHub profile."
+        }
+    },
+    "CONTACT": {
+        "INFO_LINE": "Interested in what I do?",
+        "INFO_SUBLINE": "Feel free to drop me an email anytime",
+        "MAIL": "Get in touch"
+    }
+}

@@ -1,0 +1,39 @@
+{
+    "LANGUAGES": {
+        "en": "Anglais",
+        "de": "Allemand",
+        "es": "Espagnol",
+        "fr": "Français"
+    },
+    "CAPTIONS": {
+        "PROJECTS": "Projets",
+        "CONTACT": "Contact"
+    },
+    "HOMEPAGE": {
+        "SCROLL": "faire défiler vers le bas"
+    },
+    "PROJECTS": {
+        "VIEW": "voir",
+        "SWAGGER": {
+            "TITLE": "Swagger 4 AAS",
+            "CONTENT": "Un service qui récupère automatiquement des informations à partir d'une coque d'administration d'actifs, permettant la création d'une documentation Swagger UI pour les interfaces disponibles. Sur cette base, des classes de modèle peuvent être générées à l'aide du plugin intégré Swagger CodeGen, permettant d'accéder aux interfaces de la coque d'administration d'actifs dans le code source."
+        },
+        "OVERLAY": {
+            "TITLE": "Superposition RL",
+            "CONTENT": "Une superposition dynamique pour les diffusions en direct d'esports Rocket League qui lit les données de la partie en cours et les affiche de manière vivante pour les spectateurs. De plus, une interface administrative est fournie aux commentateurs en arrière-plan, par le biais de laquelle des ajustements souhaités peuvent être effectués."
+        },
+        "MVB": {
+            "TITLE": "Site web de MVB",
+            "CONTENT": "En tant que petit groupe d'informaticiens du club de musique local, nous avons pris en charge la responsabilité du site web obsolète et de toutes les activités connexes d'un webmestre. Pour cela, nous donnons au site web Joomla un nouveau design et créons des articles sur les événements passés, les dates à venir ou nous remplissons notre galerie de photos."
+        },
+        "MORE": {
+            "TITLE": "plus",
+            "CONTENT": "D'autres projets intéressants tels qu'un système d'indices basé sur le Raisonnement à Partir de Cas (CBR) pour un jeu du démineur, une analyse des trajets en taxi à New York City et différents bots Discord peuvent être trouvés sur mon profil GitHub."
+        }
+    },
+    "CONTACT": {
+        "INFO_LINE": "Intéressé par ce que je fais?",
+        "INFO_SUBLINE": "N'hésitez pas à m'envoyer un courriel à tout moment",
+        "MAIL": "Prendre contact"
+    }
+}
