@@ -1,12 +1,12 @@
 <div class="language-selector-container">
     <div #activeLang class="active-language" (click)="showLanguages()">
-        <img src="assets/images/languages/{{ active }}.png">
+        <img src="assets/images/languages/{{ active }}.svg">
     </div>
     <div class="selectable-languages" *ngIf="open">
         <ng-container *ngFor="let lang of languages">
             <div class="lang" *ngIf="lang !== active" (click)="chooseLanguage(lang)">
                 <div class="label">{{ 'LANGUAGES.' + lang | translate}}</div>
-                <img src="assets/images/languages/{{ lang }}.png">
+                <img src="assets/images/languages/{{ lang }}.svg">
             </div>
         </ng-container>
     </div>
