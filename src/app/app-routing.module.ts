@@ -2,14 +2,13 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 import { CoreComponent } from './components/core/core.component';
-import { RLOverlayComponent } from './components/rl-overlay/rl-overlay.component';
 import { ComingSoonComponent } from './components/coming-soon/coming-soon.component';
 
-const routes: Routes = [  
+const routes: Routes = [
   { path: '', component: CoreComponent },
   { path: 'coming-soon', component: ComingSoonComponent },
-  { path: '3dg-overlay', component: RLOverlayComponent }
-  ];
+  { path: '**', redirectTo: '' }
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

@@ -7,7 +7,7 @@ import { TranslateService } from '@ngx-translate/core';
   styleUrls: ['./contact.component.scss']
 })
 export class ContactComponent implements OnInit {
-  private email: string = 'marcel.noehre@icloud.com';
+  private email: string = 'info@marcel-noehre.de';
   title: string = '';
 
   constructor(
@@ -17,8 +17,9 @@ export class ContactComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    this.title = this._translate.instant('CAPTIONS.CONTACT');
     this._translate.onLangChange.subscribe(() => {
-      this.title = this._translate.instant('CAPTIONS.CONTACT')
+      this.title = this._translate.instant('CAPTIONS.CONTACT');
     });
   }
 

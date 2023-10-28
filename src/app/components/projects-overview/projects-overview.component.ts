@@ -42,6 +42,7 @@ export class ProjectsOverviewComponent implements OnInit {
     this._breakpoint.responsiveClass$.subscribe((responsiveClass) => {
       this.responsiveClass = responsiveClass;
     });
+    this.title = this._translate.instant('CAPTIONS.PROJECTS');
     this._translate.onLangChange.subscribe(() => {
       this.title = this._translate.instant('CAPTIONS.PROJECTS')
     });

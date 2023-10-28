@@ -8,13 +8,15 @@ import { StorageService } from './services/storage.service';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'portfolio';
+  langs: string[] = ['en', 'de', 'es', 'fr'];
+  title: string = 'portfolio';
 
   constructor(
     private _storage: StorageService,
     private _translate: TranslateService
   ) {
-    _translate.setDefaultLang('en');
-    _translate.use(_storage.getLocalEntry('lang') || 'en');
+    let defaultLang: string = this.langs.includes(_translate.getBrowserLang() || '') ? _translate.getBrowserLang()! : 'en';
+    _translate.setDefaultLang(defaultLang)
+    _translate.use(_storage.getLocalEntry('lang') || defaultLang);
   }
 }
