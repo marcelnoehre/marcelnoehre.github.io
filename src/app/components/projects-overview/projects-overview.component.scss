@@ -5,25 +5,24 @@
 .projects-overview-container {
     width: 100vw;
     min-height: 100vh;
+    margin: 0;
     padding: 0;
     padding-bottom: 1rem;
-    margin: 0;
-    background-color: #10101a;
     border-top: 2px solid #E0FFFF;
+    background-color: #10101a;
 }
 
 .title {
     position: absolute;
     display: flex;
+    transform: translate(5%, 5%);
+    top: 5vh;
+    left: 5vw;
+    z-index: 1;
+    margin-top: 100vh;
+    font-size: 13vw;
     font-family: epyval;
     color: #FF00FF;
-    z-index: 1;
-    top: calc(10px + (100 - 10) * ((100vw - 50px) / (2000 - 50)));
-    left: calc(10px + (100 - 10) * ((100vw - 50px) / (2000 - 50)));
-    height: calc(15px + (150 - 15) * ((100vw - 50px) / (2000 - 50)));
-    font-size: calc(10px + (125 - 10) * ((100vw - 50px) / (2000 - 50)));
-    transform: translate(5%, 5%);
-    margin-top: 100vh;
 }
 
 .title>div {
@@ -38,11 +37,13 @@
 }
 
 .projects {
-    margin-top: calc(30px + (275 - 25) * ((100vw - 50px) / (2000 - 50)) + 5rem);
+    margin-top: 16vh
 }
 
 .project-card {
     display: flex;
+    width: 75vw;
+    margin-bottom: 5vh;
     border-radius: 5px;
     background: radial-gradient(farthest-corner at 0 0, #E8BFFF 50%, #E0FFFF);
     p {
@@ -55,15 +56,17 @@
     display: flex;
     justify-content: center;
     text-orientation: mixed;
-    font-weight: bold;
     text-align: center;
-    padding: calc(1rem + 3px) 1rem !important;
     writing-mode: vertical-rl;
+    font-weight: bold;
     font-family: epyval;
+    font-size: 6vw;
+    padding: 4vw 4vw;
 }
 
 .content {
-    text-align: justify;
+    text-align: left;
+    font-size: 4vw;
     .actions {
         display: flex;
         justify-content: center;
@@ -72,7 +75,9 @@
 }
 
 .left {
+    margin-left: 7.5vw;
     .project-title {
+        line-height: 5vw;
         margin-left: 1rem;
     }
     .content {
@@ -82,42 +87,14 @@
 
 .right {
     transform: scaleX(-1);
+    margin-left: 17.5vw;
     .content {
         transform: scaleX(-1);
         padding-left: 1rem;
     }
     .project-title {
         transform: scaleX(-1);
+        line-height: 5vw;
         margin-right: 1rem;
-    }
-}
-
-.handset-portrait {
-    .project-card {
-        width: 80%;
-        margin-bottom: 10%;
-    }
-    .left {
-        margin-left: 5%;
-    }
-    .right {
-        margin-left: 15%;
-    }
-}
-
-.small,
-.medium,
-.large,
-.handset-landscape,
-.web-landscape {
-    .project-card {
-        width: 50%;
-        margin-bottom: 5%;
-    }
-    .left {
-        margin-left: 7.5%;
-    }
-    .right {
-        margin-left: 40%;
     }
 }
