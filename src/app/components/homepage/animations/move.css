@@ -12,33 +12,34 @@
     0% {
         filter: blur(0);
     }
-    50% {
-        filter: blur(0.25rem);
+    25% {
+        filter: blur(0.2rem);
     }
     90% {
         filter: blur(0.1rem);
     }
     100% {
-        top: calc(10px + (100 - 10) * ((100vw - 50px) / (2000 - 50)));
-        left: calc(10px + (100 - 10) * ((100vw - 50px) / (2000 - 50)));
-        height: calc(10px + (125 - 10) * ((100vw - 50px) / (2000 - 50)));
-        font-size: calc(10px + (125 - 10) * ((100vw - 50px) / (2000 - 50)));
-        line-height: calc(10px + (125 - 10) * ((100vw - 50px) / (2000 - 50)));
+        /* TODO: Handle without top and left */
+        top: 12.5vh;
+        left: 7.5vw;
+        font-size: 13vw;
         transform: translate(5%, 5%);
         filter: blur(0);
     }
 }
 
 @keyframes moveDescription {
-    70% {
+    75% {
+        width: 0%;
         filter: blur(0.15rem);
     }
     90% {
         filter: blur(0.1rem);
     }
     100% {
-        margin-left: 25%;
-        margin-right: 9%;
+        margin-left: 17.5%;
+        margin-right: 27.5%;
         filter: blur(0);
+        width: 70%;
     }
 }

@@ -60,7 +60,7 @@
 
 .developer {
     will-change: auto;
-    animation: fadeIn 0.5s 3.5s ease-in-out forwards;
+    animation: fadeIn 0.5s 4s ease-in-out forwards;
 }
 
 .developer>span:nth-child(1) {

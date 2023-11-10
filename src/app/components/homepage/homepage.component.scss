@@ -11,26 +11,24 @@
     height: 100vh;
     padding: 0;
     margin: 0;
-    background: radial-gradient(farthest-corner at 0 0, #1A1B26, #10101a 80%, #E0FFFF, #E8BFFF, #F080FF, #F740FF, #FF00FF);
+    background: radial-gradient(farthest-corner at 0 0, #1A1B26, #10101a 75%, #E0FFFF, #E8BFFF, #F080FF, #F740FF, #FF00FF);
     overflow: hidden;
 }
 
 .title-name {
     position: absolute;
     display: flex;
+    z-index: 1;
+    transform: translate(-50%, -50%);
     top: 50%;
     left: 50%;
-    height: calc(5px + (200 - 10) * ((100vw - 50px) / (2000 - 50)));
-    font-size: calc(5px + (200 - 10) * ((100vw - 50px) / (2000 - 50)));
-    line-height: calc(5px + (200 - 10) * ((100vw - 50px) / (2000 - 50)));
-    transform: translate(-50%, -50%);
+    font-size: 14vw;
     font-family: epyval;
     color: #FF00FF;
-    z-index: 1;
+    filter: blur(0)
 }
 
 .title-name>div {
-    opacity: 0;
     background-image: linear-gradient(135deg, #E0FFFF 20%, #FF00FF);
     background-size: 100%;
     background-clip: text;
@@ -39,60 +37,62 @@
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
     clip-path: inset(1px);
+    opacity: 0;
 }
 
 .description {
     margin-top: 60vh;
     margin-left: 135%;
     margin-right: 109%;
-    filter: blur(1rem);
     font-weight: 500;
+    width: 0%;
+    filter: blur(1rem);
 }
 
 .developer {
+    display: flex;
     text-align: center;
-    font-size: calc(5px + (110 - 5) * ((100vw - 50px) / (2000 - 50)));
+    font-size: 8vw;
     font-family: epyval;
     white-space: nowrap;
     background-color: white;
-    color: #0d0d0d;
     transform: skew(-35deg);
-    padding: 1%;
-    color: currentColor;
+    padding: 1vw;
+    padding-left: 3vw;
     opacity: 0;
-    span {
-        opacity: 0;
-    }
+}
+
+.developer>span {
+    opacity: 0;
 }
 
 .programming-languages {
     display: flex;
     justify-content: right;
-    font-size: calc(5px + (100 - 5) * ((100vw - 50px) / (2000 - 50)));
+    font-size: 6vw;
     font-family: epyval;
     margin-top: 2.5%;
 }
 
 .programming-languages>div {
+    display: flex;
     text-align: center;
     background-color: white;
     color: #0d0d0d;
-    padding: 1%;
-    transform: skew(-35deg);
     padding-left: 2%;
     padding-right: 2%;
+    transform: skew(-35deg);
     span {
         opacity: 0;
     }
 }
 
 .java {
-    transform: skew(-35deg);
-    margin-right: 10%;
+    margin-right: 12%;
 }
 
 .angular {
-    margin-right: 5%;
+    margin-right: 3%;
 }
 
 .scroll-info {
