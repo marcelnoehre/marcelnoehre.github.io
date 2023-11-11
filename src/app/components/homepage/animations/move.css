@@ -8,6 +8,15 @@
     animation: moveDescription 2s 2.5s ease-in-out forwards;
 }
 
+.handset-landscape {
+    .title-name {
+        animation: moveTitleHandscape 1s 2s ease-in-out forwards;
+    }
+    .description {
+        animation: moveDescriptionHandscape 2s 2.5s ease-in-out forwards;
+    }
+}
+
 @keyframes moveTitle {
     0% {
         filter: blur(0);
@@ -28,6 +37,27 @@
     }
 }
 
+/* TODO: breaks cause retrigger on viewport change */
+@keyframes moveTitleHandscape {
+    0% {
+        filter: blur(0);
+    }
+    25% {
+        filter: blur(0.2rem);
+    }
+    90% {
+        filter: blur(0.1rem);
+    }
+    100% {
+        /* TODO: Handle without top and left */
+        top: 12.5vh;
+        left: 5vw;
+        font-size: 9vw;
+        transform: translate(5%, 5%);
+        filter: blur(0);
+    }  
+}
+
 @keyframes moveDescription {
     75% {
         width: 0%;
@@ -41,5 +71,21 @@
         margin-right: 27.5%;
         filter: blur(0);
         width: 70%;
+    }
+}
+
+@keyframes moveDescriptionHandscape {
+    75% {
+        width: 0%;
+        filter: blur(0.15rem);
+    }
+    90% {
+        filter: blur(0.1rem);
+    }
+    100% {
+        margin-left: 45%;
+        margin-right: 27.5%;
+        filter: blur(0);
+        width: 41.25%;
     }
 }

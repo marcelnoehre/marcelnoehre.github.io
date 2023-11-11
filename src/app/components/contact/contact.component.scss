@@ -69,3 +69,18 @@
         fill: white;
     }
 }
+
+.handset-landscape {
+    .content {
+        margin-top: 0;
+    }
+    .title {
+        font-size: 12vw;
+    }
+    .information {
+        font-size: 3vw;
+    }
+    .email {
+        font-size: 2.5vw;
+    }
+}

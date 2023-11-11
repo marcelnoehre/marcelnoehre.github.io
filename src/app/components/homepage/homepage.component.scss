@@ -55,11 +55,12 @@
     font-size: 8vw;
     font-family: epyval;
     white-space: nowrap;
-    background-color: white;
     transform: skew(-35deg);
     padding: 1vw;
     padding-left: 3vw;
     opacity: 0;
+    background-color: white;
+    box-shadow: 4.5px 3px 1.5px 0.75px rgba(100, 100, 100, 0.75);
 }
 
 .developer>span {
@@ -82,6 +83,7 @@
     padding-left: 2%;
     padding-right: 2%;
     transform: skew(-35deg);
+    box-shadow: 4.5px 3px 1.5px 0.75px rgba(100, 100, 100, 0.75);
     span {
         opacity: 0;
     }
@@ -107,11 +109,20 @@
     transform: translateY(1rem);
 }
 
-.handset-portrait,
 .handset-landscape {
-    .programming-languages>div,
+    .title-name {
+        font-size: 8vw
+    }
     .developer {
-        box-shadow: 4.5px 3px 1.5px 0.75px rgba(100, 100, 100, 0.75);
+        padding: 0.5vw;
+        padding-left: 2.5vw;
+        font-size: 4.5vw;
+    }
+    .programming-languages>div {
+        font-size: 3.75vw;
+    }
+    .scroll-info {
+        font-size: 3vw;
     }
 }
 
