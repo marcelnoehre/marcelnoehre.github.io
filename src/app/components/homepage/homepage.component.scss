@@ -43,7 +43,6 @@
 .description {
     margin-top: 60vh;
     margin-left: 135%;
-    margin-right: 109%;
     font-weight: 500;
     width: 0%;
     filter: blur(1rem);
@@ -137,6 +136,20 @@
     .programming-languages>div,
     .developer {
         box-shadow: 12px 8px 4px 2px rgba(100, 100, 100, 0.75);
+    }
+    .title-name {
+        font-size: 8vw
+    }
+    .developer {
+        padding: 0.5vw;
+        padding-left: 2.5vw;
+        font-size: 6vw;
+    }
+    .programming-languages>div {
+        font-size: 4.5vw;
+    }
+    .scroll-info {
+        font-size: 3vw;
     }
 }
 

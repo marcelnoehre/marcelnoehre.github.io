@@ -113,7 +113,7 @@
         margin-bottom: 5vw;
     }
     .project-title {
-        line-height: 0.5;
+        line-height: 0.5vw;
         font-size: 3vw;
     }
     .content {
@@ -144,6 +144,9 @@
     .project-card {
         width: 65vw;
         margin-bottom: 5vw;
+        p {
+            padding: 0.5rem;
+        }
     }
     .project-title {
         padding: 3vw 3vw;
@@ -167,6 +170,46 @@
         margin-left: 30vw;
         .project-title {
             margin-right: 2vw;
+        }
+    }
+}
+
+.medium {
+    .title {
+        font-size: 9vw;
+    }
+    .projects {
+        margin-top: calc(5vh + 14.5vw);
+    }
+    .project-card {
+        width: 65vw;
+        margin-bottom: 5vw;
+        p {
+            padding: 0.5rem;
+        }
+    }
+    .project-title {
+        padding: 3vw 3vw;
+        line-height: 0.5vw;
+        font-size: 2.25vw;
+    }
+    .content {
+        font-size: 1.9vw;
+        text-align: justify;
+        .actions>button {
+            font-size: 1.9vw;
+        }
+    }
+    .left {
+        margin-left: 5vw;
+        .project-title {
+            margin-left: 0.5rem;
+        }
+    }
+    .right {
+        margin-left: 30vw;
+        .project-title {
+            margin-right: 0.5rem;
         }
     }
 }

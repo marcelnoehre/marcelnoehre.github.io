@@ -75,7 +75,7 @@
         margin-top: 0;
     }
     .title {
-        font-size: 12vw;
+        font-size: 13vw;
     }
     .information {
         font-size: 3vw;
@@ -104,4 +104,25 @@
             width: 2.5rem;
         }
     }
+}
+
+.medium {
+    .content {
+        margin-top: 0;
+    }
+    .title {
+        font-size: 17vw;
+    }
+    .information {
+        font-size: 3.75vw;
+    }
+    .email {
+        font-size: 2.75vw;
+    }
+    .links {
+        margin-top: calc(100vh - 3.5rem);
+        img {
+                width: 2.5rem;
+            }
+        }
 }

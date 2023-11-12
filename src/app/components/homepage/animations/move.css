@@ -17,6 +17,15 @@
     }
 }
 
+.medium {
+    .title-name {
+        animation:  moveTitleMedium 2s 2.5s ease-in-out forwards;
+    }
+    .description {
+        animation: moveDescriptionMedium 2s 2.5s ease-in-out forwards;
+    }
+}
+
 @keyframes moveTitle {
     0% {
         filter: blur(0);
@@ -58,6 +67,26 @@
     }  
 }
 
+@keyframes moveTitleMedium {
+    0% {
+        filter: blur(0);
+    }
+    25% {
+        filter: blur(0.2rem);
+    }
+    90% {
+        filter: blur(0.1rem);
+    }
+    100% {
+        /* TODO: Handle without top and left */
+        top: 12.5vh;
+        left: 5vw;
+        font-size: 10vw;
+        transform: translate(5%, 5%);
+        filter: blur(0);
+    }  
+}
+
 @keyframes moveDescription {
     75% {
         width: 0%;
@@ -68,7 +97,6 @@
     }
     100% {
         margin-left: 17.5%;
-        margin-right: 27.5%;
         filter: blur(0);
         width: 70%;
     }
@@ -84,8 +112,22 @@
     }
     100% {
         margin-left: 45%;
-        margin-right: 27.5%;
         filter: blur(0);
         width: 41.25%;
+    }
+}
+
+@keyframes moveDescriptionMedium {
+    75% {
+        width: 0%;
+        filter: blur(0.15rem);
+    }
+    90% {
+        filter: blur(0.1rem);
+    }
+    100% {
+        margin-left: 32.5%;
+        filter: blur(0);
+        width: 53%;
     }
 }
