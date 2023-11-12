@@ -84,3 +84,24 @@
         font-size: 2.5vw;
     }
 }
+
+.small {
+    .title{
+        font-size: 22vw;
+    }
+    .content {
+        gap: 2vh;
+    }
+    .information {
+        font-size: 4.75vw;
+    }
+    .email {
+        font-size: 3vw;
+    }
+    .links {
+    margin-top: calc(100vh - 3.5rem);
+    img {
+            width: 2.5rem;
+        }
+    }
+}
