@@ -26,12 +26,12 @@
     }
 }
 
-.large {
+.large, .web-landscape {
     .title-name {
-        animation: moveTitleLarge 1.25s 2.5s ease-in-out forwards;
+        animation: moveTitleWeb 1.25s 2.5s ease-in-out forwards;
     }
     .description {
-        animation: moveDescriptionLarge 2s 2.5s ease-in-out forwards;
+        animation: moveDescriptionWeb 2s 2.5s ease-in-out forwards;
     }
 }
 
@@ -96,7 +96,7 @@
     }  
 }
 
-@keyframes moveTitleLarge {
+@keyframes moveTitleWeb {
     0% {
         filter: blur(0);
     }
@@ -161,7 +161,7 @@
     }
 }
 
-@keyframes moveDescriptionLarge {
+@keyframes moveDescriptionWeb {
     75% {
         width: 0%;
         filter: blur(0.15rem);

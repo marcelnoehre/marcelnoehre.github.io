@@ -237,7 +237,7 @@
         font-size: 1.75vw;
         text-align: justify;
         .actions>button {
-            font-size: 1.9vw;
+            font-size: 1.85vw;
         }
     }
     .left {
@@ -248,6 +248,49 @@
     }
     .right {
         margin-left: 30vw;
+        .project-title {
+            margin-right: 0.75rem;
+        }
+    }
+}
+
+.web-landscape {
+    .title {
+        font-size: 9vw;
+    }
+    .projects {
+        margin-top: calc(5vh + 14.5vw);
+    }
+    .project-card {
+        width: 60vw;
+        margin-bottom: 5vw;
+        p {
+            padding: 0.5rem;
+        }
+    }
+    .project-title {
+        padding: 1.75vw 1.75vw;
+        line-height: 0vw;
+        font-size: 1.9vw;
+    }
+    .content {
+        font-size: 1.4vw;
+        text-align: justify;
+        .actions>button {
+            font-size: 1.45vw;
+        }
+        mat-icon {
+            transform: scale(1.1);
+        }
+    }
+    .left {
+        margin-left: 5vw;
+        .project-title {
+            margin-left: 0.75rem;
+        }
+    }
+    .right {
+        margin-left: 35vw;
         .project-title {
             margin-right: 0.75rem;
         }
