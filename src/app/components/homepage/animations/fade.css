@@ -164,13 +164,559 @@
     animation: fadeScrollInfo 3s ease 13s forwards;
 }
 
+.handset-landscape {
+    .title-name>div:nth-child(1) {
+        will-change: auto;
+        animation: fadeInHandsetLandscape 1s 1s ease-in-out forwards;
+    }
+    
+    .title-name>div:nth-child(2) {
+        will-change: auto;
+        animation: fadeInHandsetLandscape 1s 1.075s ease-in-out forwards;
+    }
+    
+    .title-name>div:nth-child(3) {
+        will-change: auto;
+        animation: fadeInHandsetLandscape 1s 1.15s ease-in-out forwards;
+    }
+    
+    .title-name>div:nth-child(4) {
+        will-change: auto;
+        animation: fadeInHandsetLandscape 1s 1.225s ease-in-out forwards;
+    }
+    
+    .title-name>div:nth-child(5) {
+        will-change: auto;
+        animation: fadeInHandsetLandscape 1s 1.3s ease-in-out forwards;
+    }
+    
+    .title-name>div:nth-child(6) {
+        will-change: auto;
+        animation: fadeInHandsetLandscape 1s 1.375s ease-in-out forwards;
+    }
+    
+    .title-name>div:nth-child(7) {
+        will-change: auto;
+        animation: fadeInHandsetLandscape 1s 1.45s ease-in-out forwards;
+    }
+    
+    .title-name>div:nth-child(8) {
+        will-change: auto;
+        animation: fadeInHandsetLandscape 1s 1.525s ease-in-out forwards;
+    }
+    
+    .title-name>div:nth-child(9) {
+        will-change: auto;
+        animation: fadeInHandsetLandscape 1s 1.6s ease-in-out forwards;
+    }
+    
+    .title-name>div:nth-child(10) {
+        will-change: auto;
+        animation: fadeInHandsetLandscape 1s 1.675s ease-in-out forwards;
+    }
+    
+    .title-name>div:nth-child(11) {
+        will-change: auto;
+        animation: fadeInHandsetLandscape 1s 1.75s ease-in-out forwards;
+    }
+    
+    .title-name>div:nth-child(12) {
+        will-change: auto;
+        animation: fadeInHandsetLandscape 1s 1.825s ease-in-out forwards;
+    }
+    
+    .developer {
+        will-change: auto;
+        animation: fadeInHandsetLandscape 0.5s 4s ease-in-out forwards;
+    }
+    
+    .developer>span:nth-child(1) {
+        will-change: auto;
+        animation: fadeInHandsetLandscape 1s 4.25s ease-in-out forwards;
+    }
+    
+    .developer>span:nth-child(2) {
+        will-change: auto;
+        animation: fadeInHandsetLandscape 1s 4.3s ease-in-out forwards;
+    }
+    
+    .developer>span:nth-child(3) {
+        will-change: auto;
+        animation: fadeInHandsetLandscape 1s 4.35s ease-in-out forwards;
+    }
+    
+    .developer>span:nth-child(4) {
+        will-change: auto;
+        animation: fadeInHandsetLandscape 1s 4.4s ease-in-out forwards;
+    }
+    
+    .developer>span:nth-child(5) {
+        will-change: auto;
+        animation: fadeInHandsetLandscape 1s 4.45s ease-in-out forwards;
+    }
+    
+    .developer>span:nth-child(6) {
+        will-change: auto;
+        animation: fadeInHandsetLandscape 1s 4.5s ease-in-out forwards;
+    }
+    
+    .developer>span:nth-child(7) {
+        will-change: auto;
+        animation: fadeInHandsetLandscape 1s 4.55s ease-in-out forwards;
+    }
+    
+    .developer>span:nth-child(8) {
+        will-change: auto;
+        animation: fadeInHandsetLandscape 1s 4.6s ease-in-out forwards;
+    }
+    
+    .developer>span:nth-child(9) {
+        will-change: auto;
+        animation: fadeInHandsetLandscape 1s 4.65s ease-in-out forwards;
+    }
+    
+    .developer>span:nth-child(10) {
+        will-change: auto;
+        animation: fadeInHandsetLandscape 1s 4.7s ease-in-out forwards;
+    }
+    
+    .developer>span:nth-child(11) {
+        will-change: auto;
+        animation: fadeInHandsetLandscape 1s 4.75s ease-in-out forwards;
+    }
+    
+    .developer>span:nth-child(12) {
+        will-change: auto;
+        animation: fadeInHandsetLandscape 1s 4.8s ease-in-out forwards;
+    }
+    
+    .developer>span:nth-child(13) {
+        will-change: auto;
+        animation: fadeInHandsetLandscape 1s 4.85s ease-in-out forwards;
+    }
+    
+    .developer>span:nth-child(14) {
+        will-change: auto;
+        animation: fadeInHandsetLandscape 1s 4.9s ease-in-out forwards;
+    }
+    
+    .developer>span:nth-child(15) {
+        will-change: auto;
+        animation: fadeInHandsetLandscape 1s 4.95s ease-in-out forwards;
+    }
+    
+    .developer>span:nth-child(16) {
+        will-change: auto;
+        animation: fadeInHandsetLandscape 1s 5s ease-in-out forwards;
+    }
+    
+    .developer>span:nth-child(17) {
+        will-change: auto;
+        animation: fadeInHandsetLandscape 1s 5.05s ease-in-out forwards;
+    }
+    
+    .developer>span:nth-child(18) {
+        will-change: auto;
+        animation: fadeInHandsetLandscape 1s 5.1s ease-in-out forwards;
+    }
+    
+    .angular>span,
+    .java>span {
+        will-change: auto;
+        animation: fadeInHandsetLandscape 1.25s 4.85s ease-in-out forwards;
+    }
+
+    .scroll-info {
+        will-change: auto;
+        animation: fadeScrollInfoHandsetLandscape 3s ease 13s forwards;
+    }
+}
+
+.medium {
+    .title-name>div:nth-child(1) {
+        will-change: auto;
+        animation: fadeInMedium 1s 1s ease-in-out forwards;
+    }
+    
+    .title-name>div:nth-child(2) {
+        will-change: auto;
+        animation: fadeInMedium 1s 1.075s ease-in-out forwards;
+    }
+    
+    .title-name>div:nth-child(3) {
+        will-change: auto;
+        animation: fadeInMedium 1s 1.15s ease-in-out forwards;
+    }
+    
+    .title-name>div:nth-child(4) {
+        will-change: auto;
+        animation: fadeInMedium 1s 1.225s ease-in-out forwards;
+    }
+    
+    .title-name>div:nth-child(5) {
+        will-change: auto;
+        animation: fadeInMedium 1s 1.3s ease-in-out forwards;
+    }
+    
+    .title-name>div:nth-child(6) {
+        will-change: auto;
+        animation: fadeInMedium 1s 1.375s ease-in-out forwards;
+    }
+    
+    .title-name>div:nth-child(7) {
+        will-change: auto;
+        animation: fadeInMedium 1s 1.45s ease-in-out forwards;
+    }
+    
+    .title-name>div:nth-child(8) {
+        will-change: auto;
+        animation: fadeInMedium 1s 1.525s ease-in-out forwards;
+    }
+    
+    .title-name>div:nth-child(9) {
+        will-change: auto;
+        animation: fadeInMedium 1s 1.6s ease-in-out forwards;
+    }
+    
+    .title-name>div:nth-child(10) {
+        will-change: auto;
+        animation: fadeInMedium 1s 1.675s ease-in-out forwards;
+    }
+    
+    .title-name>div:nth-child(11) {
+        will-change: auto;
+        animation: fadeInMedium 1s 1.75s ease-in-out forwards;
+    }
+    
+    .title-name>div:nth-child(12) {
+        will-change: auto;
+        animation: fadeInMedium 1s 1.825s ease-in-out forwards;
+    }
+    
+    .developer {
+        will-change: auto;
+        animation: fadeInMedium 0.5s 4s ease-in-out forwards;
+    }
+    
+    .developer>span:nth-child(1) {
+        will-change: auto;
+        animation: fadeInMedium 1s 4.25s ease-in-out forwards;
+    }
+    
+    .developer>span:nth-child(2) {
+        will-change: auto;
+        animation: fadeInMedium 1s 4.3s ease-in-out forwards;
+    }
+    
+    .developer>span:nth-child(3) {
+        will-change: auto;
+        animation: fadeInMedium 1s 4.35s ease-in-out forwards;
+    }
+    
+    .developer>span:nth-child(4) {
+        will-change: auto;
+        animation: fadeInMedium 1s 4.4s ease-in-out forwards;
+    }
+    
+    .developer>span:nth-child(5) {
+        will-change: auto;
+        animation: fadeInMedium 1s 4.45s ease-in-out forwards;
+    }
+    
+    .developer>span:nth-child(6) {
+        will-change: auto;
+        animation: fadeInMedium 1s 4.5s ease-in-out forwards;
+    }
+    
+    .developer>span:nth-child(7) {
+        will-change: auto;
+        animation: fadeInMedium 1s 4.55s ease-in-out forwards;
+    }
+    
+    .developer>span:nth-child(8) {
+        will-change: auto;
+        animation: fadeInMedium 1s 4.6s ease-in-out forwards;
+    }
+    
+    .developer>span:nth-child(9) {
+        will-change: auto;
+        animation: fadeInMedium 1s 4.65s ease-in-out forwards;
+    }
+    
+    .developer>span:nth-child(10) {
+        will-change: auto;
+        animation: fadeInMedium 1s 4.7s ease-in-out forwards;
+    }
+    
+    .developer>span:nth-child(11) {
+        will-change: auto;
+        animation: fadeInMedium 1s 4.75s ease-in-out forwards;
+    }
+    
+    .developer>span:nth-child(12) {
+        will-change: auto;
+        animation: fadeInMedium 1s 4.8s ease-in-out forwards;
+    }
+    
+    .developer>span:nth-child(13) {
+        will-change: auto;
+        animation: fadeInMedium 1s 4.85s ease-in-out forwards;
+    }
+    
+    .developer>span:nth-child(14) {
+        will-change: auto;
+        animation: fadeInMedium 1s 4.9s ease-in-out forwards;
+    }
+    
+    .developer>span:nth-child(15) {
+        will-change: auto;
+        animation: fadeInMedium 1s 4.95s ease-in-out forwards;
+    }
+    
+    .developer>span:nth-child(16) {
+        will-change: auto;
+        animation: fadeInMedium 1s 5s ease-in-out forwards;
+    }
+    
+    .developer>span:nth-child(17) {
+        will-change: auto;
+        animation: fadeInMedium 1s 5.05s ease-in-out forwards;
+    }
+    
+    .developer>span:nth-child(18) {
+        will-change: auto;
+        animation: fadeInMedium 1s 5.1s ease-in-out forwards;
+    }
+    
+    .angular>span,
+    .java>span {
+        will-change: auto;
+        animation: fadeInMedium 1.25s 4.85s ease-in-out forwards;
+    }
+
+    .scroll-info {
+        will-change: auto;
+        animation: fadeScrollInfoMedium 3s ease 13s forwards;
+    }
+}
+
+.large, .web-landscape {
+    .title-name>div:nth-child(1) {
+        will-change: auto;
+        animation: fadeInWeb 1s 1s ease-in-out forwards;
+    }
+    
+    .title-name>div:nth-child(2) {
+        will-change: auto;
+        animation: fadeInWeb 1s 1.075s ease-in-out forwards;
+    }
+    
+    .title-name>div:nth-child(3) {
+        will-change: auto;
+        animation: fadeInWeb 1s 1.15s ease-in-out forwards;
+    }
+    
+    .title-name>div:nth-child(4) {
+        will-change: auto;
+        animation: fadeInWeb 1s 1.225s ease-in-out forwards;
+    }
+    
+    .title-name>div:nth-child(5) {
+        will-change: auto;
+        animation: fadeInWeb 1s 1.3s ease-in-out forwards;
+    }
+    
+    .title-name>div:nth-child(6) {
+        will-change: auto;
+        animation: fadeInWeb 1s 1.375s ease-in-out forwards;
+    }
+    
+    .title-name>div:nth-child(7) {
+        will-change: auto;
+        animation: fadeInWeb 1s 1.45s ease-in-out forwards;
+    }
+    
+    .title-name>div:nth-child(8) {
+        will-change: auto;
+        animation: fadeInWeb 1s 1.525s ease-in-out forwards;
+    }
+    
+    .title-name>div:nth-child(9) {
+        will-change: auto;
+        animation: fadeInWeb 1s 1.6s ease-in-out forwards;
+    }
+    
+    .title-name>div:nth-child(10) {
+        will-change: auto;
+        animation: fadeInWeb 1s 1.675s ease-in-out forwards;
+    }
+    
+    .title-name>div:nth-child(11) {
+        will-change: auto;
+        animation: fadeInWeb 1s 1.75s ease-in-out forwards;
+    }
+    
+    .title-name>div:nth-child(12) {
+        will-change: auto;
+        animation: fadeInWeb 1s 1.825s ease-in-out forwards;
+    }
+    
+    .developer {
+        will-change: auto;
+        animation: fadeInWeb 0.5s 4s ease-in-out forwards;
+    }
+    
+    .developer>span:nth-child(1) {
+        will-change: auto;
+        animation: fadeInWeb 1s 4.25s ease-in-out forwards;
+    }
+    
+    .developer>span:nth-child(2) {
+        will-change: auto;
+        animation: fadeInWeb 1s 4.3s ease-in-out forwards;
+    }
+    
+    .developer>span:nth-child(3) {
+        will-change: auto;
+        animation: fadeInWeb 1s 4.35s ease-in-out forwards;
+    }
+    
+    .developer>span:nth-child(4) {
+        will-change: auto;
+        animation: fadeInWeb 1s 4.4s ease-in-out forwards;
+    }
+    
+    .developer>span:nth-child(5) {
+        will-change: auto;
+        animation: fadeInWeb 1s 4.45s ease-in-out forwards;
+    }
+    
+    .developer>span:nth-child(6) {
+        will-change: auto;
+        animation: fadeInWeb 1s 4.5s ease-in-out forwards;
+    }
+    
+    .developer>span:nth-child(7) {
+        will-change: auto;
+        animation: fadeInWeb 1s 4.55s ease-in-out forwards;
+    }
+    
+    .developer>span:nth-child(8) {
+        will-change: auto;
+        animation: fadeInWeb 1s 4.6s ease-in-out forwards;
+    }
+    
+    .developer>span:nth-child(9) {
+        will-change: auto;
+        animation: fadeInWeb 1s 4.65s ease-in-out forwards;
+    }
+    
+    .developer>span:nth-child(10) {
+        will-change: auto;
+        animation: fadeInWeb 1s 4.7s ease-in-out forwards;
+    }
+    
+    .developer>span:nth-child(11) {
+        will-change: auto;
+        animation: fadeInWeb 1s 4.75s ease-in-out forwards;
+    }
+    
+    .developer>span:nth-child(12) {
+        will-change: auto;
+        animation: fadeInWeb 1s 4.8s ease-in-out forwards;
+    }
+    
+    .developer>span:nth-child(13) {
+        will-change: auto;
+        animation: fadeInWeb 1s 4.85s ease-in-out forwards;
+    }
+    
+    .developer>span:nth-child(14) {
+        will-change: auto;
+        animation: fadeInWeb 1s 4.9s ease-in-out forwards;
+    }
+    
+    .developer>span:nth-child(15) {
+        will-change: auto;
+        animation: fadeInWeb 1s 4.95s ease-in-out forwards;
+    }
+    
+    .developer>span:nth-child(16) {
+        will-change: auto;
+        animation: fadeInWeb 1s 5s ease-in-out forwards;
+    }
+    
+    .developer>span:nth-child(17) {
+        will-change: auto;
+        animation: fadeInWeb 1s 5.05s ease-in-out forwards;
+    }
+    
+    .developer>span:nth-child(18) {
+        will-change: auto;
+        animation: fadeInWeb 1s 5.1s ease-in-out forwards;
+    }
+    
+    .angular>span,
+    .java>span {
+        will-change: auto;
+        animation: fadeInWeb 1.25s 4.85s ease-in-out forwards;
+    }
+    
+    .scroll-info {
+        will-change: auto;
+        animation: fadeScrollInfoWeb 3s ease 13s forwards;
+    }    
+}
+
 @keyframes fadeIn {
     to {
         opacity: 1;
     }
 }
 
+@keyframes fadeInHandsetLandscape {
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInMedium {
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInWeb {
+    to {
+        opacity: 1;
+    }
+}
+
 @keyframes fadeScrollInfo {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+@keyframes fadeScrollInfoHandsetLandscape {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+@keyframes fadeScrollInfoMedium {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+@keyframes fadeScrollInfoWeb {
     to {
         opacity: 1;
         transform: translateY(0);
