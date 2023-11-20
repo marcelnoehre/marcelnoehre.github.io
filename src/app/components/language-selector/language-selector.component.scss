@@ -42,7 +42,7 @@ img {
     .lang {
         display: flex;
         color: white;
-        background: radial-gradient(rgb(125, 125, 125, 0.75), rgba(0, 0, 0, 0.75));
+        background: radial-gradient(rgb(125, 125, 125, 0.9), rgba(0, 0, 0, 0.9));
         box-shadow: inset 0 0 5px 1px rgba(255, 255, 255, 0.25);
         gap: 0.5rem;
         padding: 0.5rem;
@@ -59,4 +59,8 @@ img {
         box-shadow: inset 0 0 5px 1px rgba(255, 255, 255, 0.25);
         transition: background 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
     }
+}
+
+.web-landscape {
+    font-size: 1vw;
 }

@@ -1,5 +1,6 @@
 import { Component, ElementRef, HostListener, OnInit, ViewChild } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
+import { BreakpointService } from 'src/app/services/breakpoint.service';
 import { StorageService } from 'src/app/services/storage.service';
 
 @Component({
@@ -17,17 +18,21 @@ export class LanguageSelectorComponent implements OnInit {
     }
   }
 
-
+  responsiveClass!: string;
   languages: string[] = ['en', 'de', 'es', 'fr'];
   active!: string;
   open: boolean = false;
 
   constructor(
+    private _breakpoint: BreakpointService,
     private _storage: StorageService,
     private _translate: TranslateService
     ) {}
 
   ngOnInit(): void {
+    this._breakpoint.responsiveClass$.subscribe((responsiveClass) => {
+      this.responsiveClass = responsiveClass;
+    });
     this.active = this._translate.currentLang;
   }
 

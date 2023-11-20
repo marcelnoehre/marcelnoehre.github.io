@@ -1,4 +1,4 @@
-<div class="language-selector-container">
+<div class="language-selector-container" [ngClass]="responsiveClass">
     <div #activeLang class="active-language" (click)="showLanguages()">
         <img src="assets/images/languages/{{ active }}.svg">
     </div>
