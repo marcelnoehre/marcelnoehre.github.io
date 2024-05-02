@@ -10,7 +10,6 @@ import {TranslateHttpLoader} from '@ngx-translate/http-loader';
 
 import { AppComponent } from './app.component';
 import { CoreComponent } from './components/core/core.component';
-import { HomepageComponent } from './components/homepage/homepage.component';
 import { ProjectsOverviewComponent } from './components/projects-overview/projects-overview.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { RLOverlayComponent } from './components/rl-overlay/rl-overlay.component'
@@ -31,7 +30,6 @@ export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
   declarations: [
     AppComponent,
     CoreComponent,
-    HomepageComponent,
     ProjectsOverviewComponent,
     ContactComponent,
     RLOverlayComponent,
