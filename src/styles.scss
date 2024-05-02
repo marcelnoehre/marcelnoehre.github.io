@@ -31,3 +31,8 @@ app-root {
 body::-webkit-scrollbar {
     display: none;
 }
+
+@font-face {
+    font-family: 'LemonMilk';
+    src: url('assets/fonts/LemonMilk.otf') format('opentype');
+}
