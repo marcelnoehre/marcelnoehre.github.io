@@ -1,0 +1,68 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 1.75em;
+}
+
+.cube-container{
+    min-width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background:black;
+    perspective: 50%;
+}
+  
+.cube {
+    position: relative;
+    transform-style: preserve-3d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: rotateCube 10s linear infinite;
+}
+
+.side {
+    height: 4em;
+    width: 4em;
+    background: #111116;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    box-shadow: 0 0 25px 5px  #181818  inset, 0 0 0 4em #111116 inset ;
+}
+  
+.front{
+    transform: translateZ(2em);
+}
+  
+.back{
+    transform: translateZ(-2em);
+}
+  
+.top{
+    transform: translateY(-2em) rotateX(90deg);
+}
+
+.bottom{
+    transform: translateY(2em) rotateX(90deg);
+}
+
+.right{
+    transform: translateX(2em) rotateY(90deg);
+}
+
+.left{
+    transform: translateX(-2em) rotateY(90deg);
+}
+
+@keyframes rotateCube {
+    from {
+        transform: rotateX(-20deg) rotateY(45deg);
+    }
+    to {
+        transform: rotateX(-20deg) rotateY(405deg);
+    }
+}
