@@ -1,0 +1,26 @@
+.landing-page-container {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background: transparent;
+}
+
+.title {
+    position: absolute;
+    top: 3em;
+    left: 3em;
+}
+
+.font {
+    font-family: 'LemonMilk';
+    color: white;
+    text-shadow: 0 0 10px MediumSlateBlue;
+}
+
+.name {
+    font-size: 6em;
+}
+
+.developer {
+    font-size: 3em;
+}
