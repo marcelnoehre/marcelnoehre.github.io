@@ -9,18 +9,39 @@
     position: absolute;
     top: 3em;
     left: 3em;
+
+    .font {
+        font-family: 'LemonMilk';
+        color: white;
+        text-shadow: 0 0 10px MediumSlateBlue;
+    }
+    
+    .name {
+        font-size: 4.5em;
+    }
+    
+    .developer {
+        font-size: 2em;
+    }
 }
 
-.font {
-    font-family: 'LemonMilk';
-    color: white;
-    text-shadow: 0 0 10px MediumSlateBlue;
-}
+.nav {
+    position: absolute;
+    display: flex;
+    justify-content: flex-end;
+    top: 5em;
+    right: 3em;
+    gap: 2em;
 
-.name {
-    font-size: 6em;
-}
+    a {
+        font-family: 'LemonMilk';
+        color: white;
+        font-size: 1em;
+        text-decoration: none;
+        opacity: 0.2;
+    }
 
-.developer {
-    font-size: 3em;
+    a:hover {
+        opacity: 1;
+    }
 }
