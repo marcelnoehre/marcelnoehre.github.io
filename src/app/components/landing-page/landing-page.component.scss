@@ -18,6 +18,18 @@
     
     .name {
         font-size: 4.5em;
+        display: flex;
+    }
+
+    .name>div {
+        background-image: linear-gradient(135deg, #E0FFFF 20%, #FF00FF);
+        background-size: 100%;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -moz-text-fill-color: transparent;
+        clip-path: inset(1px);
     }
     
     .developer {
@@ -43,6 +55,7 @@
 
     a:hover {
         opacity: 1;
+        border-bottom: 2px solid mediumslateblue;
     }
 }
 
