@@ -9,17 +9,24 @@ import { AfterViewInit, Component, Input } from '@angular/core';
 })
 export class CubeComponent implements AfterViewInit {
   @Input() public scrollY: number = 0;
+  @Input() public screenHeight: number = 0;
 
   ngAfterViewInit() {
     try { 
       this.scrollY = window.scrollY
+      this.screenHeight = window.innerHeight;
     } catch (err) { }
   }
 
-  rotateMultiplier(): number {
-    if (this.scrollY <= 300) return 1;
-    if (this.scrollY >= 1000) 1 + (this.scrollY - 300) * 0.02;
-    return 1 + (this.scrollY - 300) * 0.01;
+  rotate(): number {
+    if (this.scrollY <= (this.screenHeight * 0.5)) return 1;
+    return 1 + (this.scrollY - (this.screenHeight * 0.5)) * 0.01;
+  }
+
+  opacity(): number {
+    if (this.scrollY <= this.screenHeight) return 1;
+    if (this.scrollY >= this.screenHeight * 1.1) return 0;
+    return 1 - (this.scrollY - this.screenHeight) / (this.screenHeight * 0.1);
   }
 
 }

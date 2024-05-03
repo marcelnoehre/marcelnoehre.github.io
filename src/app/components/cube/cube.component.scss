@@ -36,6 +36,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    opacity: var(--opacity);
     img {
         height: 75%;
         width: auto;
@@ -48,27 +49,27 @@
 }
 
 .front {
-    transform: translateZ(calc(2em * var(--rotate-multiplier)));
+    transform: translateZ(calc(2em * var(--rotate)));
 }
   
 .back {
-    transform: translateZ(calc(-2em * var(--rotate-multiplier)));
+    transform: translateZ(calc(-2em * var(--rotate)));
 }
 
 .top {
-    transform: translateY(-2em) rotateX(90deg) translateZ(calc(2em * var(--rotate-multiplier) - 2em));
+    transform: translateY(-2em) rotateX(90deg) translateZ(calc(2em * var(--rotate) - 2em));
 }
 
 .bottom {
-    transform: translateY(2em) rotateX(90deg) translateZ(calc(-2em * var(--rotate-multiplier) + 2em));
+    transform: translateY(2em) rotateX(90deg) translateZ(calc(-2em * var(--rotate) + 2em));
 }
 
 .left {
-    transform: translateX(-2em) rotateY(90deg) translateZ(calc(-2em * var(--rotate-multiplier) + 2em));
+    transform: translateX(-2em) rotateY(90deg) translateZ(calc(-2em * var(--rotate) + 2em));
 }
 
 .right {
-    transform: translateX(2em) rotateY(90deg) translateZ(calc(2em * var(--rotate-multiplier) - 2em));
+    transform: translateX(2em) rotateY(90deg) translateZ(calc(2em * var(--rotate) - 2em));
 }
 
 @keyframes rotateCube {

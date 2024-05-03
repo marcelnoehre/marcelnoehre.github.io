@@ -13,5 +13,6 @@ import { CubeComponent } from '../cube/cube.component';
 })
 export class CoreComponent {
   public scrollY: number = 0;
-
+  public screenHeight: number = 0;
+  
 }

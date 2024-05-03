@@ -1,4 +1,4 @@
-<div class="core-container" appScroll (scrollY)="scrollY = $event">
-    <app-cube [scrollY]="scrollY"></app-cube>
+<div class="core-container" appScroll (scrollY)="scrollY = $event" (screenHeight)="screenHeight = $event">
+    <app-cube [scrollY]="scrollY" [screenHeight]="screenHeight"></app-cube>
     <app-landing-page></app-landing-page>
 </div>
