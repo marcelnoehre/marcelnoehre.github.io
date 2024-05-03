@@ -56,9 +56,28 @@
 
     a:hover {
         opacity: 1;
+        // TODO: animate border
         border-bottom: 2px solid mediumslateblue;
     }
 }
+
+.mobile-nav {
+    position: absolute;
+    // TODO: resize and adjust position based on screen size
+    top: 2em;
+    right: 2em;
+    background: white;
+    color: black;
+    transition: 0.75s;
+}
+
+.mobile-nav:hover {
+    // TODO: animate from middle
+    background: mediumslateblue;
+    color: white;
+}
+
+
 
 .abstract {
     position: absolute;
