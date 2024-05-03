@@ -1,5 +1,4 @@
 import { Directive, EventEmitter, HostListener, Output } from '@angular/core';
-import { BehaviorSubject } from 'rxjs';
 
 @Directive({
   selector: '[appScroll]',

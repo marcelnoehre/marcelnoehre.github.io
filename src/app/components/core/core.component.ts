@@ -12,9 +12,6 @@ import { CubeComponent } from '../cube/cube.component';
   styleUrl: './core.component.scss'
 })
 export class CoreComponent {
-
-  onScroll(scrollY: number) {
-    console.log('scrollY', scrollY);
-  }
+  public scrollY: number = 0;
 
 }
