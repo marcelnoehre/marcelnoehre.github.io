@@ -25,13 +25,13 @@
 }
 
 .side {
-    height: 4em;
-    width: 4em;
+    height: 2em;
+    width: 2em;
     background: #404040;
     position: absolute;
     top: 0;
     bottom: 0;
-    box-shadow: 0 0 25px 5px  #808080  inset, 0 0 0 4em #404040 inset;
+    box-shadow: 0 0 25px 5px  #808080  inset, 0 0 0 2em #404040 inset;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -49,27 +49,27 @@
 }
 
 .front {
-    transform: translateZ(calc(2em * var(--rotate)));
+    transform: translateZ(calc(1em * var(--rotate)));
 }
   
 .back {
-    transform: translateZ(calc(-2em * var(--rotate)));
+    transform: translateZ(calc(-1em * var(--rotate)));
 }
 
 .top {
-    transform: translateY(-2em) rotateX(90deg) translateZ(calc(2em * var(--rotate) - 2em));
+    transform: translateY(-1em) rotateX(90deg) translateZ(calc(1em * var(--rotate) - 1em));
 }
 
 .bottom {
-    transform: translateY(2em) rotateX(90deg) translateZ(calc(-2em * var(--rotate) + 2em));
+    transform: translateY(1em) rotateX(90deg) translateZ(calc(-1em * var(--rotate) + 1em));
 }
 
 .left {
-    transform: translateX(-2em) rotateY(90deg) translateZ(calc(-2em * var(--rotate) + 2em));
+    transform: translateX(-1em) rotateY(90deg) translateZ(calc(-1em * var(--rotate) + 1em));
 }
 
 .right {
-    transform: translateX(2em) rotateY(90deg) translateZ(calc(2em * var(--rotate) - 2em));
+    transform: translateX(1em) rotateY(90deg) translateZ(calc(1em * var(--rotate) - 1em));
 }
 
 @keyframes rotateCube {
@@ -78,5 +78,37 @@
     }
     to {
         transform: rotateX(-20deg) rotateY(405deg);
+    }
+}
+
+@media (min-width: 576px) and (min-height: 576px) {
+    .side {
+        height: 4em;
+        width: 4em;
+        box-shadow: 0 0 25px 5px  #808080  inset, 0 0 0 4em #404040 inset;
+    }
+
+    .front {
+        transform: translateZ(calc(2em * var(--rotate)));
+    }
+        
+    .back {
+        transform: translateZ(calc(-2em * var(--rotate)));
+    }
+    
+    .top {
+        transform: translateY(-2em) rotateX(90deg) translateZ(calc(2em * var(--rotate) - 2em));
+    }
+    
+    .bottom {
+        transform: translateY(2em) rotateX(90deg) translateZ(calc(-2em * var(--rotate) + 2em));
+    }
+    
+    .left {
+        transform: translateX(-2em) rotateY(90deg) translateZ(calc(-2em * var(--rotate) + 2em));
+    }
+    
+    .right {
+        transform: translateX(2em) rotateY(90deg) translateZ(calc(2em * var(--rotate) - 2em));
     }
 }

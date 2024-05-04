@@ -28,6 +28,10 @@
         display: flex;
     }
 
+    .last-name {
+        transform: translateY(-0.15em);
+    }
+
     .name>div {
         background-image: linear-gradient(135deg, #E0FFFF 20%, #FF00FF);
         background-size: 100%;
@@ -40,7 +44,6 @@
     }
     
     .developer {
-        padding-top: 1.5em;
         font-size: 1.2em;
     }
 }
@@ -98,7 +101,6 @@
         }
     
         .developer {
-            padding-top: 0;
             font-size: 2em;
         }
     }
@@ -138,11 +140,5 @@
         .developer {
             font-size: 1em;
         }
-    }
-}
-
-@media (max-height: 768px) {
-    .content {
-        min-height: 80vh;
     }
 }
