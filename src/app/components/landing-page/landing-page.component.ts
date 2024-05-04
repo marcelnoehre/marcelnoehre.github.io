@@ -11,10 +11,12 @@ import { MatIconModule } from '@angular/material/icon';
 })
 export class LandingPageComponent implements AfterViewInit {
   @Input() public screenWidth: number = 0;
+  @Input() public screenHeight: number = 0;
 
   ngAfterViewInit() {
     try { 
-      this.screenWidth = window.innerWidth
+      this.screenWidth = window.innerWidth;
+      this.screenHeight = window.innerHeight;
     } catch (err) { }
   }
 }

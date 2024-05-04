@@ -1,21 +1,40 @@
 <div class="landing-page-container">
-    <div class="title">
-        <div class="font name">
-            <div>M</div>
-            <div>a</div>
-            <div>r</div>
-            <div>c</div>
-            <div>e</div>
-            <div>l</div>
-            <div>&nbsp;</div>
-            <div>N</div>
-            <div>ö</div>
-            <div>h</div>
-            <div>r</div>
-            <div>e</div>
+    <div class="content">
+        <div class="title">
+            <div class="font name">
+                <div class="row">
+                    <div>M</div>
+                    <div>a</div>
+                    <div>r</div>
+                    <div>c</div>
+                    <div>e</div>
+                    <div>l</div>
+                    @if (screenWidth >= 768 || (screenHeight < 576 && screenWidth >= 576)) {
+                        <div>&nbsp;</div>
+                        <div>N</div>
+                        <div>ö</div>
+                        <div>h</div>
+                        <div>r</div>
+                        <div>e</div>
+                    }
+                </div>
+                @if (!(screenWidth >= 768 || (screenHeight < 576  && screenWidth >= 576))) {
+                    <div class="row">
+                        <div>N</div>
+                        <div>&ouml;</div>
+                        <div>h</div>
+                        <div>r</div>
+                        <div>e</div>
+                    </div>
+                }
+            </div>
+            <div class="font developer">
+                Full Stack Developer
+            </div>
         </div>
-        <div class="font developer">
-            Full Stack Developer
+        <div class="abstract">
+            Hi there! I'm a full-stack developer who's been mainly working in web development with Angular and Nest for a few years now. 
+            During this time, I've focused on improving usability to partially automate business processes with as little worker interaction as possible.
         </div>
     </div>
     @if (screenWidth >= 1200) {
@@ -26,12 +45,8 @@
             <a href="#impressum">Impressum</a>
         </div>
     } @else {
-        <button mat-mini-fab class="nav mobile-nav">
+        <button mat-icon-button class="mobile-nav">
             <mat-icon>menu</mat-icon>
         </button>
     }
-    <div class="abstract">
-        Hi there! I'm a full-stack developer who's been mainly working in web development with Angular and Nest for a few years now. 
-        During this time, I've focused on improving usability to partially automate business processes with as little worker interaction as possible.
-    </div>
 </div>
