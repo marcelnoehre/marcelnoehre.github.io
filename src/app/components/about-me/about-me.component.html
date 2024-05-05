@@ -1,8 +1,21 @@
 <div class="about-me-container">
     <mat-card class="about-me" style="--card-degree: {{ cardDegree() }}; --card-fade: {{ cardFade() }}">
         <mat-card-content>
-            {{ screenHeight }}
-            {{ scrollY }}
+            <div class="me">
+                <img src="assets/images/me.jpg" alt="Marcel Nöhre">
+            </div>
+            <div class="about">
+                <table>
+                    <tbody>
+                        @for (item of cv; track item) {
+                            <tr>
+                                <td> {{ item.date }} </td>
+                                <td> {{ item.description }} </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
         </mat-card-content>
     </mat-card>
 </div>
