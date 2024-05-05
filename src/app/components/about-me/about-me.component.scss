@@ -11,4 +11,9 @@
     width: 75vw;
     height: 50vh;
     background: radial-gradient(farthest-corner at 0 0, #E8BFFF 50%, #E0FFFF);
+    perspective: 50%;
+    transform-style: preserve-3d;
+    transform: rotateX(var(--card-degree)) rotateY(var(--card-degree));
+    opacity: var(--card-fade);
+    will-change: transform, opacity;
 }

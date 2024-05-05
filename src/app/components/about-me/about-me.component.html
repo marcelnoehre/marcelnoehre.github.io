@@ -1,7 +1,8 @@
 <div class="about-me-container">
-    <mat-card class="about-me">
+    <mat-card class="about-me" style="--card-degree: {{ cardDegree() }}; --card-fade: {{ cardFade() }}">
         <mat-card-content>
-
+            {{ screenHeight }}
+            {{ scrollY }}
         </mat-card-content>
     </mat-card>
 </div>
