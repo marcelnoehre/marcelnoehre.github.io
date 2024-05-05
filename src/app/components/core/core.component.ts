@@ -2,11 +2,12 @@ import { Component } from '@angular/core';
 import { ScreenDirective } from '../../directives/screen.directive';
 import { LandingPageComponent } from '../landing-page/landing-page.component';
 import { CubeComponent } from '../cube/cube.component';
+import { AboutMeComponent } from '../about-me/about-me.component';
 
 @Component({
   selector: 'app-core',
   standalone: true,
-  imports: [LandingPageComponent, CubeComponent, ScreenDirective],
+  imports: [LandingPageComponent, CubeComponent, AboutMeComponent, ScreenDirective],
   providers: [ScreenDirective],
   templateUrl: './core.component.html',
   styleUrl: './core.component.scss'

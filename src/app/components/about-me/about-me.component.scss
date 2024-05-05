@@ -1,0 +1,14 @@
+.about-me-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    width: 100vw;
+    background: transparent;
+}
+
+.about-me {
+    width: 75vw;
+    height: 50vh;
+    background: radial-gradient(farthest-corner at 0 0, #E8BFFF 50%, #E0FFFF);
+}
