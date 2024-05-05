@@ -19,4 +19,11 @@ export class LandingPageComponent implements AfterViewInit {
       this.screenHeight = window.innerHeight;
     } catch (err) { }
   }
+
+  scroll(px: number): void {
+    window.scrollTo({
+      top: px,
+      behavior: 'smooth'
+    });
+  }
 }
