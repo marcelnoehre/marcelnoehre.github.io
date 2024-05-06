@@ -8,10 +8,17 @@
                 <table>
                     <tbody>
                         @for (item of cv; track item) {
-                            <tr>
-                                <td> {{ item.date }} </td>
-                                <td> {{ item.description }} </td>
-                            </tr>
+                            @if (this.scrollY >= (this.screenHeight * 1.2)) {
+                                <tr data-blobity (click)="redirect(item.url)">
+                                    <td> {{ item.date }} </td>
+                                    <td> {{ item.description }} </td>
+                                </tr>
+                            } @else {
+                                <tr (click)="redirect(item.url)">
+                                    <td> {{ item.date }} </td>
+                                    <td> {{ item.description }} </td>
+                                </tr>
+                            }
                         }
                     </tbody>
                 </table>

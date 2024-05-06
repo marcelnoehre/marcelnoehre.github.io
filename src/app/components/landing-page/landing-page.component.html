@@ -39,10 +39,10 @@
     </div>
     @if (screenWidth >= 1200) {
         <div class="nav large-nav">
-            <div (click)="scroll(this.screenHeight * 1.2)">About</div>
-            <div (click)="scroll(0)">Projects</div>
-            <div (click)="scroll(0)">Contact</div>
-            <div (click)="scroll(0)">Impressum</div>
+            <div data-blobity (click)="scroll(this.screenHeight * 1.2)">About</div>
+            <div data-blobity (click)="scroll(0)">Projects</div>
+            <div data-blobity (click)="scroll(0)">Contact</div>
+            <div data-blobity (click)="scroll(0)">Impressum</div>
         </div>
     } @else {
         <button mat-icon-button class="mobile-nav">

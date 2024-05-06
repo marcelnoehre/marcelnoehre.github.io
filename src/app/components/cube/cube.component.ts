@@ -18,13 +18,11 @@ export class CubeComponent implements AfterViewInit {
     } catch (err) { }
   }
 
-  // TODO: Use screenWidth for calculating rotation
   rotate(): number {
     if (this.scrollY <= (this.screenHeight * 0.4)) return 1;
     return 1 + (this.scrollY - (this.screenHeight * 0.4)) * 0.01;
   }
 
-  // TODO: Use screenWidth for calculating opacity
   opacity(): number {
     if (this.scrollY <= this.screenHeight) return 1;
     if (this.scrollY >= this.screenHeight * 1.1) return 0;
