@@ -1,3 +1,4 @@
+import { NgClass } from '@angular/common';
 import { AfterViewInit, Component, Input } from '@angular/core';
 import { MatCardModule } from '@angular/material/card';
 import { MatDividerModule } from '@angular/material/divider';
@@ -11,13 +12,16 @@ interface CV {
 @Component({
   selector: 'app-about-me',
   standalone: true,
-  imports: [MatCardModule, MatDividerModule],
+  imports: [MatCardModule, MatDividerModule, NgClass],
   templateUrl: './about-me.component.html',
   styleUrl: './about-me.component.scss'
 })
 export class AboutMeComponent implements AfterViewInit {
   @Input() public scrollY: number = 0;
   @Input() public screenHeight: number = 0;
+  @Input() public screenWidth: number = 0;
+  public flip: boolean[] = [true, false];
+
   public cv: CV[] = [{ 
     date: '2019 - 2023',
     description: 'B.Sc. Applied Computer Science (University of Hildesheim)',
@@ -44,6 +48,7 @@ export class AboutMeComponent implements AfterViewInit {
     try { 
       this.scrollY = window.scrollY
       this.screenHeight = window.innerHeight;
+      this.screenWidth = window.innerWidth;
     } catch (err) { }
   }
 
@@ -61,5 +66,9 @@ export class AboutMeComponent implements AfterViewInit {
 
   redirect(url: string): void {
     window.open(url, '_blank');
+  }
+
+  flipCard(): void {
+    this.flip = [!this.flip[0], !this.flip[1]];
   }
 }

@@ -1,28 +1,37 @@
 <div class="about-me-container">
     <mat-card class="about-me" style="--card-degree: {{ cardDegree() }}; --card-fade: {{ cardFade() }}">
         <mat-card-content>
-            <div class="me">
-                <img src="assets/images/me.jpg" alt="Marcel Nöhre">
-            </div>
-            <div class="about">
-                <table>
-                    <tbody>
-                        @for (item of cv; track item) {
-                            @if (this.scrollY >= (this.screenHeight * 1.2)) {
-                                <tr data-blobity (click)="redirect(item.url)">
-                                    <td> {{ item.date }} </td>
-                                    <td> {{ item.description }} </td>
-                                </tr>
-                            } @else {
-                                <tr (click)="redirect(item.url)">
-                                    <td> {{ item.date }} </td>
-                                    <td> {{ item.description }} </td>
-                                </tr>
+            @if (screenWidth >= 992) {
+                <div class="card-container">
+                    <img src="assets/images/me.jpg" alt="Marcel Nöhre">
+                </div>
+                <div class="about-large">
+                    <table>
+                        <tbody>
+                            @for (item of cv; track item) {
+                                @if (this.scrollY >= (this.screenHeight * 1.2)) {
+                                    <tr data-blobity (click)="redirect(item.url)">
+                                        <td> {{ item.date }} </td>
+                                        <td> {{ item.description }} </td>
+                                    </tr>
+                                } @else {
+                                    <tr (click)="redirect(item.url)">
+                                        <td> {{ item.date }} </td>
+                                        <td> {{ item.description }} </td>
+                                    </tr>
+                                }
                             }
-                        }
-                    </tbody>
-                </table>
-            </div>
+                        </tbody>
+                    </table>
+                </div>
+            } @else {
+                <div class="card-container">
+                    <img src="assets/images/me.jpg" alt="Marcel Nöhre" [ngClass]="flip[0] ? '' : 'flip-me'" (click)="flipCard()">
+                    <div class="about-small" [ngClass]="flip[1] ? 'flip-about' : ''" (click)="flipCard()">
+                        {{ flip }}
+                    </div>
+                </div>
+            }
         </mat-card-content>
     </mat-card>
 </div>
