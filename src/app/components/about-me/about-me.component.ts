@@ -1,7 +1,9 @@
 import { NgClass } from '@angular/common';
 import { AfterViewInit, Component, Input } from '@angular/core';
+import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
 import { MatDividerModule } from '@angular/material/divider';
+import { MatIconModule } from '@angular/material/icon';
 
 interface CV {
   date: string;
@@ -12,7 +14,7 @@ interface CV {
 @Component({
   selector: 'app-about-me',
   standalone: true,
-  imports: [MatCardModule, MatDividerModule, NgClass],
+  imports: [MatCardModule, MatDividerModule, NgClass, MatButtonModule, MatIconModule],
   templateUrl: './about-me.component.html',
   styleUrl: './about-me.component.scss'
 })
@@ -64,7 +66,8 @@ export class AboutMeComponent implements AfterViewInit {
     return 1 - (this.screenHeight - this.scrollY) / (this.screenHeight - this.screenHeight * 0.7);
   }
 
-  redirect(url: string): void {
+  redirect(url: string, event?: MouseEvent): void {
+    event?.stopPropagation();
     window.open(url, '_blank');
   }
 

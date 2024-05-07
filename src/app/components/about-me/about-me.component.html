@@ -9,7 +9,7 @@
                     <table>
                         <tbody>
                             @for (item of cv; track item) {
-                                @if (this.scrollY >= (this.screenHeight * 1.2)) {
+                                @if (this.scrollY >= (this.screenHeight * 1.19)) {
                                     <tr data-blobity (click)="redirect(item.url)">
                                         <td> {{ item.date }} </td>
                                         <td> {{ item.description }} </td>
@@ -28,7 +28,19 @@
                 <div class="card-container">
                     <img src="assets/images/me.jpg" alt="Marcel Nöhre" [ngClass]="flip[0] ? '' : 'flip-me'" (click)="flipCard()">
                     <div class="about-small" [ngClass]="flip[1] ? 'flip-about' : ''" (click)="flipCard()">
-                        {{ flip }}
+                        @for (item of cv; track item; let i = $index) {
+                            <div class="row">
+                                <h3> {{ item.date }} </h3>
+                                <div> {{ item.description }} </div>
+                                <button (click)="redirect(item.url, $event)" mat-raised-button>
+                                    View More
+                                    <mat-icon>open_in_new</mat-icon>
+                                </button>
+                            </div>
+                            @if (i < cv.length - 1) {
+                                <mat-divider></mat-divider>
+                            }
+                        }
                     </div>
                 </div>
             }
