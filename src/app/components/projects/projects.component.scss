@@ -1,0 +1,36 @@
+.projects-container {
+    width: 100vw;
+    min-height: 100vh; // todo: remove, if content sets actual height
+}
+
+.carousel-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    overflow: hidden;
+}
+
+.header {
+    display: flex;
+    white-space: nowrap;
+    letter-spacing: 1px;
+    font-family: LemonMilk;
+    font-size: 6em;
+    color: transparent;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: white;
+    animation: moveHeader 6s linear infinite;
+
+    .spacer {
+        padding: 0 0.5em;
+    }
+}
+
+@keyframes moveHeader {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+

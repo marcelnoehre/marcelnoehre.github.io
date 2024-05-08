@@ -3,11 +3,12 @@ import { ScreenDirective } from '../../directives/screen.directive';
 import { LandingPageComponent } from '../landing-page/landing-page.component';
 import { CubeComponent } from '../cube/cube.component';
 import { AboutMeComponent } from '../about-me/about-me.component';
+import { ProjectsComponent } from '../projects/projects.component';
 
 @Component({
   selector: 'app-core',
   standalone: true,
-  imports: [LandingPageComponent, CubeComponent, AboutMeComponent, ScreenDirective],
+  imports: [LandingPageComponent, CubeComponent, AboutMeComponent, ProjectsComponent, ScreenDirective],
   providers: [ScreenDirective],
   templateUrl: './core.component.html',
   styleUrl: './core.component.scss'
