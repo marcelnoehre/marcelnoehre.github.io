@@ -7,7 +7,7 @@
                 </div>
                 <div class="about-large">
                     @if (screenHeight < 576) {
-                        @for (item of cv; track item; let i = $index) {
+                        @for (item of work; track item; let i = $index) {
                             <div class="row">
                                 <h3> {{ item.date }} </h3>
                                 <div> {{ item.description }} </div>
@@ -16,14 +16,14 @@
                                     <mat-icon>open_in_new</mat-icon>
                                 </button>
                             </div>
-                            @if (i < cv.length - 1) {
+                            @if (i < work.length - 1) {
                                 <mat-divider></mat-divider>
                             }
                         }
                     } @else {
                         <table>
                             <tbody>
-                                @for (item of cv; track item) {
+                                @for (item of work; track item) {
                                     @if (this.scrollY >= (this.screenHeight * 1.19)) {
                                         <tr data-blobity (click)="redirect(item.url)">
                                             <td> {{ item.date }} </td>
@@ -44,7 +44,7 @@
                 <div class="card-container">
                     <img src="assets/images/me.jpg" alt="Marcel Nöhre" [ngClass]="flip[0] ? '' : 'flip-me'" (click)="flipCard()">
                     <div class="about-small" [ngClass]="flip[1] ? 'flip-about' : ''" (click)="flipCard()">
-                        @for (item of cv; track item; let i = $index) {
+                        @for (item of work; track item; let i = $index) {
                             <div class="row">
                                 <h3> {{ item.date }} </h3>
                                 <div> {{ item.description }} </div>
@@ -53,7 +53,7 @@
                                     <mat-icon>open_in_new</mat-icon>
                                 </button>
                             </div>
-                            @if (i < cv.length - 1) {
+                            @if (i < work.length - 1) {
                                 <mat-divider></mat-divider>
                             }
                         }

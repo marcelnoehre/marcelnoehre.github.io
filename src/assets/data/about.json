@@ -1,0 +1,29 @@
+{
+    "work": [
+        { 
+            "date": "2019 - 2023",
+            "description": "B.Sc. Applied Computer Science (University of Hildesheim)",
+            "url": "https://www.uni-hildesheim.de/studium/studienangebot/bachelorstudium/angewandte-informatik-bachelor-of-science-bsc/"
+        }, 
+        { 
+            "date": "Since 2023",
+            "description": "M.Sc. Applied Computer Science (University of Hildesheim)",
+            "url": "https://www.uni-hildesheim.de/studium/studienangebot/masterstudium/angewandte-informatik-master-of-science-msc/"
+        }, 
+        { 
+            "date": "2021 (3 month)",
+            "description": "Internship (Youco GmbH)",
+            "url": "https://youco-it.com"
+        }, 
+        { 
+            "date": "2022 & 2023",
+            "description": "Teaching Assistant - Java (University of Hildesheim)",
+            "url": "https://sse.uni-hildesheim.de"
+        }, 
+        { 
+            "date": "Since 2021",
+            "description": "Working Student (Entiac GmbH)",
+            "url": "https://entiac.com"
+        }
+    ]
+}
