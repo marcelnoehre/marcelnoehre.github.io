@@ -1,10 +1,6 @@
 import { AfterViewInit, Component, Input } from '@angular/core';
 import { DataService } from '../../services/data.service';
-
-export interface Project {
-  title: string;
-  image: string;
-}
+import { Project } from '../../interfaces/Project';
 
 @Component({
   selector: 'app-projects',

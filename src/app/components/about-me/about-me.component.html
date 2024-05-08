@@ -42,8 +42,8 @@
                 </div>
             } @else {
                 <div class="card-container">
-                    <img src="assets/images/me.jpg" alt="Marcel Nöhre" [ngClass]="flip[0] ? '' : 'flip-me'" (click)="flipCard()">
-                    <div class="about-small" [ngClass]="flip[1] ? 'flip-about' : ''" (click)="flipCard()">
+                    <img src="assets/images/me.jpg" alt="Marcel Nöhre" [ngClass]="flip.meFront ? '' : 'flip-me'" (click)="flipCard()">
+                    <div class="about-small" [ngClass]="flip.meBack ? 'flip-about' : ''" (click)="flipCard()">
                         @for (item of work; track item; let i = $index) {
                             <div class="row">
                                 <h3> {{ item.date }} </h3>

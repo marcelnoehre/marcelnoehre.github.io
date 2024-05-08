@@ -1,6 +1,7 @@
 import { AfterViewInit, Component, Input } from '@angular/core';
 import { DataService } from '../../services/data.service';
 import { NgClass } from '@angular/common';
+import { CubeSide } from '../../interfaces/CubeSide';
 
 @Component({
   selector: 'app-cube',
@@ -12,7 +13,7 @@ import { NgClass } from '@angular/common';
 export class CubeComponent implements AfterViewInit {
   @Input() public scrollY: number = 0;
   @Input() public screenHeight: number = 0;
-  public cube = this._data.cube;
+  public cube: CubeSide[] = this._data.cube;
 
   constructor(
     private _data: DataService

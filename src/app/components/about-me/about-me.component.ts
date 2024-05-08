@@ -5,12 +5,8 @@ import { MatCardModule } from '@angular/material/card';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatIconModule } from '@angular/material/icon';
 import { DataService } from '../../services/data.service';
-
-interface CV {
-  date: string;
-  description: string;
-  url: string;
-}
+import { CvItem } from '../../interfaces/CvItem';
+import { FlipState } from '../../interfaces/FlipState';
 
 @Component({
   selector: 'app-about-me',
@@ -23,8 +19,11 @@ export class AboutMeComponent implements AfterViewInit {
   @Input() public scrollY: number = 0;
   @Input() public screenHeight: number = 0;
   @Input() public screenWidth: number = 0;
-  public flip: boolean[] = [true, false];
-  public work: CV[] = this._data.work;
+  public work: CvItem[] = this._data.work;
+  public flip: FlipState = {
+    meFront: true,
+    meBack: false
+  };
 
   constructor(
     private _data: DataService
@@ -56,6 +55,7 @@ export class AboutMeComponent implements AfterViewInit {
   }
 
   flipCard(): void {
-    this.flip = [!this.flip[0], !this.flip[1]];
+    this.flip.meFront = !this.flip.meFront;
+    this.flip.meBack = !this.flip.meBack;
   }
 }
