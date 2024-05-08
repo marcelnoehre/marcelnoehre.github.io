@@ -17,8 +17,8 @@ import { FlipState } from '../../interfaces/FlipState';
 })
 export class AboutMeComponent implements AfterViewInit {
   @Input() public scrollY: number = 0;
-  @Input() public screenHeight: number = 0;
   @Input() public screenWidth: number = 0;
+  @Input() public screenHeight: number = 0;
   public work: CvItem[] = this._data.work;
   public flip: FlipState = {
     meFront: true,
@@ -32,8 +32,8 @@ export class AboutMeComponent implements AfterViewInit {
   ngAfterViewInit() {
     try { 
       this.scrollY = window.scrollY
-      this.screenHeight = window.innerHeight;
       this.screenWidth = window.innerWidth;
+      this.screenHeight = window.innerHeight;
     } catch (err) { }
   }
 

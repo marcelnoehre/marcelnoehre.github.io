@@ -11,6 +11,7 @@ import { Project } from '../../interfaces/Project';
 })
 export class ProjectsComponent implements AfterViewInit {
   @Input() public scrollY: number = 0;
+  @Input() public screenWidth: number = 0;
   public projects: Project[] = this._data.projects;
 
   constructor(
@@ -20,6 +21,7 @@ export class ProjectsComponent implements AfterViewInit {
   ngAfterViewInit() {
     try { 
       this.scrollY = window.scrollY;
+      this.screenWidth = window.innerWidth;
     } catch (err) { }
   }
 

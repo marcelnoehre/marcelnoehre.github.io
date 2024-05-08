@@ -8,10 +8,9 @@
     </div>
     <div class="projects">
         @for (project of projects; track project) {
-            <div class="image-container">
+            @if (project.title !== 'transparent' || (screenWidth >= 576 && screenWidth < 992)) {
                 <img [src]="project.image">
-            </div>
-            <div class="title">{{ project.title }}</div>
+            }
         }
     </div>
 </div>

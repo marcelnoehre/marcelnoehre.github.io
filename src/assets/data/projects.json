@@ -17,6 +17,10 @@
             "image": "assets/images/projects/poker-mas.jpg"
         },
         {
+            "title": "transparent",
+            "image": "assets/images/transparent.svg"
+        },
+        {
             "title": "CBR-based hint system (Minesweeper)",
             "image": "assets/images/projects/cbr-minesweeper.jpg"
         },

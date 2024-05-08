@@ -8,8 +8,7 @@
     justify-content: flex-start;
     overflow: hidden;
     background: black;
-    border-top: 2px solid mediumslateblue;
-    border-bottom: 2px solid mediumslateblue;
+    border-top: 4px solid lavender;
 }
 
 .header {
@@ -30,38 +29,37 @@
 }
 
 .projects {
-    color: white;
-
-    .title {
-        width: 100vw;
-        text-align: center;
-        font-size: 1em;
-        font-family: LemonMilk;
-    }
-
-    .image-container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding-top: 4em;
-        padding-bottom: 1.75em;
-    }
-
-    img {
-        height: 15em;
-        width: auto;
-    }
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    width: 100vw;
+    padding: 4px;
 }
 
-@media (min-width: 768px) {
+img {
+    width: calc(100vw * 0.5 - 10px);
+    height: auto;
+    padding: 4px;
+    border-radius: 10px;
+}
+
+@media (min-width: 576px) {
     .header {
         font-size: 6em;
     }
+
+    img {
+        width: calc(100vw * 0.333 - 10px);
+    }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 992px) {
     .header {
         font-size: 8em;
+    }
+
+    img {
+        width: calc(100vw * 0.25 - 10px);
     }
 }
 
