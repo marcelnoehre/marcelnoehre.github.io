@@ -1,28 +1,44 @@
 <div class="about-me-container">
     <mat-card class="about-me" style="--card-degree: {{ cardDegree() }}; --card-fade: {{ cardFade() }}">
         <mat-card-content>
-            @if (screenWidth >= 992) {
+            @if (screenWidth >= 992 || (screenHeight < 576 && screenWidth >= 576)) {
                 <div class="card-container">
                     <img src="assets/images/me.jpg" alt="Marcel Nöhre">
                 </div>
                 <div class="about-large">
-                    <table>
-                        <tbody>
-                            @for (item of cv; track item) {
-                                @if (this.scrollY >= (this.screenHeight * 1.19)) {
-                                    <tr data-blobity (click)="redirect(item.url)">
-                                        <td> {{ item.date }} </td>
-                                        <td> {{ item.description }} </td>
-                                    </tr>
-                                } @else {
-                                    <tr (click)="redirect(item.url)">
-                                        <td> {{ item.date }} </td>
-                                        <td> {{ item.description }} </td>
-                                    </tr>
-                                }
+                    @if (screenHeight < 576) {
+                        @for (item of cv; track item; let i = $index) {
+                            <div class="row">
+                                <h3> {{ item.date }} </h3>
+                                <div> {{ item.description }} </div>
+                                <button (click)="redirect(item.url, $event)" mat-raised-button>
+                                    View More
+                                    <mat-icon>open_in_new</mat-icon>
+                                </button>
+                            </div>
+                            @if (i < cv.length - 1) {
+                                <mat-divider></mat-divider>
                             }
-                        </tbody>
-                    </table>
+                        }
+                    } @else {
+                        <table>
+                            <tbody>
+                                @for (item of cv; track item) {
+                                    @if (this.scrollY >= (this.screenHeight * 1.19)) {
+                                        <tr data-blobity (click)="redirect(item.url)">
+                                            <td> {{ item.date }} </td>
+                                            <td> {{ item.description }} </td>
+                                        </tr>
+                                    } @else {
+                                        <tr (click)="redirect(item.url)">
+                                            <td> {{ item.date }} </td>
+                                            <td> {{ item.description }} </td>
+                                        </tr>
+                                    }
+                                }
+                            </tbody>
+                        </table>
+                    }
                 </div>
             } @else {
                 <div class="card-container">
