@@ -1,20 +1,10 @@
 <div class="cube-container">
     <div class="cube" style="--rotate: {{ rotate() }}; --opacity: {{ opacity() }}">
-        <div class="side front">
-            <img src="assets/images/programming-languages/typescript.svg" alt="Typescript">
-        </div>
-        <div class="side back">
-            <img src="assets/images/programming-languages/java.svg" alt="Java">
-        </div>
-        <div class="side top">
-            <img src="assets/images/programming-languages/angular.svg" alt="Angular">
-        </div>
-        <div class="side bottom"> </div>
-        <div class="side left">
-            <img src="assets/images/programming-languages/nest.svg" alt="Nest">
-        </div>
-        <div class="side right">
-            <img src="assets/images/programming-languages/python.svg" alt="Python">
-        </div>
+        @for (side of cube; track side) {
+            <div class="side" [ngClass]="side.type">
+                <img [src]="side.image" [alt]="side.language">
+            </div>
+        }
+        <div class="side bottom"></div>
     </div>
 </div>

@@ -1,0 +1,29 @@
+{
+    "sides": [
+        {
+            "type": "front",
+            "language": "Typescript",
+            "image": "assets/images/programming-languages/typescript.svg"
+        },
+        {
+            "type": "back",
+            "language": "Java",
+            "image": "assets/images/programming-languages/java.svg"
+        },
+        {
+            "type": "top",
+            "language": "Angular",
+            "image": "assets/images/programming-languages/angular.svg"
+        },
+        {
+            "type": "left",
+            "language": "Nest",
+            "image": "assets/images/programming-languages/nest.svg"
+        },
+        {
+            "type": "right",
+            "language": "Python",
+            "image": "assets/images/programming-languages/python.svg"
+        }
+    ]
+}

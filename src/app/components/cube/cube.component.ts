@@ -1,15 +1,22 @@
 import { AfterViewInit, Component, Input } from '@angular/core';
+import { DataService } from '../../services/data.service';
+import { NgClass } from '@angular/common';
 
 @Component({
   selector: 'app-cube',
   standalone: true,
-  imports: [],
+  imports: [NgClass],
   templateUrl: './cube.component.html',
   styleUrl: './cube.component.scss'
 })
 export class CubeComponent implements AfterViewInit {
   @Input() public scrollY: number = 0;
   @Input() public screenHeight: number = 0;
+  public cube = this._data.cube;
+
+  constructor(
+    private _data: DataService
+  ) { }
 
   ngAfterViewInit() {
     try { 
