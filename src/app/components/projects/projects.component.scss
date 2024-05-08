@@ -1,12 +1,15 @@
 .projects-container {
     width: 100vw;
-    min-height: 100vh; // todo: remove, if content sets actual height
+    background: lavender;
 }
 
 .carousel-wrapper {
     display: flex;
     justify-content: flex-start;
     overflow: hidden;
+    background: black;
+    border-top: 2px solid mediumslateblue;
+    border-bottom: 2px solid mediumslateblue;
 }
 
 .header {
@@ -29,8 +32,23 @@
 .projects {
     color: white;
 
+    .title {
+        width: 100vw;
+        text-align: center;
+        font-size: 1em;
+        font-family: LemonMilk;
+    }
+
+    .image-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 4em;
+        padding-bottom: 1.75em;
+    }
+
     img {
-        height: 10em;
+        height: 15em;
         width: auto;
     }
 }

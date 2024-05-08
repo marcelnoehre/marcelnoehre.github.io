@@ -1,27 +1,27 @@
 {
     "projects": [
         {
-            "title": "Rocket League Custom Overlay",
+            "title": "Custom Rocket League Overlay",
             "image": "assets/images/projects/rl-overlay.jpg"
         },
         {
-            "title": "Swagger Generator for an Asset Administration Shell",
+            "title": "Swagger for AAS in Industry 4.0",
             "image": "assets/images/projects/swagger-for-aas.jpg"
         },
         {
-            "title": "Analysis of Taxi trips in New York City",
+            "title": "Analysis of Taxi trips in NYC",
             "image": "assets/images/projects/nyc-taxi-analysis.jpg"
         },
         {
-            "title": "Multi Agent System for Poker",
+            "title": "Multi Agent System (Poker)",
             "image": "assets/images/projects/poker-mas.jpg"
         },
         {
-            "title": "CBR-based hint system for Minesweeper",
+            "title": "CBR-based hint system (Minesweeper)",
             "image": "assets/images/projects/cbr-minesweeper.jpg"
         },
         {
-            "title": "MVB Website",
+            "title": "Webmaster for MVB website",
             "image": "assets/images/projects/mvb-website.jpg"
         },
         {
@@ -29,7 +29,7 @@
             "image": "assets/images/projects/discord-bots.jpg"
         },
         {
-            "title": "See more",
+            "title": "Other projects",
             "image": "assets/images/projects/see-more.jpg"
         }
     ]

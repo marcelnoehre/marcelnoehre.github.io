@@ -2,12 +2,15 @@
     position: relative;
     display: flex;
     justify-content: center;
-    height: 90vh;
+    height: 75vh;
     width: 100vw;
     background: transparent;
+    z-index: -1;
 }
 
 .about-me {
+    position: fixed;
+    top: 17.25vh;
     height: 65vh;
     perspective: 50%;
     transform-style: preserve-3d;
