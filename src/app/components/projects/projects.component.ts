@@ -1,4 +1,5 @@
 import { AfterViewInit, Component, Input } from '@angular/core';
+import { DataService } from '../../services/data.service';
 
 export interface Project {
   title: string;
@@ -14,35 +15,15 @@ export interface Project {
 })
 export class ProjectsComponent implements AfterViewInit {
   @Input() public scrollY: number = 0;
-  public projects: Project[] = [{
-    title: 'Rocket League Custom Overlay',
-    image: 'assets/images/projects/rl-overlay.jpg'
-  }, {
-    title: 'Swagger Generator for an Asset Administration Shell',
-    image: 'assets/images/projects/swagger-for-aas.jpg'
-  }, {
-    title: 'Analysis of Taxi trips in New York City',
-    image: 'assets/images/projects/nyc-taxi-analysis.jpg'
-  }, {
-    title: 'Multi Agent System for Poker',
-    image: 'assets/images/projects/poker-mas.jpg'
-  }, {
-    title: 'CBR-based hint system for Minesweeper',
-    image: 'assets/images/projects/cbr-minesweeper.jpg'
-  }, {
-    title: 'MVB Website',
-    image: 'assets/images/projects/mvb-website.jpg'
-  }, {
-    title: 'Platform for Discord bots',
-    image: 'assets/images/projects/discord-bots.jpg'
-  }, {
-    title: 'See more',
-    image: 'assets/images/projects/see-more.jpg'
-  }];
+  public projects: Project[] = this._data.projects;
+
+  constructor(
+    private _data: DataService
+  ) { }
 
   ngAfterViewInit() {
     try { 
-      this.scrollY = window.scrollY
+      this.scrollY = window.scrollY;
     } catch (err) { }
   }
 
