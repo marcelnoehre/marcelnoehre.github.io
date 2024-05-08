@@ -14,10 +14,11 @@
     white-space: nowrap;
     letter-spacing: 1px;
     font-family: LemonMilk;
-    font-size: 6em;
+    font-size: 3em;
     color: transparent;
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: white;
+    will-change: transform;
     animation: moveHeader 6s linear infinite;
 
     .spacer {
@@ -34,12 +35,26 @@
     }
 }
 
-@keyframes moveHeader {
-    from {
-        transform: translateX(0);
+@media (min-width: 768px) {
+    .header {
+        font-size: 6em;
     }
-    to {
-        transform: translateX(-100%);
+}
+
+@media (min-width: 1200px) {
+    .header {
+        font-size: 8em;
+    }
+}
+
+@keyframes moveHeader {
+    0% {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+    100% {
+        -webkit-transform: translate3d(-100%, 0, 0);
+        transform: translate3d(-100%, 0, 0);
     }
 }
 
