@@ -6,5 +6,10 @@
             </div>
         }
     </div>
-    {{ scrollY }}
+    <div class="projects">
+        @for (project of projects; track project) {
+            <h1>{{ project.title }}</h1>
+            <img [src]="project.image">
+        }
+    </div>
 </div>

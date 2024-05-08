@@ -25,6 +25,15 @@
     }
 }
 
+.projects {
+    color: white;
+
+    img {
+        height: 10em;
+        width: auto;
+    }
+}
+
 @keyframes moveHeader {
     from {
         transform: translateX(0);
