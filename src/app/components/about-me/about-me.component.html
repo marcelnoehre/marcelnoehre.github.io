@@ -1,65 +1,67 @@
 <div class="about-me-container">
-    <mat-card class="about-me" style="--card-degree: {{ cardDegree() }}; --card-fade: {{ cardFade() }}">
-        <mat-card-content>
-            @if (screenWidth >= 992 || (screenHeight < 576 && screenWidth >= 576)) {
-                <div class="card-container">
-                    <img src="assets/images/me.jpg" alt="Marcel Nöhre">
-                </div>
-                <div class="about-large">
-                    @if (screenHeight < 576) {
-                        @for (item of work; track item; let i = $index) {
-                            <div class="row">
-                                <h3> {{ item.date }} </h3>
-                                <div> {{ item.description }} </div>
-                                <button (click)="redirect(item.url, $event)" mat-raised-button>
-                                    View More
-                                    <mat-icon>open_in_new</mat-icon>
-                                </button>
-                            </div>
-                            @if (i < work.length - 1) {
-                                <mat-divider></mat-divider>
-                            }
-                        }
-                    } @else {
-                        <table>
-                            <tbody>
-                                @for (item of work; track item) {
-                                    @if (this.scrollY >= (this.screenHeight * 1.19)) {
-                                        <tr data-blobity (click)="redirect(item.url)">
-                                            <td> {{ item.date }} </td>
-                                            <td> {{ item.description }} </td>
-                                        </tr>
-                                    } @else {
-                                        <tr (click)="redirect(item.url)">
-                                            <td> {{ item.date }} </td>
-                                            <td> {{ item.description }} </td>
-                                        </tr>
-                                    }
+    @if (scrollY <= (screenHeight * 2.5)) {
+        <mat-card class="about-me" style="--card-degree: {{ cardDegree() }}; --card-fade: {{ cardFade() }}">
+            <mat-card-content>
+                @if (screenWidth >= 992 || (screenHeight < 576 && screenWidth >= 576)) {
+                    <div class="card-container">
+                        <img src="assets/images/me.jpg" alt="Marcel Nöhre">
+                    </div>
+                    <div class="about-large">
+                        @if (screenHeight < 576) {
+                            @for (item of work; track item; let i = $index) {
+                                <div class="row">
+                                    <h3> {{ item.date }} </h3>
+                                    <div> {{ item.description }} </div>
+                                    <button (click)="redirect(item.url, $event)" mat-raised-button>
+                                        View More
+                                        <mat-icon>open_in_new</mat-icon>
+                                    </button>
+                                </div>
+                                @if (i < work.length - 1) {
+                                    <mat-divider></mat-divider>
                                 }
-                            </tbody>
-                        </table>
-                    }
-                </div>
-            } @else {
-                <div class="card-container">
-                    <img src="assets/images/me.jpg" alt="Marcel Nöhre" [ngClass]="flip.meFront ? '' : 'flip-me'" (click)="flipCard()">
-                    <div class="about-small" [ngClass]="flip.meBack ? 'flip-about' : ''" (click)="flipCard()">
-                        @for (item of work; track item; let i = $index) {
-                            <div class="row">
-                                <h3> {{ item.date }} </h3>
-                                <div> {{ item.description }} </div>
-                                <button (click)="redirect(item.url, $event)" mat-raised-button>
-                                    View More
-                                    <mat-icon>open_in_new</mat-icon>
-                                </button>
-                            </div>
-                            @if (i < work.length - 1) {
-                                <mat-divider></mat-divider>
                             }
+                        } @else {
+                            <table>
+                                <tbody>
+                                    @for (item of work; track item) {
+                                        @if (this.scrollY >= (this.screenHeight * 1.19)) {
+                                            <tr data-blobity (click)="redirect(item.url)">
+                                                <td> {{ item.date }} </td>
+                                                <td> {{ item.description }} </td>
+                                            </tr>
+                                        } @else {
+                                            <tr (click)="redirect(item.url)">
+                                                <td> {{ item.date }} </td>
+                                                <td> {{ item.description }} </td>
+                                            </tr>
+                                        }
+                                    }
+                                </tbody>
+                            </table>
                         }
                     </div>
-                </div>
-            }
-        </mat-card-content>
-    </mat-card>
+                } @else {
+                    <div class="card-container">
+                        <img src="assets/images/me.jpg" alt="Marcel Nöhre" [ngClass]="flip.meFront ? '' : 'flip-me'" (click)="flipCard()">
+                        <div class="about-small" [ngClass]="flip.meBack ? 'flip-about' : ''" (click)="flipCard()">
+                            @for (item of work; track item; let i = $index) {
+                                <div class="row">
+                                    <h3> {{ item.date }} </h3>
+                                    <div> {{ item.description }} </div>
+                                    <button (click)="redirect(item.url, $event)" mat-raised-button>
+                                        View More
+                                        <mat-icon>open_in_new</mat-icon>
+                                    </button>
+                                </div>
+                                @if (i < work.length - 1) {
+                                    <mat-divider></mat-divider>
+                                }
+                            }
+                        </div>
+                    </div>
+                }
+            </mat-card-content>
+        </mat-card>
+    }
 </div>
