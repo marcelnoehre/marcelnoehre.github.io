@@ -8,11 +8,29 @@
     z-index: -2;
 }
 
-.content {
+.visible-container {
     position: absolute;
     bottom: 0;
     height: 100svh;
     width: 100vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    position: relative;
+    display: flex;
+    width: 100vw;
+    flex: 1;
+}
+
+.graphic-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 50vw;
 }
 
 .penguin {
@@ -23,10 +41,9 @@
     --eye-out: rgb(0, 0, 0);
     --eye-in: rgb(255, 255, 255);
     position: relative;
-    margin: auto;
     display: block;
-    width: 20em;
-    height: 20em;
+    width: 75%;
+    aspect-ratio: 1/1;
     transform-origin: 0% 0%;
     animation: loop 10s infinite linear;
 
