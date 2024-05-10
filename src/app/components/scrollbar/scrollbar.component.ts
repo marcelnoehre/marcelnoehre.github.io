@@ -20,7 +20,7 @@ export class ScrollbarComponent {
 
   scrollbarHeight(): string {
     try { 
-      return (this.scrollY / (window.document.body.scrollHeight - this.screenHeight)) * 100 + 'vh';
+      return (this.scrollY / (window.document.body.scrollHeight)) * 100 + 'vh';
     } catch (err) {
       return '0vh'
     }

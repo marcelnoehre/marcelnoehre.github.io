@@ -1,7 +1,12 @@
 import { Injectable } from '@angular/core';
+import { CubeSide } from '../interfaces/CubeSide';
+import { CvItem } from '../interfaces/CvItem';
+import { Project } from '../interfaces/Project';
+import { Contact } from '../interfaces/Contact';
 import * as cubeData from '../../assets/data/cube.json';
 import * as aboutData from '../../assets/data/about.json';
 import * as projectsData from '../../assets/data/projects.json';
+import * as contactData from '../../assets/data/contact.json';
 
 @Injectable({
   providedIn: 'root'
@@ -10,16 +15,20 @@ export class DataService {
 
   constructor() { }
 
-  public get cube() {
+  public get cube(): CubeSide[] {
     return cubeData.sides;
   }
 
-  public get work() {
+  public get work(): CvItem[] {
     return aboutData.work;
   }
 
-  public get projects() {
+  public get projects(): Project[] {
     return projectsData.projects;
+  }
+
+  public get contact(): Contact[] {
+    return contactData.platforms;
   }
 
 }

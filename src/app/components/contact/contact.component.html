@@ -31,7 +31,7 @@
                         </div>
                         <div class="circle first-circle"></div>
                         <div class="circle second-circle"></div>
-                        <div class="circle third-circle" data-blobity>
+                        <div class="circle third-circle">
                             Contact Me
                         </div>
                     </div>
@@ -43,9 +43,9 @@
                                 Feel free to drop me a message anytime!
                             </mat-card-header>
                             <mat-card-content>
-                                <img src="assets/images/icons/linkedin.svg" alt="Linkedin">
-                                <img src="assets/images/icons/mail.svg" alt="Mail">
-                                <img src="assets/images/icons/discord.svg" alt="Discord">
+                                @for (platform of contact; track platform) {
+                                    <img [src]="platform.image" [alt]="platform.name" (click)="redirect(platform.url, platform.target)" data-blobity>
+                                } 
                             </mat-card-content>
                         </mat-card>
                     </div>
