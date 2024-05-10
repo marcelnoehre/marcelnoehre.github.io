@@ -40,7 +40,7 @@
     @if (screenWidth >= 1200) {
         <div class="nav large-nav">
             <div data-blobity (click)="scroll(screenHeight * 1.3)">About</div>
-            <div data-blobity (click)="scroll(screenHeight * 2.3)">Projects</div>
+            <div data-blobity (click)="scroll(screenHeight * 2.25)">Projects</div>
             <div data-blobity (click)="scroll(0)">Contact</div>
             <div data-blobity (click)="scroll(0)">Impressum</div>
         </div>
@@ -49,4 +49,5 @@
             <mat-icon>menu</mat-icon>
         </button>
     }
+    <div #scrollDown class="scroll-down" [ngClass]="scrollY > 0 ? 'fade' : ''"></div>
 </div>

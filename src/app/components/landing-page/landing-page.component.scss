@@ -92,6 +92,20 @@
     opacity: 1;
 }
 
+.scroll-down {
+    position: absolute;
+    top: calc(100svh - 5.5em);
+    left: calc(100vw - 5.5em);
+    height: 5em;
+    width: auto;
+    z-index: -1;
+    transition: 2s ease;
+}
+
+.fade {
+    opacity: 0;
+}
+
 @media (min-width: 576px) {
     .content {
         padding-top: 3em;
