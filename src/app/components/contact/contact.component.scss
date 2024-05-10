@@ -7,3 +7,201 @@
     background-image: linear-gradient( 109.6deg,  rgba(112,246,255,0.33) 11.2%, rgba(221,108,241,0.26) 42%, rgba(229,106,253,0.71) 71.5%, rgba(123,183,253,1) 100.2% );
     z-index: -2;
 }
+
+.penguin {
+    --skin: rgb(50, 50, 50);
+    --belly: rgb(240, 240, 240);
+    --beak: rgb(255, 165, 0);
+    --blush: rgb(255, 192, 203);
+    --eye-out: rgb(0, 0, 0);
+    --eye-in: rgb(255, 255, 255);
+    position: relative;
+    margin: auto;
+    display: block;
+    width: 20em;
+    height: 20em;
+    transform-origin: 0% 0%;
+    animation: loop 10s infinite linear;
+
+    * {
+        position: absolute;
+    }
+
+    .top {
+        top: 40%;
+        left: 23.5%;
+        width: 53%;
+        height: 45%;
+        border-radius: 70% 70% 100% 100%;
+        background: var(--skin);
+
+        .hand {
+            width: 30%;
+            height: 60%;
+            z-index: -1;
+        }
+    
+        .right-hand {
+            top: 5%;
+            left: 25%;
+            border-radius: 30% 30% 120% 30%;
+            transform: rotate(110deg);
+            animation: wave 1.75s infinite linear;
+            transform-origin: 0% 0%;
+            background: var(--skin);
+        }
+          
+        .left-hand {
+            top: 0%;
+            left: 75%;
+            border-radius: 30% 30% 30% 120%;
+            transform: rotate(-45deg);
+            background: var(--skin);
+        }
+    
+        .feet {
+            top: 85%;
+            width: 15%;
+            height: 30%;
+            border-radius: 50% 50% 50% 50%;
+            background: var(--beak);
+            z-index: -2222;
+        }
+    
+        .right-feet {
+            left: 60%;
+            transform: rotate(-80deg);
+        }
+          
+        .left-feet {
+            left: 25%;
+            transform: rotate(80deg);
+        }
+    }
+
+    .bottom {
+        top: 10%;
+        left: 25%;
+        width: 50%;
+        height: 45%;
+        border-radius: 70% 70% 60% 60%;
+        background: var(--skin);
+
+        .cheek {
+            top: 15%;
+            width: 60%;
+            height: 70%;
+            border-radius: 70% 70% 60% 60%;
+            background: var(--belly);
+        }
+          
+        .right-cheek {
+            left: 35%;
+        }
+          
+        .left-cheek {
+            left: 5%;
+        }
+
+        .belly {
+            top: 60%;
+            left: 2.5%;
+            width: 95%;
+            height: 100%;
+            border-radius: 120% 120% 100% 100%;
+            background: var(--belly);
+        }
+
+        .eye {
+            top: 45%;
+            width: 15%;
+            height: 17%;
+            border-radius: 50%;
+            background: var(--eye-out);
+        
+            .sparkle {
+                top: 25%;
+                left: 15%;
+                width: 35%;
+                height: 35%;
+                border-radius: 50%;
+                background: var(--eye-in);
+            }
+        }
+
+        .right-eye {
+            left: 60%;
+        }
+          
+        .left-eye {
+            left: 25%;
+        }
+
+        .blush {
+            top: 65%;
+            width: 15%;
+            height: 10%;
+            border-radius: 50%;
+            background: var(--blush);
+            opacity: 0.5;
+        }
+          
+        .blush-right {
+            left: 15%;
+        }
+          
+        .blush-left {
+            left: 70%;
+        }
+
+        .beak {
+            background: var(--beak);
+            height: 10%;
+            border-radius: 50%;
+        }
+          
+        .beak-top {
+            top: 60%;
+            left: 40%;
+            width: 20%;
+            height: 10%;
+        } 
+          
+        .beak-bottom {
+            top: 65%;
+            left: 42%;
+            width: 16%;
+        }
+    }
+}
+  
+@keyframes wave {
+    10% {
+        transform: rotate(110deg);
+    }
+    50% {
+        transform: rotate(130deg);
+    }
+    100% {
+        transform: rotate(110deg);
+    }
+}
+  
+@keyframes loop {
+    0% {
+        transform: rotateY(0deg);
+    }
+    25% {
+        transform: rotateY(-10deg);
+    }
+    50% {
+        transform: rotateY(0deg);
+    }
+    75% {
+        transform: rotateY(10deg);
+    }
+    100% {
+        transform: rotateY(0deg);
+    }
+}
+  
