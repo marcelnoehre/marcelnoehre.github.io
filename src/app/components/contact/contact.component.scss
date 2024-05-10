@@ -8,6 +8,13 @@
     z-index: -2;
 }
 
+.content {
+    position: absolute;
+    bottom: 0;
+    height: 100svh;
+    width: 100vw;
+}
+
 .penguin {
     --skin: rgb(50, 50, 50);
     --belly: rgb(240, 240, 240);
