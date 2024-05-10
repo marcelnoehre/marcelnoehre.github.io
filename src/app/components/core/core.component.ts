@@ -6,11 +6,12 @@ import { AboutMeComponent } from '../about-me/about-me.component';
 import { ProjectsComponent } from '../projects/projects.component';
 import { TechnologiesComponent } from '../technologies/technologies.component';
 import { ContactComponent } from '../contact/contact.component';
+import { ScrollbarComponent } from '../scrollbar/scrollbar.component';
 
 @Component({
   selector: 'app-core',
   standalone: true,
-  imports: [LandingPageComponent, CubeComponent, AboutMeComponent, ProjectsComponent, TechnologiesComponent, ContactComponent, ScreenDirective],
+  imports: [LandingPageComponent, CubeComponent, AboutMeComponent, ProjectsComponent, TechnologiesComponent, ContactComponent, ScrollbarComponent, ScreenDirective],
   providers: [ScreenDirective],
   templateUrl: './core.component.html',
   styleUrl: './core.component.scss'

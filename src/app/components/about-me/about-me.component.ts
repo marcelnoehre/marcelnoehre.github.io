@@ -31,7 +31,7 @@ export class AboutMeComponent implements AfterViewInit {
 
   ngAfterViewInit() {
     try { 
-      this.scrollY = window.scrollY
+      this.scrollY = window.scrollY;
       this.screenWidth = window.innerWidth;
       this.screenHeight = window.innerHeight;
     } catch (err) { }

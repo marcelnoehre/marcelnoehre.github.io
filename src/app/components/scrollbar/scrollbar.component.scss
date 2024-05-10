@@ -1,0 +1,10 @@
+.scrollbar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 0.5em;
+    height: var(--scrollbar-height);
+    background-image: linear-gradient(to top, #ff4e50, #f9d423);
+    box-shadow: mix(#ff4e50, #f9d423) 0 0 1em;
+    border-radius: 10px;
+}

@@ -21,7 +21,7 @@ export class CubeComponent implements AfterViewInit {
 
   ngAfterViewInit() {
     try { 
-      this.scrollY = window.scrollY
+      this.scrollY = window.scrollY;
       this.screenHeight = window.innerHeight;
     } catch (err) { }
   }
