@@ -1,5 +1,5 @@
 <div class="projects-container">
-    <div class="carousel-wrapper">
+    <div class="carousel-wrapper top">
         @for (_ of [].constructor(10); track _) {
             <div class="header">Projects
                 <div class="spacer"> - </div>
@@ -11,6 +11,13 @@
             @if (project.title !== 'transparent' || (screenWidth >= 576 && screenWidth < 992)) {
                 <img [src]="project.image">
             }
+        }
+    </div>
+    <div class="carousel-wrapper bottom">
+        @for (_ of [].constructor(10); track _) {
+            <div class="header">Projects
+                <div class="spacer"> - </div>
+            </div>
         }
     </div>
 </div>

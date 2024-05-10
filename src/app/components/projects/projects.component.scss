@@ -8,7 +8,14 @@
     justify-content: flex-start;
     overflow: hidden;
     background: black;
-    border-top: 4px solid lavender;
+}
+
+.top {
+    border-top: 8px solid lavender;
+}
+
+.bottom {
+    border-bottom: 8px solid lavender;
 }
 
 .header {
@@ -18,8 +25,8 @@
     font-family: LemonMilk;
     font-size: 3em;
     color: transparent;
-    -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: white;
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: lavender;
     will-change: transform;
     animation: moveHeader 6s linear infinite;
 
