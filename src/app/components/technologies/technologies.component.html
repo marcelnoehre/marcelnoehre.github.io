@@ -1,5 +1,11 @@
 <div class="technologies-container">
-    
+    <div class="tech-stack">
+        @for (index of [4, 3, 2, 1]; track index) {
+            <div class="layer" style="--index: {{ index }}">
+                <div class="label">Layer {{ index }}</div>
+            </div>
+        }
+    </div>
 </div>
 <svg viewBox="0 0 500 50" preserveAspectRatio="xMinYMin meet" style="transform: translateY(-2px)">
     <path d="M0,25 C150,75 350,0 500,25 L500,00 L0,0 Z" style="stroke: none; fill: #181818;"></path>

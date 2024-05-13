@@ -2,5 +2,56 @@
     position: relative;
     height: 100vh;
     width: 100vw;
+    padding: 5vw;
     background: #181818;
+}
+
+.tech-stack {
+    position: relative;
+    transform: skewY(-15deg);
+}
+
+.layer {
+    position: relative;
+    width: 20em;
+    padding: 2em;
+    background: rgb(150, 150, 150);
+    transition: 1s;
+    z-index: var(--index);
+}
+
+.layer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -2em;
+    width: 2em;
+    height: 100%;
+    transform-origin: right;
+    transform: skewY(45deg);
+    background: rgb(100, 100, 100);
+}
+
+.layer::after {
+    content: '';
+    position: absolute;
+    top: -2em;
+    left: 0;
+    width: 100%;
+    height: 2em;
+    transform-origin: bottom;
+    transform: skewX(45deg);
+    background: rgb(100, 100, 100);
+}
+
+.layer:hover {
+    transform: translateX(5em);
+    background-color: orange;
+}
+
+.label  {
+    display: block;
+    text-transform: uppercase;
+    letter-spacing: 0.5em;
+    color: white;
 }
