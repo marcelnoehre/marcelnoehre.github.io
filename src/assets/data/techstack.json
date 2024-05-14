@@ -3,21 +3,29 @@
         {
             "name": "Angular",
             "color": "#ffb6c1",
+            "shade": "#cc808b",
+            "description": "Angular.js is powerful frontend framework for building dynamic web applications, offering modular components and two-way data binding for seamless user interactions.",
             "index": 4
         },
         {
             "name": "Express",
             "color": "#94c37d",
+            "shade": "#759962",
+            "description": "Express.js is a minimalist and flexible Node.js framework for creating robust web applications and APIs, known for its simplicity and speed in handling HTTP requests.",
             "index": 3
         },
         {
             "name": "Firebase",
             "color": "#ffcc80",
+            "shade": "#cca366",
+            "description": "Firebase is a comprehensive platform providing real-time database, authentication, hosting, and cloud functions for seamless app development and scalability",
             "index": 2
         },
         {
             "name": "Docker",
             "color": "#88bcd8",
+            "shade": "#6d96ad",
+            "description": "Docker is a containerization platform that simplifies application deployment by packaging software and its dependencies into containers, enabling efficient deployment across environments.",
             "index": 1
         }
     ]

@@ -1,10 +1,15 @@
 <div class="technologies-container">
+    <div class="tech-stack-header">Techstack</div>
     <div class="tech-stack">
         @for (layer of techstack; track layer) {
-            <div class="layer" style="--index: {{ layer.index }}; --color: {{ layer.color }};">
+            <div class="layer" style="--index: {{ layer.index }}; --color: {{ layer.color }}; --shade: {{ layer.shade }}">
                 <div class="label">{{ layer.name }}</div>
+                <div class="description">{{ layer.description }}</div>
             </div>
         }
+    </div>
+    <div class="workflow">
+        <div class="workflow-header">Workflow</div>
     </div>
 </div>
 <svg viewBox="0 0 500 50" preserveAspectRatio="xMinYMin meet" style="transform: translateY(-2px)">

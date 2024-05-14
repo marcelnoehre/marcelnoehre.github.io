@@ -2,19 +2,26 @@
     position: relative;
     height: 100vh;
     width: 100vw;
-    padding: 5vw;
+    padding: 7.5vw;
     background: #181818;
+}
+
+.tech-stack-header {
+    font-size: 4vw;
+    color: white;
+    transform: translateX(-2vw);
 }
 
 .tech-stack {
     position: relative;
-    transform: skewY(-15deg);
+    transform: skewY(-15deg) translateY(-2.5vw);
 }
 
 .layer {
     position: relative;
     width: 20em;
-    padding: 2em;
+    padding: 2vw;
+    font-size: 1.5vw;
     background: rgb(150, 150, 150);
     color: white;
     transition: 1s;
@@ -25,35 +32,89 @@
     content: '';
     position: absolute;
     top: 0;
-    left: -2em;
-    width: 2em;
+    left: -2vw;
+    width: 2vw;
     height: 100%;
     transform-origin: right;
     transform: skewY(45deg);
     background: rgb(100, 100, 100);
+    transition: 1s;
 }
 
 .layer::after {
     content: '';
     position: absolute;
-    top: -2em;
+    top: -2vw;
     left: 0;
     width: 100%;
-    height: 2em;
+    height: 2vw;
     transform-origin: bottom;
     transform: skewX(45deg);
     background: rgb(100, 100, 100);
+    transition: 1s;
 }
 
 .layer:hover {
-    transform: translateX(5em);
+    transform: translateX(5vw);
     background-color: var(--color);
     color: black;
-    text-shadow: 0 0 0.5em white;
+    font-weight: bold;
+    text-shadow: 0 0 0.5vw white;
+}
+
+.layer:hover::before {
+    background: var(--shade);
+}
+
+.layer:hover::after {
+    background: var(--shade);
 }
 
 .label  {
     display: block;
     text-transform: uppercase;
-    letter-spacing: 0.5em;
+    letter-spacing: 0.5vw;
+}
+
+.description {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 105%;
+    width: 25vw;
+    opacity: 0;
+    padding: 1vw;
+    border-radius: 5px;
+    transform: skewY(15deg);
+    background-color: var(--color);
+    text-shadow: none;
+    color: black;
+    font-weight: normal;
+}
+
+.layer:hover .description {
+    display: block;
+    animation: fold 1s forwards;
+}
+
+.workflow {
+    width: 100vw;
+}
+
+.workflow-header {
+    width: 80vw;
+    text-align: right;
+    font-size: 4vw;
+    color: white;
+}
+
+@keyframes fold {
+    0% {
+        opacity: 0;
+        transform: skewY(0deg);
+    }
+    100% {
+        opacity: 1;
+        transform: skewY(15deg);
+    }
 }
