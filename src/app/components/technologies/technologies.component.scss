@@ -16,6 +16,7 @@
     width: 20em;
     padding: 2em;
     background: rgb(150, 150, 150);
+    color: white;
     transition: 1s;
     z-index: var(--index);
 }
@@ -46,12 +47,13 @@
 
 .layer:hover {
     transform: translateX(5em);
-    background-color: orange;
+    background-color: var(--color);
+    color: black;
+    text-shadow: 0 0 0.5em white;
 }
 
 .label  {
     display: block;
     text-transform: uppercase;
     letter-spacing: 0.5em;
-    color: white;
 }

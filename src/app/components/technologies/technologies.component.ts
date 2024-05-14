@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { DataService } from '../../services/data.service';
 
 @Component({
   selector: 'app-technologies',
@@ -8,5 +9,9 @@ import { Component } from '@angular/core';
   styleUrl: './technologies.component.scss'
 })
 export class TechnologiesComponent {
+  public techstack = this._data.techstack;
 
+  constructor(private _data: DataService) {
+    
+  }
 }
