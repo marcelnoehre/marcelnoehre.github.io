@@ -7,10 +7,10 @@
                 </mat-card-header>
                 <mat-card-content>
                     <div class="description">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur commodi, error, dolore enim! Est blanditiis vitae suscipit!
+                        {{ item.description }}
                     </div>
                     <div class="image">
-                        <img src="assets/images/projects/see-more.jpg" alt="">
+                        <img [src]="item.image" alt="">
                     </div>
                 </mat-card-content>
             </mat-card>

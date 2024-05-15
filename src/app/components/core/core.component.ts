@@ -4,7 +4,7 @@ import { LandingPageComponent } from '../landing-page/landing-page.component';
 import { CubeComponent } from '../cube/cube.component';
 import { AboutMeComponent } from '../about-me/about-me.component';
 import { ProjectsComponent } from '../projects/projects.component';
-import { GridComponent } from '../grid/grid';
+import { GridComponent } from '../grid/grid.component';
 import { ContactComponent } from '../contact/contact.component';
 import { ScrollbarComponent } from '../scrollbar/scrollbar.component';
 

@@ -27,6 +27,7 @@ mat-card {
 .small {
     mat-card-content {
         display: flex;
+        justify-content: space-between;
     }
 
     .description {
@@ -35,7 +36,7 @@ mat-card {
     }
 
     .image {
-        width: 34%;
+        width: 30%;
     }
 }
 
@@ -46,13 +47,15 @@ mat-card {
         display: flex;
         justify-content: center;
     }
-    
+
     .description {
-        width: 100%;
         text-align: center;
     }
 
     .image {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         width: 100%;
     }
 }
@@ -69,7 +72,7 @@ mat-card-header {
 .image {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     aspect-ratio: 1/1;
 
@@ -78,5 +81,6 @@ mat-card-header {
         height: 80%;
         border-radius: 50%;
         object-fit: cover;
+        background: white;
     }
 }
