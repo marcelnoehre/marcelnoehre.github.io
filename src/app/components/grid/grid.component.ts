@@ -11,7 +11,6 @@ import { MatCardModule } from '@angular/material/card';
 })
 export class GridComponent {
   public grid = this._data.grid;
-  public techstack = this._data.techstack;
 
   constructor(private _data: DataService) {
     
