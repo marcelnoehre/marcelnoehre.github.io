@@ -4,54 +4,63 @@
             "title": "GitHub",
             "description": "Take a look at my GitHub profile, where you'll find most of the projects I've mentioned above.",
             "image": "assets/images/grid/github.svg",
+            "url": "https://github.com/marcelnoehre",
             "class": "grid-item small"
         },
         {
             "title": "Codepen",
             "description": "Check out my CodePen for some CSS art or small but interesting webdesign snippets.",
             "image": "assets/images/grid/codepen.svg",
+            "url": "https://codepen.io/marcelnoehre",
             "class": "grid-item small"
         },
         {
             "title": "Techstack",
             "description": "Right now, I'm mostly working on some web development projects using a tech stack that includes Angular, Express.js, Firebase for data storage and Docker for deployment.",
             "image": "assets/images/projects/see-more.jpg",
+            "url": "https://codepen.io/marcelnoehre/pen/VwOveKZ",
             "class": "grid-item large"
         },
         {
             "title": "Advent of Code",
             "description": "I like solving puzzles and trying to improve my coding skills with particularly short solutions.",
             "image": "assets/images/grid/aoc.png",
+            "url": "https://github.com/marcelnoehre/advent-of-code",
             "class": "grid-item small"
         },
         {
             "title": "Technologies",
             "description": "I'm currently working in the field of web development with the mentioned tech stack. At university, I used Java a lot, for example to realise a multi-agent system. I also gained insights into Python, C/C++, R, Lisp, Kotlin and Clojure.",
             "image": "assets/images/projects/see-more.jpg",
+            "url": "",
             "class": "grid-item large"
         },
         {
             "title": "Workflow",
             "description": "Take a look at my workflow for realising a project. From sketching out the design or making detailed prototypes to Test-Driven Development and a Docker Deployment.",
             "image": "assets/images/projects/see-more.jpg",
+            "url": "",
             "class": "grid-item large"
         },
         {
             "title": "University",
             "description": "My main focus is software engineering, complemented by machine learning, particularly on large language models.",
             "image": "assets/images/grid/university.png",
+            "url": "https://www.uni-hildesheim.de/studium/studienangebot/masterstudium/angewandte-informatik-master-of-science-msc/",
             "class": "grid-item small"
         },
         {
             "title": "Work",
             "description": "We are currently developing a scanner interface as a user-friendly connection to an ERP system.",
             "image": "assets/images/grid/work.jpg",
+            "url": "https://entiac.com/mde/",
             "class": "grid-item small"
         },
         {
             "title": "Teaching",
             "description": "I've already gained some teaching experience as a teaching assistant for two semesters.",
             "image": "assets/images/grid/java.jpg",
+            "url": "https://sse.uni-hildesheim.de",
             "class": "grid-item small"
         }
     ]

@@ -15,13 +15,16 @@
 .grid-item {
     height: 100%;
     text-align: center;
-    background: rgb(255, 255, 255, 0.1 );
-    color: white;
-}
-
-mat-card {
     padding: 1.5em;
     padding-bottom: 0;
+    background: rgb(255, 255, 255, 0.1 );
+    color: white;
+    transition: 0.5s;
+}
+
+.grid-item:hover {
+    scale: 1.05;
+    background: rgb(255, 255, 255, 0.25);
 }
 
 .small {

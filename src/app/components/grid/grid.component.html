@@ -1,7 +1,7 @@
 <div class="grid-container">
     <div class="grid">
         @for (item of grid; track item) {
-            <mat-card [class]="item.class">
+            <mat-card [class]="item.class" (click)="redirect(item.url)">
                 <mat-card-header>
                     {{ item.title }}
                 </mat-card-header>

@@ -16,4 +16,8 @@ export class GridComponent {
   constructor(private _data: DataService) {
     
   }
+
+  redirect(url: string): void {
+    window.open(url, '_blank');
+  }
 }
