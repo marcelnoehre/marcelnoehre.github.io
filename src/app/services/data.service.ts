@@ -7,8 +7,10 @@ import { Contact } from '../interfaces/Contact';
 import * as cubeData from '../../assets/data/cube.json';
 import * as aboutData from '../../assets/data/about.json';
 import * as projectsData from '../../assets/data/projects.json';
+import * as gridData from '../../assets/data/grid.json';
 import * as techstack from '../../assets/data/techstack.json';
 import * as contactData from '../../assets/data/contact.json';
+import { GridItem } from '../interfaces/GridItem';
 
 @Injectable({
   providedIn: 'root'
@@ -27,6 +29,10 @@ export class DataService {
 
   public get projects(): Project[] {
     return projectsData.projects;
+  }
+
+  public get grid(): GridItem[] {
+    return gridData.items;
   }
 
   public get techstack(): TechStack[] {

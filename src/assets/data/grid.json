@@ -1,0 +1,49 @@
+{
+    "items": [
+        {
+            "title": "GitHub",
+            "description": "",
+            "class": "grid-item small"
+        },
+        {
+            "title": "Codepen",
+            "description": "",
+            "class": "grid-item small"
+        },
+        {
+            "title": "Techstack",
+            "description": "",
+            "class": "grid-item large"
+        },
+        {
+            "title": "Advent of Code",
+            "description": "",
+            "class": "grid-item small"
+        },
+        {
+            "title": "Technologies",
+            "description": "",
+            "class": "grid-item large"
+        },
+        {
+            "title": "Design",
+            "description": "",
+            "class": "grid-item large"
+        },
+        {
+            "title": "University",
+            "description": "",
+            "class": "grid-item small"
+        },
+        {
+            "title": "Work",
+            "description": "",
+            "class": "grid-item small"
+        },
+        {
+            "title": "Teaching",
+            "description": "",
+            "class": "grid-item small"
+        }
+    ]
+}

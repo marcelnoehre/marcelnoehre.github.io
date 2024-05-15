@@ -1,0 +1,82 @@
+.grid-container {
+    position: relative;
+    width: 100vw;
+    padding: 10vw 2.5vw;
+    background: linear-gradient(to bottom, #606060, #181818);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 95vw;
+    gap: 3vw;
+}
+
+.grid-item {
+    height: 100%;
+    text-align: center;
+    background: rgb(255, 255, 255, 0.1 );
+    color: white;
+}
+
+mat-card {
+    padding: 1.5em;
+    padding-bottom: 0;
+}
+
+.small {
+    mat-card-content {
+        display: flex;
+    }
+
+    .description {
+        width: 66%;
+        text-align: left;
+    }
+
+    .image {
+        width: 34%;
+    }
+}
+
+.large {
+    grid-row: span 2;
+
+    mat-card-header {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .description {
+        width: 100%;
+        text-align: center;
+    }
+
+    .image {
+        width: 100%;
+    }
+}
+
+mat-card-header {
+    font-size: 1.5em;
+    padding-bottom: 1em;
+}
+
+.description {
+    line-height: 1.5em;
+}
+
+.image {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    aspect-ratio: 1/1;
+
+    img {
+        width: 80%;
+        height: 80%;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+}
