@@ -1,22 +1,21 @@
 .grid-container {
     position: relative;
     width: 100vw;
-    padding: 10vw 2.5vw;
+    padding: 10vw 10vw;
     background: linear-gradient(to bottom, #606060, #181818);
 }
 
 .grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    width: 95vw;
-    gap: 3vw;
+    grid-template-columns: repeat(1, 1fr);
+    width: 80vw;
+    gap: 5vw;
 }
 
 .grid-item {
     height: 100%;
     text-align: center;
     padding: 1.5em;
-    padding-bottom: 0;
     background: rgb(255, 255, 255, 0.1 );
     color: white;
     transition: 0.5s;
@@ -41,6 +40,11 @@
     .image {
         width: 30%;
     }
+
+    img {
+        width: 7.5em;
+        height: 7.5em;
+    }
 }
 
 .large {
@@ -61,6 +65,11 @@
         justify-content: center;
         width: 100%;
     }
+
+    img {
+        height: 90%;
+        width: 90%;
+    }
 }
 
 mat-card-header {
@@ -80,10 +89,37 @@ mat-card-header {
     aspect-ratio: 1/1;
 
     img {
-        width: 80%;
-        height: 80%;
         border-radius: 50%;
         object-fit: cover;
         background: white;
+    }
+}
+
+@media (min-width: 768px) {
+    .grid-container {
+        padding: 10vw 2.5vw;
+    }
+
+    .grid {
+        width: 95vw;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 3vw;
+    }
+
+    .grid-item {
+        padding-bottom: 0;
+    }
+
+    .small {
+        img {
+            width: 5em;
+            height: 5em;
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .grid {
+        grid-template-columns: repeat(3, 1fr);
     }
 }
