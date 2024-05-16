@@ -12,6 +12,7 @@
     position: absolute;
     bottom: 0;
     height: 100vh;
+    overflow: scroll;
     width: 100vw;
     display: flex;
     flex-direction: column;
@@ -20,6 +21,8 @@
 .content {
     position: relative;
     display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
     width: 100vw;
     flex: 1;
 }
@@ -29,8 +32,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100%;
-    width: 50vw;
+    width: 70vw;
 }
 
 .penguin {
@@ -249,21 +251,17 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 100%;
-    width: 50vw;
+    align-items: center;
+    width: 100vw;
 
     .card-container {
         position: relative;
         display: block;
         width: 75%;
-        aspect-ratio: 1/1;
         transform-origin: 0% 0%;
     }
     
     mat-card {
-        position: absolute;
-        bottom: 10%;
-        left: 0;
         width: 100%;
         background: rgb(255, 255, 255, 0.6);
         align-items: center;
@@ -273,7 +271,6 @@
 
         mat-card-header {
             text-align: center;
-            font-size: 2em;
             padding-bottom: 4%;
         }
 
@@ -288,6 +285,43 @@
                 z-index: 500;
             }
         }
+    }
+}
+
+@media (min-width: 768px) {
+    mat-card-header {
+        font-size: 3vw;
+    }
+}
+
+@media (max-height: 150vw) {
+    .graphic-container {
+        padding-top: 15vh;
+    }
+}
+
+@media (min-width: 120vh) {
+    .content {
+        flex-direction: row;
+    }
+
+    .graphic-container {
+        width: 50vw;
+        padding-top: 0;
+    }
+
+    .data-container {
+        width: 50vw;
+    }
+
+    .card-container {
+        aspect-ratio: 1/1;
+    }
+
+    mat-card {
+        position: absolute;
+        bottom: 10%;
+        left: 0%;
     }
 }
   
