@@ -1,6 +1,8 @@
 .projects-container {
+    position: relative;
     width: 100vw;
     background: lavender;
+    z-index: 2;
 }
 
 .carousel-wrapper {
@@ -50,6 +52,10 @@ img {
     border-radius: 10px;
 }
 
+.center {
+    animation: spin 10s linear infinite;
+}
+
 @media (min-width: 576px) {
     .header {
         font-size: 6em;
@@ -81,3 +87,13 @@ img {
     }
 }
 
+@keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
