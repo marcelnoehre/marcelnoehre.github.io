@@ -17,6 +17,7 @@ export class GridComponent {
   }
 
   redirect(url: string): void {
+    if (!url) return;
     window.open(url, '_blank');
   }
 }

@@ -17,7 +17,7 @@
         {
             "title": "Techstack",
             "description": "Right now, I'm mostly working on some web development projects using a tech stack that includes Angular, Express.js, Firebase for data storage and Docker for deployment.",
-            "image": "assets/images/projects/see-more.jpg",
+            "image": "assets/images/grid/techstack.png",
             "url": "https://codepen.io/marcelnoehre/pen/VwOveKZ",
             "class": "grid-item large"
         },
@@ -31,15 +31,15 @@
         {
             "title": "Technologies",
             "description": "I'm currently working in the field of web development with the mentioned tech stack. At university, I used Java a lot, for example to realise a multi-agent system. I also gained insights into Python, C/C++, R, Lisp, Kotlin and Clojure.",
-            "image": "assets/images/projects/see-more.jpg",
-            "url": "",
+            "image": "assets/images/grid/technologies.png",
+            "url": "/coming-soon",
             "class": "grid-item large"
         },
         {
             "title": "Workflow",
             "description": "Take a look at my workflow for realising a project. From sketching out the design or making detailed prototypes to Test-Driven Development and a Docker Deployment.",
             "image": "assets/images/projects/see-more.jpg",
-            "url": "",
+            "url": "/coming-soon",
             "class": "grid-item large"
         },
         {
