@@ -2,19 +2,19 @@
     "projects": [
         {
             "title": "Custom Rocket League Overlay",
-            "image": "assets/images/projects/rl-overlay.jpg"
+            "image": "assets/images/projects/rl-overlay.png"
         },
         {
             "title": "Swagger for AAS in Industry 4.0",
-            "image": "assets/images/projects/swagger-for-aas.jpg"
+            "image": "assets/images/projects/swagger-for-aas.png"
         },
         {
             "title": "Analysis of Taxi trips in NYC",
-            "image": "assets/images/projects/nyc-taxi-analysis.jpg"
+            "image": "assets/images/projects/nyc-taxi-analysis.png"
         },
         {
             "title": "Multi Agent System (Poker)",
-            "image": "assets/images/projects/poker-mas.jpg"
+            "image": "assets/images/projects/poker-mas.png"
         },
         {
             "title": "center",
@@ -23,19 +23,19 @@
         },
         {
             "title": "CBR-based hint system (Minesweeper)",
-            "image": "assets/images/projects/cbr-minesweeper.jpg"
+            "image": "assets/images/projects/cbr-minesweeper.png"
         },
         {
             "title": "Webmaster for MVB website",
-            "image": "assets/images/projects/mvb-website.jpg"
+            "image": "assets/images/projects/mvb-website.png"
         },
         {
             "title": "Platform for Discord bots",
-            "image": "assets/images/projects/discord-bots.jpg"
+            "image": "assets/images/projects/discord-bots.png"
         },
         {
             "title": "Other projects",
-            "image": "assets/images/projects/see-more.jpg"
+            "image": "assets/images/projects/see-more.png"
         }
     ]
 }

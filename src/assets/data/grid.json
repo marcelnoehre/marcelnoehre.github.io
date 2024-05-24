@@ -38,7 +38,7 @@
         {
             "title": "Workflow",
             "description": "Take a look at my workflow for realising a project. From sketching out the design or making detailed prototypes to Test-Driven Development and a Docker Deployment.",
-            "image": "assets/images/projects/see-more.jpg",
+            "image": "assets/images/projects/see-more.png",
             "url": "/coming-soon",
             "class": "grid-item large"
         },
