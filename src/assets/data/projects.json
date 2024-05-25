@@ -3,47 +3,66 @@
         {
             "title": "Custom RL Overlay",
             "image": "assets/images/projects/rl-overlay.png",
-            "technologies": "Angular.js, Express.js, Socket.io"
+            "technologies": "Angular.js, Express.js, Socket.io",
+            "url": "/coming-soon",
+            "target": ""
+
         },
         {
             "title": "Swagger for AAS",
             "image": "assets/images/projects/swagger-for-aas.png",
-            "technologies": "Java, SwaggerAPI"
+            "technologies": "Java, SwaggerAPI",
+            "url": "/coming-soon",
+            "target": ""
         },
         {
             "title": "Taxi Trips Analysis",
             "image": "assets/images/projects/nyc-taxi-analysis.png",
-            "technologies": "Python"
+            "technologies": "Python",
+            "url": "/coming-soon",
+            "target": ""
         },
         {
-            "title": "Multi Agent System (Poker)",
+            "title": "Multi Agent System",
             "image": "assets/images/projects/poker-mas.png",
-            "technologies": "Java, Jade, myCBR, React.js"
+            "technologies": "Java, Jade, myCBR, React.js",
+            "url": "/coming-soon",
+            "target": ""
         },
         {
             "title": "center",
             "image": "assets/images/projects/center.svg",
-            "technologies": ""
+            "technologies": "",
+            "url": "",
+            "target": ""
         },
         {
-            "title": "Explainable CBR (Minesweeper)",
+            "title": "Explainable CBR",
             "image": "assets/images/projects/cbr-minesweeper.png",
-            "technologies": "Java, myCBR, Angular.js"
+            "technologies": "Java, myCBR, Angular.js",
+            "url": "/coming-soon",
+            "target": ""
         },
         {
             "title": "Webmaster MVB",
             "image": "assets/images/projects/mvb-website.png",
-            "technologies": "Joomla"
+            "technologies": "Joomla",
+            "url": "https://musikverein-borsum.de",
+            "target": "_blank"
         },
         {
-            "title": "Platform for Discord bots",
+            "title": "Discord Bots",
             "image": "assets/images/projects/discord-bots.png",
-            "technologies": "JavaScript, Discord.js"
+            "technologies": "JavaScript, Discord.js",
+            "url": "/coming-soon",
+            "target": ""
         },
         {
             "title": "Other projects",
             "image": "assets/images/projects/see-more.png",
-            "technologies": "View my GitHub profile"
+            "technologies": "View my GitHub profile",
+            "url": "https://github.com/marcelnoehre",
+            "target": "_blank"
         }
     ]
 }

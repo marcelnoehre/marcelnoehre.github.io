@@ -15,6 +15,7 @@
                         <h3>{{ project.title }}</h3>
                         <h4>{{ project.technologies }}</h4>
                     </div>
+                    <a [href]="project.url" [target]="project.target" data-no-blobity></a>
                 </div>
             } @else if (screenWidth >= 576 && screenWidth < 992) {
                 <img [src]="project.image" class="center">

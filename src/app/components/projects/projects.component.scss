@@ -111,6 +111,19 @@
     color: rgb(175, 175, 175);
     padding-top: 2%;
 }
+
+.project a {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+}
+
+.project:hover a {
+    z-index: 1;
+}
   
 .project:hover img {
     opacity: 0.2;
