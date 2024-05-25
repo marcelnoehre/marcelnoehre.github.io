@@ -1,41 +1,49 @@
 {
     "projects": [
         {
-            "title": "Custom Rocket League Overlay",
-            "image": "assets/images/projects/rl-overlay.png"
+            "title": "Custom RL Overlay",
+            "image": "assets/images/projects/rl-overlay.png",
+            "technologies": "Angular.js, Express.js, Socket.io"
         },
         {
-            "title": "Swagger for AAS in Industry 4.0",
-            "image": "assets/images/projects/swagger-for-aas.png"
+            "title": "Swagger for AAS",
+            "image": "assets/images/projects/swagger-for-aas.png",
+            "technologies": "Java, SwaggerAPI"
         },
         {
-            "title": "Analysis of Taxi trips in NYC",
-            "image": "assets/images/projects/nyc-taxi-analysis.png"
+            "title": "Taxi Trips Analysis",
+            "image": "assets/images/projects/nyc-taxi-analysis.png",
+            "technologies": "Python"
         },
         {
             "title": "Multi Agent System (Poker)",
-            "image": "assets/images/projects/poker-mas.png"
+            "image": "assets/images/projects/poker-mas.png",
+            "technologies": "Java, Jade, myCBR, React.js"
         },
         {
             "title": "center",
             "image": "assets/images/projects/center.svg",
-            "class": "center"
+            "technologies": ""
         },
         {
-            "title": "CBR-based hint system (Minesweeper)",
-            "image": "assets/images/projects/cbr-minesweeper.png"
+            "title": "Explainable CBR (Minesweeper)",
+            "image": "assets/images/projects/cbr-minesweeper.png",
+            "technologies": "Java, myCBR, Angular.js"
         },
         {
-            "title": "Webmaster for MVB website",
-            "image": "assets/images/projects/mvb-website.png"
+            "title": "Webmaster MVB",
+            "image": "assets/images/projects/mvb-website.png",
+            "technologies": "Joomla"
         },
         {
             "title": "Platform for Discord bots",
-            "image": "assets/images/projects/discord-bots.png"
+            "image": "assets/images/projects/discord-bots.png",
+            "technologies": "JavaScript, Discord.js"
         },
         {
             "title": "Other projects",
-            "image": "assets/images/projects/see-more.png"
+            "image": "assets/images/projects/see-more.png",
+            "technologies": "View my GitHub profile"
         }
     ]
 }
