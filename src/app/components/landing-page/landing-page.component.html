@@ -45,9 +45,10 @@
             <div data-blobity (click)="redirect()">Impressum</div>
         </div>
     } @else {
-        <button mat-icon-button class="mobile-nav">
+        <button mat-icon-button (click)="toggleMobileMenu()" class="mobile-nav">
             <mat-icon>menu</mat-icon>
         </button>
     }
     <div #scrollDown class="scroll-down" [ngClass]="scrollY > 0 ? 'fade' : ''"></div>
 </div>
+<app-menu [screenHeight]="screenHeight"></app-menu>
