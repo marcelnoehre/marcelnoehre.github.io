@@ -7,9 +7,16 @@
 }
 
 mat-card {
+    position: relative;
     height: 90vh;
     width: 90vw;
     padding: 2em 3em;
     overflow-y: scroll;
     box-shadow: 0 0 2.5em mediumslateblue;
+}
+
+button {
+    position: absolute;
+    top: 1em;
+    right: 1em;
 }
