@@ -51,4 +51,6 @@
     }
     <div #scrollDown class="scroll-down" [ngClass]="scrollY > 0 ? 'fade' : ''"></div>
 </div>
-<app-menu [screenHeight]="screenHeight"></app-menu>
+@if (screenWidth < 1200) {
+    <app-menu [screenHeight]="screenHeight"></app-menu>
+}

@@ -1,8 +1,19 @@
 @if (show) {
     <div class="menu-container">
-        <div data-blobity (click)="scroll('about')">About</div>
-        <div data-blobity (click)="scroll('projects')">Projects</div>
-        <div data-blobity (click)="scroll('contact')">Contact</div>
-        <div data-blobity (click)="redirect()">Impressum</div>
+        <div class="background"></div>
+        <ul>
+            <li>
+                <a data-blobity (click)="scroll('about')">About</a>
+            </li>
+            <li>
+                <a data-blobity (click)="scroll('projects')">Projects</a>
+            </li>
+            <li>
+                <a data-blobity (click)="scroll('contact')">Contact</a>
+            </li>
+            <li>
+                <a data-blobity (click)="redirect()">Impressum</a>
+            </li>
+        </ul>
     </div>
 }
