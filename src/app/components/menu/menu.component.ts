@@ -1,12 +1,22 @@
-import { AfterViewInit, Component, Input, Output } from '@angular/core';
+import { trigger, state, style, transition, animate } from '@angular/animations';
+import { AfterViewInit, Component, ElementRef, Input, Output, ViewChild } from '@angular/core';
+import { MatButtonModule } from '@angular/material/button';
+import { MatDividerModule } from '@angular/material/divider';
+import { MatIconModule } from '@angular/material/icon';
 import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-menu',
   standalone: true,
-  imports: [],
+  imports: [MatDividerModule, MatButtonModule, MatIconModule],
   templateUrl: './menu.component.html',
-  styleUrl: './menu.component.scss'
+  styleUrl: './menu.component.scss',
+  animations: [
+    trigger('fadeIn', [
+      state('void', style({ opacity: 0 })),
+      transition(':enter', animate('1s 0.5s ease-in-out')),
+    ])
+  ]
 })
 export class MenuComponent implements AfterViewInit {
   @Input() public screenHeight: number = 0;
@@ -24,6 +34,10 @@ export class MenuComponent implements AfterViewInit {
 
   open(): void {
     this.show = true;
+  }
+
+  close(): void {
+    this.show = false;
   }
 
   redirect(): void {

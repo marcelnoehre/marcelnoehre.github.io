@@ -4,7 +4,7 @@
     left: 0;
     height: 100vh;
     width: 100vw;
-    z-index: 999999;
+    z-index: 1000;
     color: white;
 }
 
@@ -16,22 +16,52 @@
     height: 1rem;
     overflow: hidden;
     border-radius: 50%;
-    animation: circle forwards 4.5s;
-    background-color: mediumslateblue;
+    animation: circle forwards 3s;
+    background-color: slateblue;
+    will-change: transform, width, height;
 }
 
-ul {
+.close {
+    display: flex;
+    justify-content: right;
+    padding: 1rem;
+}
+
+button {
+    transform: scale(1.5);
+}
+
+.menu {
     position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 0.5rem;
+    overflow-y: scroll;
     top: 0;
     left: 0;
+    width: 100vw;
+    height: 100svh;
 }
 
+.item {
+    width: 100vw;
+    text-align: center;
+    font-family: LemonMilk;
+    font-size: 2.5em;
+}
+
+a {
+    text-decoration: underline;
+}
+
+mat-divider {
+    background-color: white;
+}
 @keyframes circle {
     to {
-        scale: 10;
-        width: 284vmax;
-        height: 284vmax;
-        top: -142vmax;
-        left: -142vmax;
+        transform: scale(2);
+        width: 250vmax;
+        height: 250vmax;
     }
 }
