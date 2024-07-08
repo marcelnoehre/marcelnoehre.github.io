@@ -16,18 +16,18 @@
             "target": ""
         },
         {
-            "title": "Taxi Trips Analysis",
-            "image": "assets/images/projects/nyc-taxi-analysis.png",
-            "technologies": "Python",
-            "url": "/coming-soon",
-            "target": ""
-        },
-        {
             "title": "Multi Agent System",
             "image": "assets/images/projects/poker-mas.png",
             "technologies": "Java, Jade, myCBR, React.js",
             "url": "/coming-soon",
             "target": ""
+        },
+        {
+            "title": "Scripting Language",
+            "image": "assets/images/projects/sQeeZ.jpg",
+            "technologies": "C++",
+            "url": "/coming-soon",
+            "target": "_blank"
         },
         {
             "title": "center",
@@ -44,6 +44,13 @@
             "target": ""
         },
         {
+            "title": "Taxi Trips Analysis",
+            "image": "assets/images/projects/nyc-taxi-analysis.png",
+            "technologies": "Python",
+            "url": "/coming-soon",
+            "target": ""
+        },
+        {
             "title": "Webmaster MVB",
             "image": "assets/images/projects/mvb-website.png",
             "technologies": "Joomla",
@@ -56,13 +63,6 @@
             "technologies": "JavaScript, Discord.js",
             "url": "/coming-soon",
             "target": ""
-        },
-        {
-            "title": "Other projects",
-            "image": "assets/images/projects/see-more.png",
-            "technologies": "View my GitHub profile",
-            "url": "https://github.com/marcelnoehre",
-            "target": "_blank"
         }
     ]
 }
