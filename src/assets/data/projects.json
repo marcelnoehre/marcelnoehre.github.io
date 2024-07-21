@@ -5,7 +5,7 @@
             "image": "assets/images/projects/rl-overlay.png",
             "technologies": "Angular.js, Express.js, Socket.io",
             "url": "/coming-soon",
-            "target": ""
+            "target": "_self"
 
         },
         {
@@ -13,42 +13,42 @@
             "image": "assets/images/projects/swagger-for-aas.png",
             "technologies": "Java, SwaggerAPI",
             "url": "/coming-soon",
-            "target": ""
+            "target": "_self"
         },
         {
             "title": "Multi Agent System",
             "image": "assets/images/projects/poker-mas.png",
             "technologies": "Java, Jade, myCBR, React.js",
             "url": "/coming-soon",
-            "target": ""
+            "target": "_self"
         },
         {
             "title": "Scripting Language",
             "image": "assets/images/projects/sQeeZ.jpg",
             "technologies": "C++",
             "url": "/coming-soon",
-            "target": "_blank"
+            "target": "_self"
         },
         {
             "title": "center",
             "image": "assets/images/projects/center.svg",
             "technologies": "",
             "url": "",
-            "target": ""
+            "target": "_self"
         },
         {
             "title": "Explainable CBR",
             "image": "assets/images/projects/cbr-minesweeper.png",
             "technologies": "Java, myCBR, Angular.js",
             "url": "/coming-soon",
-            "target": ""
+            "target": "_self"
         },
         {
             "title": "Taxi Trips Analysis",
             "image": "assets/images/projects/nyc-taxi-analysis.png",
             "technologies": "Python",
             "url": "/coming-soon",
-            "target": ""
+            "target": "_self"
         },
         {
             "title": "Webmaster MVB",
@@ -62,7 +62,7 @@
             "image": "assets/images/projects/discord-bots.png",
             "technologies": "JavaScript, Discord.js",
             "url": "/coming-soon",
-            "target": ""
+            "target": "_self"
         }
     ]
 }

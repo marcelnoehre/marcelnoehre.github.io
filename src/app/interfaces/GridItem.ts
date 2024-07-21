@@ -4,4 +4,5 @@ export interface GridItem {
     class: string;
     url: string;
     image: string;
+    target: string;
 }
