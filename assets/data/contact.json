@@ -1,0 +1,16 @@
+{
+    "platforms": [
+        {
+            "name": "Linkedin",
+            "image": "assets/images/icons/linkedin.svg",
+            "url": "https://www.linkedin.com/in/marcel-nöhre-155377235/",
+            "target": "_blank"
+        },
+        {
+            "name": "E-Mail",
+            "image": "assets/images/icons/email.svg",
+            "url": "mailto:info@marcel-noehre.de",
+            "target": "_self"
+        }
+    ]
+}
