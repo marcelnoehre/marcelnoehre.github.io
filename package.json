@@ -10,7 +10,7 @@
     "test": "ng test",
     "serve:ssr:portfolio": "node dist/portfolio/server/server.mjs",
     "docs": "ng build --output-path docs",
-    "deploy": "ng deploy --cname=marcel-noehre.de"
+    "deploy": "ng deploy --cname=marcel-noehre.de --repo=https://github.com/marcelnoehre/marcelnoehre.github.io.git"
   },
   "private": true,
   "dependencies": {
