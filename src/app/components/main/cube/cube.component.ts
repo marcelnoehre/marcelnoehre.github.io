@@ -1,7 +1,7 @@
 import { AfterViewInit, Component, Input } from '@angular/core';
-import { DataService } from '../../services/data.service';
 import { NgClass } from '@angular/common';
-import { CubeSide } from '../../interfaces/CubeSide';
+import { CubeSide } from '../../../interfaces/CubeSide';
+import { DataService } from '../../../services/data.service';
 
 @Component({
   selector: 'app-cube',

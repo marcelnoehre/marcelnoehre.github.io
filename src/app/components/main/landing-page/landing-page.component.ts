@@ -2,9 +2,9 @@ import { NgClass } from '@angular/common';
 import { AfterViewInit, Component, ElementRef, Input, ViewChild } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
-import { MenuComponent } from '../menu/menu.component';
 import { Router } from '@angular/router';
 import lottie from 'lottie-web';
+import { MenuComponent } from '../../menu/menu.component';
 
 @Component({
   selector: 'app-landing-page',

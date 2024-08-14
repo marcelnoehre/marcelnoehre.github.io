@@ -1,7 +1,7 @@
 import { AfterViewInit, Component, Input } from '@angular/core';
 import { MatCardModule } from '@angular/material/card';
-import { DataService } from '../../services/data.service';
-import { Contact } from '../../interfaces/Contact';
+import { Contact } from '../../../interfaces/Contact';
+import { DataService } from '../../../services/data.service';
 
 @Component({
   selector: 'app-contact',

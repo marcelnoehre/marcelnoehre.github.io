@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { DataService } from '../../services/data.service';
 import { MatCardModule } from '@angular/material/card';
+import { DataService } from '../../../services/data.service';
 
 @Component({
   selector: 'app-grid',

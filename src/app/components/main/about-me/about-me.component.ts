@@ -4,9 +4,9 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatIconModule } from '@angular/material/icon';
-import { DataService } from '../../services/data.service';
-import { CvItem } from '../../interfaces/CvItem';
-import { FlipState } from '../../interfaces/FlipState';
+import { CvItem } from '../../../interfaces/CvItem';
+import { FlipState } from '../../../interfaces/FlipState';
+import { DataService } from '../../../services/data.service';
 
 @Component({
   selector: 'app-about-me',

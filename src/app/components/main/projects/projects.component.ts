@@ -1,6 +1,6 @@
 import { AfterViewInit, Component, Input } from '@angular/core';
-import { DataService } from '../../services/data.service';
-import { Project } from '../../interfaces/Project';
+import { Project } from '../../../interfaces/Project';
+import { DataService } from '../../../services/data.service';
 
 @Component({
   selector: 'app-projects',

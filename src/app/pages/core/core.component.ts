@@ -1,12 +1,12 @@
 import { Component } from '@angular/core';
 import { ScreenDirective } from '../../directives/screen.directive';
-import { LandingPageComponent } from '../../components/landing-page/landing-page.component';
-import { CubeComponent } from '../../components/cube/cube.component';
-import { AboutMeComponent } from '../../components/about-me/about-me.component';
-import { ProjectsComponent } from '../../components/projects/projects.component';
-import { GridComponent } from '../../components/grid/grid.component';
-import { ContactComponent } from '../../components/contact/contact.component';
 import { ScrollbarComponent } from '../../components/scrollbar/scrollbar.component';
+import { AboutMeComponent } from '../../components/main/about-me/about-me.component';
+import { ContactComponent } from '../../components/main/contact/contact.component';
+import { CubeComponent } from '../../components/main/cube/cube.component';
+import { GridComponent } from '../../components/main/grid/grid.component';
+import { LandingPageComponent } from '../../components/main/landing-page/landing-page.component';
+import { ProjectsComponent } from '../../components/main/projects/projects.component';
 
 @Component({
   selector: 'app-core',
