@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { ProjectWallpaperComponent } from '../../../components/projects/project-wallpaper/project-wallpaper.component';
+import { ProjectWallpaperComponent } from '../../../components/shared/project-wallpaper/project-wallpaper.component';
 import { MatCardModule } from '@angular/material/card';
 import { ToolbarComponent } from '../../../components/shared/toolbar/toolbar.component';
 
