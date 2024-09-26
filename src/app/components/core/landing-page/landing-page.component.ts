@@ -4,7 +4,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { Router } from '@angular/router';
 import lottie from 'lottie-web';
-import { MenuComponent } from '../../menu/menu.component';
+import { MenuComponent } from '../../shared/menu/menu.component';
 
 @Component({
   selector: 'app-landing-page',

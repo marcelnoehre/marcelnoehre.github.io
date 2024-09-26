@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { MenuComponent } from '../menu/menu.component';
-import { ScreenDirective } from '../../directives/screen.directive';
+import { ScreenDirective } from '../../../directives/screen.directive';
 
 @Component({
   selector: 'app-toolbar',

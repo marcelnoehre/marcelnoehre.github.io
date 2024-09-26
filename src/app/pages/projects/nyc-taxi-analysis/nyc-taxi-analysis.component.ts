@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
-import { ToolbarComponent } from '../../../components/toolbar/toolbar.component';
 import { ProjectWallpaperComponent } from '../../../components/projects/project-wallpaper/project-wallpaper.component';
 import { MatCardModule } from '@angular/material/card';
+import { ToolbarComponent } from '../../../components/shared/toolbar/toolbar.component';
 
 @Component({
   selector: 'app-nyc-taxi-analysis',
