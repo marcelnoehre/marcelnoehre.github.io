@@ -31,7 +31,7 @@ export class LandingPageComponent implements AfterViewInit {
         renderer: 'svg',
         loop: true,
         autoplay: true,
-        path: 'assets/images/scroll-down.json'
+        path: 'assets/images/icons/scroll-down.json'
       });
     } catch (err) { }
   }

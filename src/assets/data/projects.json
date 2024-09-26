@@ -2,7 +2,7 @@
     "projects": [
         {
             "title": "Custom RL Overlay",
-            "image": "assets/images/projects/rl-overlay.png",
+            "image": "assets/images/projects/rl-overlay/rl-overlay-logo.png",
             "technologies": "Angular.js, Express.js, Socket.io",
             "url": "/coming-soon",
             "target": "_self"
@@ -10,21 +10,21 @@
         },
         {
             "title": "Swagger for AAS",
-            "image": "assets/images/projects/swagger-for-aas.png",
+            "image": "assets/images/projects/swagger-for-aas/swagger-for-aas-logo.png",
             "technologies": "Java, SwaggerAPI",
             "url": "/coming-soon",
             "target": "_self"
         },
         {
             "title": "Multi Agent System",
-            "image": "assets/images/projects/poker-mas.png",
+            "image": "assets/images/projects/poker-mas/poker-mas-logo.png",
             "technologies": "Java, Jade, myCBR, React.js",
             "url": "/coming-soon",
             "target": "_self"
         },
         {
             "title": "Scripting Language",
-            "image": "assets/images/projects/sQeeZ.jpg",
+            "image": "assets/images/projects/sQeeZ-scripting-language/sQeeZ-scripting-language-logo.jpg",
             "technologies": "C++",
             "url": "/coming-soon",
             "target": "_self"
@@ -38,28 +38,28 @@
         },
         {
             "title": "Explainable CBR",
-            "image": "assets/images/projects/cbr-minesweeper.png",
+            "image": "assets/images/projects/cbr-minesweeper/cbr-minesweeper-logo.png",
             "technologies": "Java, myCBR, Angular.js",
             "url": "/coming-soon",
             "target": "_self"
         },
         {
             "title": "Taxi Trips Analysis",
-            "image": "assets/images/projects/nyc-taxi-analysis.png",
+            "image": "assets/images/projects/nyc-taxi-analysis/nyc-taxi-analysis-logo.png",
             "technologies": "Python",
             "url": "/projects/nyc-taxi-analysis",
             "target": "_self"
         },
         {
             "title": "Webmaster MVB",
-            "image": "assets/images/projects/mvb-website.png",
+            "image": "assets/images/projects/mvb-website/mvb-website-logo.png",
             "technologies": "Joomla",
             "url": "https://musikverein-borsum.de",
             "target": "_blank"
         },
         {
             "title": "Discord Bots",
-            "image": "assets/images/projects/discord-bots.png",
+            "image": "assets/images/projects/discord-bots/discord-bots-logo.png",
             "technologies": "JavaScript, Discord.js",
             "url": "/coming-soon",
             "target": "_self"
