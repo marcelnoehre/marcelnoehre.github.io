@@ -22,7 +22,7 @@ export class MenuComponent implements AfterViewInit {
   @Input() public screenHeight: number = 0;
   public show: boolean = false;
 
-  constructor(
+  constructor( 
     private _router: Router
   ) { }
 

@@ -1,3 +1,13 @@
-<div class="toolbar-container">
-    
+<div class="toolbar-container"
+    (screenHeight)="screenHeight = $event" 
+    (screenWidth)="screenWidth = $event"
+    appScreen
+>
+    <div class="logo">
+        <div>M</div>
+        <div>N</div>
+    </div>
+    @if (screenWidth < 1200) {
+        <app-menu [screenHeight]="screenHeight"></app-menu>
+    }
 </div>
