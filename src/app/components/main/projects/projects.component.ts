@@ -1,5 +1,5 @@
 import { AfterViewInit, Component, Input } from '@angular/core';
-import { Project } from '../../../interfaces/Project';
+import { Project } from '../../../interfaces/Project.interface';
 import { DataService } from '../../../services/data.service';
 
 @Component({

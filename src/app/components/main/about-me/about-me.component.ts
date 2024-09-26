@@ -4,8 +4,8 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatIconModule } from '@angular/material/icon';
-import { CvItem } from '../../../interfaces/CvItem';
-import { FlipState } from '../../../interfaces/FlipState';
+import { CvItem } from '../../../interfaces/CvItem.interface';
+import { FlipState } from '../../../interfaces/FlipState.interface';
 import { DataService } from '../../../services/data.service';
 
 @Component({

@@ -13,13 +13,13 @@ export class ScreenDirective {
   constructor() { }
   
   @HostListener('window:scroll', ['$event'])
-  onScroll(event: Event) {
+  onScroll() {
     this.scrollX.emit(window.scrollX);
     this.scrollY.emit(window.scrollY);
   }
 
   @HostListener('window:resize', ['$event'])
-  onResize(event: Event) {
+  onResize() {
     this.screenWidth.emit(window.innerWidth);
     this.screenHeight.emit(window.innerHeight);
   }

@@ -1,6 +1,6 @@
 import { AfterViewInit, Component, Input } from '@angular/core';
 import { MatCardModule } from '@angular/material/card';
-import { Contact } from '../../../interfaces/Contact';
+import { Contact } from '../../../interfaces/Contact.interface';
 import { DataService } from '../../../services/data.service';
 
 @Component({
