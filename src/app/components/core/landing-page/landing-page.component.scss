@@ -54,43 +54,6 @@
     color: white;
 }
 
-.large-nav {
-    position: absolute;
-    display: flex;
-    justify-content: flex-end;
-    top: 2em;
-    right: 2em;
-    gap: 2em;
-
-    div {
-        padding: 0.25em;
-        opacity: 0.5;
-        transition: opacity 0.5s ease;
-        color: white;
-        font-family: 'LemonMilk';
-        font-size: 1em;
-        text-decoration: none;
-    }
-
-    div:hover {
-        opacity: 1;
-        border-bottom: 2px solid mediumslateblue;
-    }
-}
-
-.mobile-nav {
-    position: absolute;
-    top: 0.25em;
-    right: 0.5em;
-    opacity: 0.5;
-    transition: opacity 0.5s ease;
-    color: white;
-}
-
-.mobile-nav:hover {
-    opacity: 1;
-}
-
 .scroll-down {
     position: absolute;
     top: calc(100svh - 5.5em);
@@ -103,6 +66,12 @@
 
 .fade {
     opacity: 0;
+}
+
+app-toolbar {
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 @media (min-width: 576px) {
@@ -124,12 +93,6 @@
         width: 23em;
         font-size: 1.2em;
         text-align: left;
-    }
-
-    .mobile-nav {
-        top: 1rem;
-        right: 1rem;
-        transform: scale(1.5);
     }
 }
 

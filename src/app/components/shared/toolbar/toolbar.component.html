@@ -1,13 +1,21 @@
-<div class="toolbar-container"
-    (screenHeight)="screenHeight = $event" 
-    (screenWidth)="screenWidth = $event"
-    appScreen
->
-    <div class="logo">
-        <div>M</div>
-        <div>N</div>
-    </div>
-    @if (screenWidth < 1200) {
+<div class="toolbar-container">
+    @if (showLogo) {
+        <div class="logo">
+            <div>M</div>
+            <div>N</div>
+        </div>
+    }
+    @if (screenWidth >= 1200) {
+        <div class="nav large-nav">
+            <div data-blobity (click)="scroll('about')">About</div>
+            <div data-blobity (click)="scroll('projects')">Projects</div>
+            <div data-blobity (click)="scroll('contact')">Contact</div>
+            <div data-blobity (click)="redirect()">Impressum</div>
+        </div>
+    } @else {
+        <button mat-icon-button (click)="toggleMobileMenu()" class="mobile-nav">
+            <mat-icon>menu</mat-icon>
+        </button>
         <app-menu [screenHeight]="screenHeight"></app-menu>
     }
 </div>

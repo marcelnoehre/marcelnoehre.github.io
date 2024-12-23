@@ -37,20 +37,6 @@
             During this time, I've focused on improving usability to partially automate business processes with as little worker interaction as possible.
         </div>
     </div>
-    @if (screenWidth >= 1200) {
-        <div class="nav large-nav">
-            <div data-blobity (click)="scroll('about')">About</div>
-            <div data-blobity (click)="scroll('projects')">Projects</div>
-            <div data-blobity (click)="scroll('contact')">Contact</div>
-            <div data-blobity (click)="redirect()">Impressum</div>
-        </div>
-    } @else {
-        <button mat-icon-button (click)="toggleMobileMenu()" class="mobile-nav">
-            <mat-icon>menu</mat-icon>
-        </button>
-    }
+    <app-toolbar [screenHeight]="screenHeight" [screenWidth]="screenWidth"></app-toolbar>
     <div #scrollDown class="scroll-down" [ngClass]="scrollY > 0 ? 'fade' : ''"></div>
 </div>
-@if (screenWidth < 1200) {
-    <app-menu [screenHeight]="screenHeight"></app-menu>
-}
