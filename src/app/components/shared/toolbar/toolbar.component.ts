@@ -29,8 +29,8 @@ export class ToolbarComponent implements AfterViewInit{
     } catch (err) { }
   }
 
-  redirect(): void {
-    this._router.navigate(['/impressum']);
+  redirect(route: string): void {
+    this._router.navigate([route]);
   }
 
   scroll(target: string): void {
