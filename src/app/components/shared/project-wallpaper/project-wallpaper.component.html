@@ -1,3 +1,9 @@
-<div class="project-wallpaper-container">
+<app-toolbar [screenHeight]="screenHeight" [screenWidth]="screenWidth"></app-toolbar>
+<div 
+    class="project-wallpaper-container"
+    (screenWidth)="screenWidth = $event"
+    (screenHeight)="screenHeight = $event" 
+    appScreen
+>
     <div class="wallpaper" style="background-image: url({{wallpaper}});"></div>
 </div>
