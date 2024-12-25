@@ -53,7 +53,41 @@
         width: 10vw;
         height: auto;
     }
+}
 
+.table-of-contents {
+    width: 100vw;
+    padding: 2.5rem 0;
+    background: darkorange;
+
+    h1 {
+        text-align: center;
+        margin: 0;
+        font-size: 3vw;
+        text-decoration: overline underline;
+    }
+
+    ul {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1.5rem;
+        padding-top: 1.5rem;
+
+        li {
+            display: flex;
+            justify-content: center;
+            list-style-type: none;
+            font-size: 2vw;
+            
+            a {
+                background-color: #333333;
+                padding: 0.2em;
+                color: white;
+                text-decoration: none;
+                border-radius: 5px;
+            }
+        }
+    }
 }
 
 @media (min-width: 576px) {
