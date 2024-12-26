@@ -26,13 +26,181 @@
 <div class="table-of-contents">
     <h1>Table of Contents</h1>
     <ul>
-        <li><a href="#distribution">Distribution</a></li>
-        <li><a href="#200000">200000+</a></li>
-        <li><a href="#manhattan">Manhattan</a></li>
-        <li><a href="#airports">Airports</a></li>
-        <li><a href="#average">Average</a></li>
-        <li><a href="#empty-runs">Empty runs</a></li>
-        <li><a href="#tips">Tips</a></li>
-        <li><a href="#conclusion">Conclusion</a></li>
+        <li><a href="projects/nyc-taxi-analysis#distribution">Distribution</a></li>
+        <li><a href="projects/nyc-taxi-analysis#200000">200000+</a></li>
+        <li><a href="projects/nyc-taxi-analysis#manhattan">Manhattan</a></li>
+        <li><a href="projects/nyc-taxi-analysis#airports">Airports</a></li>
+        <li><a href="projects/nyc-taxi-analysis#average">Average</a></li>
+        <li><a href="projects/nyc-taxi-analysis#empty-runs">Empty runs</a></li>
+        <li><a href="projects/nyc-taxi-analysis#tips">Tips</a></li>
+        <li><a href="projects/nyc-taxi-analysis#ressources">Ressources</a></li>
     </ul>
+</div>
+<div class="area white" id="distribution">
+    <h2>Distribution of taxi trips per district of New York City</h2>
+    <p>By examining the patterns and trends, we aim to gain insights into the city's mobility dynamics and the factors that influence the spatial distribution of cab trips.</p>
+    <a href="https://github.com/marcelnoehre/nyc-taxi-analysis/blob/main/analyses/distribution.ipynb" target="_blank">View Analysis</a>
+    <div class="row two">
+        <div>
+            <h3>Distribution of customer pickups</h3>
+            <img src="assets/images/projects/nyc-taxi-analysis/distribution_pu.png" alt="Distribution of customer pickups">
+        </div>
+        <div>
+            <h3>Distribution of customer dropoffs</h3>
+            <img src="assets/images/projects/nyc-taxi-analysis/distribution_do.png" alt="Distribution of customer dropoffs">
+        </div>
+    </div>
+</div>
+
+<div class="area smoke" id="200000">
+    <h2>200000+ Trips per zone</h2>
+    <p>In the pursuit of optimizing taxi services within Manhattan, an examination of zones with 200,000 taxi trips reveals that all but two outliers, namely the zones housing JFK and LaGuardia airports, align with the predetermined center of Manhattan. This insight underscores the significance of these airport-centric anomalies in the broader transportation network analysis.</p>
+    <a href="https://github.com/marcelnoehre/nyc-taxi-analysis/blob/main/analyses/200000+.ipynb" target="_blank">View Analysis</a>
+    <div class="row one">
+        <div>
+            <h3>Trips per zone with 200,000+ trips</h3>
+            <img src="assets/images/projects/nyc-taxi-analysis/200.000_pu.jpg" alt="Trips per zone">
+        </div>
+    </div>
+</div>
+
+<div class="area white" id="manhattan">
+    <h2>Manhattan (NYC) center based on trip data</h2>
+    <p>Determining the center of the main district Manhattan borough based on taxi data provides a fascinating insight into the dynamic diversity of this metropolis, allowing for a precise localization of the pulsating heart of New York City.</p>
+    <a href="https://github.com/marcelnoehre/nyc-taxi-analysis/blob/main/analyses/center.ipynb" target="_blank">View Analysis</a>
+    <div class="row two">
+        <div>
+            <h3>Pickups in Manhattan</h3>
+            <img src="assets/images/projects/nyc-taxi-analysis/manhatten_pu_center.jpg?raw=true" alt="Pickups in Manhattan">
+        </div>
+        <div>
+            <h3>Dropoffs in Manhattan</h3>
+            <img src="assets/images/projects/nyc-taxi-analysis/manhatten_do_center.jpg?raw=true" alt="Dropoffs in Manhattan">
+        </div>    
+    </div>
+</div>
+
+<div class="area smoke" id="airports">
+    <h2>Trips from/to airports</h2>
+    <p>Turning our attention to the identified outliers, specifically the two major airports, JFK and LaGuardia, this chapter delves into a detailed examination of taxi trips to and from these aviation hubs.</p>
+    <a href="https://github.com/marcelnoehre/nyc-taxi-analysis/blob/main/analyses/airports.ipynb" target="_blank">View Analysis</a>
+    <div class="row two">
+        <div>
+            <h3>Trips from airports</h3>
+            <img src="assets/images/projects/nyc-taxi-analysis/airport_manhatten.jpg" alt="Trips from airports">
+        </div>
+        <div>
+            <h3>Trips to airports</h3>
+            <img src="assets/images/projects/nyc-taxi-analysis/to_airports.png" alt="Trips to airports">
+        </div>
+    </div>
+</div>
+
+<div class="area white" id="average">
+    <h2>Distribution of trips below/above average</h2>
+    <p>Navigating the spectrum of trip distances, this chapter explores the dichotomy between journeys below and above the average. In doing so, we aim to discern patterns that align with commuting routes from various districts to Manhattan, as well as ascertain correlations with trips originating from the airports and converging towards the central nexus of New York City.</p>
+    <a href="https://github.com/marcelnoehre/nyc-taxi-analysis/blob/main/analyses/lower-upper.ipynb" target="_blank">View Analysis</a>
+    <div class="row two">
+        <div>
+            <h3>Distribution of lower distance trips based on the customer pickups</h3>
+            <img src="assets/images/projects/nyc-taxi-analysis/distribution_lower_pu.png" alt="Lower distance trips based on pickups">
+        </div>
+        <div>
+            <h3>Distribution of lower distance trips based on the customer dropoffs</h3>
+            <img src="assets/images/projects/nyc-taxi-analysis/distribution_lower_do.png" alt="Lower distance trips based on dropoffs">
+        </div>
+    </div>
+    <div class="row two">
+        <div>
+            <h3>Center of Manhattan based on lower distance pickups</h3>
+            <img src="assets/images/projects/nyc-taxi-analysis/lower_pu_manhatten.jpg" alt="Lower distance pickups center of Manhattan">
+        </div>
+        <div>
+            <h3>Center of Manhattan based on upper distance pickups</h3>
+            <img src="assets/images/projects/nyc-taxi-analysis/upper_pu_manhatten.jpg" alt="Upper distance pickups center of Manhattan">
+        </div>
+    </div>
+    <div class="row two">
+        <div>
+            <h3>Center of Manhattan based on lower distance dropoffs</h3>
+            <img src="assets/images/projects/nyc-taxi-analysis/lower_do_manhatten.jpg" alt="Lower distance dropoffs center of Manhattan">
+        </div>
+        <div>
+            <h3>Center of Manhattan based on upper distance dropoffs</h3>
+            <img src="assets/images/projects/nyc-taxi-analysis/upper_do_manhatten.jpg" alt="Upper distance dropoffs center of Manhattan">
+        </div>
+    </div>
+</div>
+
+<div class="area smoke" id="empty-runs">
+    <h2>Empty runs</h2>
+    <p>Delving into the strategic maneuvers of taxi drivers, this chapter investigates the phenomenon of empty runs—instances where cabs reposition without passengers with the goal of optimizing earnings.</p>
+    <a href="https://github.com/marcelnoehre/nyc-taxi-analysis/blob/main/analyses/empty-runs.ipynb" target="_blank">View Analysis</a>
+    <div class="row two">
+        <div>
+            <h3>Distribution of empty run starts per district of New York City</h3>
+            <img src="assets/images/projects/nyc-taxi-analysis/empty_run_starts.png" alt="Empty run starts per district">
+        </div>
+        <div>
+            <h3>Distribution of empty run ends per district of New York City</h3>
+            <img src="assets/images/projects/nyc-taxi-analysis/empty_run_ends.png" alt="Empty run ends per district">
+        </div>
+    </div>
+    <div class="row two">
+        <div>
+            <h3>Distribution of empty runs with the start in Manhattan</h3>
+            <img src="assets/images/projects/nyc-taxi-analysis/empty_pu.jpg" alt="Empty runs starting in Manhattan">
+        </div>
+        <div>
+            <h3>Distribution of empty runs with the end in Manhattan</h3>
+            <img src="assets/images/projects/nyc-taxi-analysis/empty_do.jpg" alt="Empty runs ending in Manhattan">
+        </div>
+    </div>
+</div>
+<div class="area white" id="tips">
+    <h2>Tips</h2>
+    <p>Shedding light on the financial nuances of taxi transactions, this chapter delves into the realm of tip amounts and their potential correlation with the preceding strategies of empty runs and driver repositioning. By scrutinizing tipping patterns in conjunction with the strategic maneuvers observed earlier, we aim to uncover insights into the intricate interplay between customer gratuity and the optimization strategies employed by taxi drivers.</p>
+    <a href="https://github.com/marcelnoehre/nyc-taxi-analysis/blob/main/analyses/tips.ipynb" target="_blank">View Analysis</a>
+    <div class="row two">
+        <div>
+            <h3>Tip amount for each district in NYC</h3>
+            <img src="assets/images/projects/nyc-taxi-analysis/tip_amounts_districts.png" alt="Tip amounts per district">
+        </div>
+    </div>
+    <h3>Tips at airport connections</h3>
+    <p>Examining the tipping landscape through the lens of airport travel, this chapter investigates tip amounts associated with trips to and from airports. With a specific focus on discerning patterns in tipping behavior from tourists, we aim to uncover whether there is a notable variance in tip amounts for airport journeys, shedding light on the dynamics of gratitude in the context of travel to and from key transportation hubs.</p>
+    <a href="https://github.com/marcelnoehre/nyc-taxi-analysis/blob/main/analyses/airport-tips.ipynb" target="_blank">View Analysis</a>
+    <div class="row two">
+        <div>
+            <h3>Tips from/to airports</h3>
+            <img src="assets/images/projects/nyc-taxi-analysis/tips_from_to_airpots.png" alt="Tips from/to airports">
+        </div>
+    </div>
+    <div class="row two">
+        <div>
+            <h3>Tip amounts from airports over the year</h3>
+            <img src="assets/images/projects/nyc-taxi-analysis/tips_from_airports_year.png" alt="Tips from airports over the year">
+        </div>
+        <div>
+            <h3>Tip amounts to airports over the year</h3>
+            <img src="assets/images/projects/nyc-taxi-analysis/tips_to_airports_year.png" alt="Tips to airports over the year">
+        </div>
+    </div>
+</div>
+<div class="area smoke" id="ressources">
+    <h2>Ressources</h2>
+    <div class="row ressources">
+        <div>
+            <h3>GitHub Repository</h3>
+            <img src="assets/images/grid/github.svg" alt="GitHub">
+            <p>Explore the code and data used for this analysis on GitHub.</p>
+            <a href="" target="_blank">Repository</a>
+        </div>
+        <div>
+            <h3>NYC Taxi & Limousine Commission</h3>
+            <img src="assets/images/projects/nyc-taxi-analysis/nyc-tlc-logo.svg" alt="NYC Taxi & Limousine Commission">
+            <p>Access the official data source for NYC taxi and limousine services.</p>
+            <a href="https://www1.nyc.gov/site/tlc/about/tlc-trip-record-data.page" target="_blank">TLC Taxi Data</a>
+        </div>
+    </div>
 </div>
