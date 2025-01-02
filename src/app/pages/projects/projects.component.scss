@@ -1,8 +1,8 @@
 .projects-container {
     position: relative;
     width: 100vw;
-    background: lavender;
     z-index: 2;
+    background: radial-gradient(circle at center, #2d2a55, #1e1c3b 60%, #0e0c22);
 }
 
 .carousel-wrapper {
@@ -37,6 +37,96 @@
     justify-content: flex-start;
     flex-wrap: wrap;
     width: 100vw;
+}
+
+.project {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 70vw;
+    margin: 2rem auto;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    color: white;
+
+    &:hover {
+        box-shadow: 0 4px 8px slateblue;
+    }
+
+    .heading {
+        display: flex;
+        justify-content: space-between;
+        margin: 1rem 2rem 0 2rem;
+        align-items: center;
+    }
+
+    .title {
+        font-size: 2rem;
+        font-weight: bold;
+        text-transform: uppercase;
+        border-bottom: 4px solid slateblue;
+    }
+
+    .technologies {
+        color: lightslategrey;
+    }
+
+    .content {
+        display: flex;
+        text-align: left;
+        padding: 1rem 2rem;
+        gap: 2rem;
+
+        .information {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 0 1rem;
+        }
+
+        img {
+            width: 25vw;
+            border-radius: 10px;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        p {
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+    }
+
+    .actions {
+        display: flex;
+        justify-content: center;
+
+        button {
+            background-color: slateblue;
+            color: white;
+        }
+    }
+}
+
+.left {
+    transform: translateX(-10vw);
+}
+
+.left:hover {
+    transform: translateX(-10vw) scale(1.02);
+}
+
+.right {
+    transform: translateX(10vw);
+}
+
+.right:hover {
+    transform: translateX(10vw) scale(1.02);
 }
 
 .contact-spacer {

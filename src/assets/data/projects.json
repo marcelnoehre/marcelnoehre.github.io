@@ -4,65 +4,83 @@
             "title": "Custom RL Overlay",
             "image": "assets/images/projects/rl-overlay/rl-overlay-logo.png",
             "technologies": "Angular.js, Express.js, Socket.io",
+            "description": "Example Description",
             "url": "/coming-soon",
-            "target": "_self"
+            "target": "_self",
+            "grid": true
 
         },
         {
             "title": "Swagger for AAS",
             "image": "assets/images/projects/swagger-for-aas/swagger-for-aas-logo.png",
             "technologies": "Java, SwaggerAPI",
+            "description": "Example Description",
             "url": "/coming-soon",
-            "target": "_self"
+            "target": "_self",
+            "grid": true
         },
         {
             "title": "Multi Agent System",
             "image": "assets/images/projects/poker-mas/poker-mas-logo.png",
             "technologies": "Java, Jade, myCBR, React.js",
+            "description": "Example Description",
             "url": "/coming-soon",
-            "target": "_self"
+            "target": "_self",
+            "grid": true
         },
         {
             "title": "Scripting Language",
             "image": "assets/images/projects/sQeeZ-scripting-language/sQeeZ-scripting-language-logo.jpg",
             "technologies": "C++",
+            "description": "Example Description",
             "url": "/coming-soon",
-            "target": "_self"
+            "target": "_self",
+            "grid": true
         },
         {
             "title": "center",
             "image": "assets/images/projects/center.svg",
             "technologies": "",
+            "description": "",
             "url": "",
-            "target": "_self"
+            "target": "_self",
+            "grid": true
         },
         {
             "title": "Explainable CBR",
             "image": "assets/images/projects/cbr-minesweeper/cbr-minesweeper-logo.png",
             "technologies": "Java, myCBR, Angular.js",
+            "description": "Example Description",
             "url": "/coming-soon",
-            "target": "_self"
+            "target": "_self",
+            "grid": true
         },
         {
             "title": "Taxi Trips Analysis",
             "image": "assets/images/projects/nyc-taxi-analysis/nyc-taxi-analysis-logo.png",
             "technologies": "Python",
+            "description": "Example Description",
             "url": "/projects/nyc-taxi-analysis",
-            "target": "_self"
+            "target": "_self",
+            "grid": true
         },
         {
             "title": "Webmaster MVB",
             "image": "assets/images/projects/mvb-website/mvb-website-logo.png",
             "technologies": "Joomla",
+            "description": "Example Description",
             "url": "https://musikverein-borsum.de",
-            "target": "_blank"
+            "target": "_blank",
+            "grid": true
         },
         {
             "title": "Discord Bots",
             "image": "assets/images/projects/discord-bots/discord-bots-logo.png",
             "technologies": "JavaScript, Discord.js",
+            "description": "Example Description",
             "url": "/coming-soon",
-            "target": "_self"
+            "target": "_self",
+            "grid": true
         }
     ]
 }

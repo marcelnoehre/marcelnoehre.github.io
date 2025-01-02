@@ -36,7 +36,6 @@ export class ToolbarComponent implements AfterViewInit{
   scroll(target: string): void {
     let px;
     if (target === 'about') px = this.screenHeight * 1.2;
-    if (target === 'projects') px = this.screenHeight * 2.25;
     if (target === 'contact') px = window.document.body.scrollHeight;
     window.scrollTo({
       top: px,

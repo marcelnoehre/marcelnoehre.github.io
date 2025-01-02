@@ -8,17 +8,19 @@
     </div>
     <div class="projects">
         @for (project of projects; track project) {
-            @if (project.title !== 'center') {
-                <div class="project">
-                    <img [src]="project.image">
-                    <div class="caption">
-                        <h3>{{ project.title }}</h3>
-                        <h4>{{ project.technologies }}</h4>
+            @if (project.grid) {
+                @if (project.title !== 'center') {
+                    <div class="project">
+                        <img [src]="project.image">
+                        <div class="caption">
+                            <h3>{{ project.title }}</h3>
+                            <h4>{{ project.technologies }}</h4>
+                        </div>
+                        <a [href]="project.url" [target]="project.target" data-no-blobity></a>
                     </div>
-                    <a [href]="project.url" [target]="project.target" data-no-blobity></a>
-                </div>
-            } @else if (screenWidth >= 576 && screenWidth < 992) {
-                <img [src]="project.image" class="center">
+                } @else if (screenWidth >= 576 && screenWidth < 992) {
+                    <img [src]="project.image" class="center">
+                }
             }
         }
     </div>

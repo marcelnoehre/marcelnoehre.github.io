@@ -13,7 +13,28 @@
         }
     </div>
     <div class="projects">
-
+        @for (project of projects; track project) {
+            @if (project.title !== 'center') {
+                <section [class]="$even ? 'project left' : 'project right'">
+                    <div class="heading">
+                        <div class="title">{{ project.title }}</div>
+                        <div class="technologies">{{ project.technologies }}</div>
+                    </div>
+                    <div class="content">
+                        <img [src]="project.image" alt="Project Image">
+                        <div class="information">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis consectetur minus corrupti dolorum. Sequi distinctio voluptates nemo, architecto excepturi dignissimos, cupiditate magni quisquam exercitationem explicabo veritatis, possimus accusamus necessitatibus quae.</p>
+                            <div class="actions">
+                                <button mat-raised-button (click)="openUrl(project.url, project.target)">
+                                    <mat-icon>visibility</mat-icon>
+                                    View
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </section>                
+            }
+        }
     </div>
     <div class="carousel-wrapper">
         @for (_ of [].constructor(10); track _) {
