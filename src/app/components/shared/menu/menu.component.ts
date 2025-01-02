@@ -40,15 +40,14 @@ export class MenuComponent implements AfterViewInit {
     this.show = false;
   }
 
-  redirect(): void {
-    this._router.navigate(['/impressum']);
+  redirect(route: string): void {
+    this._router.navigate([route]);
     this.show = false;
   }
 
   scroll(target: string): void {
     let px;
     if (target === 'about') px = this.screenHeight * 1.2;
-    if (target === 'projects') px = this.screenHeight * 2.25;
     if (target === 'contact') px = window.document.body.scrollHeight;
     window.scrollTo({
       top: px,

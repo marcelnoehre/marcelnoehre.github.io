@@ -5,13 +5,13 @@ import { ContactComponent } from '../../components/core/contact/contact.componen
 import { ScrollbarComponent } from '../../components/shared/scrollbar/scrollbar.component';
 import { Project } from '../../interfaces/Project.interface';
 import { DataService } from '../../services/data.service';
-import { MatIcon } from '@angular/material/icon';
+import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 
 @Component({
   selector: 'app-projects',
   standalone: true,
-  imports: [MatButtonModule, MatIcon, ToolbarComponent, ContactComponent, ScrollbarComponent, ScreenDirective],
+  imports: [MatButtonModule, MatIconModule, ToolbarComponent, ContactComponent, ScrollbarComponent, ScreenDirective],
   providers: [ScreenDirective],
   templateUrl: './projects.component.html',
   styleUrl: './projects.component.scss'
