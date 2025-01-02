@@ -14,6 +14,7 @@ export class ContactComponent implements AfterViewInit {
   @Input() public scrollY: number = 0;
   @Input() public screenHeight: number = 0;
   public contact: Contact[] = this._data.contact;
+  public year: string = new Date().getFullYear().toString();
 
   constructor(
     private _data: DataService

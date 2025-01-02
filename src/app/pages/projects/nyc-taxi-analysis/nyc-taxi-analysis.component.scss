@@ -211,6 +211,11 @@
     }
 }
 
+.contact-spacer {
+    border-top: 2px solid black;
+    height: 100vh;
+}
+
 @media (min-width: 992px) {
     .nyc-taxi-analysis-title-container>.title {
         padding-top: 2.5vh;

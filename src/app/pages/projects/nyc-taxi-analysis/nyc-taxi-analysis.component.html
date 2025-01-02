@@ -204,3 +204,10 @@
         </div>
     </div>
 </div>
+<div class="contact-spacer"
+    (scrollY)="scrollY = $event" 
+    (screenHeight)="screenHeight = $event"
+    appScreen
+>
+    <app-contact [scrollY]="scrollY" [screenHeight]="screenHeight"></app-contact>
+</div>
