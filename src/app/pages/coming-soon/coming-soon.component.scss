@@ -4,6 +4,14 @@
 	box-sizing: border-box;
 }
 
+button {
+    position: absolute;
+    top: 0.5em;
+    right: 0.5em;
+	color: white;
+	background-color: slateblue;
+}
+
 .container {
 	display: flex;
 	justify-content: center;
