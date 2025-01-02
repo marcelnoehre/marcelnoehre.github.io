@@ -3,13 +3,13 @@ import { Project } from '../../../interfaces/Project.interface';
 import { DataService } from '../../../services/data.service';
 
 @Component({
-  selector: 'app-projects',
+  selector: 'app-projects-grid',
   standalone: true,
   imports: [],
-  templateUrl: './projects.component.html',
-  styleUrl: './projects.component.scss'
+  templateUrl: './projects-grid.component.html',
+  styleUrl: './projects-grid.component.scss'
 })
-export class ProjectsComponent implements AfterViewInit {
+export class ProjectsGridComponent implements AfterViewInit {
   @Input() public scrollY: number = 0;
   @Input() public screenWidth: number = 0;
   public projects: Project[] = this._data.projects;

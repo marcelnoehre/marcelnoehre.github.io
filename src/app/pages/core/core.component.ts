@@ -6,12 +6,12 @@ import { ContactComponent } from '../../components/core/contact/contact.componen
 import { CubeComponent } from '../../components/core/cube/cube.component';
 import { GridComponent } from '../../components/core/grid/grid.component';
 import { LandingPageComponent } from '../../components/core/landing-page/landing-page.component';
-import { ProjectsComponent } from '../../components/core/projects/projects.component';
+import { ProjectsGridComponent } from '../../components/core/projects-grid/projects-grid.component';
 
 @Component({
   selector: 'app-core',
   standalone: true,
-  imports: [LandingPageComponent, CubeComponent, AboutMeComponent, ProjectsComponent, GridComponent, ContactComponent, ScrollbarComponent, ScreenDirective],
+  imports: [LandingPageComponent, CubeComponent, AboutMeComponent, ProjectsGridComponent, GridComponent, ContactComponent, ScrollbarComponent, ScreenDirective],
   providers: [ScreenDirective],
   templateUrl: './core.component.html',
   styleUrl: './core.component.scss'
