@@ -3,11 +3,12 @@ import { ProjectWallpaperComponent } from '../../../components/shared/project-wa
 import { MatCardModule } from '@angular/material/card';
 import { ContactComponent } from '../../../components/core/contact/contact.component';
 import { ScreenDirective } from '../../../directives/screen.directive';
+import { ScrollbarComponent } from '../../../components/shared/scrollbar/scrollbar.component';
 
 @Component({
   selector: 'app-nyc-taxi-analysis',
   standalone: true,
-  imports: [ProjectWallpaperComponent, MatCardModule, ContactComponent, ScreenDirective],
+  imports: [ProjectWallpaperComponent, MatCardModule, ContactComponent, ScrollbarComponent, ScreenDirective],
   providers: [ScreenDirective],
   templateUrl: './nyc-taxi-analysis.component.html',
   styleUrl: './nyc-taxi-analysis.component.scss'

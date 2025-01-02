@@ -14,7 +14,7 @@ import { MatIconModule } from '@angular/material/icon';
 })
 export class ToolbarComponent implements AfterViewInit{
   @ViewChild(MenuComponent) menu!: MenuComponent;
-  @Input() public showLogo: boolean = false;
+  @Input() public isLP: boolean = true;
   @Input() public screenHeight: number = 0;
   @Input() public screenWidth: number = 0;
 
