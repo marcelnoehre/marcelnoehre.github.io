@@ -1,1 +1,29 @@
-<p>projects works!</p>
+<app-toolbar [screenHeight]="screenHeight" [screenWidth]="screenWidth" [isLP]="false"></app-toolbar>
+<div class="projects-container"
+    (screenWidth)="screenWidth = $event"
+    (screenHeight)="screenHeight = $event"
+    (scrollY)="scrollY = $event" 
+    appScreen
+>
+    <div class="carousel-wrapper">
+        @for (_ of [].constructor(10); track _) {
+            <div class="header">Projects
+                <div class="spacer"> - </div>
+            </div>
+        }
+    </div>
+    <div class="projects">
+
+    </div>
+    <div class="carousel-wrapper">
+        @for (_ of [].constructor(10); track _) {
+            <div class="header">Projects
+                <div class="spacer"> - </div>
+            </div>
+        }
+    </div>
+</div>
+<div class="contact-spacer">
+    <app-contact [scrollY]="scrollY" [screenHeight]="screenHeight"></app-contact>
+    <app-scrollbar [scrollY]="scrollY" [screenHeight]="screenHeight"></app-scrollbar>
+</div>
