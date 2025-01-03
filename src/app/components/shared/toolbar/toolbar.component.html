@@ -15,9 +15,11 @@
             <div data-blobity (click)="redirect('/impressum')">Impressum</div>
         </div>
     } @else {
-        <button mat-icon-button (click)="toggleMobileMenu()" class="mobile-nav">
-            <mat-icon>menu</mat-icon>
-        </button>
+        <div class="mobile-nav-container">
+            <button mat-icon-button (click)="toggleMobileMenu()" class="mobile-nav">
+                <mat-icon>menu</mat-icon>
+            </button>
+        </div>
         <app-menu [screenHeight]="screenHeight"></app-menu>
     }
 </div>

@@ -24,11 +24,13 @@
 .close {
     display: flex;
     justify-content: right;
-    padding: 1rem;
+    padding: 1rem 0.25rem;
+    opacity: 0;
+    animation: appear 1s forwards 0.75s;
 }
 
 button {
-    transform: scale(1.5);
+    transform: scale(1.25);
 }
 
 .menu {
@@ -58,10 +60,27 @@ a {
 mat-divider {
     background-color: white;
 }
+
+@media (min-width: 576px) {
+    .close {
+        padding: 1.5rem;
+    }
+
+    button {
+        transform: scale(1.5);
+    }
+}
+
 @keyframes circle {
     to {
         transform: scale(2);
         width: 250vmax;
         height: 250vmax;
+    }
+}
+
+@keyframes appear {
+    to {
+        opacity: 1;
     }
 }

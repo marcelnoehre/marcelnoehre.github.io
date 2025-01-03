@@ -50,23 +50,27 @@
     }
 }
 
-.mobile-nav {
+.mobile-nav-container {
     position: absolute;
-    top: 0.25em;
-    right: 0.5em;
+    top: 0;
+    right: 0.25rem;
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.mobile-nav {
     opacity: 0.5;
     transition: opacity 0.5s ease;
     color: white;
 }
 
-.mobile-nav:hover {
-    opacity: 1;
-}
-
 @media (min-width: 576px) {
-    .mobile-nav {
-        top: 1rem;
+    .mobile-nav-container {
         right: 1rem;
+    }
+    .mobile-nav {
         transform: scale(1.5);
     }
 }
