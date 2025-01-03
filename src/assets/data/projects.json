@@ -4,7 +4,7 @@
             "title": "Custom RL Overlay",
             "image": "assets/images/projects/rl-overlay/rl-overlay-logo.png",
             "technologies": "Angular.js, Express.js, Socket.io",
-            "description": "Example Description",
+            "description": "A dynamic streaming overlay for Rocket League Esports matches, designed to read and seamlessly display in-game data. It also includes a caster panel for easy adjustment of match information.",
             "url": "/coming-soon",
             "target": "_self",
             "grid": true
@@ -14,7 +14,7 @@
             "title": "Swagger for AAS",
             "image": "assets/images/projects/swagger-for-aas/swagger-for-aas-logo.png",
             "technologies": "Java, SwaggerAPI",
-            "description": "Example Description",
+            "description": "Reads data from Asset Administration Shells, generalizes it, and generates a comprehensive Swagger UI documentation to ensure clarity and accessibility for developers.",
             "url": "/coming-soon",
             "target": "_self",
             "grid": true
@@ -23,7 +23,7 @@
             "title": "Multi Agent System",
             "image": "assets/images/projects/poker-mas/poker-mas-logo.png",
             "technologies": "Java, Jade, myCBR, React.js",
-            "description": "Example Description",
+            "description": "A Multi-Agent System for playing poker, where each CPU player acts as an agent, calculating moves using a combination of case-based reasoning and plan-based strategies for optimal gameplay.",
             "url": "/coming-soon",
             "target": "_self",
             "grid": true
@@ -32,7 +32,7 @@
             "title": "Scripting Language",
             "image": "assets/images/projects/sQeeZ-scripting-language/sQeeZ-scripting-language-logo.jpg",
             "technologies": "C++",
-            "description": "Example Description",
+            "description": "sQeeZ is a modern scripting language that combines simplicity, power, and flexibility. Its concise syntax enables developers to create clean, efficient code and implement complex functionalities with ease.",
             "url": "/coming-soon",
             "target": "_self",
             "grid": true
@@ -50,7 +50,7 @@
             "title": "Explainable CBR",
             "image": "assets/images/projects/cbr-minesweeper/cbr-minesweeper-logo.png",
             "technologies": "Java, myCBR, Angular.js",
-            "description": "Example Description",
+            "description": "A Case-Based Reasoning (CBR) system for Minesweeper that analyzes game patterns and offers tips based on previously solved cases, enabling users to learn and improve their gameplay.",
             "url": "/coming-soon",
             "target": "_self",
             "grid": true
@@ -59,7 +59,7 @@
             "title": "Taxi Trips Analysis",
             "image": "assets/images/projects/nyc-taxi-analysis/nyc-taxi-analysis-logo.png",
             "technologies": "Python",
-            "description": "Example Description",
+            "description": "Analyzes NYC taxi trip data to calculate the geographic center, explore tipping behavior across districts, and highlight key areas like airports with insights into tourist and local trends.",
             "url": "/projects/nyc-taxi-analysis",
             "target": "_self",
             "grid": true
@@ -68,7 +68,7 @@
             "title": "Webmaster MVB",
             "image": "assets/images/projects/mvb-website/mvb-website-logo.png",
             "technologies": "Joomla",
-            "description": "Example Description",
+            "description": "A website for a local music club, where we design and display news, manage email communication, and handle various online tasks to keep the community informed and engaged.",
             "url": "https://musikverein-borsum.de",
             "target": "_blank",
             "grid": true
@@ -77,7 +77,7 @@
             "title": "Discord Bots",
             "image": "assets/images/projects/discord-bots/discord-bots-logo.png",
             "technologies": "JavaScript, Discord.js",
-            "description": "Example Description",
+            "description": "Commissioned Discord bots designed to manage temporary voice channels based on user roles, handle role assignments, and automate the process of filling in form data into a document file.",
             "url": "/coming-soon",
             "target": "_self",
             "grid": true

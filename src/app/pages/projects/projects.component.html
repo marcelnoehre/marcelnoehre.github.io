@@ -23,7 +23,7 @@
                     <div class="content">
                         <img [src]="project.image" alt="Project Image">
                         <div class="information">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis consectetur minus corrupti dolorum. Sequi distinctio voluptates nemo, architecto excepturi dignissimos, cupiditate magni quisquam exercitationem explicabo veritatis, possimus accusamus necessitatibus quae.</p>
+                            <p>{{ project.description }}</p>
                             <div class="actions">
                                 <button mat-raised-button (click)="openUrl(project.url, project.target)">
                                     <mat-icon>visibility</mat-icon>
