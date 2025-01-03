@@ -37,14 +37,15 @@
     justify-content: flex-start;
     flex-wrap: wrap;
     width: 100vw;
+    margin: 1rem 0;
 }
 
 .project {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 70vw;
-    margin: 2rem auto;
+    width: 90vw;
+    margin: 1rem auto;
     border-radius: 15px;
     background: rgba(255, 255, 255, 0.2);
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
@@ -59,13 +60,15 @@
 
     .heading {
         display: flex;
+        flex-direction: column;
         justify-content: space-between;
         margin: 1rem 2rem 0 2rem;
         align-items: center;
     }
 
     .title {
-        font-size: 2rem;
+        width: fit-content;
+        font-size: 1.5rem;
         font-weight: bold;
         text-transform: uppercase;
         border-bottom: 4px solid slateblue;
@@ -77,9 +80,9 @@
 
     .content {
         display: flex;
+        flex-direction: column;
         text-align: left;
         padding: 1rem 2rem;
-        gap: 2rem;
 
         .information {
             display: flex;
@@ -87,18 +90,14 @@
             justify-content: center;
             align-items: center;
             text-align: center;
-            padding: 0 1rem;
         }
 
         img {
-            width: 25vw;
+            margin: 0 auto;
+            width: 60vw;
+            height: auto;
             border-radius: 10px;
             box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
-        }
-
-        p {
-            font-size: 1rem;
-            line-height: 1.6;
         }
     }
 
@@ -113,22 +112,6 @@
     }
 }
 
-.left {
-    transform: translateX(-10vw);
-}
-
-.left:hover {
-    transform: translateX(-10vw) scale(1.02);
-}
-
-.right {
-    transform: translateX(10vw);
-}
-
-.right:hover {
-    transform: translateX(10vw) scale(1.02);
-}
-
 .contact-spacer {
     margin-bottom: 100vh;
 }
@@ -137,11 +120,68 @@
     .header {
         font-size: 6em;
     }
+
+    .project {
+        width: 72vw;
+
+        .heading {
+            flex-direction: row;
+        }
+
+        .content {
+            flex-direction: row;
+            gap: 1.5rem;
+
+            img {
+                width: 28vw;
+            }
+        }
+    }
+
+    .left {
+        transform: translateX(-10vw);
+    }
+    
+    .left:hover {
+        transform: translateX(-10vw) scale(1.02);
+    }
+    
+    .right {
+        transform: translateX(10vw);
+    }
+    
+    .right:hover {
+        transform: translateX(10vw) scale(1.02);
+    }
 }
 
 @media (min-width: 992px) {
     .header {
         font-size: 8em;
+    }
+
+    .project {
+        width: 64vw;
+
+        .information {
+            padding: 0 1rem;
+        }
+
+        .content {
+            img {
+                margin: 0;
+                width: 20vw;
+            }
+
+            p {
+                font-size: 1rem;
+                line-height: 1.6;
+            }
+        }
+
+        .title {
+            font-size: 2rem;
+        }
     }
 }
 
