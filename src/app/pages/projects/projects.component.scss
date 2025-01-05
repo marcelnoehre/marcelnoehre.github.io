@@ -49,6 +49,7 @@
     }
 
     .technologies {
+        padding-top: 0.2rem;
         color: lightslategrey;
     }
 
@@ -96,6 +97,10 @@
 
         .heading {
             flex-direction: row;
+
+            .technologies {
+                padding-top: 0;
+            }
         }
 
         .content {

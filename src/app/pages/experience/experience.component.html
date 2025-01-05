@@ -5,7 +5,46 @@
     (scrollY)="scrollY = $event" 
     appScreen
 >
-    Experience
+    <app-carousel-wrapper title="experience"></app-carousel-wrapper>
+    <div class="split-view">
+        <div class="study">
+            <h2 class="title">Work Experience</h2>
+            @for (item of study; track item) {
+                <section class="experience-card">
+                    <div class="heading">
+                        <div class="organization">{{ item.organization }}</div>
+                        <div class="date">{{ item.date }}</div>
+                    </div>
+                    <p class="content">{{ item.description }}</p>
+                    <div class="view">
+                        <button (click)="redirect(item.url)" mat-raised-button>
+                            View More
+                            <mat-icon>open_in_new</mat-icon>
+                        </button>
+                    </div>
+                </section>
+            }
+        </div>
+        <div class="work">
+            <h2 class="title">Study</h2>
+            @for (item of work; track item) {
+                <section class="experience-card">
+                    <div class="heading">
+                        <div class="organization">{{ item.organization }}</div>
+                        <div class="date">{{ item.date }}</div>
+                    </div>
+                    <p class="content">{{ item.description }}</p>
+                    <div class="view">
+                        <button (click)="redirect(item.url)" mat-raised-button>
+                            View More
+                            <mat-icon>open_in_new</mat-icon>
+                        </button>
+                    </div>
+                </section>
+            }
+        </div>
+    </div>
+    <app-carousel-wrapper title="experience"></app-carousel-wrapper>
 </div>
 <div class="contact-spacer">
     <app-contact [scrollY]="scrollY" [screenHeight]="screenHeight"></app-contact>

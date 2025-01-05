@@ -11,7 +11,8 @@
                             @for (item of work; track item; let i = $index) {
                                 <div class="row">
                                     <h3> {{ item.date }} </h3>
-                                    <div> {{ item.description }} </div>
+                                    <div> {{ item.description }}</div>
+                                    <div>({{ item.organization }})</div>
                                     <button (click)="redirect(item.url, $event)" mat-raised-button>
                                         View More
                                         <mat-icon>open_in_new</mat-icon>
@@ -28,12 +29,12 @@
                                         @if (this.scrollY >= (this.screenHeight * 1.19)) {
                                             <tr data-blobity (click)="redirect(item.url)">
                                                 <td> {{ item.date }} </td>
-                                                <td> {{ item.description }} </td>
+                                                <td> {{ item.description }} ({{ item.organization }})</td>
                                             </tr>
                                         } @else {
                                             <tr (click)="redirect(item.url)">
                                                 <td> {{ item.date }} </td>
-                                                <td> {{ item.description }} </td>
+                                                <td> {{ item.description }} ({{ item.organization }})</td>
                                             </tr>
                                         }
                                     }
@@ -48,7 +49,8 @@
                             @for (item of work; track item; let i = $index) {
                                 <div class="row">
                                     <h3> {{ item.date }} </h3>
-                                    <div> {{ item.description }} </div>
+                                    <div> {{ item.description }}</div>
+                                    <div>({{ item.organization }})</div>
                                     <button (click)="redirect(item.url, $event)" mat-raised-button>
                                         View More
                                         <mat-icon>open_in_new</mat-icon>

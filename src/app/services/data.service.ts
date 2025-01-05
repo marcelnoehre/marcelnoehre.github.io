@@ -21,6 +21,10 @@ export class DataService {
     return cubeData.sides;
   }
 
+  public get study(): CvItem[] {
+    return experienceData.study;
+  }
+
   public get work(): CvItem[] {
     return experienceData.work;
   }
