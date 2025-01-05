@@ -9,7 +9,7 @@
     <div class="split-view">
         <div class="study">
             <h2 class="title">Work Experience</h2>
-            @for (item of study; track item) {
+            @for (item of work; track item) {
                 <section class="experience-card">
                     <div class="heading">
                         <div class="organization">{{ item.organization }}</div>
@@ -27,7 +27,7 @@
         </div>
         <div class="work">
             <h2 class="title">Study</h2>
-            @for (item of work; track item) {
+            @for (item of study; track item) {
                 <section class="experience-card">
                     <div class="heading">
                         <div class="organization">{{ item.organization }}</div>

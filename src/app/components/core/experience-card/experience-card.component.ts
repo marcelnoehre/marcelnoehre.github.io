@@ -19,7 +19,7 @@ export class ExperienceCardComponent implements AfterViewInit {
   @Input() public scrollY: number = 0;
   @Input() public screenWidth: number = 0;
   @Input() public screenHeight: number = 0;
-  public work: CvItem[] = this._data.study.concat(this._data.work);
+  public work: CvItem[] = this._data.work.concat(this._data.study);
   public flip: FlipState = {
     meFront: true,
     meBack: false
