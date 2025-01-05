@@ -7,11 +7,9 @@
     }
     @if (screenWidth >= 1200) {
         <div class="nav large-nav">
-            @if (isLP) {
-                <div data-blobity (click)="scroll('about')">About</div>
-            }
+            <div data-blobity (click)="redirect('/about-me')">About</div>
             <div data-blobity (click)="redirect('/projects')">Projects</div>
-            <div data-blobity (click)="scroll('contact')">Contact</div>
+            <div data-blobity (click)="scroll()">Contact</div>
             <div data-blobity (click)="redirect('/impressum')">Impressum</div>
         </div>
     } @else {

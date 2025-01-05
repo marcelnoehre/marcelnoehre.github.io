@@ -33,12 +33,9 @@ export class ToolbarComponent implements AfterViewInit{
     this._router.navigate([route]);
   }
 
-  scroll(target: string): void {
-    let px;
-    if (target === 'about') px = this.screenHeight * 1.2;
-    if (target === 'contact') px = window.document.body.scrollHeight;
+  scroll(): void {
     window.scrollTo({
-      top: px,
+      top: window.document.body.scrollHeight,
       behavior: 'smooth'
     });
   }

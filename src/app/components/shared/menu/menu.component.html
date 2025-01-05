@@ -4,7 +4,7 @@
         <div class="menu" [@fadeIn]>
             <ng-container>
                 <div class="item">
-                    <a data-blobity (click)="scroll('about')">About</a>
+                    <a data-blobity (click)="redirect('/about-me')">About</a>
                 </div>
                 <mat-divider></mat-divider>
             </ng-container>
@@ -16,7 +16,7 @@
             </ng-container>
             <ng-container>
                 <div class="item">
-                    <a data-blobity (click)="scroll('contact')">Contact</a>
+                    <a data-blobity (click)="scroll()">Contact</a>
                 </div>
                 <mat-divider></mat-divider>
             </ng-container>
