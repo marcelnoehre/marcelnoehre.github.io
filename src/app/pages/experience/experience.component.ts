@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { ScreenDirective } from '../../directives/screen.directive';
 import { ToolbarComponent } from '../../components/shared/toolbar/toolbar.component';
-import { ContactComponent } from '../../components/core/contact/contact.component';
+import { ContactComponent } from '../../components/shared/contact/contact.component';
 import { ScrollbarComponent } from '../../components/shared/scrollbar/scrollbar.component';
 
 @Component({

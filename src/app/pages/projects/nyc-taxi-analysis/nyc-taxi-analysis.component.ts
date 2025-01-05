@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { ProjectWallpaperComponent } from '../../../components/shared/project-wallpaper/project-wallpaper.component';
 import { MatCardModule } from '@angular/material/card';
-import { ContactComponent } from '../../../components/core/contact/contact.component';
+import { ContactComponent } from '../../../components/shared/contact/contact.component';
 import { ScreenDirective } from '../../../directives/screen.directive';
 import { ScrollbarComponent } from '../../../components/shared/scrollbar/scrollbar.component';
 

@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { ScreenDirective } from '../../directives/screen.directive';
 import { ScrollbarComponent } from '../../components/shared/scrollbar/scrollbar.component';
 import { ExperienceCardComponent } from '../../components/core/experience-card/experience-card.component';
-import { ContactComponent } from '../../components/core/contact/contact.component';
+import { ContactComponent } from '../../components/shared/contact/contact.component';
 import { CubeComponent } from '../../components/core/cube/cube.component';
 import { GridComponent } from '../../components/core/grid/grid.component';
 import { LandingPageComponent } from '../../components/core/landing-page/landing-page.component';
