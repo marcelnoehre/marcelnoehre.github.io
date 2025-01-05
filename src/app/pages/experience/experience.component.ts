@@ -5,14 +5,14 @@ import { ContactComponent } from '../../components/core/contact/contact.componen
 import { ScrollbarComponent } from '../../components/shared/scrollbar/scrollbar.component';
 
 @Component({
-  selector: 'app-about-me',
+  selector: 'app-experience',
   standalone: true,
   imports: [ToolbarComponent, ContactComponent, ScrollbarComponent, ScreenDirective],
   providers: [ScreenDirective],
-  templateUrl: './about-me.component.html',
-  styleUrl: './about-me.component.scss'
+  templateUrl: './experience.component.html',
+  styleUrl: './experience.component.scss'
 })
-export class AboutMeComponent {
+export class ExperienceComponent {
   public screenWidth: number = 0;
   public screenHeight: number = 0;
   public scrollY: number = 0;

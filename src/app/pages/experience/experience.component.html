@@ -1,11 +1,11 @@
 <app-toolbar [screenHeight]="screenHeight" [screenWidth]="screenWidth" [isLP]="false"></app-toolbar>
-<div class="about-me-container"
+<div class="experience-container"
     (screenWidth)="screenWidth = $event"
     (screenHeight)="screenHeight = $event"
     (scrollY)="scrollY = $event" 
     appScreen
 >
-    About Me
+    Experience
 </div>
 <div class="contact-spacer">
     <app-contact [scrollY]="scrollY" [screenHeight]="screenHeight"></app-contact>

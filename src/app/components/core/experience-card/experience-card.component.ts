@@ -9,13 +9,13 @@ import { FlipState } from '../../../interfaces/FlipState.interface';
 import { DataService } from '../../../services/data.service';
 
 @Component({
-  selector: 'app-about-me-card',
+  selector: 'app-experience-card',
   standalone: true,
   imports: [MatCardModule, MatDividerModule, NgClass, MatButtonModule, MatIconModule],
-  templateUrl: './about-me-card.component.html',
-  styleUrl: './about-me-card.component.scss'
+  templateUrl: './experience-card.component.html',
+  styleUrl: './experience-card.component.scss'
 })
-export class AboutMeCardComponent implements AfterViewInit {
+export class ExperienceCardComponent implements AfterViewInit {
   @Input() public scrollY: number = 0;
   @Input() public screenWidth: number = 0;
   @Input() public screenHeight: number = 0;

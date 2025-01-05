@@ -4,11 +4,11 @@ import { ComingSoonComponent } from './pages/coming-soon/coming-soon.component';
 import { ImpressumComponent } from './pages/impressum/impressum.component';
 import { NycTaxiAnalysisComponent } from './pages/projects/nyc-taxi-analysis/nyc-taxi-analysis.component';
 import { ProjectsComponent } from './pages/projects/projects.component';
-import { AboutMeComponent } from './pages/about-me/about-me.component';
+import { ExperienceComponent } from './pages/experience/experience.component';
 
 export const routes: Routes = [
     { path: '', component: CoreComponent },
-    { path: 'about-me', component: AboutMeComponent },
+    { path: 'experience', component: ExperienceComponent },
     { path: 'projects', children: [
         { path: '', component: ProjectsComponent},
         { path: 'nyc-taxi-analysis', component: NycTaxiAnalysisComponent }

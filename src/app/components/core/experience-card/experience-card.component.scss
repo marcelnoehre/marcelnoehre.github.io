@@ -1,4 +1,4 @@
-.about-me-card-container {
+.experience-card-container {
     position: relative;
     display: flex;
     justify-content: center;
@@ -7,7 +7,7 @@
     background: transparent;
 }
 
-.about-me-card {
+.experience-card {
     position: fixed;
     top: 17.25vh;
     height: 65vh;
@@ -47,7 +47,7 @@ button {
     background-color: rgba(124, 104, 238, 0.1) !important;
 }
 
-.about-small {
+.experience-small {
     position: absolute;
     display: flex;
     flex-direction: column;
@@ -72,7 +72,7 @@ button {
     }
 }
 
-.flip-about {
+.flip-experience {
     transform: rotateY(0deg);
 }
 
@@ -84,7 +84,7 @@ button {
     text-align: center;
 }
 
-.about-large {
+.experience-large {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -121,13 +121,13 @@ td:first-child {
 }
 
 @media (min-width: 992px) {
-    .about-me-card {
+    .experience-card {
         min-width: 75vw;
     }
 }
 
 @media (max-width: 576px) {
-    .about-small {
+    .experience-small {
         font-size: 0.9em;
     }
 
@@ -138,12 +138,12 @@ td:first-child {
 
 @media (max-height: 576px) {
 
-    .about-me-card {
+    .experience-card {
         height: 75vh;
 
     }
 
-    .about-large {
+    .experience-large {
         justify-content: flex-start;
         padding: 0 2em;
     }
