@@ -21,5 +21,5 @@ export class CoreComponent {
   public scrollY: number = 0;
   public screenWidth: number = 0;
   public screenHeight: number = 0;
-
+  public minScroll: number = 3;
 }
