@@ -1,6 +1,6 @@
-<div class="about-me-container">
+<div class="about-me-card-container">
     @if (scrollY <= (screenHeight * 2.5)) {
-        <mat-card class="about-me" style="--card-degree: {{ cardDegree() }}; --card-fade: {{ cardFade() }}">
+        <mat-card class="about-me-card" style="--card-degree: {{ cardDegree() }}; --card-fade: {{ cardFade() }}">
             <mat-card-content>
                 @if (screenWidth >= 992 || (screenHeight < 576 && screenWidth >= 576)) {
                     <div class="card-container">

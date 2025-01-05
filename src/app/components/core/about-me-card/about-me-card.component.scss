@@ -1,4 +1,4 @@
-.about-me-container {
+.about-me-card-container {
     position: relative;
     display: flex;
     justify-content: center;
@@ -7,7 +7,7 @@
     background: transparent;
 }
 
-.about-me {
+.about-me-card {
     position: fixed;
     top: 17.25vh;
     height: 65vh;
@@ -121,7 +121,7 @@ td:first-child {
 }
 
 @media (min-width: 992px) {
-    .about-me {
+    .about-me-card {
         min-width: 75vw;
     }
 }
@@ -138,7 +138,7 @@ td:first-child {
 
 @media (max-height: 576px) {
 
-    .about-me {
+    .about-me-card {
         height: 75vh;
 
     }

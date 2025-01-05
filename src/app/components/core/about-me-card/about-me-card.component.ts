@@ -9,13 +9,13 @@ import { FlipState } from '../../../interfaces/FlipState.interface';
 import { DataService } from '../../../services/data.service';
 
 @Component({
-  selector: 'app-about-me',
+  selector: 'app-about-me-card',
   standalone: true,
   imports: [MatCardModule, MatDividerModule, NgClass, MatButtonModule, MatIconModule],
-  templateUrl: './about-me.component.html',
-  styleUrl: './about-me.component.scss'
+  templateUrl: './about-me-card.component.html',
+  styleUrl: './about-me-card.component.scss'
 })
-export class AboutMeComponent implements AfterViewInit {
+export class AboutMeCardComponent implements AfterViewInit {
   @Input() public scrollY: number = 0;
   @Input() public screenWidth: number = 0;
   @Input() public screenHeight: number = 0;
