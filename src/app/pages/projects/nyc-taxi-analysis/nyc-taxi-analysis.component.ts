@@ -17,4 +17,5 @@ export class NycTaxiAnalysisComponent {
   public wallpaper: string = 'assets/images/projects/nyc-taxi-analysis/nyc-taxi-analysis-wallpaper.jpg';
   public scrollY: number = 0;
   public screenHeight: number = 0;
+  public minScroll: number = 3;
 }
