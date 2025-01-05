@@ -44,7 +44,7 @@
                             </mat-card-header>
                             <mat-card-content>
                                 @for (platform of contact; track platform) {
-                                    <img [src]="platform.image" [alt]="platform.name" (click)="redirect(platform.url, platform.target)" data-blobity>
+                                    <img [src]="platform.image" [alt]="platform.name" (click)="redirect(platform.url, platform.target)" class="icon" data-blobity>
                                 } 
                             </mat-card-content>
                         </mat-card>
