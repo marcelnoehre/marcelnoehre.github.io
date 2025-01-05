@@ -1,34 +1,34 @@
 {
     "items": [
         {
+            "title": "Work experience",
+            "description": "We are currently developing a scanner interface as a user-friendly connection to an ERP system.",
+            "image": "assets/images/grid/work.jpg",
+            "url": "https://entiac.com/mde/",
+            "class": "grid-item small",
+            "target": "_blank"
+        },
+        {
+            "title": "University",
+            "description": "My main focus is software engineering, complemented by machine learning, particularly on large language models.",
+            "image": "assets/images/grid/university.png",
+            "url": "https://www.uni-hildesheim.de/studium/studienangebot/masterstudium/angewandte-informatik-master-of-science-msc/",
+            "class": "grid-item small",
+            "target": "_blank"
+        },
+        {
             "title": "GitHub",
             "description": "Take a look at my GitHub profile, where you'll find most of the projects I've mentioned above.",
             "image": "assets/images/grid/github.svg",
             "url": "https://github.com/marcelnoehre",
-            "class": "grid-item small",
-            "target": "_blank"
-        },
-        {
-            "title": "Codepen",
-            "description": "Check out my CodePen for some CSS art or small but interesting webdesign snippets.",
-            "image": "assets/images/grid/codepen.svg",
-            "url": "https://codepen.io/marcelnoehre",
-            "class": "grid-item small",
-            "target": "_blank"
-        },
-        {
-            "title": "My Projects",
-            "description": "Please refer to the comprehensive list of all my projects, with links to the respective repositories.",
-            "image": "assets/images/grid/see-more.png",
-            "url": "/coming-soon",
             "class": "grid-item large",
-            "target": "_self"
+            "target": "_blank"
         },
         {
-            "title": "Advent of Code",
-            "description": "I like solving puzzles and trying to improve my coding skills with particularly short solutions.",
-            "image": "assets/images/grid/aoc.png",
-            "url": "https://github.com/marcelnoehre/advent-of-code",
+            "title": "Teaching",
+            "description": "I've already gained some teaching experience as a teaching assistant for two semesters.",
+            "image": "assets/images/grid/java.jpg",
+            "url": "https://sse.uni-hildesheim.de",
             "class": "grid-item small",
             "target": "_blank"
         },
@@ -41,36 +41,36 @@
             "target": "_self"
         },
         {
-            "title": "Workflow",
-            "description": "Take a look at my workflow for realising a project. From sketching out the design or making detailed prototypes to Test-Driven Development and a Docker Deployment.",
-            "image": "assets/images/grid/workflow.png",
-            "url": "/coming-soon",
+            "title": "Advent of Code",
+            "description": "I like solving puzzles and trying to improve my coding skills with particularly short solutions.",
+            "image": "assets/images/grid/aoc.png",
+            "url": "https://github.com/marcelnoehre/advent-of-code",
             "class": "grid-item large",
+            "target": "_blank"
+        },
+        {
+            "title": "My Projects",
+            "description": "Please refer to the comprehensive list of all my projects, with links to the respective repositories.",
+            "image": "assets/images/grid/see-more.png",
+            "url": "/coming-soon",
+            "class": "grid-item small",
             "target": "_self"
         },
         {
-            "title": "University",
-            "description": "My main focus is software engineering, complemented by machine learning, particularly on large language models.",
-            "image": "assets/images/grid/university.png",
-            "url": "https://www.uni-hildesheim.de/studium/studienangebot/masterstudium/angewandte-informatik-master-of-science-msc/",
+            "title": "Hobbies",
+            "description": "Explore my interests outside of work, including my passion for sports and my appreciation for music.",
+            "image": "assets/images/grid/free-time.png",
+            "url": "/coming-soon",
             "class": "grid-item small",
-            "target": "_blank"
+            "target": "_self"
         },
         {
-            "title": "Work",
-            "description": "We are currently developing a scanner interface as a user-friendly connection to an ERP system.",
-            "image": "assets/images/grid/work.jpg",
-            "url": "https://entiac.com/mde/",
+            "title": "Fun Facts",
+            "description": "Find out more about my preferences and insights, such as my favorite programming language and unique experiences.",
+            "image": "assets/images/grid/fun-fact.png",
+            "url": "/coming-soon",
             "class": "grid-item small",
-            "target": "_blank"
-        },
-        {
-            "title": "Teaching",
-            "description": "I've already gained some teaching experience as a teaching assistant for two semesters.",
-            "image": "assets/images/grid/java.jpg",
-            "url": "https://sse.uni-hildesheim.de",
-            "class": "grid-item small",
-            "target": "_blank"
+            "target": "_self"
         }
     ]
 }
