@@ -7,11 +7,12 @@ import { Project } from '../../interfaces/Project.interface';
 import { DataService } from '../../services/data.service';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
+import { CarouselWrapperComponent } from '../../components/shared/carousel-wrapper/carousel-wrapper.component';
 
 @Component({
   selector: 'app-projects',
   standalone: true,
-  imports: [MatButtonModule, MatIconModule, ToolbarComponent, ContactComponent, ScrollbarComponent, ScreenDirective],
+  imports: [MatButtonModule, MatIconModule, ToolbarComponent, CarouselWrapperComponent, ContactComponent, ScrollbarComponent, ScreenDirective],
   providers: [ScreenDirective],
   templateUrl: './projects.component.html',
   styleUrl: './projects.component.scss'

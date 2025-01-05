@@ -5,13 +5,7 @@
     (scrollY)="scrollY = $event" 
     appScreen
 >
-    <div class="carousel-wrapper">
-        @for (_ of [].constructor(10); track _) {
-            <div class="header">Projects
-                <div class="spacer"> - </div>
-            </div>
-        }
-    </div>
+    <app-carousel-wrapper title="projects"></app-carousel-wrapper>
     <div class="projects">
         @for (project of projects; track project) {
             @if (project.title !== 'center') {
@@ -36,13 +30,7 @@
             }
         }
     </div>
-    <div class="carousel-wrapper">
-        @for (_ of [].constructor(10); track _) {
-            <div class="header">Projects
-                <div class="spacer"> - </div>
-            </div>
-        }
-    </div>
+    <app-carousel-wrapper title="projects"></app-carousel-wrapper>
 </div>
 <div class="contact-spacer">
     <app-contact [scrollY]="scrollY" [screenHeight]="screenHeight"></app-contact>

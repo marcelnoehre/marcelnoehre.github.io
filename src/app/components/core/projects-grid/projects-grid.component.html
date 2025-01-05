@@ -1,11 +1,5 @@
 <div class="projects-grid-container">
-    <div class="carousel-wrapper top">
-        @for (_ of [].constructor(10); track _) {
-            <div class="header">Projects
-                <div class="spacer"> - </div>
-            </div>
-        }
-    </div>
+    <app-carousel-wrapper title="projects" position="top"></app-carousel-wrapper>
     <div class="projects">
         @for (project of projects; track project) {
             @if (project.grid) {
@@ -24,11 +18,5 @@
             }
         }
     </div>
-    <div class="carousel-wrapper bottom">
-        @for (_ of [].constructor(10); track _) {
-            <div class="header">Projects
-                <div class="spacer"> - </div>
-            </div>
-        }
-    </div>
+    <app-carousel-wrapper title="projects" position="bottom"></app-carousel-wrapper>
 </div>
