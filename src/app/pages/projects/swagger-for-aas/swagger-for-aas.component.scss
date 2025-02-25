@@ -1,0 +1,33 @@
+.swagger-for-aas-title-container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(-5vh);
+
+    .title {
+        text-align: center;
+        font-size: 16vw;
+        -webkit-text-stroke: 0.6vw black;
+        text-shadow: 0.3vw 0.3vw 0.6vw #173647;
+        color: #84ea2c;
+    }
+}
+
+@media (min-width: 576px) {
+    .swagger-for-aas-title-container>.title {
+        font-size: 12vw;
+        -webkit-text-stroke: 0.35vw black;
+        text-shadow: 0.4vw 0.4vw 0.8vw #173647;
+    }
+}
+
+@media (min-width: 992px) {
+    .swagger-for-aas-title-container>.title {
+        font-size: 8vw;
+        -webkit-text-stroke: 0.3vw black;
+        text-shadow: 0.3vw 0.3vw 0.6vw #173647;
+    } 
+}
