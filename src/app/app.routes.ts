@@ -6,6 +6,7 @@ import { NycTaxiAnalysisComponent } from './pages/projects/nyc-taxi-analysis/nyc
 import { ProjectsComponent } from './pages/projects/projects.component';
 import { ExperienceComponent } from './pages/experience/experience.component';
 import { SwaggerForAasComponent } from './pages/projects/swagger-for-aas/swagger-for-aas.component';
+import { TechstackComponent } from './pages/techstack/techstack.component';
 
 export const routes: Routes = [
     { path: '', component: CoreComponent },
@@ -15,6 +16,7 @@ export const routes: Routes = [
         { path: 'nyc-taxi-analysis', component: NycTaxiAnalysisComponent },
         { path: 'swagger-for-aas', component: SwaggerForAasComponent }
     ]},
+    { path: 'techstack', component: TechstackComponent },
     { path: 'impressum', component: ImpressumComponent },
     { path: 'coming-soon', component: ComingSoonComponent },
     { path: '**', redirectTo: '' }

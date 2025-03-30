@@ -36,7 +36,7 @@
             "title": "Techstack",
             "description": "I'm currently working in the field of web development, using the Angular Framework. At university, I used Java a lot, for example to realise a multi-agent system. I also gained insights into C/C++, Python, R, Lisp, Clojure and Prolog.",
             "image": "assets/images/grid/technologies.png",
-            "url": "/coming-soon",
+            "url": "/techstack",
             "class": "grid-item large",
             "target": "_self"
         },

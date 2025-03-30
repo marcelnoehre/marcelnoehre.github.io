@@ -1,0 +1,14 @@
+<app-toolbar [screenHeight]="screenHeight" [screenWidth]="screenWidth" [isLP]="false"></app-toolbar>
+<div 
+    class="techstack-container"
+    (screenWidth)="screenWidth = $event"
+    (screenHeight)="screenHeight = $event" 
+    (scrollY)="scrollY = $event"
+    appScreen    
+>
+    <div class="tagcloud"></div>
+</div>
+<div class="contact-spacer">
+    <app-contact [scrollY]="scrollY" [screenHeight]="screenHeight"></app-contact>
+    <app-scrollbar [scrollY]="scrollY" [screenHeight]="screenHeight"></app-scrollbar>
+</div>
