@@ -9,6 +9,7 @@ import { ScrollbarComponent } from '../../components/shared/scrollbar/scrollbar.
   selector: 'app-techstack',
   standalone: true,
   imports: [ToolbarComponent, ScreenDirective, ContactComponent, ScrollbarComponent],
+  providers: [ScreenDirective],
   templateUrl: './techstack.component.html',
   styleUrl: './techstack.component.scss'
 })

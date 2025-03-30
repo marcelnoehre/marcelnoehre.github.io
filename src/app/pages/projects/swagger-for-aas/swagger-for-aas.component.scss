@@ -38,6 +38,7 @@ mat-card {
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     background: linear-gradient(135deg, rgba(132, 234, 44, 0.4), rgba(44, 168, 234, 0.4));
+    flex-grow: 1;
 }
 
 mat-card:hover {
@@ -86,9 +87,17 @@ mat-card:hover {
         gap: 0;
     }
 
+    h1 {
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        padding-top: 2rem;
+    }
+
     .actions {
         display: flex;
         justify-content: center;
+        padding-bottom: 2rem;
 
         a {
             text-decoration: none;
@@ -98,7 +107,11 @@ mat-card:hover {
             border-radius: 10px;
         }
     }
-      
+}
+
+.contact-spacer {
+    border-top: 2px solid black;
+    margin-bottom: 100vh;
 }
 
 @media (min-width: 576px) {

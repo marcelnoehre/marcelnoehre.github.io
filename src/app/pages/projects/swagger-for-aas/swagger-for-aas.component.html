@@ -22,9 +22,18 @@
         <img src="assets/images/projects/swagger-for-aas/swagger-ui.png" alt="Swagger UI">
         <p>The implementation is done in Java, where all necessary data is read from an Asset Administration Shell via REST. While there are variations in the standard, companies typically maintain a consistent internal structure, allowing a Swagger UI to be generated for a specific format. Predefined classes are used to represent the required Swagger UI format. These classes are populated with the extracted information from the Asset Administration Shell. Finally, instances of these classes are converted into a JSON string, which serves as the foundation for the Swagger UI.</p>
     </div>
+    <h1>Try it yourself!</h1>
     <div class="row actions">
         <a href="https://github.com/eclipse-aaspe/package-explorer" target="_blank">AASX Package Explorer</a>
         <a href="https://github.com/marcelnoehre/swagger-for-aas" target="_blank">GitHub - Swagger UI Creator</a>
         <a href="https://editor.swagger.io/" target="_blank">Swagger Editor</a>
     </div>
+</div>
+<div class="contact-spacer"
+    (scrollY)="scrollY = $event" 
+    (screenHeight)="screenHeight = $event"
+    appScreen
+>
+    <app-contact [scrollY]="scrollY" [screenHeight]="screenHeight" [minScroll]="minScroll"></app-contact>
+    <app-scrollbar [scrollY]="scrollY" [screenHeight]="screenHeight"></app-scrollbar>
 </div>
