@@ -9,3 +9,22 @@
         <mat-card>Swagger UI is an open-source tool that visually represents APIs, allowing developers to explore, test, and interact with API endpoints through an intuitive web interface. It generates documentation from OpenAPI specifications, making it easier to understand request and response structures, parameters, and authentication requirements.</mat-card>
     </div>
 </div>
+<div class="content">
+    <div class="row aasx">
+        <img src="assets/images/projects/swagger-for-aas/aasx-package-explorer.png" alt="AASX Package Explorer">
+        <p>The Asset Administration Shell (AAS) is stored in a .aasx file, which serves as a standardized container for managing and exchanging digital twin data. These files can be opened, viewed, and edited using tools such as the <a href="https://github.com/eclipse-aaspe/package-explorer">AASX Package Explorer</a>, allowing users to inspect and modify the contained information efficiently.</p>
+    </div>
+    <div class="row structure">
+        <p>The Swagger UI requires a predefined format, which is illustrated in a tree diagram. This diagram provides a structured overview of how the data should be organized. The information from an Asset Administration Shell must ultimately be parsed into this format to ensure compatibility and proper integration.</p>
+        <img src="assets/images/projects/swagger-for-aas/swagger-structure.png" alt="Swagger UI Structure">
+    </div>
+    <div class="row ui">
+        <img src="assets/images/projects/swagger-for-aas/swagger-ui.png" alt="Swagger UI">
+        <p>The implementation is done in Java, where all necessary data is read from an Asset Administration Shell via REST. While there are variations in the standard, companies typically maintain a consistent internal structure, allowing a Swagger UI to be generated for a specific format. Predefined classes are used to represent the required Swagger UI format. These classes are populated with the extracted information from the Asset Administration Shell. Finally, instances of these classes are converted into a JSON string, which serves as the foundation for the Swagger UI.</p>
+    </div>
+    <div class="row actions">
+        <a href="https://github.com/eclipse-aaspe/package-explorer" target="_blank">AASX Package Explorer</a>
+        <a href="https://github.com/marcelnoehre/swagger-for-aas" target="_blank">GitHub - Swagger UI Creator</a>
+        <a href="https://editor.swagger.io/" target="_blank">Swagger Editor</a>
+    </div>
+</div>

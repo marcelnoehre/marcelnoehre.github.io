@@ -45,6 +45,62 @@ mat-card:hover {
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
 }
 
+.content {
+    width: 100vw;
+    background-color: white;
+
+    .row {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        gap: 2rem;
+        padding: 2rem;
+
+        img {
+            width: 67%;
+            border-radius: 10px;
+        }
+
+        p {
+            text-align: center;
+            padding: 2rem;
+            border-radius: 10px;
+        }
+    }
+
+    .aasx {
+        background-color: rgb(44, 168, 234);
+
+        p {
+            background-color: rgba(255, 255, 255, 0.75);
+        }
+    }
+
+    .structure>p {
+        background-color: rgba(133, 234, 44, 0.4);
+    }
+
+    .ui {
+        background-color: rgba(133, 234, 44, 0.4);
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .actions {
+        display: flex;
+        justify-content: center;
+
+        a {
+            text-decoration: none;
+            background-color: #181818;
+            color: white;
+            padding: 1rem;
+            border-radius: 10px;
+        }
+    }
+      
+}
+
 @media (min-width: 576px) {
     .swagger-for-aas-title-container>.title {
         font-size: 12vw;
