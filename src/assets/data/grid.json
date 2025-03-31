@@ -65,12 +65,12 @@
             "target": "_self"
         },
         {
-            "title": "Fun Facts",
-            "description": "Find out more about my preferences and insights, such as my favorite programming language and unique experiences.",
-            "image": "assets/images/grid/fun-fact.png",
-            "url": "/coming-soon",
+            "title": "Dev Resources",
+            "description": "Here is a small collection of tools that help me with coding. Simple and practical, just what I need for my projects.",
+            "image": "assets/images/grid/dev-resources.png",
+            "url": "https://marcel-noehre.de/resources",
             "class": "grid-item small",
-            "target": "_self"
+            "target": "_blank"
         }
     ]
 }
