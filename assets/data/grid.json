@@ -33,20 +33,20 @@
             "target": "_blank"
         },
         {
+            "title": "Dev Resources",
+            "description": "Here is a small collection of tools that help me with coding. Simple and practical, just what I need for my projects.",
+            "image": "assets/images/grid/dev-resources.png",
+            "url": "https://marcel-noehre.de/resources",
+            "class": "grid-item large",
+            "target": "_blank"
+        },
+        {
             "title": "Techstack",
             "description": "I'm currently working in the field of web development, using the Angular Framework. At university, I used Java a lot, for example to realise a multi-agent system. I also gained insights into C/C++, Python, R, Lisp, Clojure and Prolog.",
             "image": "assets/images/grid/technologies.png",
-            "url": "/coming-soon",
+            "url": "/techstack",
             "class": "grid-item large",
             "target": "_self"
-        },
-        {
-            "title": "Advent of Code",
-            "description": "I like solving puzzles and trying to improve my coding skills with particularly short solutions.",
-            "image": "assets/images/grid/aoc.png",
-            "url": "https://github.com/marcelnoehre/advent-of-code",
-            "class": "grid-item large",
-            "target": "_blank"
         },
         {
             "title": "My Projects",
@@ -65,12 +65,12 @@
             "target": "_self"
         },
         {
-            "title": "Fun Facts",
-            "description": "Find out more about my preferences and insights, such as my favorite programming language and unique experiences.",
-            "image": "assets/images/grid/fun-fact.png",
-            "url": "/coming-soon",
+            "title": "Advent of Code",
+            "description": "I like solving puzzles and trying to improve my coding skills with particularly short solutions.",
+            "image": "assets/images/grid/aoc.png",
+            "url": "https://github.com/marcelnoehre/advent-of-code",
             "class": "grid-item small",
-            "target": "_self"
+            "target": "_blank"
         }
     ]
 }

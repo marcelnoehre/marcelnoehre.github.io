@@ -15,7 +15,7 @@
             "image": "assets/images/projects/swagger-for-aas/swagger-for-aas-logo.png",
             "technologies": "Java, SwaggerAPI",
             "description": "Reads data from Asset Administration Shells, generalizes it, and generates a comprehensive Swagger UI documentation to ensure clarity and accessibility for developers.",
-            "url": "/coming-soon",
+            "url": "/projects/swagger-for-aas",
             "target": "_self",
             "grid": true
         },
