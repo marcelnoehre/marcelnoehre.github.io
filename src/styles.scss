@@ -1,1 +1,68 @@
-/* You can add global styles to this file, and also import other style files */
+@use '@angular/material' as mat;
+
+:root {
+  --background-color: #ffffff;
+  --text-color: #000000;
+}
+
+body.dark-mode {
+  --background-color: #181818;
+  --text-color: #ffffff;
+}
+
+html {
+  @include mat.theme((
+    color: (
+      primary: mat.$azure-palette,
+      tertiary: mat.$blue-palette,
+    ),
+    typography: Roboto,
+    density: 0,
+  ));
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+
+body {
+  color-scheme: light;
+  font: var(--mat-sys-body-medium);
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+html,
+body {
+  width: 100vw;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  /* Safari */
+  -webkit-user-select: none;
+  /* Firefox */
+  -moz-user-select: none;
+  /* IE10+/Edge */
+  -ms-user-select: none;
+  /* Standard */
+  user-select: none;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  display: none;
+  scrollbar-width: none;
+  -webkit-appearance: none;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+
+app-root {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 0;
+  margin: 0;
+}
