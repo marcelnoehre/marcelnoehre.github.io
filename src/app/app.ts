@@ -1,6 +1,6 @@
 import { AfterViewInit, Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { ThemeService } from './services/theme';
+import { Theme } from './services/theme';
 import Blobity from 'blobity';
 
 @Component({
@@ -12,7 +12,7 @@ import Blobity from 'blobity';
 export class App implements AfterViewInit {
   protected readonly title = signal('Marcel Nöhre');
 
-  constructor(public themeService: ThemeService) {}
+  constructor(public _: Theme) {}
 
   ngAfterViewInit(): void {
     try { 

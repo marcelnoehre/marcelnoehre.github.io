@@ -1,23 +1,23 @@
 import { Injectable } from '@angular/core';
-import { StorageService } from './storage';
+import { Storage } from './storage';
 
 @Injectable({ providedIn: 'root' })
-export class ThemeService {
+export class Theme {
   private _DARK_MODE = 'dark-mode';
 
-  constructor(private _storageService: StorageService) {
-    const session = _storageService.getLocalEntry(this._DARK_MODE);
+  constructor(private _storage: Storage) {
+    const session = this._storage.getLocalEntry(this._DARK_MODE);
     this.setDarkMode(session ? session === 'true' : (window.matchMedia('(prefers-color-scheme: dark)').matches));
   }
 
   setDarkMode(isDark: boolean) {
     if (isDark) {
       document.body.classList.add(this._DARK_MODE);
-      this._storageService.setLocalEntry(this._DARK_MODE, true);
+      this._storage.setLocalEntry(this._DARK_MODE, true);
       localStorage.setItem(this._DARK_MODE, 'true');
     } else {
       document.body.classList.remove(this._DARK_MODE);
-      this._storageService.setLocalEntry(this._DARK_MODE, false);
+      this._storage.setLocalEntry(this._DARK_MODE, false);
     }
   }
 
