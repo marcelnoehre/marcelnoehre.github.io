@@ -1,0 +1,20 @@
+<div class="container">
+    @if (home) {
+        Marcel Nöhre
+    }
+    @if (width >= 1200) {
+        <div class="nav">
+            <div data-blobity (click)="redirect('/publications')">Publications</div>
+            <div data-blobity (click)="redirect('/projects')">Projects</div>
+            <div data-blobity (click)="redirect('/cv')">CV</div>
+            <div data-blobity (click)="redirect('/contact')">Contact</div>
+            <div data-blobity (click)="redirect('/impressum')">Impressum</div>
+        </div>
+    } @else {
+        <div class="mobile-nav-container">
+            <button mat-icon-button class="mobile-nav">
+                <mat-icon>menu</mat-icon>
+            </button>
+        </div>
+    }
+</div>

@@ -1,0 +1,32 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 7.5vh;
+    width: 100vw;
+    background-color: var(--background);
+    border-bottom: 1px solid var(--secondary);
+}
+
+.nav {
+    position: absolute;
+    display: flex;
+    justify-content: flex-end;
+    inset: auto 1em auto auto;
+    gap: 2em;
+
+    div {
+        padding: 0.25em;
+        opacity: 0.5;
+        transition: opacity 0.5s ease;
+        color: var(--text);
+        font-family: 'LemonMilk';
+        font-size: 0.85em;
+        text-decoration: none;
+    }
+
+    div:hover {
+        opacity: 1;
+        border-bottom: 2px solid var(--primary);
+    }
+}
