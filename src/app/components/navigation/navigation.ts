@@ -3,16 +3,24 @@ import { Screen } from '../../services/screen';
 import { Router } from '@angular/router';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
+import { MatMenuModule } from '@angular/material/menu';
 
 @Component({
   selector: 'app-navigation',
-  imports: [MatIconModule, MatButtonModule],
+  imports: [MatIconModule, MatButtonModule, MatMenuModule],
   templateUrl: './navigation.html',
   styleUrl: './navigation.scss'
 })
 export class Navigation implements OnInit {
   protected home: boolean = false;
   protected width: number = 0;
+  protected items: Array<{ route: string, title: string }> = [
+    { route: '/publications', title: 'Publications' },
+    { route: '/projects', title: 'Projects' },
+    { route: '/cv', title: 'CV' },
+    { route: '/contact', title: 'Contact' },
+    { route: '/impressum', title: 'Impressum' }
+  ];
 
   constructor(
     private _router: Router,

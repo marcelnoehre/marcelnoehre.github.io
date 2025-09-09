@@ -23,10 +23,17 @@
         font-family: 'LemonMilk';
         font-size: 0.85em;
         text-decoration: none;
+        cursor: pointer;
     }
 
     div:hover {
         opacity: 1;
         border-bottom: 2px solid var(--primary);
     }
+}
+
+.menu-item {
+    font-family: 'LemonMilk';
+    text-align: center;
+    cursor: pointer;
 }
