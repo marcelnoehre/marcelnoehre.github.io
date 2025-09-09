@@ -8,6 +8,13 @@
     border-bottom: 1px solid var(--secondary);
 }
 
+.logo {
+    font-size: 3vh;
+    line-height: 7.5vh;
+    padding-left: 0.5em;
+    cursor: pointer;
+}
+
 .nav {
     position: absolute;
     display: flex;

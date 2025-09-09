@@ -1,6 +1,10 @@
 <div class="container">
-    @if (home) {
-        Marcel Nöhre
+    @if (!home) {
+        <div data-blobity data-blobity-magnetic="false" class="mixed-color logo" (click)="redirect('')">
+            @for (char of name; track char) {
+                <div [innerHTML]="char"></div>
+            }
+        </div>
     }
     @if (width >= 1200) {
         <div class="nav">

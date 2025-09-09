@@ -14,6 +14,7 @@ import { MatMenuModule } from '@angular/material/menu';
 export class Navigation implements OnInit {
   protected home: boolean = false;
   protected width: number = 0;
+  protected name: Array<string> = ['M', 'a', 'r', 'c', 'e', 'l', '&nbsp;', 'N', 'ö', 'h', 'r', 'e'];
   protected items: Array<{ route: string, title: string }> = [
     { route: '/publications', title: 'Publications' },
     { route: '/projects', title: 'Projects' },
