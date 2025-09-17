@@ -1,3 +1,38 @@
+<app-navigation [home]="true" class="home-nav"></app-navigation>
 <div class="container">
-    <app-navigation></app-navigation>
+    <app-cube></app-cube>
+    <div class="landing-page">
+        <div class="content">
+            <div class="title">
+                <div class="name">
+                    <div class="mixed-color">
+                        @for (char of firstName; track char) {
+                            <div>{{ char }}</div>
+                        }
+                        @if (width >= 768 || (height < 576 && width >= 576)) {
+                            <div>&nbsp;</div>
+                            @for (char of lastName; track char) {
+                                <div>{{ char }}</div>
+                            }
+                        }
+                    </div>
+                    @if (!(width >= 768 || (height < 576  && width >= 576))) {
+                        <div class="mixed-color last-name">
+                            @for (char of lastName; track char) {
+                                <div>{{ char }}</div>
+                            }
+                        </div>
+                    }
+                </div>
+                <div class="position">
+                    Researcher
+                </div>
+            </div>
+            <div class="abstract">
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+            </div>
+        </div>
+        <div #scrollDown class="scroll-down" [ngClass]="scrollY > 0 ? 'fade' : ''"></div>
+    </div>
 </div>
+<app-scrollbar></app-scrollbar>
