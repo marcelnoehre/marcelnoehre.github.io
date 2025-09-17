@@ -7,7 +7,7 @@
   --secondary: #181818;
 }
 
-body.dark-mode {
+html.dark-mode {
   --background: #181818;
   --text: #ffffff;
   --primary: mediumslateblue;
@@ -25,11 +25,11 @@ html {
   ));
   scroll-behavior: smooth;
   scrollbar-width: none;
+  background-color: var(--background);
 }
 
 body {
   color-scheme: light;
-  font: var(--mat-sys-body-medium);
   font-family: Roboto, "Helvetica Neue", sans-serif;
 }
 
@@ -49,7 +49,6 @@ body {
   user-select: none;
   scrollbar-width: none;
   -ms-overflow-style: none;
-  background-color: var(--background);
   color: var(--text);
 }
 

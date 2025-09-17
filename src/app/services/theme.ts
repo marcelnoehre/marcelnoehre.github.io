@@ -12,20 +12,20 @@ export class Theme {
 
   setDarkMode(isDark: boolean) {
     if (isDark) {
-      document.body.classList.add(this._DARK_MODE);
+      document.documentElement.classList.add(this._DARK_MODE);
       this._storage.setLocalEntry(this._DARK_MODE, true);
       localStorage.setItem(this._DARK_MODE, 'true');
     } else {
-      document.body.classList.remove(this._DARK_MODE);
+      document.documentElement.classList.remove(this._DARK_MODE);
       this._storage.setLocalEntry(this._DARK_MODE, false);
     }
   }
 
   toggleDarkMode() {
-    this.setDarkMode(!document.body.classList.contains(this._DARK_MODE));
+    this.setDarkMode(!document.documentElement.classList.contains(this._DARK_MODE));
   }
 
   isDarkMode(): boolean {
-    return document.body.classList.contains(this._DARK_MODE);
+    return document.documentElement.classList.contains(this._DARK_MODE);
   }
 }
