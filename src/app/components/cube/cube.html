@@ -1,0 +1,9 @@
+<div class="cube-container">
+    <div class="cube" style="--rotate: {{ rotate() }}; --opacity: {{ opacity() }}">
+        @for (side of cube; track side) {
+            <div class="side" [ngClass]="side.type">
+                <img [src]="side.image" [alt]="side.name">
+            </div>
+        }
+    </div>
+</div>
