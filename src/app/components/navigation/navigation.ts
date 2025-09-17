@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { Screen } from '../../services/screen';
 import { Router } from '@angular/router';
 import { MatIconModule } from '@angular/material/icon';
@@ -12,7 +12,7 @@ import { MatMenuModule } from '@angular/material/menu';
   styleUrl: './navigation.scss'
 })
 export class Navigation implements OnInit {
-  protected home: boolean = false;
+  @Input() home: boolean = false;
   protected width: number = 0;
   protected name: Array<string> = ['M', 'a', 'r', 'c', 'e', 'l', '&nbsp;', 'N', 'ö', 'h', 'r', 'e'];
   protected items: Array<{ route: string, title: string }> = [

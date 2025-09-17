@@ -1,6 +1,6 @@
-<div class="container">
+<div class="container" [class]="home ? '' : 'sticky'">
     @if (!home) {
-        <div data-blobity data-blobity-magnetic="false" class="mixed-color logo" (click)="redirect('')">
+        <div class="mixed-color logo" (click)="redirect('')">
             @for (char of name; track char) {
                 <div [innerHTML]="char"></div>
             }
@@ -9,12 +9,12 @@
     @if (width >= 1200) {
         <div class="nav">
             @for (item of items; track item) {
-                <div data-blobity (click)="redirect(item.route)">{{item.title}}</div>
+                <div (click)="redirect(item.route)">{{item.title}}</div>
             }
         </div>
     } @else {
         <div class="nav">
-            <button mat-icon-button [matMenuTriggerFor]="menu" data-blobity-magnetic="false">
+            <button mat-icon-button [matMenuTriggerFor]="menu">
                 <mat-icon>menu</mat-icon>
             </button>
             <mat-menu #menu="matMenu" xPosition="before" yPosition="below">
