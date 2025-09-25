@@ -4,7 +4,7 @@
     width: 0.5em;
     height: var(--scrollbar-height);
     background-image: linear-gradient(to top, #ff4e50, #f9d423);
-    box-shadow: mix(#ff4e50, #f9d423) 0 0 1em;
+    box-shadow: color-mix(#ff4e50, #f9d423) 0 0 1em;
     border-radius: 10px;
     z-index: 999;
 }

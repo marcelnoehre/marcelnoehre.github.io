@@ -1,6 +1,7 @@
 import { Component, ElementRef, ViewChild } from '@angular/core';
 import { Navigation } from '../../components/navigation/navigation';
 import { Screen } from '../../services/screen';
+import { AboutMe } from "../../components/about-me/about-me";
 import { Cube } from '../../components/cube/cube';
 import { Scrollbar } from '../../components/scrollbar/scrollbar';
 import { CommonModule } from '@angular/common';
@@ -8,7 +9,7 @@ import lottie from 'lottie-web';
 
 @Component({
   selector: 'app-home',
-  imports: [CommonModule, Navigation, Cube, Scrollbar],
+  imports: [CommonModule, Navigation, Cube, Scrollbar, AboutMe, AboutMe],
   templateUrl: './home.html',
   styleUrl: './home.scss'
 })
