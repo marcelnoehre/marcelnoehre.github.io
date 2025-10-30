@@ -3,6 +3,7 @@
 :root {
   --background: #ffffff;
   --text: #000000;
+  --text-reverse: #ffffff;
   --primary: mediumslateblue;
   --secondary: #181818;
 }
@@ -10,6 +11,7 @@
 html.dark-mode {
   --background: #181818;
   --text: #ffffff;
+  --text-reverse: #000000;
   --primary: mediumslateblue;
   --secondary: #f5f5f5;
 }

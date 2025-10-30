@@ -1,7 +1,9 @@
 <div class="container">
-    <mat-card class="card" style="--card-degree: {{ cardDegree() }}; --card-fade: {{ cardFade() }}; --card-scale: {{ cardScale() }};">
-        <mat-card-content>
-            
-        </mat-card-content>
-    </mat-card>
+    @if (scrollY <= (height * 2.5)) {
+        <mat-card class="card" style="--card-degree: {{ cardDegree() }}; --card-fade: {{ cardFade() }}; --card-scale: {{ cardScale() }};">
+            <mat-card-content>
+                
+            </mat-card-content>
+        </mat-card>
+    }
 </div>

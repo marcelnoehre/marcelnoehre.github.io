@@ -1,19 +1,22 @@
-import { Component, ElementRef, ViewChild } from '@angular/core';
+import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { Navigation } from '../../components/navigation/navigation';
 import { Screen } from '../../services/screen';
 import { AboutMe } from "../../components/about-me/about-me";
 import { Cube } from '../../components/cube/cube';
+import { SelectedPublications } from '../../components/selected-publications/selected-publications';
+import { Grid } from "../../components/grid/grid";
+import { Contact } from '../../components/contact/contact';
 import { Scrollbar } from '../../components/scrollbar/scrollbar';
 import { CommonModule } from '@angular/common';
 import lottie from 'lottie-web';
 
 @Component({
   selector: 'app-home',
-  imports: [CommonModule, Navigation, Cube, Scrollbar, AboutMe, AboutMe],
+  imports: [CommonModule, Navigation, Cube, Scrollbar, AboutMe, AboutMe, SelectedPublications, Grid, Contact],
   templateUrl: './home.html',
   styleUrl: './home.scss'
 })
-export class Home {
+export class Home implements OnInit {
   @ViewChild('scrollDown', { static: true }) animationContainer!: ElementRef;
   protected width: number = 0;
   protected height: number = 0;

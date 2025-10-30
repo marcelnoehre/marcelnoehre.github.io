@@ -1,0 +1,17 @@
+.container {
+    position: relative;
+    width: 100vw;
+    min-height: calc(100vh - 7.5vh);
+    background: var(--secondary);
+    color: var(--text-reverse);
+    z-index: 2;
+}
+
+h1 {
+    text-align: center;
+    padding: 1rem 0;
+    margin: 0;
+    font-family: 'LemonMilk';
+    color: var(--primary);
+    font-size: 3em;
+}
