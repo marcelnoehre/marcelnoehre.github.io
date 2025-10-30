@@ -1,0 +1,23 @@
+<div class="grid-container">
+    <div class="grid">
+        @for (item of grid; track item) {
+            <mat-card [class]="item.class" (click)="redirect(item.url, item.target)">
+                <mat-card-header>
+                    {{ item.title }}
+                </mat-card-header>
+                <mat-card-content>
+                    <div class="description">
+                        {{ item.description }}
+                    </div>
+                    <div class="image">
+                        <img [src]="item.image" alt="">
+                    </div>
+                </mat-card-content>
+            </mat-card>
+        }
+    </div>
+</div>
+<svg viewBox="0 0 500 50" preserveAspectRatio="xMinYMin meet" style="transform: translateY(-2px)">
+    <path d="M0,25 C150,75 350,0 500,25 L500,00 L0,0 Z" style="stroke: none; fill: #181818;"></path>
+</svg>
+<div class="contact-spacer"></div>

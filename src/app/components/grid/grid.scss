@@ -1,0 +1,135 @@
+.grid-container {
+    position: relative;
+    width: 100vw;
+    background: linear-gradient(to bottom,#606060, #181818);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    width: 80vw;
+    padding: 10vw 10vw;
+    gap: 5vw;
+}
+
+.grid-item {
+    height: 100%;
+    text-align: center;
+    padding: 1.5em;
+    background: rgb(255, 255, 255, 0.1 );
+    color: white;
+    transition: 0.5s;
+}
+
+.grid-item:hover {
+    scale: 1.05;
+    background: rgb(255, 255, 255, 0.25);
+}
+
+.small {
+    mat-card-content {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .description {
+        width: 66%;
+        text-align: left;
+    }
+
+    .image {
+        width: 30%;
+    }
+
+    img {
+        width: 5em;
+        height: 5em;
+    }
+}
+
+.large {
+    grid-row: span 2;
+
+    mat-card-header {
+        display: flex;
+        justify-content: center;
+    }
+
+    .description {
+        text-align: center;
+    }
+
+    .image {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+    }
+
+    img {
+        height: 90%;
+        width: 90%;
+    }
+}
+
+mat-card-header {
+    font-size: 1.5em;
+    padding-bottom: 1em;
+}
+
+.description {
+    line-height: 1.5em;
+}
+
+.image {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    aspect-ratio: 1/1;
+
+    img {
+        border-radius: 50%;
+        object-fit: cover;
+        background: white;
+    }
+}
+
+.contact-spacer {
+    margin-bottom: 20vh;
+}
+
+@media (min-width: 576px) {
+    .small {
+        img {
+            width: 7.5em;
+            height: 7.5em;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .grid {
+        width: 95vw;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 10vw 2.5vw;
+        gap: 3vw;
+    }
+
+    .grid-item {
+        padding-bottom: 0;
+    }
+
+    .small {
+        img {
+            width: 5em;
+            height: 5em;
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
