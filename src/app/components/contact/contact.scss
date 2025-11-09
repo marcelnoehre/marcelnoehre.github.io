@@ -12,7 +12,7 @@
 }
 
 .visible-container {
-    height: 20vh;
+    height: 80vh;
     overflow: scroll;
     width: 100vw;
     display: flex;
@@ -23,26 +23,64 @@
 .content {
     position: relative;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: left;
     width: 100vw;
 }
 
-.contact-grid {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    justify-content: center;
-    gap: 3rem;
-    height: 20vh;
-    width: 100vw;
+ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 0.2em;
+    padding-left: 0.2em;
+}
 
-    button {
-        height: 3.5rem;
-    }
+ul li {
+    list-style: none;
+}
 
-    img {
-        width: 2.25rem;
-    }
+ul li a {
+    position: relative;
+    overflow: hidden;
+    display: block;
+    text-align: center;
+    width: 10vw;
+    height: 10vw;
+    line-height: 10vw;
+    font-size: 5vw;
+    margin: 0 0.5vw;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    background-color: #fff;
+    z-index: 1;
+}
+
+ul li a .icon {
+  position: relative;
+  color: #262626;
+  transition: .5s;
+  z-index: 3;
+}
+
+ul li a:hover .icon {
+  color: #fff;
+  transform: rotateY(360deg);
+}
+
+ul li a:before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--social-color);
+  transition: .5s;
+  z-index: 2;
+}
+
+ul li a:hover:before {
+  top: 0;
 }
 
 .copyright {
@@ -53,14 +91,26 @@
     color: white;
 }
 
-@media (min-width: 768px) {
-    .contact-grid {
-        button {
-            height: 4.5rem;
-        }
+@media (max-height: 576px) {
+    ul li a {
+        width: 6vw;
+        height: 6vw;
+        line-height: 6vw;
+        font-size: 3vw;
+        margin: 0 0.5vw;
+    }
+}
 
-        img {
-            width: 3rem;
-        }
+@media (min-width: 992px) {
+    ul {
+        display: flex;
+    }
+
+    ul li a {
+        width: 6vw;
+        height: 6vw;
+        line-height: 6vw;
+        font-size: 3vw;
+        margin: 0 0.5vw;
     }
 }
