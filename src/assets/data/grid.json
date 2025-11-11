@@ -4,7 +4,7 @@
             "title": "University of Kassel",
             "description": "Research on algebraic knowledge modelling, network analysis, and ontology learning applications.",
             "image": "assets/images/grid/network.svg",
-            "url": "https://www.kde.cs.uni-kassel.de/en/",
+            "url": "https://www.kde.cs.uni-kassel.de",
             "class": "grid-item small",
             "target": "_blank"
         },

@@ -1,0 +1,69 @@
+{
+    "experience": [
+        {
+            "from": "11/2025",
+            "to": null,
+            "position": "Research Associate",
+            "institution": "University of Kassel",
+            "institutionURL": "https://www.uni-kassel.de/uni/index.html",
+            "institute": "Knowledge & Data Engineering Group",
+            "instituteURL": "https://www.kde.cs.uni-kassel.de",
+            "homepage": "Homepage",
+            "homepageURL": "https://www.kde.cs.uni-kassel.de/noehre"
+        },
+        {
+            "from": "10/2021",
+            "to": "11/2025",
+            "position": "Web Developer",
+            "institution": "Entiac GmbH",
+            "institutionURL": "https://entiac.com",
+            "institute": "MDE",
+            "instituteURL": "https://entiac.com/mde/",
+            "homepage": null,
+            "homepageURL": null
+        }
+    ],
+    "education": [
+        {
+            "from": "11/2025",
+            "to": null,
+            "degree": "PhD Candidate",
+            "institution": "University of Kassel",
+            "institutionURL": "https://www.uni-kassel.de/uni/index.html",
+            "institute": "Knowledge & Data Engineering Group",
+            "instituteURL": "https://www.kde.cs.uni-kassel.de",
+            "homepage": "Homepage",
+            "homepageURL": "https://www.kde.cs.uni-kassel.de/noehre",
+            "thesis": null,
+            "original": null
+        },
+        {
+            "from": "4/2023",
+            "to": "11/2025",
+            "degree": "Master of Science (M.Sc.)",
+            "field": "Applied Computer Science",
+            "institution": "University of Hildesheim",
+            "institutionURL": "https://www.uni-hildesheim.de",
+            "institute": "Information Systems and Machine Learning Lab (ISMLL)",
+            "instituteURL": "https://www.ismll.uni-hildesheim.de",
+            "homepage": null,
+            "homepageURL": null,
+            "thesis": "The Robustness of Topological Data Analysis under Imputation-Induced Perturbations",
+            "original": null
+        },
+        {
+            "from": "10/2019",
+            "to": "06/2023",
+            "degree": "Bachelor of Science (B.Sc.)",
+            "field": "Applied Computer Science",
+            "institution": "University of Hildesheim",
+            "institutionURL": "https://www.uni-hildesheim.de",
+            "institute": "Software Systems Engineering (SSE)",
+            "instituteURL": "https://www.sse.uni-hildesheim.de",
+            "homepage": null,
+            "homepageURL": null,
+            "thesis": "Swagger in the IIP-Ecosphere for Administration Shells in Industry 4.0",
+            "original": "Swagger im Bereich IIP-Ecosphere für Verwaltungsschalen in der Industrie 4.0"
+        }
+    ]
+}
