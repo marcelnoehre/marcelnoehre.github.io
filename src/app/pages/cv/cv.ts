@@ -4,10 +4,11 @@ import { ExperienceItem } from '../../interfaces/experience-item';
 import { EducationItem } from '../../interfaces/education-item';
 import { MatIconModule } from '@angular/material/icon';
 import { Navigation } from '../../components/navigation/navigation';
+import { Contact } from '../../components/contact/contact';
 
 @Component({
   selector: 'app-cv',
-  imports: [MatIconModule, Navigation],
+  imports: [MatIconModule, Navigation, Contact],
   templateUrl: './cv.html',
   styleUrl: './cv.scss'
 })

@@ -95,16 +95,6 @@ mat-card-header {
     }
 }
 
-.contact-spacer {
-    margin-bottom: 20vh;
-}
-
-@media (max-height: 576px) {
-    .contact-spacer {
-        margin-bottom: 40vh;
-    }
-}
-
 @media (min-width: 576px) {
     .small {
         img {
@@ -132,18 +122,10 @@ mat-card-header {
             height: 5em;
         }
     }
-
-    .contact-spacer {
-        margin-bottom: 40vh;
-    }
 }
 
 @media (min-width: 992px) {
     .grid {
         grid-template-columns: repeat(3, 1fr);
-    }
-
-    .contact-spacer {
-        margin-bottom: 20vh;
     }
 }

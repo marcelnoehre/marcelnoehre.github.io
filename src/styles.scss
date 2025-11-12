@@ -95,3 +95,25 @@ app-root {
     z-index: 2;
   }
 }
+
+.contact-spacer {
+  margin-bottom: 20vh;
+}
+
+@media (max-height: 576px) {
+  .contact-spacer {
+    margin-bottom: 40vh;
+  }
+}
+
+@media (min-width: 768px) {
+  .contact-spacer {
+    margin-bottom: 40vh;
+  }
+}
+
+@media (min-width: 992px) {
+  .contact-spacer {
+    margin-bottom: 20vh;
+  }
+}
