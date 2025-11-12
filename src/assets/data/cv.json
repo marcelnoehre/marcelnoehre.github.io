@@ -8,7 +8,7 @@
             "institutionURL": "https://www.uni-kassel.de/uni/index.html",
             "institute": "Knowledge & Data Engineering Group",
             "instituteURL": "https://www.kde.cs.uni-kassel.de",
-            "homepage": "Homepage",
+            "homepage": "Marcel Nöhre",
             "homepageURL": "https://www.kde.cs.uni-kassel.de/noehre"
         },
         {
@@ -32,7 +32,7 @@
             "institutionURL": "https://www.uni-kassel.de/uni/index.html",
             "institute": "Knowledge & Data Engineering Group",
             "instituteURL": "https://www.kde.cs.uni-kassel.de",
-            "homepage": "Homepage",
+            "homepage": "Marcel Nöhre",
             "homepageURL": "https://www.kde.cs.uni-kassel.de/noehre",
             "thesis": null,
             "original": null
@@ -62,7 +62,7 @@
             "instituteURL": "https://www.sse.uni-hildesheim.de",
             "homepage": null,
             "homepageURL": null,
-            "thesis": "Swagger in the IIP-Ecosphere for Administration Shells in Industry 4.0",
+            "thesis": "Swagger in the IIP-Ecosphere for Asset Administration Shells in Industry 4.0",
             "original": "Swagger im Bereich IIP-Ecosphere für Verwaltungsschalen in der Industrie 4.0"
         }
     ]

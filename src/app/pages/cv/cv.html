@@ -1,0 +1,87 @@
+<app-navigation [home]="false"></app-navigation>
+<div class="container">
+    <div class="mixed-color title">
+        @for (char of cv; track $index) {
+            <div [innerHTML]="char"></div>
+        }
+    </div>
+    <div class="experience">
+        <h1>Experience</h1>
+        @for (item of experience; track item) {
+            <div class="item">
+                <div class="date">
+                    @if (!item.to) {
+                        <div class="since">Since</div>
+                    }
+                    <div class="from">{{ item.from }}</div>
+                    @if (item.to) {
+                        &nbsp;&mdash;&nbsp;
+                        <div class="to">{{ item.to }}</div>
+                    }
+                </div>
+                <div class="content">
+                    <h2 class="position">{{ item.position }}</h2>
+                    <div class="link">
+                        <mat-icon>business</mat-icon>
+                        <a [href]="item.institutionURL" target="_blank">{{ item.institution }}</a>
+                    </div>
+                    @if (item.institute) {
+                        <div class="link">
+                            <mat-icon>group</mat-icon>
+                            <a [href]="item.instituteURL" target="_blank">{{ item.institute }}</a>
+                        </div>
+                    }
+                    @if (item.homepage) {
+                        <div class="link">
+                            <mat-icon>link</mat-icon>
+                            <a [href]="item.homepageURL" target="_blank">{{item.homepage }}</a>
+                        </div>
+                    }
+                </div>
+            </div>
+            @if ($index < experience.length - 1) {
+                <div class="divider"></div>
+            }
+        }
+    </div>
+    <div class="education">
+        <h1>Education</h1>
+        @for (item of education; track item) {
+            <div class="item">
+                <div class="date">
+                    @if (!item.to) {
+                        <div class="since">Since</div>
+                    }
+                    <div class="from">{{ item.from }}</div>
+                    @if (item.to) {
+                        &nbsp;&mdash;&nbsp;
+                        <div class="to">{{ item.to }}</div>
+                    }
+                </div>
+                <div class="content">
+                    <h2 class="degree">{{ item.degree }}</h2>
+                    <div class="link">
+                        <mat-icon>business</mat-icon>
+                        <a [href]="item.institutionURL" target="_blank">{{ item.institution }}</a>
+                    </div>
+                    @if (item.institute) {
+                        <div class="link">
+                            <mat-icon>group</mat-icon>
+                            <a [href]="item.instituteURL" target="_blank">{{ item.institute }}</a>
+                        </div>
+                    }
+                    @if (item.homepage) {
+                        <div class="link">
+                            <mat-icon>link</mat-icon>
+                            <a [href]="item.homepageURL" target="_blank">{{item.homepage }}</a>
+                        </div>
+                    }
+                    <div class="thesis">{{ item.thesis }}</div>
+                    @if (item.original) {
+                        <div class="original">Original: {{ item.original }}</div>
+                    }
+                </div>
+            </div>
+        }
+    </div>
+</div>
