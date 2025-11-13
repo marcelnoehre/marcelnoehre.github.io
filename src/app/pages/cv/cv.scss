@@ -12,8 +12,8 @@
 .title {
     display: flex;
     justify-content: center;
-    padding: 2.5vh 0;
-    font-size: 5vh;
+    font-size: 8vw;
+    padding: 2.5vh 0 0 0;
 }
 
 .experience,
@@ -21,41 +21,49 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    width: 60vw;
+    width: 75vw;
     margin: 0 20vw;
     border: 1px solid darkgray;
     border-radius: 10px;
     margin-bottom: 5vh;
-    padding: 2rem;
+    padding: 1em 2em 0 2em;
 
-    h2 {
+    h1 {
         padding: 0;
         margin: 0;
+        text-decoration: underline;
     }
 }
 
 .item {
     display: flex;
+    flex-direction: column;
     width: 100%;
-    padding: 1rem;
+    padding: 1em 0;
+
+    h2 {
+        margin: 0;
+        padding: 0;
+    }
 }
 
 .date {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
-    padding: 0 2.5vw 0 0;
+    padding: 0 0 0.25em 0;
+    gap: 0.25em;
 }
 
 .from,
 .to {
-    padding: 0.25rem;    
+    padding: 0.25em;    
     background: var(--primary);
     border-radius: 5px;
 }
 
 .since {
-    margin-bottom: 0.25rem;
+    margin-bottom: 0.25em;
 }
 
 .content {
@@ -63,19 +71,20 @@
     flex-direction: column;
     justify-content: space-around;
     width: 100%;
-    gap: 0.5rem;
+    gap: 0.5em;
 }
 
 .divider {
     height: 1px;
     width: 100%;
+    margin: 0.5em 0;
     background: darkgray;
 }
 
 .link {
     display: flex;
     align-items: center;
-    gap: 0.5rem;
+    gap: 0.5em;
 
     mat-icon {
         color: slateblue;
@@ -93,4 +102,27 @@ a:hover {
 
 .original {
     font-style: italic;
+}
+
+@media (min-width: 576px) {
+    .title {
+        padding: 2.5vh 0;
+        font-size: 5vh;
+    }
+
+    .experience,
+    .education {
+        width: 60vw;
+    }
+
+    .item {
+        flex-direction: row;
+        padding: 1em;
+    }
+
+    .date {
+        flex-direction: column;
+        padding: 0 2.5vw 0 0;
+        gap: 0;
+    }
 }
