@@ -9,13 +9,6 @@
     background-color: #181818;
 }
 
-.title {
-    display: flex;
-    justify-content: center;
-    font-size: 8vw;
-    padding: 2.5vh 0 0 0;
-}
-
 .experience,
 .education {
     display: flex;
@@ -104,12 +97,7 @@ a:hover {
     font-style: italic;
 }
 
-@media (min-width: 576px) {
-    .title {
-        padding: 2.5vh 0;
-        font-size: 5vh;
-    }
-
+@media (min-width: 768px) {
     .experience,
     .education {
         width: 60vw;

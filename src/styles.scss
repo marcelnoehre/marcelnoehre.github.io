@@ -96,11 +96,29 @@ app-root {
   }
 }
 
+.page-title {
+  display: flex;
+  justify-content: center;
+  font-size: 8vw;
+  padding: 2.5vh 0 0 0;
+}
+
 .contact-spacer {
   margin-bottom: 20vh;
 }
 
+@media (min-width: 576px) {
+  .page-title {
+    padding: 2.5vh 0;
+    font-size: 5vh;
+  }
+}
+
 @media (max-height: 576px) {
+  .page-title {
+    font-size: 8vh;
+  }
+
   .contact-spacer {
     margin-bottom: 40vh;
   }
