@@ -1,19 +1,6 @@
 .container {
-    position: relative;
-    width: 100vw;
-    min-height: calc(100vh - 7.5vh);
-    background: var(--secondary);
-    color: var(--text-reverse);
-    z-index: 2;
-}
-
-h1 {
-    text-align: center;
-    padding: 1em 0;
-    margin: 0;
-    font-family: 'LemonMilk';
-    color: var(--primary);
-    font-size: 3em;
+    height: 50vh;
+    background-color: #181818;
 }
 
 .publications {
@@ -26,13 +13,27 @@ h1 {
 }
 
 @media (min-width: 576px) {
+    .container {
+        height: 40vh;
+    }
+
     .publications {
         font-size: 3.5vh;
     }
 }
 
 @media (max-height: 576px) {
+    .container {
+        height: 40vh;
+    }
+
     .publications {
         font-size: 8vh;
+    }
+}
+  
+@media (min-width: 992px) {
+    .container {
+        height: 50vh;
     }
 }
