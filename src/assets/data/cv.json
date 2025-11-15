@@ -2,7 +2,6 @@
     "experience": [
         {
             "from": "11/2025",
-            "to": null,
             "position": "Research Associate",
             "institution": "University of Kassel",
             "institutionURL": "https://www.uni-kassel.de/uni/index.html",
@@ -18,24 +17,19 @@
             "institution": "Entiac GmbH",
             "institutionURL": "https://entiac.com",
             "institute": "MDE",
-            "instituteURL": "https://entiac.com/mde/",
-            "homepage": null,
-            "homepageURL": null
+            "instituteURL": "https://entiac.com/mde/"
         }
     ],
     "education": [
         {
             "from": "11/2025",
-            "to": null,
             "degree": "PhD Candidate",
             "institution": "University of Kassel",
             "institutionURL": "https://www.uni-kassel.de/uni/index.html",
             "institute": "Knowledge & Data Engineering Group",
             "instituteURL": "https://www.kde.cs.uni-kassel.de",
             "homepage": "Marcel Nöhre",
-            "homepageURL": "https://www.kde.cs.uni-kassel.de/noehre",
-            "thesis": null,
-            "original": null
+            "homepageURL": "https://www.kde.cs.uni-kassel.de/noehre"
         },
         {
             "from": "4/2023",
@@ -46,10 +40,7 @@
             "institutionURL": "https://www.uni-hildesheim.de",
             "institute": "Information Systems and Machine Learning Lab (ISMLL)",
             "instituteURL": "https://www.ismll.uni-hildesheim.de",
-            "homepage": null,
-            "homepageURL": null,
-            "thesis": "The Robustness of Topological Data Analysis under Imputation-Induced Perturbations",
-            "original": null
+            "thesis": "The Robustness of Topological Data Analysis under Imputation-Induced Perturbations"
         },
         {
             "from": "10/2019",
@@ -60,8 +51,6 @@
             "institutionURL": "https://www.uni-hildesheim.de",
             "institute": "Software Systems Engineering (SSE)",
             "instituteURL": "https://www.sse.uni-hildesheim.de",
-            "homepage": null,
-            "homepageURL": null,
             "thesis": "Swagger in the IIP-Ecosphere for Asset Administration Shells in Industry 4.0",
             "original": "Swagger im Bereich IIP-Ecosphere für Verwaltungsschalen in der Industrie 4.0"
         }
