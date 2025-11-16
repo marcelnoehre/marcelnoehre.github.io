@@ -1,4 +1,4 @@
-@if (scrollY >= (height * minScroll)) {
+@if (minScroll === 0 || scrollY > (height * minScroll)) {
     <div class="contact-container">
         <div class="visible-container">
             <svg viewBox="0 0 500 45" preserveAspectRatio="xMinYMin meet" style="transform: translateY(-2px)">

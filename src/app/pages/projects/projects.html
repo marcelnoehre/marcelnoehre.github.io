@@ -5,6 +5,48 @@
             <div [innerHTML]="char"></div>
         }
     </div>
+    <div class="projects">
+        @for (item of projects; track item) {
+            <div class="item">
+                <h2>{{ item.title }}</h2>
+                <div class="content">
+                    <img [src]="'assets/images/projects/' + item.image" [alt]="item.title">
+                    <div class="info">
+                        <div class="desc">{{ item.description }}</div>
+                        <div class="links">
+                            @if (item.repository) {
+                                <div class="link">
+                                    <mat-icon>code</mat-icon>
+                                    <a [href]="item.repositoryURL" target="_blank">{{ item.repository }}</a>
+                                </div>
+                            }
+                            @if (item.link) {
+                                <div class="link">
+                                    <mat-icon>link</mat-icon>
+                                    <a [href]="item.linkURL" target="_blank">{{ item.link }}</a>
+                                </div>
+                            }
+                            @if (item.subpage) {
+                                <div class="link">
+                                    <mat-icon>link</mat-icon>
+                                    <a [href]="item.subpageURL">{{ item.subpage }}</a>
+                                </div>
+                            }
+                            @if (item.youtube) {
+                                <div class="link">
+                                    <mat-icon>ondemand_video</mat-icon>
+                                    <a [href]="item.youtubeURL" target="_blank">{{ item.youtube }}</a>
+                                </div>
+                            }
+                        </div>
+                    </div>
+                </div>
+            </div>
+            @if ($index < projects.length - 1) {
+                <div class="divider"></div>
+            }
+        }
+    </div>
 </div>
 <svg viewBox="0 0 500 50" preserveAspectRatio="xMinYMin meet" style="transform: translateY(-2px)">
     <path d="M0,25 C150,75 350,0 500,25 L500,00 L0,0 Z" style="stroke: none; fill: #181818;"></path>
