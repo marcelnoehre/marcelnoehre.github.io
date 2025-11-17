@@ -40,14 +40,6 @@ body {
   width: 100vw;
   margin: 0;
   padding: 0;
-  /* Safari */
-  -webkit-user-select: none;
-  /* Firefox */
-  -moz-user-select: none;
-  /* IE10+/Edge */
-  -ms-user-select: none;
-  /* Standard */
-  user-select: none;
   scrollbar-width: none;
   -ms-overflow-style: none;
   color: var(--text);
@@ -133,4 +125,17 @@ app-root {
   .contact-spacer {
     margin-bottom: 20vh;
   }
+}
+
+.mat-mdc-menu-panel {
+  background-color: transparent !important;
+}
+
+.mat-mdc-menu-content {
+  background-color: rgb(123, 104, 238, 0.75);
+  border: 1px solid white;
+}
+
+.mat-mdc-menu-item-text {
+  color: white !important;
 }

@@ -58,6 +58,16 @@
     div:hover::after {
         width: 100%;
     }
+
+    .active {
+        opacity: 1;
+        pointer-events: none;
+    }
+
+    .active::after {
+        width: 100%;
+        background: var(--primary)
+    }
 }
 
 .menu-item {

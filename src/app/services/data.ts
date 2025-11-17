@@ -1,21 +1,27 @@
 import { Injectable } from '@angular/core';
+import { NavigationItem } from '../interfaces/navigation-item';
 import { CubeSide } from '../interfaces/cube-side';
 import { GridItem } from '../interfaces/grid-item';
 import { ContactItem } from '../interfaces/contact-item';
+import { ProjectItem } from '../interfaces/project-item';
 import { ExperienceItem } from '../interfaces/experience-item';
 import { EducationItem } from '../interfaces/education-item';
 
+import * as navData from '../../assets/data/navigation.json';
 import * as cubeData from '../../assets/data/cube.json';
 import * as gridData from '../../assets/data/grid.json';
 import * as contactData from '../../assets/data/contact.json';
 import * as projectData from '../../assets/data/projects.json';
 import * as cvData from '../../assets/data/cv.json';
-import { ProjectItem } from '../interfaces/project-item';
 
 @Injectable({
   providedIn: 'root'
 })
 export class Data {
+
+  public get navigation(): NavigationItem[] {
+    return navData.navigation;
+  }
 
   public get cube(): CubeSide[] {
     return cubeData.sides;
