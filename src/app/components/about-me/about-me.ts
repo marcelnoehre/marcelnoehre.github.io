@@ -1,26 +1,40 @@
 import { Component } from '@angular/core';
 import { Screen } from '../../services/screen';
 import { MatCardModule } from '@angular/material/card';
+import { PersonalItem } from '../../interfaces/personal-item';
+import { WorkItem } from '../../interfaces/work-item';
+import { Data } from '../../services/data';
+import { MatIconModule } from '@angular/material/icon';
 
 @Component({
   selector: 'app-about-me',
-  imports: [MatCardModule],
+  imports: [MatCardModule, MatIconModule],
   templateUrl: './about-me.html',
   styleUrl: './about-me.scss'
 })
 export class AboutMe {
+  private _basePath: string = 'assets/images/about/'
   protected width: number = 0;
   protected height: number = 0;
   protected scrollY: number = 0;
+  protected cardImage: string = this._basePath + 'me.jpg';
+  protected personal: PersonalItem[] = [];
+  protected work!: WorkItem;
 
   constructor(
-    private _screen: Screen
+    private _screen: Screen,
+    private _data: Data
   ) { }
 
   ngOnInit(): void {
-    this._screen.width$.subscribe(width => this.width = width);
+    this._screen.width$.subscribe(width => {
+      this.width = width;
+      this.cardImage = this._basePath + (width > 768 ? 'me.jpg' : 'click-me.jpeg');
+    });
     this._screen.height$.subscribe(height => this.height = height);
     this._screen.scrollY$.subscribe(scrollY => this.scrollY = scrollY);
+    this.personal = this._data.personal;
+    this.work = this._data.work;
   }
 
   protected cardDegree(): string {

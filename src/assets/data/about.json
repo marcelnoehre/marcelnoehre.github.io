@@ -1,0 +1,33 @@
+{
+    "personal": [
+        {
+            "icon": "calendar_today",
+            "value": "02.12.2000"
+        },
+        {
+            "icon": "location_on",
+            "value": "Hildesheim"
+        }
+    ],
+    "work": {
+        "position": "Research Associate",
+        "institution": "University of Kassel",
+        "institutionURL": "https://www.uni-kassel.de/uni/index.html",
+        "institute": "Knowledge & Data Engineering Group",
+        "instituteURL": "https://www.kde.cs.uni-kassel.de",
+        "homepage": "Marcel Nöhre",
+        "homepageURL": "https://www.kde.cs.uni-kassel.de/noehre",
+        "personal": [
+            {
+                "icon": "email",
+                "value": "noehre@cs.uni-kassel.de",
+                "link": "mailto:noehre@cs.uni-kassel.de"
+            },
+            {
+                "icon": "phone",
+                "value": "+49 561 804-6298",
+                "link": "tel:+495618046298"
+            }
+        ]
+    }
+}

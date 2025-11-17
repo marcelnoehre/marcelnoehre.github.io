@@ -2,7 +2,43 @@
     @if (scrollY <= (height * 2.5)) {
         <mat-card class="card" style="--card-degree: {{ cardDegree() }}; --card-fade: {{ cardFade() }}; --card-scale: {{ cardScale() }};">
             <mat-card-content>
-                
+                <div class="content">
+                    <img [src]="cardImage" alt="">
+                    <div class="information">
+                        <h1>Marcel Nöhre</h1>
+                        @for (item of personal; track item) {
+                            <div class="personal">
+                                <mat-icon>{{ item.icon }}</mat-icon>
+                                {{ item.value }}
+                            </div>
+                        }
+                        <div class="work">
+                            <h2 class="position">{{ work.position }}</h2>
+                            <div class="link">
+                                <mat-icon>business</mat-icon>
+                                <a [href]="work.institutionURL" target="_blank">{{ work.institution }}</a>
+                            </div>
+                            @if (work.institute) {
+                                <div class="link">
+                                    <mat-icon>group</mat-icon>
+                                    <a [href]="work.instituteURL" target="_blank">{{ work.institute }}</a>
+                                </div>
+                            }
+                            @if (work.homepage) {
+                                <div class="link">
+                                    <mat-icon>link</mat-icon>
+                                    <a [href]="work.homepageURL" target="_blank">{{work.homepage }}</a>
+                                </div>
+                            }
+                            @for (item of work.personal; track item) {
+                                <div class="link">
+                                    <mat-icon>{{ item.icon }}</mat-icon>
+                                    <a [href]="item.link" target="_blank">{{ item.value }}</a>
+                                </div>
+                            }
+                        </div>
+                    </div>
+                </div>
             </mat-card-content>
         </mat-card>
     }
