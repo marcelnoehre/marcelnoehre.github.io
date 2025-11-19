@@ -17,6 +17,9 @@
         </div>
     } @else {
         <div class="nav">
+            <button mat-icon-button (click)="toggleTheme()">
+                <mat-icon>{{ themeIcon }}</mat-icon>
+            </button>
             <button mat-icon-button [matMenuTriggerFor]="menu">
                 <mat-icon>menu</mat-icon>
             </button>
