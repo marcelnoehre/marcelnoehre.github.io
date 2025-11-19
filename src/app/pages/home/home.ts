@@ -9,6 +9,8 @@ import { Contact } from '../../components/contact/contact';
 import { Scrollbar } from '../../components/scrollbar/scrollbar';
 import { CommonModule } from '@angular/common';
 import lottie from 'lottie-web';
+import { HomeItem } from '../../interfaces/home-item';
+import { Data } from '../../services/data';
 
 @Component({
   selector: 'app-home',
@@ -23,10 +25,15 @@ export class Home implements OnInit {
   protected scrollY: number = 0;
   protected firstName: Array<string> = ['M', 'a', 'r', 'c', 'e', 'l'];
   protected lastName: Array<string> = ['N', 'ö', 'h', 'r', 'e'];
+  protected data!: HomeItem;
 
-  constructor(private _screen: Screen) { }
+  constructor(
+    private _screen: Screen,
+    private _data: Data
+  ) { }
 
   ngOnInit() {
+    this.data = this._data.home;
     this._screen.width$.subscribe(w => this.width = w);
     this._screen.height$.subscribe(h => this.height = h);
     this._screen.scrollY$.subscribe(y => this.scrollY = y);

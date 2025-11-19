@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { HomeItem } from '../interfaces/home-item';
 import { NavigationItem } from '../interfaces/navigation-item';
 import { CubeSide } from '../interfaces/cube-side';
 import { PersonalItem } from '../interfaces/personal-item';
@@ -21,6 +22,10 @@ import * as cvData from '../../assets/data/cv.json';
   providedIn: 'root'
 })
 export class Data {
+
+  public get home(): HomeItem {
+    return aboutData.home;
+  }
 
   public get navigation(): NavigationItem[] {
     return navData.navigation;
