@@ -6,6 +6,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatMenuModule } from '@angular/material/menu';
 import { NavigationItem } from '../../interfaces/navigation-item';
 import { Data } from '../../services/data';
+import { Theme } from '../../services/theme';
 
 @Component({
   selector: 'app-navigation',
@@ -19,11 +20,13 @@ export class Navigation implements OnInit {
   protected name: Array<string> = ['M', 'a', 'r', 'c', 'e', 'l', '&nbsp;', 'N', 'ö', 'h', 'r', 'e'];
   protected navigation: NavigationItem[] = [];
   protected path: string = '';
+  protected themeIcon: string = '';
 
   constructor(
     private _router: Router,
     private _route: ActivatedRoute,
     private _screen: Screen,
+    private _theme: Theme,
     private _data: Data
   ) { }
 
@@ -31,6 +34,7 @@ export class Navigation implements OnInit {
     this._screen.width$.subscribe(w => this.width = w);
     this.navigation = this._data.navigation;
     this.path = '/' + this._route.snapshot.routeConfig?.path;
+    this.themeIcon = this._theme.isDarkMode() ? 'light_mode' : 'dark_mode';
   }
 
   protected redirect(route: string | undefined): void {
@@ -44,6 +48,11 @@ export class Navigation implements OnInit {
         behavior: 'smooth'
       });
     }
+  }
+
+  toggleTheme() {
+    this._theme.toggleTheme();
+    this.themeIcon = this._theme.isDarkMode() ? 'light_mode' : 'dark_mode';
   }
 
 }

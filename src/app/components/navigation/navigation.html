@@ -11,6 +11,9 @@
             @for (item of navigation; track item) {
                 <div (click)="redirect(item.route)" [class]="item.route === path ? 'active' : ''">{{item.title}}</div>
             }
+            <button mat-icon-button (click)="toggleTheme()">
+                <mat-icon>{{ themeIcon }}</mat-icon>
+            </button>
         </div>
     } @else {
         <div class="nav">
