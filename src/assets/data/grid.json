@@ -38,7 +38,7 @@
             "image": "assets/images/grid/publications.webp",
             "url": "/publications",
             "class": "grid-item large",
-            "target": "_blank"
+            "target": "_self"
         },
         {
             "title": "My Projects",
@@ -54,13 +54,13 @@
             "image": "assets/images/grid/resources.svg",
             "url": "https://marcel-noehre.de/resources",
             "class": "grid-item small",
-            "target": "_blank"
+            "target": "_self"
         },
         {
             "title": "Google Scholar",
             "description": "Browse my publications and citations on Google Scholar",
             "image": "assets/images/grid/google-scholar.svg",
-            "url": "",
+            "url": "https://scholar.google.com/citations?user=lOG9iWwAAAAJ",
             "class": "grid-item small",
             "target": "_blank"
         },

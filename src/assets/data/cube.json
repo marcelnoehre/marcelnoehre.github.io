@@ -12,18 +12,18 @@
         },
         {
             "type": "front",
-            "name": "Python",
-            "image": "assets/images/cube/python.svg"
+            "name": "Typescript",
+            "image": "assets/images/cube/typescript.svg"
         },
         {
             "type": "back",
-            "name": "Python",
-            "image": "assets/images/cube/python.svg"
+            "name": "Clojure",
+            "image": "assets/images/cube/clojure.svg"
         },
         {
             "type": "left",
-            "name": "Angular",
-            "image": "assets/images/cube/angular.svg"
+            "name": "Python",
+            "image": "assets/images/cube/python.svg"
         },
         {
             "type": "right",
