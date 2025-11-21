@@ -5,10 +5,11 @@ import { PersonalItem } from '../../interfaces/personal-item';
 import { WorkItem } from '../../interfaces/work-item';
 import { Data } from '../../services/data';
 import { MatIconModule } from '@angular/material/icon';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-about-me',
-  imports: [MatCardModule, MatIconModule],
+  imports: [MatCardModule, MatIconModule, CommonModule],
   templateUrl: './about-me.html',
   styleUrl: './about-me.scss'
 })
@@ -20,6 +21,8 @@ export class AboutMe {
   protected cardImage: string = this._basePath + 'me.jpg';
   protected personal: PersonalItem[] = [];
   protected work!: WorkItem;
+  protected front: boolean = true;
+  protected flipBreak: number = 992;
 
   constructor(
     private _screen: Screen,
@@ -29,7 +32,8 @@ export class AboutMe {
   ngOnInit(): void {
     this._screen.width$.subscribe(width => {
       this.width = width;
-      this.cardImage = this._basePath + (width > 768 ? 'me.jpg' : 'click-me.jpeg');
+      if (width >= this.flipBreak) this.front = true;
+      this.cardImage = this._basePath + (width > this.flipBreak ? 'me.jpg' : 'click-me.jpeg');
     });
     this._screen.height$.subscribe(height => this.height = height);
     this._screen.scrollY$.subscribe(scrollY => this.scrollY = scrollY);
@@ -53,6 +57,11 @@ export class AboutMe {
     if (this.scrollY <= (this.height * 0.7)) return 0;
     if (this.scrollY >= this.height * 1.3) return 1;
     return 1 - (this.height * 1.3 - this.scrollY) / (this.height * 1.3 - this.height * 0.7);
+  }
+
+  protected flipCard(): void {
+    if (this.width >= this.flipBreak) return;
+    this.front = !this.front;
   }
 
 }

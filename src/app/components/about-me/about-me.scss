@@ -7,10 +7,18 @@
     background: transparent;
 }
 
+
+mat-card-content {
+    perspective: 50%;
+    position: relative;
+    box-sizing: border-box;
+    display: flex;
+}
+
 .card {
     position: fixed;
-    top: 12.25vh;
-    height: 75vh;
+    top: 15vh;
+    height: 60vh;
     perspective: 50%;
     transform-style: preserve-3d;
     transform: rotateX(var(--card-degree)) rotateY(var(--card-degree)) scale(var(--card-scale));
@@ -23,21 +31,49 @@
 
 .content {
     display: flex;
+    transform-style: preserve-3d;
+
+    img {
+        height: calc(60vh - 2em);
+        width: auto;
+        object-fit: cover;
+        display: block;
+        transition: transform 0.5s;
+        backface-visibility: hidden;
+        border-radius: 5px;
+    }
 }
 
-img {
-    height: calc(75vh - 2em);
-    width: auto;
-    object-fit: cover;
-    display: block;
-    border-radius: 5px;
+.flip-container {
+    position: absolute;
+    backface-visibility: hidden;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    transform: rotateY(180deg);
+    transition: transform 0.5s;
+}
+
+.flip-img {
+    transform: rotateY(180deg);
+}
+
+.flip {
+    transform: rotateY(0deg);
 }
 
 .information {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    align-items: center;
     padding: 2em;
+
+    h1, h2 {
+        text-decoration: underline;
+    }
 }
 
 .personal {
@@ -51,6 +87,7 @@ img {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    align-items: center;
     gap: 0.5em;
 }
 
@@ -75,23 +112,16 @@ a:hover {
 
 @media (min-width: 576px) {
     .card {
-        height: 60vh;
-    }
-
-    img {
-        height: calc(60vh - 2em);
-    }
-}
-
-@media (min-width: 992px) {
-    .card {
+        top: 12.5vh;
         height: 75vh;
     }
 
     img {
-        height: calc(75vh - 2em);
+        height: calc(75vh - 2em) !important;
     }
+}
 
+@media (min-width: 992px) {
     .information {
         padding: 2em 3em;
     }
@@ -99,6 +129,11 @@ a:hover {
 
 @media (max-height: 576px) {
     .card {
+        top: 12.5vh;
         height: 75vh;
+    }
+
+    img {
+        height: calc(75vh - 2em);
     }
 }
