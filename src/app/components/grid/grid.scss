@@ -1,7 +1,7 @@
 .grid-container {
     position: relative;
     width: 100vw;
-    background: linear-gradient(to bottom,#606060, #181818);
+    background: linear-gradient(to bottom,#606060, var(--background));
 }
 
 .grid {
@@ -16,14 +16,14 @@
     height: 100%;
     text-align: center;
     padding: 1.5em;
-    background: rgb(255, 255, 255, 0.1 );
-    color: white;
+    background: var(--grid-item);
+    color: var(--text);
     transition: 0.5s;
 }
 
 .grid-item:hover {
     scale: 1.05;
-    background: rgb(255, 255, 255, 0.25);
+    background: var(--grid-item-hover);
 }
 
 .small {

@@ -2,7 +2,7 @@
     position: relative;
     width: 100vw;
     min-height: calc(100vh - 7.5vh);
-    background: var(--secondary);
+    background: var(--background-secondary);
     color: var(--text-reverse);
     z-index: 2;
 }
@@ -23,6 +23,7 @@ h1 {
     text-align: center;
     font-size: 5vw;
     padding-top: 3vh;
+    color: var(--text-secondary);
 }
 
 @media (min-width: 576px) {

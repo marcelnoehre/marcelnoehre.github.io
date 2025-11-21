@@ -11,6 +11,7 @@
 .sticky {
     position: sticky;
     top: 0;
+    border-top: 1px solid var(--secondary);
     border-bottom: 1px solid var(--secondary);
 }
 

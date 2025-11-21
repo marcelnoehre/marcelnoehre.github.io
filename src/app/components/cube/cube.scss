@@ -27,11 +27,11 @@
 .side {
     height: 2em;
     width: 2em;
-    background: #404040;
+    background: var(--cube);
     position: absolute;
     top: 0;
     bottom: 0;
-    box-shadow: 0 0 25px 5px  #808080  inset, 0 0 0 2em #404040 inset;
+    box-shadow: 0 0 25px 5px var(--cube-shade) inset, 0 0 0 2em var(--cube) inset;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -86,7 +86,7 @@
     .side {
         height: 4em;
         width: 4em;
-        box-shadow: 0 0 25px 5px  #808080  inset, 0 0 0 4em #404040 inset;
+        box-shadow: 0 0 25px 5px var(--cube-shade) inset, 0 0 0 4em var(--cube) inset;
     }
 
     .front {
