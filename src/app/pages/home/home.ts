@@ -37,6 +37,7 @@ export class Home implements OnInit {
     this._screen.width$.subscribe(w => this.width = w);
     this._screen.height$.subscribe(h => this.height = h);
     this._screen.scrollY$.subscribe(y => this.scrollY = y);
+    window.scrollTo(0, 0);
     try {
       lottie.loadAnimation({
         container: this.animationContainer.nativeElement,

@@ -22,5 +22,6 @@ export class Cv implements OnInit {
   ngOnInit() {
     this.experience = this._data.experience;
     this.education = this._data.education;
+    window.scrollTo(0, 0);
   }
 }

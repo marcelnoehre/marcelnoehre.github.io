@@ -5,8 +5,8 @@ import { Publications } from './pages/publications/publications';
 import { Projects } from './pages/projects/projects';
 
 export const routes: Routes = [
-    { path: '', component: Home },
-    { path: 'publications', component: Publications },
-    { path: 'projects', component: Projects },
-    { path: 'cv', component: Cv }
+    { path: '', component: Home, data: { scrollPosition: 'top' } },
+    { path: 'publications', component: Publications, data: { scrollPosition: 'top' } },
+    { path: 'projects', component: Projects, data: { scrollPosition: 'top' } },
+    { path: 'cv', component: Cv, data: { scrollPosition: 'top' } }
 ];

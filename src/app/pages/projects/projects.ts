@@ -19,6 +19,7 @@ export class Projects implements OnInit {
 
   ngOnInit() {
     this.projects = this._data.projects;
+    window.scrollTo(0, 0);
   }
 
 }
