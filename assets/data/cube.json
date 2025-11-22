@@ -1,0 +1,34 @@
+{
+    "sides": [
+        {
+            "type": "top",
+            "name": "Graph",
+            "image": "assets/images/cube/graph.svg"
+        },
+        {
+            "type": "bottom",
+            "name": "Graph",
+            "image": "assets/images/cube/graph.svg"
+        },
+        {
+            "type": "front",
+            "name": "Typescript",
+            "image": "assets/images/cube/typescript.svg"
+        },
+        {
+            "type": "back",
+            "name": "Clojure",
+            "image": "assets/images/cube/clojure.svg"
+        },
+        {
+            "type": "left",
+            "name": "Python",
+            "image": "assets/images/cube/python.svg"
+        },
+        {
+            "type": "right",
+            "name": "Angular",
+            "image": "assets/images/cube/angular.svg"
+        }
+    ]
+}

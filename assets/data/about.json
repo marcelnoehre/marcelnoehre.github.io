@@ -1,0 +1,37 @@
+{
+    "home": {
+        "position": "Research Associate",
+        "abstract": "My research focuses on knowledge representation in the field of formal concept analysis, with a particular emphasis on developing drawing algorithms for concept lattices. Therefore, I examine strategies for generating structurally accurate lattice diagrams that follow the conditions for the positioning of elements. To achieve this goal, my research investigates the combinatorial properties of lattices and their geometric constraints, with particular attention to the dimension of partially ordered sets, as well as more local strategies to measure the dimensionality of a lattice, as these are often dominated by complex substructures."
+    },
+    "personal": [
+        {
+            "icon": "calendar_today",
+            "value": "02.12.2000"
+        },
+        {
+            "icon": "location_on",
+            "value": "Hildesheim"
+        }
+    ],
+    "work": {
+        "position": "Research Associate",
+        "institution": "University of Kassel",
+        "institutionURL": "https://www.uni-kassel.de/uni/index.html",
+        "institute": "Knowledge & Data Engineering Group",
+        "instituteURL": "https://www.kde.cs.uni-kassel.de",
+        "homepage": "Marcel Nöhre",
+        "homepageURL": "https://www.kde.cs.uni-kassel.de/noehre",
+        "personal": [
+            {
+                "icon": "email",
+                "value": "noehre@cs.uni-kassel.de",
+                "link": "mailto:noehre@cs.uni-kassel.de"
+            },
+            {
+                "icon": "phone",
+                "value": "+49 561 804-6298",
+                "link": "tel:+495618046298"
+            }
+        ]
+    }
+}

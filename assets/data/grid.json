@@ -1,0 +1,76 @@
+{
+    "items": [
+        {
+            "title": "University of Kassel",
+            "description": "Research on algebraic knowledge modelling, network analysis, and ontology learning applications.",
+            "image": "assets/images/grid/network.svg",
+            "url": "https://www.kde.cs.uni-kassel.de",
+            "class": "grid-item small",
+            "target": "_blank"
+        },
+        {
+            "title": "Linkedin",
+            "description": "Connect with me on LinkedIn to stay in touch",
+            "image": "assets/images/grid/linkedin.svg",
+            "url": "https://www.linkedin.com/in/marcel-nöhre-155377235/",
+            "class": "grid-item small",
+            "target": "_blank"
+        },
+        {
+            "title": "GitHub",
+            "description": "Browse my code repositories and programming projects on GitHub",
+            "image": "assets/images/grid/github.svg",
+            "url": "https://github.com/marcelnoehre",
+            "class": "grid-item large",
+            "target": "_blank"
+        },
+        {
+            "title": "ORCID",
+            "description": "View my research profile and publications on ORCID",
+            "image": "assets/images/grid/orcid.svg",
+            "url": "https://orcid.org/0009-0005-4089-2925",
+            "class": "grid-item small",
+            "target": "_blank"
+        },
+        {
+            "title": "Publications",
+            "description": "Explore my academic publications and research output",
+            "image": "assets/images/grid/publications.webp",
+            "url": "/publications",
+            "class": "grid-item large",
+            "target": "_self"
+        },
+        {
+            "title": "My Projects",
+            "description": "Explore my side programming projects and experiments",
+            "image": "assets/images/grid/see-more.png",
+            "url": "/projects",
+            "class": "grid-item large",
+            "target": "_self"
+        },
+        {
+            "title": "Dev Resources",
+            "description": "Discover tools and resources for development and coding",
+            "image": "assets/images/grid/resources.svg",
+            "url": "https://marcel-noehre.de/resources",
+            "class": "grid-item small",
+            "target": "_self"
+        },
+        {
+            "title": "Google Scholar",
+            "description": "Browse my publications and citations on Google Scholar",
+            "image": "assets/images/grid/google-scholar.svg",
+            "url": "https://scholar.google.com/citations?user=lOG9iWwAAAAJ",
+            "class": "grid-item small",
+            "target": "_blank"
+        },
+        {
+            "title": "Advent of Code",
+            "description": "I like solving programming challenges with Advent of Code",
+            "image": "assets/images/grid/aoc.png",
+            "url": "https://github.com/marcelnoehre/advent-of-code",
+            "class": "grid-item small",
+            "target": "_blank"
+        }
+    ]
+}

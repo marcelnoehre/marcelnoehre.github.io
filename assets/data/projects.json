@@ -1,0 +1,34 @@
+{
+    "projects": [
+        {
+            "title": "LEGO Brick Sorting Machine",
+            "description": "A LEGO brick sorting machine using a vibratory plate for seperation, visual color detection and magnetic valves that trigger compressed air bursts to sort bricks quickly and precisely by color.",
+            "image": "lego-brick-sorting.png",
+            "repository": "Source Code",
+            "repositoryURL": "https://github.com/marcelnoehre/lego-brick-sorting",
+            "youtube": "Demonstration Video",
+            "youtubeURL": "https://www.youtube.com/watch?v=LHaFeOrvy90"
+        },
+        {
+            "title": "Rocket League Overlay",
+            "description": "A dynamic streaming overlay for Rocket League Esports matches, designed to read and seamlessly display in-game data. It also includes a caster panel for easy adjustment of match information.",
+            "image": "rl-overlay.png",
+            "repository": "Source Code",
+            "repositoryURL": "https://github.com/marcelnoehre/overlay-3dg"
+        },
+        {
+            "title": "Swagger For AAS",
+            "description": "Reads data from Asset Administration Shells, generalizes it, and generates a comprehensive Swagger UI documentation to ensure clarity and accessibility for developers.",
+            "image": "swagger-for-aas.png",
+            "repository": "Source Code",
+            "repositoryURL": "https://github.com/marcelnoehre/swagger-for-aas"
+        },
+        {
+            "title": "Webmaster MVB",
+            "description": "A website for a local music club, where we design and display news, manage email communication, and handle various online tasks to keep the community informed and engaged.",
+            "image": "mvb-website.png",
+            "link": "Website",
+            "linkURL": "https://musikverein-borsum.de/"
+        }
+    ]
+}
