@@ -1,7 +1,7 @@
 {
     "home": {
         "position": "Research Associate",
-        "abstract": "My research focuses on knowledge representation in the field of formal concept analysis, with a particular emphasis on developing drawing algorithms for concept lattices. Therefore, I examine strategies for generating structurally accurate lattice diagrams that follow the conditions for the positioning of elements. To achieve this goal, my research investigates the combinatorial properties of lattices and their geometric constraints, with particular attention to the dimension of partially ordered sets, as well as more local strategies to measure the dimensionality of a lattice, as these are often dominated by complex substructures."
+        "abstract": "I am a researcher in the Knowledge and Data Engineering Group at the University of Kassel. My research focuses on knowledge representation within Formal Concept Analysis, with a particular emphasis on algorithms for drawing concept lattices. To produce visually appealing lattice drawings, I investigate the structural properties of lattices."
     },
     "personal": [
         {

@@ -51,8 +51,8 @@
         {
             "title": "Dev Resources",
             "description": "Discover tools and resources for development and coding",
-            "image": "assets/images/grid/resources.svg",
-            "url": "https://marcel-noehre.de/resources",
+            "image": "assets/images/grid/dev-resources.svg",
+            "url": "https://marcel-noehre.de/dev-resources",
             "class": "grid-item small",
             "target": "_self"
         },
