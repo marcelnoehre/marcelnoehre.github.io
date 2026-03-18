@@ -9,6 +9,7 @@ import { ContactItem } from '../interfaces/contact-item';
 import { ProjectItem } from '../interfaces/project-item';
 import { ExperienceItem } from '../interfaces/experience-item';
 import { EducationItem } from '../interfaces/education-item';
+import { PublicationItem } from '../interfaces/publications-item';
 
 import * as navData from '../../assets/data/navigation.json';
 import * as cubeData from '../../assets/data/cube.json';
@@ -17,6 +18,7 @@ import * as gridData from '../../assets/data/grid.json';
 import * as contactData from '../../assets/data/contact.json';
 import * as projectData from '../../assets/data/projects.json';
 import * as cvData from '../../assets/data/cv.json';
+import * as publicationsData from '../../assets/data/publications.json'
 
 @Injectable({
   providedIn: 'root'
@@ -63,4 +65,11 @@ export class Data {
     return cvData.education;
   }
 
+  public get publications(): PublicationItem[] {
+    return publicationsData.publications;
+  }
+
+  public get openData(): PublicationItem[] {
+    return publicationsData.openData
+  }
 }
