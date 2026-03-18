@@ -13,7 +13,7 @@ h1 {
     margin: 0;
     font-family: 'LemonMilk';
     color: var(--primary);
-    font-size: 3em;
+    font-size: 2em;
 }
 
 .publications {
@@ -21,19 +21,39 @@ h1 {
     display: flex;
     justify-content: center;
     text-align: center;
-    font-size: 5vw;
     padding-top: 3vh;
     color: var(--text-secondary);
 }
 
-@media (min-width: 576px) {
-    .publications {
-        font-size: 3.5vh;
+p {
+    margin: 8px 0 !important;
+}
+
+.item {
+    margin-bottom: 1em;
+}
+
+.full-list {
+    display: flex;
+    justify-content: center;
+    padding-top: 3em;
+
+    button {
+        background: var(--publication);
+        border-radius: 5px;
+        padding: 1em;
+        font-size: 1.5em;
     }
 }
 
-@media (max-height: 576px) {
-    .publications {
-        font-size: 8vh;
+@media (min-width: 768px) {
+    h1 {
+        font-size: 3em;
+    }
+
+    .full-list {
+        button {
+            font-size: 2em;
+        }
     }
 }

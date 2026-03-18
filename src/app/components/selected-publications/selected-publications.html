@@ -1,4 +1,16 @@
 <div class="container">
   <h1>Selected Publications</h1>
-  <div class="publications">No publications available at the moment</div>
+  <div class="publications">
+    @for (publication of publications; track publication) {
+      <div class="item">
+          <p>{{ publication.authors }}</p>
+          <p><b>{{ publication.title }}</b></p>
+          <p><i>{{ publication.published }} ({{ publication.year }})</i></p>
+          <a [href]="publication.doi">{{ publication.doi }}</a>
+      </div>
+    }
+  </div>
+  <div class="full-list">
+    <button mat-raised-button (click)="redirect()">View full list</button>
+  </div>
 </div>
