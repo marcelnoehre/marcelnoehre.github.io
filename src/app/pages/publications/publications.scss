@@ -1,40 +1,106 @@
 .container {
-    height: 50vh;
     background-color: var(--background);
 }
 
 .publications {
-    width: 100vw;
+    width: calc(90vw - 4em);
     display: flex;
-    justify-content: center;
-    text-align: center;
-    font-size: 5vw;
-    padding-top: 3vh;
-    color: var(--text);
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 0 5vw;
+    padding: 0 2em;
+    border-radius: 5px;
+    color: var(--text-secondary);
+    background-color: var(--text-primary);
 }
 
-@media (min-width: 576px) {
-    .container {
-        height: 40vh;
+p {
+    margin: 8px 0 !important;
+}
+
+.item {
+    width: 100%;
+    margin-bottom: 1em;
+}
+
+.bibtex-block {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.25s ease;
+
+    &.open {
+        max-height: 500px;
+        overflow-y: scroll;
     }
 
+    .bibtex-inner {
+        position: relative;
+        margin-top: 0.75rem;
+        background: var(--bibtex);
+        border-left: 3px solid var(--primary);
+        border-radius: 4px;
+        padding: 1rem 1rem 1rem 1rem;
+
+        pre {
+            margin: 0;
+            font-size: 0.78rem;
+            font-family: 'DM Mono', monospace;
+            white-space: pre-wrap;
+            word-break: break-word;
+        }
+
+        .copy-btn {
+            position: absolute;
+            top: 0.5rem;
+            right: 0.5rem;
+        }
+    }
+}
+
+.abstract-block {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.25s ease;
+
+    &.open {
+        max-height: 500px;
+        overflow-y: scroll;
+    }
+
+    .abstract-inner {
+        margin-top: 0.75rem;
+        border-left: 3px solid var(--primary);
+        padding: 0.75rem 1rem;
+        border-radius: 4px;
+
+        p {
+            margin: 0;
+            font-size: 0.9rem;
+            line-height: 1.65;
+            color: var(--abstract);
+        }
+    }
+}
+
+.actions {
+    display: flex; 
+    gap: 0.5rem;
+
+    button {
+        border-radius: 5px;
+        background-color: var(--publication);
+        color: var(--text-secondary);
+    }
+}
+
+.open-data {
+    padding-top: 1em;
+}
+
+@media (min-width: 768px) {
     .publications {
-        font-size: 3.5vh;
-    }
-}
-
-@media (max-height: 576px) {
-    .container {
-        height: 40vh;
-    }
-
-    .publications {
-        font-size: 8vh;
-    }
-}
-  
-@media (min-width: 992px) {
-    .container {
-        height: 50vh;
+        width: calc(66vw - 4em);
+        margin: 0 17vw;
     }
 }

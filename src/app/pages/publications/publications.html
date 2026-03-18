@@ -5,7 +5,56 @@
             <div [innerHTML]="char"></div>
         }
     </div>
-    <div class="publications">No publications available at the moment</div>
+    <div class="publications">
+        <h1>Publications and Preprints</h1>
+        @for (publication of publications; track publication) {
+            <div class="item">
+                <p>{{ publication.authors }}</p>
+                <p><b>{{ publication.title }}</b></p>
+                <p><i>{{ publication.published }} ({{ publication.year }})</i></p>
+                <div class="actions">
+                    <button mat-stroked-button (click)="toggleAbstract(publication.doi)">Abstract</button>
+                    <button mat-stroked-button (click)="toggleBibtex(publication.doi)">BibTex</button>
+                    <button mat-stroked-button (click)="redirect(publication.doi)">DOI</button>
+                </div>
+                <div class="abstract-block" [class.open]="openAbstract.has(publication.doi)">
+                    <div class="abstract-inner">
+                        @for (paragraph of publication.abstract; track $index) {
+                            <p>{{ paragraph }}</p>
+                        }
+                    </div>
+                </div>
+                <div class="bibtex-block" [class.open]="openBibtex.has(publication.doi)">
+                    <div class="bibtex-inner">
+                        <button mat-icon-button class="copy-btn" (click)="copy(publication.bibtex)" matTooltip="Copy BibTeX">
+                            <mat-icon>content_copy</mat-icon>
+                        </button>
+                        <pre><code>{{ publication.bibtex }}</code></pre>
+                    </div>
+                </div>
+            </div>
+        }
+        <h1 class="open-data">Open Data</h1>
+        @for (publication of openData; track publication) {
+            <div class="item">
+                <p>{{ publication.authors }}</p>
+                <p><b>{{ publication.title }}</b></p>
+                <p><i>{{ publication.published }} ({{ publication.year }})</i></p>
+                <div class="actions">
+                    <button mat-stroked-button (click)="toggleBibtex(publication.doi)">BibTex</button>
+                    <button mat-stroked-button (click)="redirect(publication.doi)">DOI</button>
+                </div>
+                <div class="bibtex-block" [class.open]="openBibtex.has(publication.doi)">
+                    <div class="bibtex-inner">
+                        <button mat-icon-button class="copy-btn" (click)="copy(publication.bibtex)" matTooltip="Copy BibTeX">
+                            <mat-icon>content_copy</mat-icon>
+                        </button>
+                        <pre><code>{{ publication.bibtex }}</code></pre>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
 </div>
 <svg viewBox="0 0 500 50" preserveAspectRatio="xMinYMin meet" style="transform: translateY(-2px)">
     <path d="M0,25 C150,75 350,0 500,25 L500,00 L0,0 Z" style="stroke: none;"></path>
