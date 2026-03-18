@@ -1,0 +1,26 @@
+{
+    "publications": [
+        {
+            "authors": "Marcel Nöhre, Dominik Dürrschnabel, Bernhard Ganter, Gerd Stumme",
+            "year": "2026",
+            "published": "Submitted to CONCEPTS 2026",
+            "title": "DimFlux: Force-Directed Additive Line Diagrams",
+            "doi": "https://doi.org/10.48550/arXiv.2603.16366",
+            "bibtex": "@misc{nöhre2026dimfluxforcedirectedadditiveline,\n  title = {DimFlux: Force-Directed Additive Line Diagrams},\n  author = {Marcel Nöhre and Dominik Dürrschnabel and Bernhard Ganter and Gerd Stumme},\n  year = {2026},\n  eprint={2603.16366},\n  archivePrefix={arXiv},\n  primaryClass={cs.CG},\n  url={https://arxiv.org/abs/2603.16366}\n}",
+            "abstract": [
+                "The visualization of concept lattices is a central problem in the field of Formal Concept Analysis. Force-directed algorithms, as popular in graph drawing, are a promising approach, treating lattice diagrams as physical models, optimizing node positions based on forces derived from the lattice structure. We build on the work of Zschalig, who, however, limited himself to attribute-additive diagrams. We use a more general additivity, in which both the attributes and the objects contribute to the positions of the concept nodes.",
+                "We replace the planarity enhancer used by Zschalig to obtain a starting diagram for force-directed optimization with the DimDraw algorithm, which generates structured order diagrams on its own. The combination results in DimFlux, an algorithm that leverages the advantages of DimDraw but generates additive diagrams in which readability is increased by maximizing the conflict distance between nodes and non-incident edges."
+            ]
+        }
+    ],
+    "openData": [
+        {
+            "authors": "Marcel Nöhre, Dominik Dürrschnabel, Bernhard Ganter, Gerd Stumme",
+            "year": "2026",
+            "published": "Zenodo",
+            "title": "A Visual Benchmark of DimFlux: Comparison of Line Diagrams for Concept Lattices",
+            "doi": "https://doi.org/10.5281/zenodo.18936106",
+            "bibtex": "@misc{nohre_2026_18936106,\n  author = {Nöhre, Marcel and Dürrschnabel, Dominik and Ganter, Bernhard and Stumme, Gerd},\n  title = {A Visual Benchmark of DimFlux: Comparison of Line Diagrams for Concept Lattices},\n  month = mar,\n  year = 2026,\n  publisher = {Zenodo},\n  doi = {10.5281/zenodo.18936106},\n  url = {https://doi.org/10.5281/zenodo.18936106}\n}"
+        }
+    ]
+}
