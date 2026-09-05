@@ -1,0 +1,53 @@
+{
+  "socials": [
+    {
+      "name": "Mail",
+      "url": "mailto:noehre@cs.uni-kassel.de",
+      "icon": "mail",
+      "iconType": "material",
+      "color": "#106cbd"
+    },
+    {
+      "name": "LinkedIn",
+      "url": "https://www.linkedin.com/in/marcel-nöhre-155377235/",
+      "icon": "in",
+      "iconType": "text",
+      "color": "#0072b1"
+    },
+    {
+      "name": "ORCID",
+      "url": "https://orcid.org/0009-0005-4089-2925",
+      "icon": "iD",
+      "iconType": "text",
+      "color": "#a6ce39"
+    },
+    {
+      "name": "Google Scholar",
+      "url": "https://scholar.google.com/citations?user=lOG9iWwAAAAJ",
+      "icon": "school",
+      "iconType": "material",
+      "color": "#4285f4"
+    },
+    {
+      "name": "ResearchGate",
+      "url": "https://www.researchgate.net/profile/Marcel-Noehre",
+      "icon": "RG",
+      "iconType": "text",
+      "color": "#40ba9c"
+    },
+    {
+      "name": "GitHub",
+      "url": "https://github.com/marcelnoehre",
+      "icon": "GH",
+      "iconType": "text",
+      "color": "#8b8f98"
+    },
+    {
+      "name": "BibSonomy",
+      "url": "https://www.bibsonomy.org/user/noehre",
+      "icon": "B",
+      "iconType": "text",
+      "color": "#006699"
+    }
+  ]
+}

@@ -37,3 +37,32 @@
     <a mat-stroked-button color="primary" routerLink="/publications">View all publications</a>
   </section>
 }
+
+@if (socials().length) {
+  <section class="connect">
+    <h2>Connect</h2>
+
+    <div class="social-strip">
+      @for (social of socials(); track social) {
+        <a
+          class="social"
+          [href]="social.url"
+          target="_blank"
+          rel="noopener"
+          [title]="social.name"
+          [attr.aria-label]="social.name"
+          [style.--social-color]="social.color"
+        >
+          <span class="social-icon">
+            @if (social.iconType === 'material') {
+              <mat-icon>{{ social.icon }}</mat-icon>
+            } @else {
+              {{ social.icon }}
+            }
+          </span>
+          <span class="social-name">{{ social.name }}</span>
+        </a>
+      }
+    </div>
+  </section>
+}

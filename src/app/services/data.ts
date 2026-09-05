@@ -6,6 +6,7 @@ import { HomeItem } from '../interfaces/home-item';
 import { CvItem } from '../interfaces/cv-item';
 import { PublicationsItem } from '../interfaces/publications-item';
 import { PublicationItem } from '../interfaces/publication-item';
+import { SocialItem } from '../interfaces/social-item';
 
 @Service()
 export class Data {
@@ -15,6 +16,12 @@ export class Data {
     return this.http
       .get<{ navigation: NavigationItem[] }>('data/navigation.json')
       .pipe(map((data) => data.navigation));
+  }
+
+  socials(): Observable<SocialItem[]> {
+    return this.http
+      .get<{ socials: SocialItem[] }>('data/social.json')
+      .pipe(map((data) => data.socials));
   }
 
   home(): Observable<HomeItem> {
