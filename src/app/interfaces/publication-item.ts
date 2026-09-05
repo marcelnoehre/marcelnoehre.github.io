@@ -6,4 +6,5 @@ export interface PublicationItem {
   doi: string;
   bibtex: string;
   abstract?: string[];
+  selected?: boolean;
 }

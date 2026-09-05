@@ -5,6 +5,7 @@ import { NavigationItem } from '../interfaces/navigation-item';
 import { HomeItem } from '../interfaces/home-item';
 import { CvItem } from '../interfaces/cv-item';
 import { PublicationsItem } from '../interfaces/publications-item';
+import { PublicationItem } from '../interfaces/publication-item';
 
 @Service()
 export class Data {
@@ -26,5 +27,11 @@ export class Data {
 
   publications(): Observable<PublicationsItem> {
     return this.http.get<PublicationsItem>('data/publications.json');
+  }
+
+  selectedPublications(): Observable<PublicationItem[]> {
+    return this.publications().pipe(
+      map((data) => data.publications.filter((publication) => publication.selected)),
+    );
   }
 }

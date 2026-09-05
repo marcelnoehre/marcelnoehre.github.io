@@ -18,3 +18,22 @@
     </div>
   </section>
 }
+
+@if (selectedPublications().length) {
+  <section class="selected-publications">
+    <h2>Selected Publications</h2>
+
+    <div class="cards">
+      @for (publication of selectedPublications(); track publication) {
+        <article class="card">
+          <p class="authors">{{ publication.authors }}</p>
+          <h3>{{ publication.title }}</h3>
+          <p class="venue">{{ publication.published }} ({{ publication.year }})</p>
+          <a class="doi" [href]="publication.doi" target="_blank" rel="noopener">View publication</a>
+        </article>
+      }
+    </div>
+
+    <a mat-stroked-button color="primary" routerLink="/publications">View all publications</a>
+  </section>
+}
