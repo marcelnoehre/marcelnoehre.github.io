@@ -1,0 +1,24 @@
+{
+  "navigation": [
+    {
+      "title": "Home",
+      "route": "/"
+    },
+    {
+      "title": "Publications",
+      "route": "/publications"
+    },
+    {
+      "title": "Repositories",
+      "route": "/repositories"
+    },
+    {
+      "title": "CV",
+      "route": "/cv"
+    },
+    {
+      "title": "Contact",
+      "mailto": "mailto:noehre@cs.uni-kassel.de"
+    }
+  ]
+}
