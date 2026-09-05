@@ -17,6 +17,12 @@
             <div class="entry">
               <p class="authors">{{ publication.authors }}</p>
               <h3>{{ publication.title }}</h3>
+              @if (publication.award) {
+                <span class="award-badge">
+                  <mat-icon>emoji_events</mat-icon>
+                  {{ publication.award }}
+                </span>
+              }
               <p class="venue">{{ publication.published }} ({{ publication.year }})</p>
 
               <div class="actions">
@@ -81,6 +87,12 @@
             <div class="entry">
               <p class="authors">{{ publication.authors }}</p>
               <h3>{{ publication.title }}</h3>
+              @if (publication.award) {
+                <span class="award-badge">
+                  <mat-icon>emoji_events</mat-icon>
+                  {{ publication.award }}
+                </span>
+              }
               <p class="venue">{{ publication.published }} ({{ publication.year }})</p>
 
               <div class="actions">
@@ -110,5 +122,45 @@
         }
       </ol>
     </section>
+
+    @if (data.awards.length) {
+      <section class="pub-section">
+        <h2>Awards</h2>
+        <ol class="timeline">
+          @for (award of data.awards; track award; let last = $last) {
+            <li class="timeline-item">
+              <div class="rail">
+                <span class="node"></span>
+                @if (!last) {
+                  <span class="edge"></span>
+                }
+              </div>
+
+              <div class="entry">
+                <div class="award-header">
+                  <mat-icon>emoji_events</mat-icon>
+                  <h3>
+                    {{ award.title }}
+                    @if (award.place) {
+                      <span class="award-place">{{ award.place }}</span>
+                    }
+                  </h3>
+                </div>
+                <p class="venue">{{ award.event }} ({{ award.year }})</p>
+                @if (award.description) {
+                  <p class="award-description">{{ award.description }}</p>
+                }
+                @if (award.link) {
+                  <a class="link" [href]="award.link" target="_blank" rel="noopener">
+                    <mat-icon>open_in_new</mat-icon>
+                    View related work
+                  </a>
+                }
+              </div>
+            </li>
+          }
+        </ol>
+      </section>
+    }
   </div>
 }

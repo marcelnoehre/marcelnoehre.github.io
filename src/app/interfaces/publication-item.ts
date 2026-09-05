@@ -7,4 +7,5 @@ export interface PublicationItem {
   bibtex: string;
   abstract?: string[];
   selected?: boolean;
+  award?: string;
 }

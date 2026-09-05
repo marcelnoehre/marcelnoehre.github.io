@@ -33,6 +33,7 @@
             "published": "CONCEPTS Data Analysis Showcase (CDAS) Workshop",
             "title": "Exploring ESC Winners with Nested Diagrams",
             "doi": "https://doi.org/10.48550/arXiv.2608.13630",
+            "award": "EUREKA Award",
             "bibtex": "@misc{sharma2026exploringescwinnersnested,\n  title={Exploring ESC Winners with Nested Diagrams},\n  author={Anurag Sharma and Marcel Nöhre and Gerd Stumme},\n  year={2026},\n  eprint={2608.13630},\n  archivePrefix={arXiv},\n  primaryClass={cs.AI},\n  url={https://arxiv.org/abs/2608.13630}\n}",
             "abstract": [
                 "We present ConceptFlow, a scikit-learn-compatible Python library for Formal Concept Analysis that constructs and renders nested line diagrams from many-valued formal contexts. Given a many-valued context and a partition of its attributes into conceptual scales, ConceptFlow performs conceptual scaling, computes the factor lattices, identifies filled nodes of the corresponding subdirect product, and produces an interactive visualization.",
@@ -48,6 +49,29 @@
             "title": "A Visual Benchmark of DimFlux: Comparison of Line Diagrams for Concept Lattices",
             "doi": "https://doi.org/10.5281/zenodo.20280441",
             "bibtex": "@misc{nohre_2026_20280441,\n  author = {Nöhre, Marcel and Dürrschnabel, Dominik and Ganter, Bernhard and Stumme, Gerd},\n  title = {A Visual Benchmark of DimFlux: Comparison of Line Diagrams for Concept Lattices},\n  month = may,\n  year = 2026,\n  publisher = {Zenodo},\n  doi = {10.5281/zenodo.20280441},\n  url = {https://doi.org/10.5281/zenodo.20280441}\n}"
+        }
+    ],
+    "awards": [
+        {
+            "title": "EUREKA Award",
+            "event": "CONCEPTS Data Analysis Showcase (CDAS) Workshop",
+            "year": "2026",
+            "link": "https://doi.org/10.48550/arXiv.2608.13630",
+            "description": "Awarded for the most surprising or impactful insight."
+        },
+        {
+            "title": "Manual Challenge",
+            "place": "2nd Place",
+            "event": "Graph Drawing Contest, GD 2026",
+            "year": "2026",
+            "description": "Minimizing k in k-plane drawings."
+        },
+        {
+            "title": "Creative Topic",
+            "place": "3rd Place",
+            "event": "Graph Drawing Contest, GD 2026",
+            "year": "2026",
+            "description": "Voting patterns across years in the Eurovision Song Contest."
         }
     ]
 }
