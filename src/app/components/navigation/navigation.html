@@ -1,0 +1,34 @@
+<nav class="navigation">
+  <a class="brand" routerLink="/" (click)="closeMenu()">Marcel Nöhre</a>
+
+  <button
+    class="menu-toggle"
+    type="button"
+    [attr.aria-expanded]="menuOpen()"
+    aria-label="Toggle navigation"
+    (click)="toggleMenu()"
+  >
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+
+  <ul class="links" [class.open]="menuOpen()">
+    @for (item of items(); track item.title) {
+      <li>
+        @if (item.route) {
+          <a
+            [routerLink]="item.route"
+            routerLinkActive="active"
+            [routerLinkActiveOptions]="{ exact: item.route === '/' }"
+            (click)="closeMenu()"
+          >
+            {{ item.title }}
+          </a>
+        } @else if (item.mailto) {
+          <a [href]="item.mailto" (click)="closeMenu()">{{ item.title }}</a>
+        }
+      </li>
+    }
+  </ul>
+</nav>

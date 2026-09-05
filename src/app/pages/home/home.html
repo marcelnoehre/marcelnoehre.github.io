@@ -1,0 +1,20 @@
+@if (item(); as home) {
+  <section class="hero">
+    <div class="hero-text">
+      <p class="affiliation">
+        <a [href]="home.universityUrl" target="_blank" rel="noopener">{{ home.university }}</a>
+        &middot;
+        <a [href]="home.departmentUrl" target="_blank" rel="noopener">{{ home.department }}</a>
+      </p>
+
+      <h1>{{ home.name }}</h1>
+      <p class="position">{{ home.position }}</p>
+
+      <p class="abstract">{{ home.abstract }}</p>
+    </div>
+
+    <div class="hero-image">
+      <img [src]="home.image" [alt]="home.name" />
+    </div>
+  </section>
+}

@@ -1,0 +1,10 @@
+{
+  "name": "Marcel Nöhre",
+  "position": "PhD Candidate & Research Associate",
+  "department": "Knowledge & Data Engineering Group",
+  "departmentUrl": "https://www.kde.cs.uni-kassel.de",
+  "university": "University of Kassel",
+  "universityUrl": "https://www.uni-kassel.de/uni/index.html",
+  "abstract": "I am a researcher in the Knowledge and Data Engineering Group at the University of Kassel. My research focuses on knowledge representation within Formal Concept Analysis, with a particular emphasis on algorithms for drawing concept lattices. To produce visually appealing lattice drawings, I investigate the structural properties of lattices.",
+  "image": "images/about/me.jpg"
+}
