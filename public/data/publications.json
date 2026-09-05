@@ -7,6 +7,7 @@
             "title": "DimFlux: Force-directed additive line diagrams",
             "doi": "https://doi.org/10.1016/j.ijar.2026.109734",
             "selected": true,
+            "image": "images/research/dimflux.svg",
             "bibtex": "@article{NOHRE2026109734,\n  title = {DimFlux: Force-directed additive line diagrams},\n  journal = {International Journal of Approximate Reasoning},\n  volume = {197},\n  pages = {109734},\n  year = {2026},\n  issn = {0888-613X},\n  doi = {https://doi.org/10.1016/j.ijar.2026.109734},\n  url = {https://www.sciencedirect.com/science/article/pii/S0888613X2600109X},\n  author = {Marcel Nöhre and Dominik Dürrschnabel and Bernhard Ganter and Gerd Stumme},\n  keywords = {Formal concept analysis, Force-directed placement, Additive line diagrams, DimDraw, DimFlux},\n}",
             "abstract": [
                 "The visualization of concept lattices is a central problem in the field of Formal Concept Analysis. Force-directed algorithms, as popular in graph drawing, are a promising approach, treating lattice diagrams as physical models, optimizing node positions based on forces derived from the lattice structure. We build on the work of Zschalig, who, however, limited himself to attribute-additive diagrams. We use a more general additivity, in which both the attributes and the objects contribute to the positions of the concept nodes.",
@@ -20,6 +21,7 @@
             "title": "Node Labeling in Line Diagrams of Ordered Sets",
             "doi": "https://doi.org/10.48550/arXiv.2607.23283",
             "selected": true,
+            "image": "images/research/node-labeling.svg",
             "bibtex": "@misc{nöhre2026nodelabelinglinediagrams,\n  title={Node Labeling in Line Diagrams of Ordered Sets},\n  author={Marcel Nöhre and Gerd Stumme},\n  year={2026},\n  eprint={2607.23283},\n  archivePrefix={arXiv},\n  primaryClass={cs.CG},\n  url={https://arxiv.org/abs/2607.23283},\n}",
             "abstract": [
                 "We propose a flexible, two-phase algorithm for labeling line diagrams of ordered sets, in which the nodes of direct neighbors in the order relation are connected by a straight, upward-pointing line. In contrast to the labeling of diagrams of arbitrary graphs, we benefit from the fact that all edges in line diagrams of ordered sets are more or less vertical. In this paper, we study the placement of all labels such that they do not intersect with any nodes, lines, or other labels while minimizing the distances between the nodes and their labels.",
@@ -60,18 +62,18 @@
             "description": "Awarded for the most surprising or impactful insight."
         },
         {
-            "title": "Manual Challenge",
-            "place": "2nd Place",
-            "event": "Graph Drawing Contest, GD 2026",
-            "year": "2026",
-            "description": "Minimizing k in k-plane drawings."
-        },
-        {
             "title": "Creative Topic",
             "place": "3rd Place",
             "event": "Graph Drawing Contest, GD 2026",
             "year": "2026",
             "description": "Voting patterns across years in the Eurovision Song Contest."
+        },
+        {
+            "title": "Manual Challenge",
+            "place": "2nd Place",
+            "event": "Graph Drawing Contest, GD 2026",
+            "year": "2026",
+            "description": "Minimizing k in k-plane drawings."
         }
     ]
 }

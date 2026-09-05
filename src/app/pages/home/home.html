@@ -36,6 +36,9 @@
     <div class="cards">
       @for (publication of selectedPublications(); track publication) {
         <article class="card">
+          @if (publication.image) {
+            <img class="thumbnail" [src]="publication.image" [alt]="publication.title" />
+          }
           <p class="authors">{{ publication.authors }}</p>
           <h3>{{ publication.title }}</h3>
           <p class="venue">{{ publication.published }} ({{ publication.year }})</p>
