@@ -17,6 +17,16 @@
       <img [src]="home.image" [alt]="home.name" />
     </div>
   </section>
+
+  <button
+    type="button"
+    class="scroll-indicator"
+    [class.hidden]="scrolledFromTop()"
+    (click)="scrollToNext()"
+    aria-label="Scroll down"
+  >
+    <mat-icon>keyboard_arrow_down</mat-icon>
+  </button>
 }
 
 @if (selectedPublications().length) {

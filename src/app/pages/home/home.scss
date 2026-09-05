@@ -6,7 +6,8 @@
   max-width: 72rem;
   margin: 0 auto;
   padding: clamp(3rem, 10vh, 7rem) clamp(1.5rem, 5vw, 4rem);
-  min-height: calc(100vh - 5.5rem);
+  min-height: calc(100vh - var(--nav-height, 5.5rem));
+  min-height: calc(100dvh - var(--nav-height, 5.5rem));
 }
 
 .hero-text {
@@ -101,7 +102,7 @@ h1 {
 
   h2 {
     margin: 0;
-    font-size: 0.85rem;
+    font-size: 1.4rem;
     font-weight: 500;
     letter-spacing: 0.08em;
     text-transform: uppercase;
@@ -169,7 +170,7 @@ h1 {
 
   h2 {
     margin: 0;
-    font-size: 0.85rem;
+    font-size: 1.4rem;
     font-weight: 500;
     letter-spacing: 0.08em;
     text-transform: uppercase;
@@ -227,4 +228,47 @@ h1 {
 
 .social-name {
   font-size: 0.9rem;
+}
+
+.scroll-indicator {
+  position: fixed;
+  right: clamp(1.5rem, 5vw, 3rem);
+  bottom: clamp(1.5rem, 5vh, 2.5rem);
+  z-index: 5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 3rem;
+  height: 3rem;
+  padding: 0;
+  border-radius: 50%;
+  background-color: var(--mat-sys-surface-container);
+  border: 1px solid color-mix(in srgb, var(--mat-sys-on-surface) 12%, transparent);
+  color: var(--mat-sys-primary);
+  cursor: pointer;
+  opacity: 1;
+  transform: translateY(0);
+  transition:
+    opacity 0.3s ease,
+    transform 0.3s ease;
+
+  mat-icon {
+    animation: scroll-bounce 1.6s ease-in-out infinite;
+  }
+
+  &.hidden {
+    opacity: 0;
+    transform: translateY(0.5rem);
+    pointer-events: none;
+  }
+}
+
+@keyframes scroll-bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(0.3rem);
+  }
 }

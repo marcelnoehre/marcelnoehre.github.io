@@ -1,4 +1,4 @@
-import { Component, inject } from '@angular/core';
+import { Component, HostListener, inject, signal } from '@angular/core';
 import { toSignal } from '@angular/core/rxjs-interop';
 import { RouterLink } from '@angular/router';
 import { MatButtonModule } from '@angular/material/button';
@@ -24,4 +24,15 @@ export class Home {
   protected readonly socials = toSignal(this.data.socials(), {
     initialValue: [] as SocialItem[],
   });
+
+  protected readonly scrolledFromTop = signal(false);
+
+  @HostListener('window:scroll')
+  protected onWindowScroll(): void {
+    this.scrolledFromTop.set(window.scrollY > 50);
+  }
+
+  protected scrollToNext(): void {
+    window.scrollTo({ top: window.innerHeight, behavior: 'smooth' });
+  }
 }
