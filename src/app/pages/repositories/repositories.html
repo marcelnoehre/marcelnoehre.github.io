@@ -1,0 +1,66 @@
+@if (item(); as data) {
+  <div class="page">
+    <h1>Repositories</h1>
+
+    <section class="repo-section">
+      <h2>Research</h2>
+      <div class="cards">
+        @for (repo of data.research; track repo) {
+          <article class="card">
+            <h3>{{ repo.title }}</h3>
+            <p class="description">{{ repo.description }}</p>
+            <div class="links">
+              @if (repo.repositoryURL) {
+                <a class="link" [href]="repo.repositoryURL" target="_blank" rel="noopener">
+                  <mat-icon>code</mat-icon>
+                  Repository
+                </a>
+              }
+              @if (repo.publicationDoi) {
+                <a class="link" [href]="repo.publicationDoi" target="_blank" rel="noopener">
+                  <mat-icon>description</mat-icon>
+                  View publication
+                </a>
+              }
+            </div>
+          </article>
+        }
+      </div>
+    </section>
+
+    <section class="repo-section">
+      <h2>Side Projects</h2>
+      <div class="cards">
+        @for (repo of data.sideProjects; track repo) {
+          <article class="card">
+            @if (repo.image) {
+              <img class="thumbnail" [src]="repo.image" [alt]="repo.title" />
+            }
+            <h3>{{ repo.title }}</h3>
+            <p class="description">{{ repo.description }}</p>
+            <div class="links">
+              @if (repo.repositoryURL) {
+                <a class="link" [href]="repo.repositoryURL" target="_blank" rel="noopener">
+                  <mat-icon>code</mat-icon>
+                  Repository
+                </a>
+              }
+              @if (repo.websiteURL) {
+                <a class="link" [href]="repo.websiteURL" target="_blank" rel="noopener">
+                  <mat-icon>open_in_new</mat-icon>
+                  Website
+                </a>
+              }
+              @if (repo.demoURL) {
+                <a class="link" [href]="repo.demoURL" target="_blank" rel="noopener">
+                  <mat-icon>play_circle</mat-icon>
+                  {{ repo.demoLabel }}
+                </a>
+              }
+            </div>
+          </article>
+        }
+      </div>
+    </section>
+  </div>
+}

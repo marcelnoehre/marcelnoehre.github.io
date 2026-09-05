@@ -9,8 +9,8 @@
       "route": "/publications"
     },
     {
-      "title": "Projects",
-      "route": "/projects"
+      "title": "Repositories",
+      "route": "/repositories"
     },
     {
       "title": "CV",

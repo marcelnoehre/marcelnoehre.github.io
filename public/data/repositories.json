@@ -1,0 +1,44 @@
+{
+  "research": [
+    {
+      "title": "DimFlux",
+      "description": "Force-directed additive line diagrams for concept lattices, by projecting DimDraw layouts into the additive space and applying forces to maximize the conflict distance between nodes and non-incident edges.",
+      "repositoryURL": "https://github.com/marcelnoehre/dim-flux",
+      "publicationDoi": "https://doi.org/10.1016/j.ijar.2026.109734"
+    },
+    {
+      "title": "Node Labeling",
+      "description": "A two-phase algorithm for labeling line diagrams of ordered sets, placing labels without intersecting nodes, lines, or other labels while minimizing distances to their nodes.",
+      "repositoryURL": "https://github.com/marcelnoehre/node-labeling",
+      "publicationDoi": "https://doi.org/10.48550/arXiv.2607.23283"
+    }
+  ],
+  "sideProjects": [
+    {
+      "title": "LEGO Brick Sorting Machine",
+      "description": "A LEGO brick sorting machine using a vibratory plate for separation, visual color detection and magnetic valves that trigger compressed air bursts to sort bricks quickly and precisely by color.",
+      "image": "images/repositories/lego-brick-sorting.png",
+      "repositoryURL": "https://github.com/marcelnoehre/lego-brick-sorting",
+      "demoLabel": "Demonstration Video",
+      "demoURL": "https://www.youtube.com/watch?v=LHaFeOrvy90"
+    },
+    {
+      "title": "Rocket League Overlay",
+      "description": "A dynamic streaming overlay for Rocket League Esports matches, designed to read and seamlessly display in-game data. It also includes a caster panel for easy adjustment of match information.",
+      "image": "images/repositories/rl-overlay.png",
+      "repositoryURL": "https://github.com/marcelnoehre/overlay-3dg"
+    },
+    {
+      "title": "Swagger For AAS",
+      "description": "Reads data from Asset Administration Shells, generalizes it, and generates a comprehensive Swagger UI documentation to ensure clarity and accessibility for developers.",
+      "image": "images/repositories/swagger-for-aas.png",
+      "repositoryURL": "https://github.com/marcelnoehre/swagger-for-aas"
+    },
+    {
+      "title": "Webmaster MVB",
+      "description": "A website for a local music club, where we design and display news, manage email communication, and handle various online tasks to keep the community informed and engaged.",
+      "image": "images/repositories/mvb-website.png",
+      "websiteURL": "https://musikverein-borsum.de/"
+    }
+  ]
+}

@@ -7,6 +7,7 @@ import { CvItem } from '../interfaces/cv-item';
 import { PublicationsItem } from '../interfaces/publications-item';
 import { PublicationItem } from '../interfaces/publication-item';
 import { SocialItem } from '../interfaces/social-item';
+import { RepositoriesItem } from '../interfaces/repositories-item';
 
 @Service()
 export class Data {
@@ -40,5 +41,9 @@ export class Data {
     return this.publications().pipe(
       map((data) => data.publications.filter((publication) => publication.selected)),
     );
+  }
+
+  repositories(): Observable<RepositoriesItem> {
+    return this.http.get<RepositoriesItem>('data/repositories.json');
   }
 }
