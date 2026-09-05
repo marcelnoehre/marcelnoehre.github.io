@@ -1,0 +1,112 @@
+@if (cv(); as data) {
+  <div class="page">
+    <h1>Curriculum Vitae</h1>
+
+    <section class="cv-section">
+      <h2>Experience</h2>
+      <ol class="timeline">
+        @for (item of data.experience; track item; let last = $last) {
+          <li class="timeline-item">
+            <div class="rail">
+              <span class="node"></span>
+              @if (!last) {
+                <span class="edge"></span>
+              }
+            </div>
+
+            <div class="entry">
+              <div class="date">
+                @if (!item.to) {
+                  <span class="since">Since</span>
+                }
+                <span class="from">{{ item.from }}</span>
+                @if (item.to) {
+                  <span class="range-sep">&mdash;</span>
+                  <span class="to">{{ item.to }}</span>
+                }
+              </div>
+
+              <div class="content">
+                <h3>{{ item.position }}</h3>
+                <a class="link" [href]="item.institutionURL" target="_blank" rel="noopener">
+                  <mat-icon>business</mat-icon>
+                  {{ item.institution }}
+                </a>
+                @if (item.institute) {
+                  <a class="link" [href]="item.instituteURL" target="_blank" rel="noopener">
+                    <mat-icon>group</mat-icon>
+                    {{ item.institute }}
+                  </a>
+                }
+                @if (item.homepage) {
+                  <a class="link" [href]="item.homepageURL" target="_blank" rel="noopener">
+                    <mat-icon>link</mat-icon>
+                    {{ item.homepage }}
+                  </a>
+                }
+              </div>
+            </div>
+          </li>
+        }
+      </ol>
+    </section>
+
+    <section class="cv-section">
+      <h2>Education</h2>
+      <ol class="timeline">
+        @for (item of data.education; track item; let last = $last) {
+          <li class="timeline-item">
+            <div class="rail">
+              <span class="node"></span>
+              @if (!last) {
+                <span class="edge"></span>
+              }
+            </div>
+
+            <div class="entry">
+              <div class="date">
+                @if (!item.to) {
+                  <span class="since">Since</span>
+                }
+                <span class="from">{{ item.from }}</span>
+                @if (item.to) {
+                  <span class="range-sep">&mdash;</span>
+                  <span class="to">{{ item.to }}</span>
+                }
+              </div>
+
+              <div class="content">
+                <h3>{{ item.degree }}</h3>
+                @if (item.field) {
+                  <p class="field">{{ item.field }}</p>
+                }
+                <a class="link" [href]="item.institutionURL" target="_blank" rel="noopener">
+                  <mat-icon>business</mat-icon>
+                  {{ item.institution }}
+                </a>
+                @if (item.institute) {
+                  <a class="link" [href]="item.instituteURL" target="_blank" rel="noopener">
+                    <mat-icon>group</mat-icon>
+                    {{ item.institute }}
+                  </a>
+                }
+                @if (item.homepage) {
+                  <a class="link" [href]="item.homepageURL" target="_blank" rel="noopener">
+                    <mat-icon>link</mat-icon>
+                    {{ item.homepage }}
+                  </a>
+                }
+                @if (item.thesis) {
+                  <p class="thesis">{{ item.thesis }}</p>
+                }
+                @if (item.original) {
+                  <p class="original">Original: {{ item.original }}</p>
+                }
+              </div>
+            </div>
+          </li>
+        }
+      </ol>
+    </section>
+  </div>
+}

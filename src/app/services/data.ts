@@ -3,6 +3,7 @@ import { HttpClient } from '@angular/common/http';
 import { map, Observable } from 'rxjs';
 import { NavigationItem } from '../interfaces/navigation-item';
 import { HomeItem } from '../interfaces/home-item';
+import { CvItem } from '../interfaces/cv-item';
 
 @Service()
 export class Data {
@@ -16,5 +17,9 @@ export class Data {
 
   home(): Observable<HomeItem> {
     return this.http.get<HomeItem>('data/home.json');
+  }
+
+  cv(): Observable<CvItem> {
+    return this.http.get<CvItem>('data/cv.json');
   }
 }
