@@ -1,0 +1,153 @@
+.page {
+  max-width: 48rem;
+  margin: 0 auto;
+  padding: clamp(2rem, 6vh, 4rem) clamp(1.5rem, 5vw, 4rem) 5rem;
+}
+
+h1 {
+  margin: 0 0 3rem;
+  font-size: clamp(2.25rem, 5vw, 3rem);
+  font-weight: 500;
+  letter-spacing: -0.01em;
+}
+
+.pub-section {
+  margin-bottom: 3.5rem;
+
+  h2 {
+    margin: 0 0 1.5rem;
+    font-size: 0.85rem;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--mat-sys-primary);
+  }
+}
+
+.timeline {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.timeline-item {
+  display: flex;
+  gap: 1.25rem;
+}
+
+.rail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 0 0 auto;
+  padding-top: 1.6rem;
+}
+
+.node {
+  width: 0.6rem;
+  height: 0.6rem;
+  flex: 0 0 auto;
+  border-radius: 50%;
+  background-color: var(--mat-sys-primary);
+  box-shadow: 0 0 0 4px color-mix(in srgb, var(--mat-sys-primary) 15%, transparent);
+}
+
+.edge {
+  width: 1px;
+  flex: 1 1 auto;
+  margin: 0.35rem 0;
+  background-color: color-mix(in srgb, var(--mat-sys-primary) 30%, transparent);
+}
+
+.entry {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  margin-bottom: 1.5rem;
+  padding: 1.25rem 1.5rem;
+  border-radius: 0.85rem;
+  background-color: var(--mat-sys-surface-container);
+  border: 1px solid color-mix(in srgb, var(--mat-sys-on-surface) 8%, transparent);
+}
+
+.timeline-item:last-child .entry {
+  margin-bottom: 0;
+}
+
+.authors {
+  margin: 0;
+  font-size: 0.9rem;
+  color: color-mix(in srgb, var(--mat-sys-on-surface) 70%, transparent);
+}
+
+h3 {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+.venue {
+  margin: 0 0 0.25rem;
+  font-size: 0.88rem;
+  font-style: italic;
+  color: color-mix(in srgb, var(--mat-sys-on-surface) 60%, transparent);
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-top: 0.25rem;
+}
+
+.expand-block {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.25s ease;
+
+  &.open {
+    max-height: 32rem;
+    overflow-y: auto;
+  }
+}
+
+.expand-inner {
+  margin-top: 0.85rem;
+  padding: 0.85rem 1rem;
+  border-radius: 0.5rem;
+  border-left: 3px solid var(--mat-sys-primary);
+  background-color: color-mix(in srgb, var(--mat-sys-on-surface) 4%, transparent);
+}
+
+.abstract-inner p {
+  margin: 0 0 0.75rem;
+  font-size: 0.9rem;
+  line-height: 1.65;
+  color: color-mix(in srgb, var(--mat-sys-on-surface) 85%, transparent);
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.bibtex-inner {
+  position: relative;
+
+  pre {
+    margin: 0;
+    font-family: 'Roboto Mono', ui-monospace, monospace;
+    font-size: 0.78rem;
+    line-height: 1.5;
+    white-space: pre-wrap;
+    word-break: break-word;
+    padding-right: 2rem;
+  }
+
+  .copy-btn {
+    position: absolute;
+    top: -0.1rem;
+    right: -0.35rem;
+  }
+}

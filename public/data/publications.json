@@ -1,0 +1,51 @@
+{
+    "publications": [
+        {
+            "authors": "Marcel Nöhre, Dominik Dürrschnabel, Bernhard Ganter, Gerd Stumme",
+            "year": "2026",
+            "published": "International Journal of Approximate Reasoning, 197, 109734.",
+            "title": "DimFlux: Force-directed additive line diagrams",
+            "doi": "https://doi.org/10.1016/j.ijar.2026.109734",
+            "bibtex": "@article{NOHRE2026109734,\n  title = {DimFlux: Force-directed additive line diagrams},\n  journal = {International Journal of Approximate Reasoning},\n  volume = {197},\n  pages = {109734},\n  year = {2026},\n  issn = {0888-613X},\n  doi = {https://doi.org/10.1016/j.ijar.2026.109734},\n  url = {https://www.sciencedirect.com/science/article/pii/S0888613X2600109X},\n  author = {Marcel Nöhre and Dominik Dürrschnabel and Bernhard Ganter and Gerd Stumme},\n  keywords = {Formal concept analysis, Force-directed placement, Additive line diagrams, DimDraw, DimFlux},\n}",
+            "abstract": [
+                "The visualization of concept lattices is a central problem in the field of Formal Concept Analysis. Force-directed algorithms, as popular in graph drawing, are a promising approach, treating lattice diagrams as physical models, optimizing node positions based on forces derived from the lattice structure. We build on the work of Zschalig, who, however, limited himself to attribute-additive diagrams. We use a more general additivity, in which both the attributes and the objects contribute to the positions of the concept nodes.",
+                "We replace the planarity enhancer used by Zschalig to obtain a starting diagram for force-directed optimization with the DimDraw algorithm, which generates structured order diagrams on its own. The combination results in DimFlux, an algorithm that leverages the advantages of DimDraw but generates additive diagrams in which readability is increased by maximizing the conflict distance between nodes and non-incident edges."
+            ]
+        },
+        {
+            "authors": "Marcel Nöhre, Gerd Stumme",
+            "year": "2026",
+            "published": "arXiv",
+            "title": "Node Labeling in Line Diagrams of Ordered Sets",
+            "doi": "https://doi.org/10.48550/arXiv.2607.23283",
+            "bibtex": "@misc{nöhre2026nodelabelinglinediagrams,\n  title={Node Labeling in Line Diagrams of Ordered Sets},\n  author={Marcel Nöhre and Gerd Stumme},\n  year={2026},\n  eprint={2607.23283},\n  archivePrefix={arXiv},\n  primaryClass={cs.CG},\n  url={https://arxiv.org/abs/2607.23283},\n}",
+            "abstract": [
+                "We propose a flexible, two-phase algorithm for labeling line diagrams of ordered sets, in which the nodes of direct neighbors in the order relation are connected by a straight, upward-pointing line. In contrast to the labeling of diagrams of arbitrary graphs, we benefit from the fact that all edges in line diagrams of ordered sets are more or less vertical. In this paper, we study the placement of all labels such that they do not intersect with any nodes, lines, or other labels while minimizing the distances between the nodes and their labels.",
+                "Our approach starts by filtering the fixed-position model using line diagram-specific readability criteria. For labels that cannot be placed adjacent to their node (overflow labels), we exploit the free space in the graph's interior or the infinite space surrounding the drawing and link the labels with their respective node by straight binding lines that should not cross other nodes or labels if possible. To balance quality and runtime, we derive an initial placement of the overflow labels using a cost function over a sparse grid of candidates, followed by a force-based refinement step to fine-tune the layout.",
+                "Furthermore, we demonstrate the flexibility of this approach by applying it to the visual constraints of line diagrams in the field of Formal Concept Analysis (FCA), where certain labels have to be placed above their node and others below. This special version of the algorithm shows that a pre-filtering in the first phase and minimal adjustments for the cost function and force-based model are sufficient to handle the dual labeling requirements of concept lattices."
+            ]
+        },
+        {
+            "authors": "Anurag Sharma, Marcel Nöhre, Gerd Stumme",
+            "year": "2026",
+            "published": "CONCEPTS Data Analysis Showcase (CDAS) Workshop",
+            "title": "Exploring ESC Winners with Nested Diagrams",
+            "doi": "https://doi.org/10.48550/arXiv.2608.13630",
+            "bibtex": "@misc{sharma2026exploringescwinnersnested,\n  title={Exploring ESC Winners with Nested Diagrams},\n  author={Anurag Sharma and Marcel Nöhre and Gerd Stumme},\n  year={2026},\n  eprint={2608.13630},\n  archivePrefix={arXiv},\n  primaryClass={cs.AI},\n  url={https://arxiv.org/abs/2608.13630}\n}",
+            "abstract": [
+                "We present ConceptFlow, a scikit-learn-compatible Python library for Formal Concept Analysis that constructs and renders nested line diagrams from many-valued formal contexts. Given a many-valued context and a partition of its attributes into conceptual scales, ConceptFlow performs conceptual scaling, computes the factor lattices, identifies filled nodes of the corresponding subdirect product, and produces an interactive visualization.",
+                "We apply ConceptFlow to the winners of the Eurovision Song Contest from 1975 to 2025, exploring relationships between voting patterns and musical characteristics. Voting support is captured by an outer scale spanning regional, cultural, historical, and political dimensions, while an inner scale captures musical characteristics via tempo and key. The resulting nested line diagram reveals implications across both scales, exposing dependencies between how winning entries were voted for and the musical properties they share."
+            ]
+        }
+    ],
+    "openData": [
+        {
+            "authors": "Marcel Nöhre, Dominik Dürrschnabel, Bernhard Ganter, Gerd Stumme",
+            "year": "2026",
+            "published": "Zenodo",
+            "title": "A Visual Benchmark of DimFlux: Comparison of Line Diagrams for Concept Lattices",
+            "doi": "https://doi.org/10.5281/zenodo.20280441",
+            "bibtex": "@misc{nohre_2026_20280441,\n  author = {Nöhre, Marcel and Dürrschnabel, Dominik and Ganter, Bernhard and Stumme, Gerd},\n  title = {A Visual Benchmark of DimFlux: Comparison of Line Diagrams for Concept Lattices},\n  month = may,\n  year = 2026,\n  publisher = {Zenodo},\n  doi = {10.5281/zenodo.20280441},\n  url = {https://doi.org/10.5281/zenodo.20280441}\n}"
+        }
+    ]
+}

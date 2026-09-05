@@ -4,6 +4,7 @@ import { map, Observable } from 'rxjs';
 import { NavigationItem } from '../interfaces/navigation-item';
 import { HomeItem } from '../interfaces/home-item';
 import { CvItem } from '../interfaces/cv-item';
+import { PublicationsItem } from '../interfaces/publications-item';
 
 @Service()
 export class Data {
@@ -21,5 +22,9 @@ export class Data {
 
   cv(): Observable<CvItem> {
     return this.http.get<CvItem>('data/cv.json');
+  }
+
+  publications(): Observable<PublicationsItem> {
+    return this.http.get<PublicationsItem>('data/publications.json');
   }
 }

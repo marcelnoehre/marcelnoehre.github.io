@@ -1,0 +1,114 @@
+@if (item(); as data) {
+  <div class="page">
+    <h1>Publications</h1>
+
+    <section class="pub-section">
+      <h2>Publications</h2>
+      <ol class="timeline">
+        @for (publication of data.publications; track publication; let last = $last) {
+          <li class="timeline-item">
+            <div class="rail">
+              <span class="node"></span>
+              @if (!last) {
+                <span class="edge"></span>
+              }
+            </div>
+
+            <div class="entry">
+              <p class="authors">{{ publication.authors }}</p>
+              <h3>{{ publication.title }}</h3>
+              <p class="venue">{{ publication.published }} ({{ publication.year }})</p>
+
+              <div class="actions">
+                @if (publication.abstract) {
+                  <button
+                    mat-stroked-button
+                    color="primary"
+                    (click)="toggleAbstract(publication.doi)"
+                  >
+                    Abstract
+                  </button>
+                }
+                <button mat-stroked-button color="primary" (click)="toggleBibtex(publication.doi)">
+                  BibTeX
+                </button>
+                <a mat-stroked-button color="primary" [href]="publication.doi" target="_blank" rel="noopener"
+                  >DOI</a
+                >
+              </div>
+
+              @if (publication.abstract) {
+                <div class="expand-block" [class.open]="openAbstract().has(publication.doi)">
+                  <div class="expand-inner abstract-inner">
+                    @for (paragraph of publication.abstract; track $index) {
+                      <p>{{ paragraph }}</p>
+                    }
+                  </div>
+                </div>
+              }
+
+              <div class="expand-block" [class.open]="openBibtex().has(publication.doi)">
+                <div class="expand-inner bibtex-inner">
+                  <button
+                    mat-icon-button
+                    class="copy-btn"
+                    (click)="copy(publication.bibtex)"
+                    aria-label="Copy BibTeX"
+                  >
+                    <mat-icon>content_copy</mat-icon>
+                  </button>
+                  <pre><code>{{ publication.bibtex }}</code></pre>
+                </div>
+              </div>
+            </div>
+          </li>
+        }
+      </ol>
+    </section>
+
+    <section class="pub-section">
+      <h2>Open Data</h2>
+      <ol class="timeline">
+        @for (publication of data.openData; track publication; let last = $last) {
+          <li class="timeline-item">
+            <div class="rail">
+              <span class="node"></span>
+              @if (!last) {
+                <span class="edge"></span>
+              }
+            </div>
+
+            <div class="entry">
+              <p class="authors">{{ publication.authors }}</p>
+              <h3>{{ publication.title }}</h3>
+              <p class="venue">{{ publication.published }} ({{ publication.year }})</p>
+
+              <div class="actions">
+                <button mat-stroked-button color="primary" (click)="toggleBibtex(publication.doi)">
+                  BibTeX
+                </button>
+                <a mat-stroked-button color="primary" [href]="publication.doi" target="_blank" rel="noopener"
+                  >DOI</a
+                >
+              </div>
+
+              <div class="expand-block" [class.open]="openBibtex().has(publication.doi)">
+                <div class="expand-inner bibtex-inner">
+                  <button
+                    mat-icon-button
+                    class="copy-btn"
+                    (click)="copy(publication.bibtex)"
+                    aria-label="Copy BibTeX"
+                  >
+                    <mat-icon>content_copy</mat-icon>
+                  </button>
+                  <pre><code>{{ publication.bibtex }}</code></pre>
+                </div>
+              </div>
+            </div>
+          </li>
+        }
+      </ol>
+    </section>
+  </div>
+}

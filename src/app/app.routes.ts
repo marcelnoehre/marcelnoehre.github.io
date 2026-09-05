@@ -10,8 +10,7 @@ export const routes: Routes = [
   },
   {
     path: 'publications',
-    loadComponent: () => import('./pages/coming-soon/coming-soon').then((m) => m.ComingSoon),
-    data: { title: 'Publications' },
+    loadComponent: () => import('./pages/publications/publications').then((m) => m.Publications),
   },
   { path: '**', redirectTo: '' },
 ];
