@@ -3,12 +3,14 @@
     {
       "title": "DimFlux",
       "description": "Force-directed additive line diagrams for concept lattices, by projecting DimDraw layouts into the additive space and applying forces to maximize the conflict distance between nodes and non-incident edges.",
+      "image": "images/research/dimflux.svg",
       "repositoryURL": "https://github.com/marcelnoehre/dim-flux",
       "publicationDoi": "https://doi.org/10.1016/j.ijar.2026.109734"
     },
     {
       "title": "Node Labeling",
       "description": "A two-phase algorithm for labeling line diagrams of ordered sets, placing labels without intersecting nodes, lines, or other labels while minimizing distances to their nodes.",
+      "image": "images/research/node-labeling.svg",
       "repositoryURL": "https://github.com/marcelnoehre/node-labeling",
       "publicationDoi": "https://doi.org/10.48550/arXiv.2607.23283"
     }

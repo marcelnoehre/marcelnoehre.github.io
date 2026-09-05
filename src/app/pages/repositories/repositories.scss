@@ -53,6 +53,12 @@ h1 {
   aspect-ratio: 16 / 9;
   object-fit: cover;
   border-radius: 0.85rem 0.85rem 0 0;
+
+  &.diagram {
+    padding: 1rem;
+    object-fit: contain;
+    background-color: var(--mat-sys-surface-container-highest);
+  }
 }
 
 .description {
