@@ -16,7 +16,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 68px;
+  height: var(--nav-height);
 }
 
 .nav__brand {
@@ -76,6 +76,11 @@
 
 .nav__link:hover::before {
   transform: scaleX(1);
+}
+
+/* The dot already marks the current page */
+.nav__link.active:hover::before {
+  transform: scaleX(0);
 }
 
 /* Dot marking the current page */

@@ -35,6 +35,7 @@
   --mono: 'JetBrains Mono', ui-monospace, Consolas, monospace;
   --gutter: clamp(16px, 5vw, 64px);
   --max: 1240px;
+  --nav-height: 68px;
 
   font: 17px/1.6 var(--sans);
   color: var(--text);
@@ -101,6 +102,13 @@ svg {
   outline: 2px solid var(--accent);
   outline-offset: 3px;
   border-radius: 4px;
+}
+
+/* Phones in landscape: a slimmer nav leaves more of the short screen for content */
+@media (orientation: landscape) and (max-height: 500px) {
+  :root {
+    --nav-height: 56px;
+  }
 }
 
 .container {

@@ -7,6 +7,8 @@
   position: sticky;
   top: 0;
   height: 100svh;
+  /* Center the content in the area below the fixed nav, so nothing hides behind it */
+  padding-top: var(--nav-height);
   display: flex;
   align-items: center;
   overflow: hidden;
@@ -123,7 +125,7 @@
   }
 
   .scene__visual {
-    height: 38svh;
+    height: 34svh;
   }
 
   .scene__text {
@@ -132,5 +134,45 @@
 
   .scene__progress {
     display: none;
+  }
+}
+
+/* Phones in landscape: diagram and text side by side, sized to the short screen */
+@media (orientation: landscape) and (max-height: 500px) {
+  .scene__grid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 'visual text';
+    gap: 32px;
+  }
+
+  .scene--flip .scene__grid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 'text visual';
+  }
+
+  .scene__visual {
+    height: calc(100svh - var(--nav-height) - 32px);
+  }
+
+  .scene__text {
+    gap: 8px;
+  }
+
+  .scene__title {
+    font-size: clamp(2rem, 12svh, 3.2rem);
+  }
+
+  .scene__description {
+    font-size: 0.85rem;
+    line-height: 1.5;
+  }
+
+  .scene__links {
+    margin-top: 4px;
+  }
+
+  .scene__link {
+    padding: 7px 14px;
+    font-size: 0.8rem;
   }
 }

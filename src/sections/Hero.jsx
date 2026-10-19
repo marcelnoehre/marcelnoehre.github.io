@@ -27,7 +27,9 @@ export default function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, ease }}
           >
-            Formal Concept Analysis · Lattice Drawing
+            <span className="hero__topic">Formal Concept Analysis</span>
+            <span className="hero__topic-sep"> · </span>
+            <span className="hero__topic">Lattice Drawing</span>
           </motion.p>
 
           <h1 className="hero__name">

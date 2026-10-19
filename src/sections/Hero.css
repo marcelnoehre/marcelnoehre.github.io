@@ -21,6 +21,10 @@
   z-index: 1;
 }
 
+.hero__topic {
+  white-space: nowrap;
+}
+
 .hero__name {
   display: grid;
   font-size: clamp(4rem, 11vw, 9.5rem);
@@ -46,6 +50,10 @@
   display: grid;
   gap: 6px;
   font-size: clamp(1rem, 1.6vw, 1.15rem);
+}
+
+.hero__role a {
+  white-space: nowrap;
 }
 
 .hero__position {
@@ -141,6 +149,17 @@
   }
 }
 
+/* Each topic on its own line once they no longer fit side by side */
+@media (max-width: 520px), (orientation: landscape) and (max-height: 500px) {
+  .hero__topic {
+    display: block;
+  }
+
+  .hero__topic-sep {
+    display: none;
+  }
+}
+
 @media (max-width: 860px) {
   .hero__grid {
     grid-template-columns: 1fr;
@@ -165,5 +184,46 @@
 @media (prefers-reduced-motion: reduce) {
   .hero__scroll-line {
     animation: none;
+  }
+}
+
+/* Phones in landscape: side by side like on desktop, sized to the short screen */
+@media (orientation: landscape) and (max-height: 500px) {
+  .hero {
+    min-height: 100svh;
+    padding: calc(var(--nav-height) + 12px) 0 20px;
+  }
+
+  .hero__grid {
+    grid-template-columns: 1.1fr 1fr;
+    gap: 24px;
+  }
+
+  .hero__text {
+    gap: 14px;
+  }
+
+  .hero__name {
+    font-size: clamp(2.6rem, 17svh, 5rem);
+  }
+
+  .hero__role {
+    font-size: 0.9rem;
+  }
+
+  .hero__lattice {
+    position: relative;
+    inset: auto;
+    width: 100%;
+    pointer-events: auto;
+  }
+
+  .hero__lattice .lattice {
+    height: calc(100svh - var(--nav-height) - 48px);
+    opacity: 1;
+  }
+
+  .hero__scroll {
+    display: none;
   }
 }

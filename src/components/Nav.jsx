@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Link, NavLink } from 'react-router-dom'
+import { Link, NavLink, useLocation } from 'react-router-dom'
 import { useMotionValueEvent, useScroll } from 'motion/react'
 import { FiMoon, FiSun } from 'react-icons/fi'
 import { useTheme } from '../hooks/useTheme.js'
@@ -13,9 +13,18 @@ const LINKS = [
 
 export default function Nav() {
   const [theme, toggleTheme] = useTheme()
+  const { pathname } = useLocation()
   const [scrolled, setScrolled] = useState(false)
   const { scrollY } = useScroll()
   useMotionValueEvent(scrollY, 'change', (y) => setScrolled(y > 24))
+
+  // The current page's link brings you back to the top instead of doing nothing
+  const onLinkClick = (event, to) => {
+    if (to !== pathname) return
+    event.preventDefault()
+    const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches
+    window.scrollTo({ top: 0, behavior: reduce ? 'auto' : 'smooth' })
+  }
 
   const onToggle = (event) => {
     const rect = event.currentTarget.getBoundingClientRect()
@@ -36,7 +45,7 @@ export default function Nav() {
         </Link>
         <nav className="nav__links">
           {LINKS.map(({ to, label }) => (
-            <NavLink key={to} to={to} className="nav__link">
+            <NavLink key={to} to={to} className="nav__link" onClick={(event) => onLinkClick(event, to)}>
               {label}
             </NavLink>
           ))}

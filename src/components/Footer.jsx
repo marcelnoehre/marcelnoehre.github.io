@@ -9,8 +9,6 @@ import './Footer.css'
 const ICONS = { MdMail, FaLinkedin, SiOrcid, SiGooglescholar, SiResearchgate, SiGithub }
 
 export default function Footer() {
-  const mail = socials.find((social) => social.name === 'Mail')
-
   return (
     <footer className="footer">
       <div className="container">
@@ -25,11 +23,6 @@ export default function Footer() {
           <h2>
             <em>Let’s connect</em> the dots.
           </h2>
-          {mail && (
-            <a className="footer__mail text-link" href={mail.url}>
-              {mail.url.replace('mailto:', '')}
-            </a>
-          )}
         </motion.div>
 
         <ul className="footer__socials">
@@ -61,7 +54,11 @@ export default function Footer() {
 
         <div className="footer__meta">
           <span>© {new Date().getFullYear()} {about.name}</span>
-          <span>{about.department} · {about.university}</span>
+          <span>
+            <a href={about.departmentURL} target="_blank" rel="noreferrer">{about.department}</a>
+            {' · '}
+            <a href={about.universityURL} target="_blank" rel="noreferrer">{about.university}</a>
+          </span>
         </div>
       </div>
     </footer>
