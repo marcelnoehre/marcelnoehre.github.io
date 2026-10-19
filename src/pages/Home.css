@@ -1,0 +1,18 @@
+.highlights__intro {
+  display: grid;
+  gap: 16px;
+  padding-top: clamp(40px, 8vw, 100px);
+}
+
+.highlights__intro h2 {
+  font-size: clamp(3rem, 9vw, 7.5rem);
+}
+
+.highlights__intro em {
+  color: var(--accent);
+}
+
+.highlights__more {
+  padding: 40px 0 clamp(40px, 8vw, 100px);
+  font-size: 1.1rem;
+}

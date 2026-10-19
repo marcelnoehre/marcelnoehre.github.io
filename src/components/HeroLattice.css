@@ -1,0 +1,59 @@
+.lattice {
+  width: 100%;
+  height: auto;
+  overflow: visible;
+}
+
+.lattice__edge {
+  stroke: var(--line-strong);
+  stroke-width: 2;
+  stroke-linecap: round;
+  transition: stroke 0.3s, stroke-width 0.3s;
+}
+
+.lattice__edge.is-up {
+  stroke: var(--accent);
+  stroke-width: 3;
+}
+
+.lattice__edge.is-down {
+  stroke: var(--warm);
+  stroke-width: 3;
+}
+
+.lattice__edge.is-dimmed {
+  stroke: var(--line);
+}
+
+.lattice__hit {
+  fill: transparent;
+  cursor: crosshair;
+}
+
+.lattice__dot {
+  fill: var(--bg);
+  stroke: var(--accent);
+  stroke-width: 3;
+  pointer-events: none;
+  transition: fill 0.3s, stroke 0.3s, r 0.3s;
+}
+
+/* The hovered concept belongs to both sets, so it is filled with both colors */
+.lattice__node.is-active .lattice__dot {
+  fill: url(#lattice-split);
+  stroke: var(--ink);
+  r: 11;
+}
+
+.lattice__node.is-up .lattice__dot {
+  fill: color-mix(in srgb, var(--accent) 22%, var(--bg));
+}
+
+.lattice__node.is-down .lattice__dot {
+  fill: color-mix(in srgb, var(--warm) 22%, var(--bg));
+  stroke: var(--warm);
+}
+
+.lattice__node.is-dimmed .lattice__dot {
+  stroke: var(--line-strong);
+}

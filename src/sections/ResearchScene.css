@@ -1,0 +1,136 @@
+.scene {
+  position: relative;
+  height: 220vh;
+}
+
+.scene__sticky {
+  position: sticky;
+  top: 0;
+  height: 100svh;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.scene__grid {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  grid-template-areas: 'visual text';
+  align-items: center;
+  gap: clamp(32px, 6vw, 96px);
+}
+
+.scene--flip .scene__grid {
+  grid-template-columns: 1fr 1.1fr;
+  grid-template-areas: 'text visual';
+}
+
+.scene__visual {
+  grid-area: visual;
+  height: min(70svh, 560px);
+}
+
+.scene__text {
+  grid-area: text;
+  display: grid;
+  gap: 20px;
+  align-content: center;
+}
+
+.scene__number {
+  font-family: var(--mono);
+  font-size: 0.85rem;
+  color: var(--accent);
+}
+
+.scene__number::after {
+  content: '';
+  display: inline-block;
+  width: 48px;
+  height: 1px;
+  margin-left: 12px;
+  vertical-align: middle;
+  background: var(--accent);
+}
+
+.scene__title {
+  font-size: clamp(3rem, 7vw, 6rem);
+}
+
+.scene__description {
+  max-width: 46ch;
+  font-size: clamp(1rem, 1.4vw, 1.12rem);
+}
+
+.scene__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 8px;
+}
+
+.scene__link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 18px;
+  border: 1px solid var(--line-strong);
+  border-radius: 999px;
+  color: var(--ink);
+  font-size: 0.9rem;
+  text-decoration: none;
+  transition: border-color 0.2s, background 0.2s, color 0.2s;
+}
+
+.scene__link:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.scene__link--primary {
+  border-color: var(--accent);
+  background: var(--accent);
+  color: var(--bg);
+}
+
+.scene__link--primary:hover {
+  background: transparent;
+}
+
+.scene__progress {
+  position: absolute;
+  top: 50%;
+  right: max(12px, calc((100vw - var(--max)) / 2 - 40px));
+  width: 1px;
+  height: 120px;
+  translate: 0 -50%;
+  background: var(--line);
+}
+
+.scene__progress span {
+  display: block;
+  height: 100%;
+  background: var(--accent);
+  transform-origin: top;
+}
+
+@media (max-width: 860px) {
+  .scene__grid,
+  .scene--flip .scene__grid {
+    grid-template-columns: 1fr;
+    grid-template-areas: 'visual' 'text';
+    gap: 20px;
+  }
+
+  .scene__visual {
+    height: 38svh;
+  }
+
+  .scene__text {
+    gap: 12px;
+  }
+
+  .scene__progress {
+    display: none;
+  }
+}

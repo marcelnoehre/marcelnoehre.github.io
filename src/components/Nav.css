@@ -1,0 +1,128 @@
+.nav {
+  position: fixed;
+  inset: 0 0 auto;
+  z-index: 50;
+  border-bottom: 1px solid transparent;
+  transition: background 0.3s, border-color 0.3s, backdrop-filter 0.3s;
+}
+
+.nav.is-scrolled {
+  background: color-mix(in srgb, var(--bg) 72%, transparent);
+  backdrop-filter: blur(14px);
+  border-bottom-color: var(--line);
+}
+
+.nav__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 68px;
+}
+
+.nav__brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--ink);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+.nav__brand-lines {
+  fill: none;
+  stroke: var(--ink);
+  stroke-width: 1.6;
+}
+
+.nav__brand-node {
+  fill: var(--accent);
+  transition: transform 0.3s;
+  transform-box: fill-box;
+  transform-origin: center;
+}
+
+.nav__brand:hover .nav__brand-node {
+  transform: scale(1.35);
+}
+
+.nav__links {
+  display: flex;
+  align-items: center;
+  gap: clamp(4px, 1.5vw, 12px);
+}
+
+.nav__link {
+  position: relative;
+  padding: 6px 8px;
+  font-size: 0.9rem;
+  color: var(--text);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+/* Underline that grows from the center on hover */
+.nav__link::before {
+  content: '';
+  position: absolute;
+  left: 8px;
+  right: 8px;
+  bottom: 2px;
+  height: 1px;
+  background: var(--accent);
+  transform: scaleX(0);
+  transition: transform 0.25s ease;
+}
+
+.nav__link:hover::before {
+  transform: scaleX(1);
+}
+
+/* Dot marking the current page */
+.nav__link::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: -6px;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--accent);
+  transform: translateX(-50%) scale(0);
+  transition: transform 0.25s;
+}
+
+.nav__link:hover,
+.nav__link.active {
+  color: var(--ink);
+}
+
+.nav__link.active::after {
+  transform: translateX(-50%) scale(1);
+}
+
+.nav__theme {
+  display: grid;
+  place-items: center;
+  width: 36px;
+  height: 36px;
+  margin-left: 4px;
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  background: transparent;
+  color: var(--ink);
+  font-size: 1rem;
+  cursor: pointer;
+  transition: border-color 0.2s, transform 0.4s;
+}
+
+.nav__theme:hover {
+  border-color: var(--accent);
+  transform: rotate(25deg);
+}
+
+@media (max-width: 560px) {
+  .nav__brand span {
+    display: none;
+  }
+}

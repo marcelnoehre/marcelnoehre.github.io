@@ -1,0 +1,112 @@
+import { useEffect, useId, useRef } from 'react'
+import './InlineDiagram.css'
+
+// Colors as exported by the drawing tool, mapped to theme tokens
+const COLORS = {
+  'rgb(0%, 0%, 0%)': 'var(--ink)',
+  'rgb(100%, 100%, 100%)': 'var(--bg)',
+  'rgb(50.195312%, 50.195312%, 50.195312%)': 'var(--muted)',
+}
+
+const clamp = (value) => Math.min(1, Math.max(0, value))
+
+// Parses the SVG, namespaces its ids and swaps fixed colors for theme variables
+function prepareSvg(text, prefix) {
+  const svg = new DOMParser().parseFromString(text, 'image/svg+xml').documentElement
+  svg.removeAttribute('width')
+  svg.removeAttribute('height')
+
+  for (const el of svg.querySelectorAll('[id]')) el.id = `${prefix}${el.id}`
+  for (const el of svg.querySelectorAll('*')) {
+    for (const attr of ['href', 'xlink:href']) {
+      const value = el.getAttribute(attr)
+      if (value?.startsWith('#')) el.setAttribute(attr, `#${prefix}${value.slice(1)}`)
+    }
+    const clip = el.getAttribute('clip-path')
+    if (clip) el.setAttribute('clip-path', clip.replace('url(#', `url(#${prefix}`))
+    for (const prop of ['fill', 'stroke']) {
+      const color = COLORS[el.getAttribute(prop)]
+      if (color) {
+        el.removeAttribute(prop)
+        el.style[prop] = color
+      }
+    }
+  }
+
+  // The white background rectangle is the only filled path without a stroke
+  for (const path of svg.querySelectorAll('path')) {
+    if (path.style.fill === 'var(--bg)' && !path.style.stroke) path.remove()
+  }
+  return svg
+}
+
+const topOf = (el) => el.getBoundingClientRect().top
+
+// Splits the drawing into edges, nodes and labels, ordered top to bottom
+function classify(svg) {
+  const paths = [...svg.querySelectorAll('path')].filter((path) => !path.closest('defs'))
+  const edges = paths
+    .filter((path) => path.style.fill === '' && path.getAttribute('fill') === 'none' && !path.getAttribute('stroke-dasharray'))
+    .sort((a, b) => topOf(a) - topOf(b))
+    .map((path) => ({ el: path, length: path.getTotalLength() }))
+  const nodes = paths
+    .filter((path) => path.style.fill === 'var(--bg)')
+    .sort((a, b) => topOf(a) - topOf(b))
+  // Glyphs, dashed leader lines and the filled dots at the end of the leaders
+  const labels = [
+    ...svg.querySelectorAll('use'),
+    ...paths.filter((path) => path.getAttribute('stroke-dasharray')),
+    ...paths.filter((path) => path.style.fill && path.style.fill !== 'var(--bg)'),
+  ]
+
+  for (const node of nodes) node.style.stroke = 'var(--accent)'
+  for (const { el, length } of edges) el.style.strokeDasharray = `${length} ${length}`
+  return { edges, nodes, labels }
+}
+
+// Edges draw in first, nodes appear on top of them, labels fade in last
+function render({ edges, nodes, labels }, progress) {
+  edges.forEach(({ el, length }, i) => {
+    const start = (i / edges.length) * 0.5
+    const local = clamp((progress - start) / 0.25)
+    el.style.strokeDashoffset = length * (1 - local)
+    el.style.opacity = local > 0 ? 1 : 0
+  })
+  nodes.forEach((el, i) => {
+    const start = 0.15 + (i / nodes.length) * 0.5
+    el.style.opacity = clamp((progress - start) / 0.12)
+  })
+  const labelOpacity = clamp((progress - 0.75) / 0.2)
+  for (const el of labels) el.style.opacity = labelOpacity
+}
+
+export default function InlineDiagram({ src, progress, label }) {
+  const ref = useRef(null)
+  const prefix = `d${useId().replace(/[^a-zA-Z0-9]/g, '')}-`
+
+  useEffect(() => {
+    let cancelled = false
+    let unsubscribe
+
+    fetch(src)
+      .then((response) => response.text())
+      .then((text) => {
+        if (cancelled || !ref.current) return
+        const svg = prepareSvg(text, prefix)
+        ref.current.replaceChildren(svg)
+        const parts = classify(svg)
+        render(parts, progress.get())
+        unsubscribe = progress.on('change', (value) => render(parts, value))
+      })
+      .catch(() => {
+        // Leave the frame empty if the drawing fails to load
+      })
+
+    return () => {
+      cancelled = true
+      unsubscribe?.()
+    }
+  }, [src, progress, prefix])
+
+  return <div ref={ref} className="diagram" role="img" aria-label={label} />
+}

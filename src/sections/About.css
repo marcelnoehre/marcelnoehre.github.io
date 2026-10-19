@@ -1,0 +1,81 @@
+.about {
+  overflow-x: clip;
+  padding: clamp(80px, 14vw, 180px) 0;
+}
+
+.about__grid {
+  display: grid;
+  grid-template-columns: minmax(220px, 0.8fr) 1.2fr;
+  align-items: center;
+  gap: clamp(40px, 8vw, 120px);
+}
+
+.about__photo-wrap {
+  position: relative;
+  aspect-ratio: 1;
+  width: 100%;
+  max-width: 400px;
+  justify-self: center;
+}
+
+.about__photo {
+  position: absolute;
+  inset: 9%;
+  width: 82%;
+  height: 82%;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+/* Zoomed in on the face, which sits slightly below the middle of the portrait */
+.about__photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 56%;
+  transform: scale(1.25);
+  transform-origin: 50% 46%;
+}
+
+.about__orbit {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+}
+
+.about__orbit-ring {
+  fill: none;
+  stroke: var(--line-strong);
+  stroke-width: 0.6;
+  stroke-dasharray: 2 4;
+}
+
+.about__orbit-node {
+  fill: var(--bg);
+  stroke: var(--accent);
+  stroke-width: 1.5;
+}
+
+.about__text {
+  display: grid;
+  gap: 24px;
+}
+
+.about__abstract {
+  font-family: var(--serif);
+  font-size: clamp(1.6rem, 3.2vw, 2.6rem);
+  line-height: 1.22;
+  color: var(--ink);
+}
+
+@media (max-width: 760px) {
+  .about__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about__photo-wrap {
+    max-width: 280px;
+  }
+}
