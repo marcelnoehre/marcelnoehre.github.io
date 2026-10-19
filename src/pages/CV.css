@@ -1,157 +1,7 @@
-.cv {
-  max-width: 960px;
-  padding: clamp(120px, 18vh, 180px) 0 clamp(40px, 8vw, 100px);
-}
-
-.cv-hero {
-  display: grid;
-  gap: 20px;
-  margin-bottom: clamp(64px, 10vw, 120px);
-}
-
-.cv-hero h1 {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0 0.25em;
-  font-size: clamp(3.4rem, 10vw, 7.5rem);
-  line-height: 0.95;
-}
-
-.cv-hero__mask {
-  display: block;
-  overflow: hidden;
-  padding-bottom: 0.08em;
-}
-
-.cv-hero__mask > span {
-  display: block;
-}
-
-.cv-section + .cv-section {
-  margin-top: clamp(72px, 10vw, 128px);
-}
-
-.cv-section__header {
-  display: grid;
-  gap: 12px;
-  margin-bottom: 40px;
-}
-
-.cv-section__header h2 {
-  font-size: clamp(2.4rem, 5vw, 3.6rem);
-}
-
-.cv-section__number {
-  font-family: var(--mono);
-  font-size: 0.85rem;
-  color: var(--accent);
-}
-
-.cv-section__number::after {
-  content: '';
-  display: inline-block;
-  width: 48px;
-  height: 1px;
-  margin-left: 12px;
-  vertical-align: middle;
-  background: var(--accent);
-}
-
-.cv-timeline {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.cv-item {
-  display: flex;
-  gap: clamp(16px, 3vw, 28px);
-}
-
-/* Rail: a chain drawn like the hero lattice */
-.cv-rail {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  flex: 0 0 auto;
-  padding-top: 30px;
-}
-
-.cv-node {
-  position: relative;
-  width: 16px;
-  height: 16px;
-  flex: 0 0 auto;
-  border: 3px solid var(--line-strong);
-  border-radius: 50%;
-  background: var(--bg);
-  transition: border-color 0.4s, background 0.4s;
-}
-
-.cv-node.is-reached {
-  border-color: var(--accent);
-  background: color-mix(in srgb, var(--accent) 22%, var(--bg));
-}
-
-.cv-node.is-ongoing.is-reached {
-  background: var(--accent);
-}
-
-/* Ongoing positions keep a soft pulse */
-.cv-node.is-ongoing.is-reached::after {
-  content: '';
-  position: absolute;
-  inset: -3px;
-  border-radius: 50%;
-  border: 2px solid var(--accent);
-  animation: cv-pulse 2.4s ease-out infinite;
-}
-
-@keyframes cv-pulse {
-  from {
-    transform: scale(1);
-    opacity: 0.8;
-  }
-  to {
-    transform: scale(2.4);
-    opacity: 0;
-  }
-}
-
-.cv-edge {
-  position: relative;
-  width: 2px;
-  flex: 1 1 auto;
-  margin: 6px 0;
-  background: var(--line);
-}
-
-.cv-edge span {
-  position: absolute;
-  inset: 0;
-  background: var(--accent);
-  transform-origin: top;
-}
-
 .cv-card {
-  flex: 1;
   display: grid;
   grid-template-columns: 9.5rem 1fr;
   gap: clamp(20px, 4vw, 40px);
-  margin-bottom: 24px;
-  padding: clamp(20px, 3vw, 28px) clamp(20px, 3vw, 32px);
-  border: 1px solid var(--line);
-  border-radius: 16px;
-  background: color-mix(in srgb, var(--bg-soft) 60%, transparent);
-  transition: border-color 0.3s;
-}
-
-.cv-item:last-child .cv-card {
-  margin-bottom: 0;
-}
-
-.cv-card:hover {
-  border-color: color-mix(in srgb, var(--accent) 50%, transparent);
 }
 
 .cv-date {
@@ -207,37 +57,6 @@
   margin-top: 4px;
 }
 
-.cv-link {
-  display: inline-flex;
-  align-items: flex-start;
-  gap: 10px;
-  width: fit-content;
-  font-size: 0.92rem;
-  color: var(--text);
-  text-decoration: none;
-  transition: color 0.2s;
-}
-
-.cv-link svg {
-  flex: 0 0 auto;
-  margin-top: 0.2em;
-  font-size: 1.1rem;
-  color: var(--accent);
-}
-
-.cv-link span {
-  background: linear-gradient(var(--accent), var(--accent)) 0 100% / 0 1px no-repeat;
-  transition: background-size 0.3s;
-}
-
-.cv-link:hover {
-  color: var(--ink);
-}
-
-.cv-link:hover span {
-  background-size: 100% 1px;
-}
-
 .cv-thesis {
   display: grid;
   gap: 6px;
@@ -281,11 +100,5 @@
 
   .cv-date__sep {
     padding-left: 0;
-  }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .cv-node.is-ongoing.is-reached::after {
-    animation: none;
   }
 }

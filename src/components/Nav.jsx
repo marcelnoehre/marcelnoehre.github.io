@@ -6,7 +6,7 @@ import { useTheme } from '../hooks/useTheme.js'
 import './Nav.css'
 
 const LINKS = [
-  { to: '/research', label: 'Research' },
+  { to: '/publications', label: 'Publications' },
   { to: '/projects', label: 'Projects' },
   { to: '/cv', label: 'CV' },
 ]

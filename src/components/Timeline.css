@@ -1,0 +1,190 @@
+.tl-page {
+  max-width: 960px;
+  padding: clamp(120px, 18vh, 180px) 0 clamp(40px, 8vw, 100px);
+}
+
+.tl-hero {
+  display: grid;
+  gap: 20px;
+  margin-bottom: clamp(64px, 10vw, 120px);
+}
+
+.tl-hero h1 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 0.25em;
+  font-size: clamp(3.4rem, 10vw, 7.5rem);
+  line-height: 0.95;
+}
+
+.tl-hero__mask {
+  display: block;
+  overflow: hidden;
+  padding-bottom: 0.08em;
+}
+
+.tl-hero__mask > span {
+  display: block;
+}
+
+.tl-section + .tl-section {
+  margin-top: clamp(72px, 10vw, 128px);
+}
+
+.tl-section__header {
+  display: grid;
+  gap: 12px;
+  margin-bottom: 40px;
+}
+
+.tl-section__header h2 {
+  font-size: clamp(2.4rem, 5vw, 3.6rem);
+}
+
+.tl-section__number {
+  font-family: var(--mono);
+  font-size: 0.85rem;
+  color: var(--accent);
+}
+
+.tl-section__number::after {
+  content: '';
+  display: inline-block;
+  width: 48px;
+  height: 1px;
+  margin-left: 12px;
+  vertical-align: middle;
+  background: var(--accent);
+}
+
+.tl-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.tl-item {
+  display: flex;
+  gap: clamp(16px, 3vw, 28px);
+}
+
+/* Rail: a chain drawn like the hero lattice */
+.tl-rail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 0 0 auto;
+  padding-top: 30px;
+}
+
+.tl-node {
+  position: relative;
+  width: 16px;
+  height: 16px;
+  flex: 0 0 auto;
+  border: 3px solid var(--line-strong);
+  border-radius: 50%;
+  background: var(--bg);
+  transition: border-color 0.4s, background 0.4s;
+}
+
+.tl-node.is-reached {
+  border-color: var(--accent);
+  background: color-mix(in srgb, var(--accent) 22%, var(--bg));
+}
+
+.tl-node.is-ongoing.is-reached {
+  background: var(--accent);
+}
+
+/* Ongoing entries keep a soft pulse */
+.tl-node.is-ongoing.is-reached::after {
+  content: '';
+  position: absolute;
+  inset: -3px;
+  border-radius: 50%;
+  border: 2px solid var(--accent);
+  animation: tl-pulse 2.4s ease-out infinite;
+}
+
+@keyframes tl-pulse {
+  from {
+    transform: scale(1);
+    opacity: 0.8;
+  }
+  to {
+    transform: scale(2.4);
+    opacity: 0;
+  }
+}
+
+.tl-edge {
+  position: relative;
+  width: 2px;
+  flex: 1 1 auto;
+  margin: 6px 0;
+  background: var(--line);
+}
+
+.tl-edge span {
+  position: absolute;
+  inset: 0;
+  background: var(--accent);
+  transform-origin: top;
+}
+
+.tl-card {
+  flex: 1;
+  min-width: 0;
+  margin-bottom: 24px;
+  padding: clamp(20px, 3vw, 28px) clamp(20px, 3vw, 32px);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  background: color-mix(in srgb, var(--bg-soft) 60%, transparent);
+  transition: border-color 0.3s;
+}
+
+.tl-item:last-child .tl-card {
+  margin-bottom: 0;
+}
+
+.tl-card:hover {
+  border-color: color-mix(in srgb, var(--accent) 50%, transparent);
+}
+
+.tl-link {
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 10px;
+  width: fit-content;
+  font-size: 0.92rem;
+  color: var(--text);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.tl-link svg {
+  flex: 0 0 auto;
+  margin-top: 0.2em;
+  font-size: 1.1rem;
+  color: var(--accent);
+}
+
+.tl-link span {
+  background: linear-gradient(var(--accent), var(--accent)) 0 100% / 0 1px no-repeat;
+  transition: background-size 0.3s;
+}
+
+.tl-link:hover {
+  color: var(--ink);
+}
+
+.tl-link:hover span {
+  background-size: 100% 1px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .tl-node.is-ongoing.is-reached::after {
+    animation: none;
+  }
+}

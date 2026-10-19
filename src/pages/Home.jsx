@@ -31,7 +31,7 @@ export default function Home() {
         ))}
 
         <div className="container highlights__more">
-          <Link to="/research" className="text-link">All research →</Link>
+          <Link to="/publications" className="text-link">All publications →</Link>
         </div>
       </section>
     </>
