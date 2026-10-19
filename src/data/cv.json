@@ -1,0 +1,58 @@
+{
+  "experience": [
+    {
+      "from": "2025-11",
+      "position": "Research Associate",
+      "institution": "University of Kassel",
+      "institutionURL": "https://www.uni-kassel.de/uni/index.html",
+      "institute": "Knowledge & Data Engineering Group",
+      "instituteURL": "https://www.kde.cs.uni-kassel.de",
+      "homepage": "Marcel Nöhre",
+      "homepageURL": "https://www.kde.cs.uni-kassel.de/noehre"
+    },
+    {
+      "from": "2021-10",
+      "to": "2025-11",
+      "position": "Web Developer",
+      "institution": "Entiac GmbH",
+      "institutionURL": "https://entiac.com",
+      "institute": "MDE",
+      "instituteURL": "https://entiac.com/mde/"
+    }
+  ],
+  "education": [
+    {
+      "from": "2025-11",
+      "degree": "PhD Candidate",
+      "institution": "University of Kassel",
+      "institutionURL": "https://www.uni-kassel.de/uni/index.html",
+      "institute": "Knowledge & Data Engineering Group",
+      "instituteURL": "https://www.kde.cs.uni-kassel.de",
+      "homepage": "Marcel Nöhre",
+      "homepageURL": "https://www.kde.cs.uni-kassel.de/noehre"
+    },
+    {
+      "from": "2023-04",
+      "to": "2025-11",
+      "degree": "Master of Science (M.Sc.)",
+      "field": "Applied Computer Science",
+      "institution": "University of Hildesheim",
+      "institutionURL": "https://www.uni-hildesheim.de",
+      "institute": "Information Systems and Machine Learning Lab (ISMLL)",
+      "instituteURL": "https://www.ismll.uni-hildesheim.de",
+      "thesis": "The Robustness of Topological Data Analysis under Imputation-Induced Perturbations"
+    },
+    {
+      "from": "2019-10",
+      "to": "2023-06",
+      "degree": "Bachelor of Science (B.Sc.)",
+      "field": "Applied Computer Science",
+      "institution": "University of Hildesheim",
+      "institutionURL": "https://www.uni-hildesheim.de",
+      "institute": "Software Systems Engineering (SSE)",
+      "instituteURL": "https://www.sse.uni-hildesheim.de",
+      "thesis": "Swagger in the IIP-Ecosphere for Asset Administration Shells in Industry 4.0",
+      "original": "Swagger im Bereich IIP-Ecosphere für Verwaltungsschalen in der Industrie 4.0"
+    }
+  ]
+}
