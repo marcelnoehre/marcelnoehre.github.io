@@ -25,16 +25,16 @@
       "demoURL": "https://www.youtube.com/watch?v=LHaFeOrvy90"
     },
     {
-      "title": "Rocket League Overlay",
-      "description": "A dynamic streaming overlay for Rocket League Esports matches, designed to read and seamlessly display in-game data. It also includes a caster panel for easy adjustment of match information.",
-      "image": "images/projects/rl-overlay.png",
-      "repositoryURL": "https://github.com/marcelnoehre/overlay-3dg"
-    },
-    {
       "title": "Swagger For AAS",
       "description": "Reads data from Asset Administration Shells, generalizes it, and generates a comprehensive Swagger UI documentation to ensure clarity and accessibility for developers.",
       "image": "images/projects/swagger-for-aas.png",
       "repositoryURL": "https://github.com/marcelnoehre/swagger-for-aas"
+    },
+    {
+      "title": "Rocket League Overlay",
+      "description": "A dynamic streaming overlay for Rocket League Esports matches, designed to read and seamlessly display in-game data. It also includes a caster panel for easy adjustment of match information.",
+      "image": "images/projects/rl-overlay.png",
+      "repositoryURL": "https://github.com/marcelnoehre/overlay-3dg"
     },
     {
       "title": "Webmaster MVB",

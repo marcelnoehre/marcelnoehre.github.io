@@ -6,6 +6,7 @@ import Home from './pages/Home.jsx'
 import PageStub from './pages/PageStub.jsx'
 import CV from './pages/CV.jsx'
 import Publications from './pages/Publications.jsx'
+import Repositories from './pages/Repositories.jsx'
 
 function ScrollToTop() {
   const { pathname } = useLocation()
@@ -25,7 +26,7 @@ export default function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/publications" element={<Publications />} />
-          <Route path="/projects" element={<PageStub title="Projects" />} />
+          <Route path="/repositories" element={<Repositories />} />
           <Route path="/cv" element={<CV />} />
           <Route path="*" element={<PageStub title="Not found" />} />
         </Routes>

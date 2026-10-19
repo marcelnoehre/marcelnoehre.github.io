@@ -33,19 +33,26 @@ export function PageHeader({ eyebrow, title }) {
   )
 }
 
+// Numbered section heading, shared by all subpages
+export function SectionHeader({ number, title }) {
+  return (
+    <motion.header
+      className="tl-section__header"
+      initial={{ opacity: 0, y: 24 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, amount: 0.8 }}
+      transition={{ duration: 0.7, ease }}
+    >
+      <span className="tl-section__number">{number}</span>
+      <h2>{title}</h2>
+    </motion.header>
+  )
+}
+
 export function TimelineSection({ number, title, children }) {
   return (
     <section className="tl-section">
-      <motion.header
-        className="tl-section__header"
-        initial={{ opacity: 0, y: 24 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true, amount: 0.8 }}
-        transition={{ duration: 0.7, ease }}
-      >
-        <span className="tl-section__number">{number}</span>
-        <h2>{title}</h2>
-      </motion.header>
+      <SectionHeader number={number} title={title} />
       <ol className="tl-list">{children}</ol>
     </section>
   )

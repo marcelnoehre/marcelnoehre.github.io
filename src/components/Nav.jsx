@@ -7,7 +7,7 @@ import './Nav.css'
 
 const LINKS = [
   { to: '/publications', label: 'Publications' },
-  { to: '/projects', label: 'Projects' },
+  { to: '/repositories', label: 'Repositories' },
   { to: '/cv', label: 'CV' },
 ]
 
