@@ -4,10 +4,14 @@ import Nav from './components/Nav.jsx'
 import Footer from './components/Footer.jsx'
 import Home from './pages/Home.jsx'
 import PageStub from './pages/PageStub.jsx'
+import CV from './pages/CV.jsx'
 
 function ScrollToTop() {
   const { pathname } = useLocation()
-  useEffect(() => window.scrollTo(0, 0), [pathname])
+  // Braces matter: newer browsers return a Promise from scrollTo, which must not become the cleanup
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [pathname])
   return null
 }
 
@@ -21,7 +25,7 @@ export default function App() {
           <Route path="/" element={<Home />} />
           <Route path="/research" element={<PageStub title="Research" />} />
           <Route path="/projects" element={<PageStub title="Projects" />} />
-          <Route path="/cv" element={<PageStub title="CV" />} />
+          <Route path="/cv" element={<CV />} />
           <Route path="*" element={<PageStub title="Not found" />} />
         </Routes>
       </main>

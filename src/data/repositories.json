@@ -4,6 +4,7 @@
       "title": "DimFlux",
       "description": "Force-directed additive line diagrams for concept lattices, by projecting DimDraw layouts into the additive space and applying forces to maximize the conflict distance between nodes and non-incident edges.",
       "image": "images/research/dimflux.svg",
+      "nodeScale": 0.85,
       "repositoryURL": "https://github.com/marcelnoehre/dim-flux",
       "publicationDoi": "https://doi.org/10.1016/j.ijar.2026.109734"
     },

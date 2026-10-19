@@ -42,8 +42,21 @@ function prepareSvg(text, prefix) {
 
 const topOf = (el) => el.getBoundingClientRect().top
 
+// Shrinks a node around its own center; the wrapper keeps the path's own transform intact
+// and the outline is compensated so it stays as thick as the edges
+function scaleNode(node, scale) {
+  const wrapper = document.createElementNS('http://www.w3.org/2000/svg', 'g')
+  node.replaceWith(wrapper)
+  wrapper.appendChild(node)
+  wrapper.style.transformBox = 'fill-box'
+  wrapper.style.transformOrigin = 'center'
+  wrapper.style.transform = `scale(${scale})`
+  const strokeWidth = parseFloat(node.getAttribute('stroke-width'))
+  if (strokeWidth) node.style.strokeWidth = strokeWidth / scale
+}
+
 // Splits the drawing into edges, nodes and labels, ordered top to bottom
-function classify(svg) {
+function classify(svg, nodeScale) {
   const paths = [...svg.querySelectorAll('path')].filter((path) => !path.closest('defs'))
   const edges = paths
     .filter((path) => path.style.fill === '' && path.getAttribute('fill') === 'none' && !path.getAttribute('stroke-dasharray'))
@@ -59,7 +72,10 @@ function classify(svg) {
     ...paths.filter((path) => path.style.fill && path.style.fill !== 'var(--bg)'),
   ]
 
-  for (const node of nodes) node.style.stroke = 'var(--accent)'
+  for (const node of nodes) {
+    node.style.stroke = 'var(--accent)'
+    if (nodeScale !== 1) scaleNode(node, nodeScale)
+  }
   for (const { el, length } of edges) el.style.strokeDasharray = `${length} ${length}`
   return { edges, nodes, labels }
 }
@@ -80,7 +96,7 @@ function render({ edges, nodes, labels }, progress) {
   for (const el of labels) el.style.opacity = labelOpacity
 }
 
-export default function InlineDiagram({ src, progress, label }) {
+export default function InlineDiagram({ src, progress, label, nodeScale = 1 }) {
   const ref = useRef(null)
   const prefix = `d${useId().replace(/[^a-zA-Z0-9]/g, '')}-`
 
@@ -94,7 +110,7 @@ export default function InlineDiagram({ src, progress, label }) {
         if (cancelled || !ref.current) return
         const svg = prepareSvg(text, prefix)
         ref.current.replaceChildren(svg)
-        const parts = classify(svg)
+        const parts = classify(svg, nodeScale)
         render(parts, progress.get())
         unsubscribe = progress.on('change', (value) => render(parts, value))
       })
@@ -106,7 +122,7 @@ export default function InlineDiagram({ src, progress, label }) {
       cancelled = true
       unsubscribe?.()
     }
-  }, [src, progress, prefix])
+  }, [src, progress, prefix, nodeScale])
 
   return <div ref={ref} className="diagram" role="img" aria-label={label} />
 }

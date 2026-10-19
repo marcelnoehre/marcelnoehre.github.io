@@ -28,6 +28,7 @@ export default function ResearchScene({ project, index }) {
           <div className="scene__visual">
             <InlineDiagram
               src={asset(project.image)}
+              nodeScale={project.nodeScale}
               progress={reduce ? drawn : drawProgress}
               label={`Line diagram drawn with ${project.title}`}
             />
