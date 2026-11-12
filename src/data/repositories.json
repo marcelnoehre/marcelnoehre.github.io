@@ -12,7 +12,7 @@
       "description": "A two-phase algorithm for labeling line diagrams of ordered sets, placing labels without intersecting nodes, lines, or other labels while minimizing distances to their nodes.",
       "image": "images/research/node-labeling.svg",
       "repositoryURL": "https://github.com/marcelnoehre/node-labeling",
-      "publicationDoi": "https://doi.org/10.48550/arXiv.2607.23283"
+      "publicationDoi": "https://doi.org/10.4230/LIPIcs.GD.2026.12"
     }
   ],
   "sideProjects": [

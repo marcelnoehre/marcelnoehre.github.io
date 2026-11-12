@@ -170,7 +170,7 @@ function AwardItem({ award, last }) {
 export default function Publications() {
   return (
     <div className="container tl-page">
-      <PageHeader eyebrow="Papers, Data & Awards" title="Publications" />
+      <PageHeader eyebrow="Papers, Data, Posters & Awards" title="Publications" />
 
       <TimelineSection number="01" title="Papers">
         {data.publications.map((publication, i) => (
@@ -178,7 +178,7 @@ export default function Publications() {
         ))}
       </TimelineSection>
 
-      <TimelineSection number="02" title="Open Data">
+      <TimelineSection number="02" title="Data & Posters">
         {data.openData.map((publication, i) => (
           <PublicationItem key={publication.doi} publication={publication} last={i === data.openData.length - 1} />
         ))}

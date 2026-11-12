@@ -17,12 +17,12 @@
         {
             "authors": "Marcel Nöhre, Gerd Stumme",
             "year": "2026",
-            "published": "arXiv",
+            "published": "34th International Symposium on Graph Drawing and Network Visualization (GD 2026), LIPIcs 396, 12:1–12:20.",
             "title": "Node Labeling in Line Diagrams of Ordered Sets",
-            "doi": "https://doi.org/10.48550/arXiv.2607.23283",
+            "doi": "https://doi.org/10.4230/LIPIcs.GD.2026.12",
             "selected": true,
             "image": "images/research/node-labeling.svg",
-            "bibtex": "@misc{nöhre2026nodelabelinglinediagrams,\n  title={Node Labeling in Line Diagrams of Ordered Sets},\n  author={Marcel Nöhre and Gerd Stumme},\n  year={2026},\n  eprint={2607.23283},\n  archivePrefix={arXiv},\n  primaryClass={cs.CG},\n  url={https://arxiv.org/abs/2607.23283},\n}",
+            "bibtex": "@InProceedings{nohre_et_al:LIPIcs.GD.2026.12,\n  author = {N\"{o}hre, Marcel and Stumme, Gerd},\n  title = {{Node Labeling in Line Diagrams of Ordered Sets}},\n  booktitle = {34th International Symposium on Graph Drawing and Network Visualization (GD 2026)},\n  pages = {12:1--12:20},\n  series = {Leibniz International Proceedings in Informatics (LIPIcs)},\n  ISBN = {978-3-95977-452-9},\n  ISSN = {1868-8969},\n  year = {2026},\n  volume = {396},\n  editor = {L\"{o}ffler, Maarten and Miksch, Silvia},\n  publisher = {Schloss Dagstuhl -- Leibniz-Zentrum f{\"u}r Informatik},\n  address = {Dagstuhl, Germany},\n  URL = {https://drops.dagstuhl.de/entities/document/10.4230/LIPIcs.GD.2026.12},\n  URN = {urn:nbn:de:0030-drops-279078},\n  doi = {10.4230/LIPIcs.GD.2026.12},\n  annote = {Keywords: Node Labeling, Line Diagrams, Formal Concept Analysis}\n}",
             "abstract": [
                 "We propose a flexible, two-phase algorithm for labeling line diagrams of ordered sets, in which the nodes of direct neighbors in the order relation are connected by a straight, upward-pointing line. In contrast to the labeling of diagrams of arbitrary graphs, we benefit from the fact that all edges in line diagrams of ordered sets are more or less vertical. In this paper, we study the placement of all labels such that they do not intersect with any nodes, lines, or other labels while minimizing the distances between the nodes and their labels.",
                 "Our approach starts by filtering the fixed-position model using line diagram-specific readability criteria. For labels that cannot be placed adjacent to their node (overflow labels), we exploit the free space in the graph's interior or the infinite space surrounding the drawing and link the labels with their respective node by straight binding lines that should not cross other nodes or labels if possible. To balance quality and runtime, we derive an initial placement of the overflow labels using a cost function over a sparse grid of candidates, followed by a force-based refinement step to fine-tune the layout.",
@@ -51,6 +51,14 @@
             "title": "A Visual Benchmark of DimFlux: Comparison of Line Diagrams for Concept Lattices",
             "doi": "https://doi.org/10.5281/zenodo.20280441",
             "bibtex": "@misc{nohre_2026_20280441,\n  author = {Nöhre, Marcel and Dürrschnabel, Dominik and Ganter, Bernhard and Stumme, Gerd},\n  title = {A Visual Benchmark of DimFlux: Comparison of Line Diagrams for Concept Lattices},\n  month = may,\n  year = 2026,\n  publisher = {Zenodo},\n  doi = {10.5281/zenodo.20280441},\n  url = {https://doi.org/10.5281/zenodo.20280441}\n}"
+        },
+        {
+            "authors": "Marcel Nöhre, Anurag Sharma, Gerd Stumme",
+            "year": "2026",
+            "published": "Creative Topic: 34th International Symposium on Graph Drawing and Network Visualization (GD 2026), Zenodo",
+            "title": "The Rhythm of the European Vote",
+            "doi": "https://doi.org/10.5281/zenodo.24158083",
+            "bibtex": "@misc{nohre_2026_24158083,\n  author = {Nöhre, Marcel and Sharma, Anurag and Stumme, Gerd},\n  title = {The Rhythm of the European Vote},\n  month = nov,\n  year = 2026,\n  publisher = {Zenodo},\n  doi = {10.5281/zenodo.24158083},\n  url = {https://doi.org/10.5281/zenodo.24158083}\n}"
         }
     ],
     "awards": [
